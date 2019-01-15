@@ -4,7 +4,8 @@ using UnityEngine;
 
 
 
-public class InputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour
+{
 
     public static InputManager instance;
 
@@ -14,7 +15,7 @@ public class InputManager : MonoBehaviour {
     }
 
     //Movement
-    private static float Move_Horizontal()
+    private float Move_Horizontal()
     {
         float r = 0.0f;
 
@@ -38,13 +39,13 @@ public class InputManager : MonoBehaviour {
             default:
                 return 0;
         }
-        
+
     }
 
-    private static float Move_Vertical()
+    private float Move_Vertical()
     {
         float r = 0.0f;
-        
+
         switch (SystemInfo.operatingSystemFamily)
         {
             case OperatingSystemFamily.MacOSX:
@@ -67,13 +68,25 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    public static Vector2 Joystick_Move()
+    public Vector3 Move()
     {
-        return new Vector2(Move_Horizontal(), Move_Vertical());
+        Vector3 test = new Vector3(Move_Horizontal(),0, Move_Vertical());
+        
+        if (test == Vector3.zero)
+        {
+            float moveHorizontal = Input.GetAxis ("Horizontal");
+            float moveVertical = Input.GetAxis ("Vertical");
+
+            return new Vector3 (moveHorizontal, 0.0f, moveVertical);
+
+        }else
+        {
+            return new Vector3(Move_Horizontal(),0, Move_Vertical());
+        }
     }
 
     //Looking
-    private static float Looking_Horizontal()
+    private float Looking_Horizontal()
     {
         float r = 0.0f;
         
@@ -82,7 +95,7 @@ public class InputManager : MonoBehaviour {
             case OperatingSystemFamily.MacOSX:
 
                 r += Input.GetAxis("Looking_Horizontal_Joystick_MacOSX");
-                return Mathf.Clamp(r, -1.0f, 1.0f);
+        return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Windows:
 
@@ -99,7 +112,7 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    private static float Looking_Vertical()
+    private float Looking_Vertical()
     {
         float r = 0.0f;
         
@@ -125,17 +138,20 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    public static Vector2 Joystick_Looking()
+    public Vector3 looking()
     {
-        return new Vector2(Looking_Horizontal(), Looking_Vertical());
+        Vector3 test = new Vector3(Looking_Horizontal(), Looking_Vertical(), 0);
+
+        if(test == Vector3.zero)
+        {
+            return Vector3.zero;
+        }else
+        {
+            return Vector3.zero;
+        }
     }
 
-
-
-
-
-
-    public static bool Jump()
+    public bool Jump()
     {
         float offset = 0.75f;
 
@@ -149,11 +165,12 @@ public class InputManager : MonoBehaviour {
 
                 } else if (Input.GetButtonDown("Jump_Keyboard"))
                 {
-                    return true;
+                     return true;
                 }
                 else return false;
 
-            case OperatingSystemFamily.Windows:
+            case 
+               OperatingSystemFamily.Windows:
 
                 if(Input.GetAxis("Jump_Joystick_R_Trigger_Windows") > offset)
                 {
@@ -161,11 +178,12 @@ public class InputManager : MonoBehaviour {
 
                 } else if (Input.GetButtonDown("Jump_Keyboard"))
                 {
-                    return true;
+                     return true;
                 }
                 else return false;
 
-            case OperatingSystemFamily.Linux:
+            case 
+               OperatingSystemFamily.Linux:
 
                 if(Input.GetAxis("Jump_Joystick_R_Trigger_Linux") > offset)
                 {
@@ -173,7 +191,7 @@ public class InputManager : MonoBehaviour {
 
                 } else if (Input.GetButtonDown("Jump_Keyboard"))
                 {
-                    return true;
+                     return true;
                 }
                 else return false;
 
@@ -182,7 +200,7 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    public static bool Pause()
+    public bool Pause()
     {
         switch (SystemInfo.operatingSystemFamily)
         {
@@ -217,7 +235,7 @@ public class InputManager : MonoBehaviour {
                     return true;
                 }
                 if (Input.GetButtonDown("Pasue_Keyboard"))
-                {
+        {
                     return true;
                 }
                 else return false;
@@ -227,7 +245,7 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    public static bool Submit()
+    public bool Submit()
     {
         if (Input.GetButtonDown("Submit"))
         {
@@ -236,7 +254,7 @@ public class InputManager : MonoBehaviour {
         else return false;
     }
 
-    public static bool Cancel()
+    public bool Cancel()
     {
         if (Input.GetButtonDown("Cancel"))
         {
