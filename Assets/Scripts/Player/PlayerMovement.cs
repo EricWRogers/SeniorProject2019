@@ -6,19 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float speed = 10.0f;
-    void Start()
-    {
-        //Cursor.lockState = CursorLockMode.Locked;
-    }
-
     void Update()
     {
-        float translation = InputManager.instance.Move().z;
-        float straffe = InputManager.instance.Move().x;
+        float x = InputManager.instance.Move().x;
+        float y = InputManager.instance.Move().z;
 
-        translation *= Time.deltaTime;
-        straffe *= Time.deltaTime;
+        x *= Time.deltaTime;
+        y *= Time.deltaTime;
 
-        transform.Translate(straffe, 0, translation);
+        transform.Translate(x, 0, y);
     }
 }

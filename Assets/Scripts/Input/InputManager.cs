@@ -88,13 +88,13 @@ public class InputManager : MonoBehaviour
             return new Vector3(Move_Horizontal(),0.0f, Move_Vertical());
         }else
         {
-            float moveHorizontal = Input.GetAxis("Horizontal_Keyboard");
-            float moveVertical = Input.GetAxis("Vertical_Keyboard");
+            float x = 0.0f;
+            float y = 0.0f;
 
-            Debug.Log(moveHorizontal);
-            Debug.Log(moveVertical);
+            x += Input.GetAxis("Horizontal_Keyboard");
+            y += Input.GetAxis("Vertical_Keyboard");
 
-            return new Vector3 (moveHorizontal, 0.0f, moveVertical);
+            return new Vector3 (x, 0.0f,y);
         }
     }
 
@@ -153,17 +153,14 @@ public class InputManager : MonoBehaviour
     {
         if (TestGamepadConected())
         {
-            Vector3 temp = new Vector3(Looking_Horizontal(), Looking_Vertical(), 0.0f);
-
-            return temp;
+            return new Vector3(Looking_Horizontal(), Looking_Vertical(), 0.0f);
+            
         }else
         {
-            float lookingHorizontal = Input.GetAxis("Looking_Horizontal_Keyboard");
-            float lookingVertical = Input.GetAxis("Looking_Vertical_Keyboard");
+            float lookingHorizontal = Input.GetAxisRaw("Looking_Horizontal_Keyboard");
+            float lookingVertical = Input.GetAxisRaw("Looking_Vertical_Keyboard");
 
-            Vector3 temp = new Vector3 (lookingHorizontal, lookingVertical, 0.0f);
-
-            return temp;
+            return new Vector3 (lookingHorizontal, lookingVertical, 0.0f);
         }
     }
 
