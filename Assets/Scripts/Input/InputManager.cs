@@ -2,19 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class InputManager : MonoBehaviour
 {
+    public static InputManager instance = null;
 
-    public static InputManager instance;
-
-    private void Awake()
+    void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }else if (instance != this)
+        {
+            Destroy(gameObject); 
+        }
     }
 
-    //Movement
+    private static bool TestGamepadConected()
+    {
+        if (Input.GetJoystickNames().Length > 0)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
     private float Move_Horizontal()
     {
         float r = 0.0f;
@@ -23,17 +36,17 @@ public class InputManager : MonoBehaviour
         {
             case OperatingSystemFamily.MacOSX:
 
-                r += Input.GetAxis("Horizontal");
+                r += Input.GetAxis("Horizontal_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Windows:
 
-                r += Input.GetAxis("Horizontal");
+                r += Input.GetAxis("Horizontal_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Linux:
 
-                r += Input.GetAxis("Horizontal");
+                r += Input.GetAxis("Horizontal_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             default:
@@ -50,17 +63,17 @@ public class InputManager : MonoBehaviour
         {
             case OperatingSystemFamily.MacOSX:
 
-                r += Input.GetAxis("Vertical");
+                r += Input.GetAxis("Vertical_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Windows:
 
-                r += Input.GetAxis("Vertical");
+                r += Input.GetAxis("Vertical_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Linux:
 
-                r += Input.GetAxis("Vertical");
+                r += Input.GetAxis("Vertical_Gamepad");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             default:
@@ -70,22 +83,18 @@ public class InputManager : MonoBehaviour
 
     public Vector3 Move()
     {
-        Vector3 test = new Vector3(Move_Horizontal(),0, Move_Vertical());
-        
-        if (test == Vector3.zero)
-        {
-            float moveHorizontal = Input.GetAxis ("Horizontal");
-            float moveVertical = Input.GetAxis ("Vertical");
-
-            return new Vector3 (moveHorizontal, 0.0f, moveVertical);
-
-        }else
+        if (TestGamepadConected())
         {
             return new Vector3(Move_Horizontal(),0, Move_Vertical());
+        }else
+        {
+            float moveHorizontal = Input.GetAxis("Horizontal_Keyboard");
+            float moveVertical = Input.GetAxis("Vertical_Keyboard");
+
+            return new Vector3 (moveHorizontal, 0.0f, moveVertical);
         }
     }
 
-    //Looking
     private float Looking_Horizontal()
     {
         float r = 0.0f;
@@ -137,80 +146,33 @@ public class InputManager : MonoBehaviour
                 return 0;
         }
     }
-
-    public Vector3 looking()
+    public Vector3 Looking()
     {
-        Vector3 test = new Vector3(Looking_Horizontal(), Looking_Vertical(), 0);
-
-        if(test == Vector3.zero)
+        if (TestGamepadConected())
         {
-            return Vector3.zero;
+            Vector3 temp = new Vector3(Looking_Horizontal(), Looking_Vertical(), 0.0f);
+
+            return temp;
         }else
         {
-            return Vector3.zero;
+            float lookingHorizontal = Input.GetAxis("Looking_Horizontal_Keyboard");
+            float lookingVertical = Input.GetAxis("Looking_Vertical_Keyboard");
+
+            Vector3 temp = new Vector3 (lookingHorizontal, lookingVertical, 0.0f);
+
+            return temp;
         }
     }
 
-    public bool Jump()
+    public bool Interact()
     {
-        float offset = 0.75f;
+        float offset = 0.8f;
 
         switch (SystemInfo.operatingSystemFamily)
         {
             case OperatingSystemFamily.MacOSX:
 
-                if(Input.GetAxis("Jump_Joystick_R_Trigger_MacOSX") > offset)
-                {
-                    return true;
-
-                } else if (Input.GetButtonDown("Jump_Keyboard"))
-                {
-                     return true;
-                }
-                else return false;
-
-            case 
-               OperatingSystemFamily.Windows:
-
-                if(Input.GetAxis("Jump_Joystick_R_Trigger_Windows") > offset)
-                {
-                    return true;
-
-                } else if (Input.GetButtonDown("Jump_Keyboard"))
-                {
-                     return true;
-                }
-                else return false;
-
-            case 
-               OperatingSystemFamily.Linux:
-
-                if(Input.GetAxis("Jump_Joystick_R_Trigger_Linux") > offset)
-                {
-                    return true;
-
-                } else if (Input.GetButtonDown("Jump_Keyboard"))
-                {
-                     return true;
-                }
-                else return false;
-
-            default:
-                return false;
-        }
-    }
-
-    public bool Pause()
-    {
-        switch (SystemInfo.operatingSystemFamily)
-        {
-            case OperatingSystemFamily.MacOSX:
-
-                if (Input.GetButtonDown("Pasue_Joystick_MacOSX"))
-                {
-                    return true;
-                }
-                else if (Input.GetButtonDown("Pasue_Keyboard"))
+                if ((Input.GetAxis("Interact_Joystick_MacOSX_R") > offset) || Input.GetButtonDown("Interact_Keyboard"))
                 {
                     return true;
                 }
@@ -218,28 +180,20 @@ public class InputManager : MonoBehaviour
 
             case OperatingSystemFamily.Windows:
 
-                if (Input.GetButtonDown("Pasue_Joystick_Windows"))
-                {
-                    return true;
-                }
-                else if (Input.GetButtonDown("Pasue_Keyboard"))
+                if ((Input.GetAxis("Interact_Joystick_Windows_R") > offset) || Input.GetButtonDown("Interact_Keyboard"))
                 {
                     return true;
                 }
                 else return false;
 
             case OperatingSystemFamily.Linux:
-        
-                if (Input.GetButtonDown("Pasue_Joystick_Linux"))
+
+                if ((Input.GetAxis("Interact_Joystick_Linux_R") > offset) || Input.GetButtonDown("Interact_Keyboard"))
                 {
                     return true;
                 }
-                if (Input.GetButtonDown("Pasue_Keyboard"))
-        {
-                    return true;
-                }
                 else return false;
-        
+
             default:
                 return false;
         }
@@ -247,19 +201,132 @@ public class InputManager : MonoBehaviour
 
     public bool Submit()
     {
-        if (Input.GetButtonDown("Submit"))
-        {
-            return true;
-        }
-        else return false;
-    }
+        switch (SystemInfo.operatingSystemFamily)
+                {
+                    case OperatingSystemFamily.MacOSX:
 
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_MacOSX"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Windows:
+
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Windows"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Linux:
+
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Linux"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    default:
+                        return false;
+                }
+    }
     public bool Cancel()
     {
-        if (Input.GetButtonDown("Cancel"))
-        {
-            return true;
-        }
-        else return false;
+        switch (SystemInfo.operatingSystemFamily)
+                {
+                    case OperatingSystemFamily.MacOSX:
+
+                        if (Input.GetButtonDown("Cancel_Keyboard") || Input.GetButtonDown("Cancel_MacOSX"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Windows:
+
+                        if (Input.GetButtonDown("Cancel_Keyboard") || Input.GetButtonDown("Cancel_Windows"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Linux:
+
+                        if (Input.GetButtonDown("Cancel_Keyboard") || Input.GetButtonDown("Cancel_Linux"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    default:
+                        return false;
+                }
+    }
+
+    public bool Pause()
+    {
+        switch (SystemInfo.operatingSystemFamily)
+                {
+                    case OperatingSystemFamily.MacOSX:
+
+                        if (Input.GetButtonDown("Pause_Keyboard") || Input.GetButtonDown("Pause_MacOSX"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Windows:
+
+                        if (Input.GetButtonDown("Pause_Keyboard") || Input.GetButtonDown("Pause_Windows"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Linux:
+
+                        if (Input.GetButtonDown("Pause_Keyboard") || Input.GetButtonDown("Pause_Linux"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    default:
+                        return false;
+                }
+    }
+
+    public bool Sprint()
+    {
+        switch (SystemInfo.operatingSystemFamily)
+                {
+                    case OperatingSystemFamily.MacOSX:
+
+                        if (Input.GetButtonDown("Sprint_Keyboard") || Input.GetButtonDown("Sprint_MacOSX"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Windows:
+
+                        if (Input.GetButtonDown("Sprint_Keyboard") || Input.GetButtonDown("Sprint_Windows"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Linux:
+
+                        if (Input.GetButtonDown("Sprint_Keyboard") || Input.GetButtonDown("Sprint_Linux"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    default:
+                        return false;
+                }
     }
 }
