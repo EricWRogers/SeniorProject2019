@@ -85,11 +85,14 @@ public class InputManager : MonoBehaviour
     {
         if (TestGamepadConected())
         {
-            return new Vector3(Move_Horizontal(),0, Move_Vertical());
+            return new Vector3(Move_Horizontal(),0.0f, Move_Vertical());
         }else
         {
             float moveHorizontal = Input.GetAxis("Horizontal_Keyboard");
             float moveVertical = Input.GetAxis("Vertical_Keyboard");
+
+            Debug.Log(moveHorizontal);
+            Debug.Log(moveVertical);
 
             return new Vector3 (moveHorizontal, 0.0f, moveVertical);
         }
