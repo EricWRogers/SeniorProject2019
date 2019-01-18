@@ -205,7 +205,7 @@ public class InputManager : MonoBehaviour
                 {
                     case OperatingSystemFamily.MacOSX:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_MacOSX"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_MacOSX") || Input.GetButtonDown("Submit_Mouse"))
                         {
                             return true;
                         }
@@ -213,7 +213,7 @@ public class InputManager : MonoBehaviour
 
                     case OperatingSystemFamily.Windows:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Windows"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Windows") || Input.GetButtonDown("Submit_Mouse"))
                         {
                             return true;
                         }
@@ -221,7 +221,7 @@ public class InputManager : MonoBehaviour
 
                     case OperatingSystemFamily.Linux:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Linux"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Linux")|| Input.GetButtonDown("Submit_Mouse"))
                         {
                             return true;
                         }
