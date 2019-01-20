@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
         float x = InputManager.instance.Move().x;
         float y = InputManager.instance.Move().z;
 
-        x *= Time.deltaTime;
-        y *= Time.deltaTime;
+        x *= Time.deltaTime * speed;
+        y *= Time.deltaTime * speed;
 
         transform.Translate(x, 0, y);
     }

@@ -36,17 +36,17 @@ public class InputManager : MonoBehaviour
         {
             case OperatingSystemFamily.MacOSX:
 
-                r += Input.GetAxis("Horizontal_Gamepad");
+                r += Input.GetAxis("Horizontal");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Windows:
 
-                r += Input.GetAxis("Horizontal_Gamepad");
+                r += Input.GetAxis("Horizontal");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Linux:
 
-                r += Input.GetAxis("Horizontal_Gamepad");
+                r += Input.GetAxis("Horizontal");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             default:
@@ -63,17 +63,17 @@ public class InputManager : MonoBehaviour
         {
             case OperatingSystemFamily.MacOSX:
 
-                r += Input.GetAxis("Vertical_Gamepad");
+                r += Input.GetAxis("Vertical");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Windows:
 
-                r += Input.GetAxis("Vertical_Gamepad");
+                r += Input.GetAxis("Vertical");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             case OperatingSystemFamily.Linux:
 
-                r += Input.GetAxis("Vertical_Gamepad");
+                r += Input.GetAxis("Vertical");
                 return Mathf.Clamp(r, -1.0f, 1.0f);
 
             default:
@@ -91,8 +91,8 @@ public class InputManager : MonoBehaviour
             float x = 0.0f;
             float y = 0.0f;
 
-            x += Input.GetAxis("Horizontal_Keyboard");
-            y += Input.GetAxis("Vertical_Keyboard");
+            x += Input.GetAxis("Horizontal");
+            y += Input.GetAxis("Vertical");
 
             return new Vector3 (x, 0.0f,y);
         }
@@ -205,7 +205,7 @@ public class InputManager : MonoBehaviour
                 {
                     case OperatingSystemFamily.MacOSX:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_MacOSX") || Input.GetButtonDown("Submit_Mouse"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_MacOSX"))
                         {
                             return true;
                         }
@@ -213,7 +213,7 @@ public class InputManager : MonoBehaviour
 
                     case OperatingSystemFamily.Windows:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Windows") || Input.GetButtonDown("Submit_Mouse"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Windows"))
                         {
                             return true;
                         }
@@ -221,7 +221,7 @@ public class InputManager : MonoBehaviour
 
                     case OperatingSystemFamily.Linux:
 
-                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Linux")|| Input.GetButtonDown("Submit_Mouse"))
+                        if (Input.GetButtonDown("Submit_Keyboard") || Input.GetButtonDown("Submit_Linux"))
                         {
                             return true;
                         }
