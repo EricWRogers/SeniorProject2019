@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     void Update(){}
     void FixedUpdate()
     {
-
+        PollAgression();
     }
     void PollAgression()
     {
