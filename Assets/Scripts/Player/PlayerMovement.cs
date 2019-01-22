@@ -15,6 +15,5 @@ public class PlayerMovement : MonoBehaviour
         y *= Time.deltaTime * speed;
 
         transform.Translate(x, 0, y);
-
     }
 }
