@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50097ddb405f5cd43af9692fbfea0e14, type: 3}
   m_Name: WanderState
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
-  sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  actions:
+  - {fileID: 11400000, guid: 4367a1e1cf3ba2c46bc2dfc961c92dc6, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 72577c25c7ce0ff489385762da7d508e, type: 2}
+    trueState: {fileID: 11400000, guid: 9c2b3da65da2ddb4ba9c50b4c3a0b3ca, type: 2}
+    falseState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
+  sceneGizmoColor: {r: 1, g: 0, b: 0.78478, a: 1}
