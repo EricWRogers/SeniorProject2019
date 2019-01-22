@@ -12,6 +12,8 @@ public class CamLooking : MonoBehaviour
 
     GameObject character;
 
+
+
     void Start()
     {
         character = this.transform.parent.gameObject;
@@ -28,6 +30,13 @@ public class CamLooking : MonoBehaviour
         mouseLook += smoothv;
 
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
-        character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
+        character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, Vector3.up);
+
+        if(transform.localRotation.x > -20.0f)
+        {
+            Quaternion temp = transform.localRotation;
+
+           transform.localRotation.Set(temp.x, temp.y, temp.z, temp.w);
+        }
     }
 }
