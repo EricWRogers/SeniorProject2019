@@ -5,7 +5,7 @@ using UnityEngine;
 public class CreditMovement : MonoBehaviour
 {
     public float speed = 0f;
-    public float startYPos = -470.0f;
+    public float startYPos = 0f;
     private Vector3 pos;
 
     void Start()

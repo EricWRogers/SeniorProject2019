@@ -9,6 +9,7 @@ public class MainMenuButtons : MonoBehaviour
     public GameObject optionsMenuUI;
     public GameObject creditsUI;
     public string gameSceneName;
+    public float creditDuration = 100f;
 
     public void Play()
     {
@@ -30,7 +31,8 @@ public class MainMenuButtons : MonoBehaviour
     public void LoadCredits()
     {
         mainMenuUI.SetActive(false);
-        creditsUI.SetActive(true);        
+        creditsUI.SetActive(true);
+        Invoke("CloseCredits", creditDuration);
     }
 
     public void CloseCredits()
