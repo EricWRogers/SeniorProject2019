@@ -329,4 +329,37 @@ public class InputManager : MonoBehaviour
                         return false;
                 }
     }
+
+    public bool Jump()
+    {
+        switch (SystemInfo.operatingSystemFamily)
+                {
+                    case OperatingSystemFamily.MacOSX:
+
+                        if (Input.GetButtonDown("Jump_Keyboard") || Input.GetButtonDown("Jump_MacOSX"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Windows:
+
+                        if (Input.GetButtonDown("Jump_Keyboard") || Input.GetButtonDown("Jump_Windows"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    case OperatingSystemFamily.Linux:
+
+                        if (Input.GetButtonDown("Jump_Keyboard") || Input.GetButtonDown("Jump_Linux"))
+                        {
+                            return true;
+                        }
+                        else return false;
+
+                    default:
+                        return false;
+                }
+    }
 }
