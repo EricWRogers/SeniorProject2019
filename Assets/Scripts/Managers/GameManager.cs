@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour
     {
         PollAgression();
     }
-    void PollAgression()
+    private void PollAgression()
     {
         foreach(GameObject waypoint in RoomGOS)
         {
-            if ( Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 5.0f )
+            if ( Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 10.0f )
             {
                 VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
-                RoomManager.agressionMeter++;
+                RoomManager.agressionMeter =  RoomManager.agressionMeter + 0.1f;
                 if( RoomManager.agressionMeter > 100.0f) { RoomManager.agressionMeter = 100.0f; }
             }
         }
