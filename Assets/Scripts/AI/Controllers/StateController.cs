@@ -10,7 +10,7 @@ public class StateController : MonoBehaviour
     public EntityStats enemyStats;
     public Transform eyes;
     public State remainState;
-    public Transform chaseTarget;
+    
     public int nextWayPoint;
 
     public GameManager gameManager;

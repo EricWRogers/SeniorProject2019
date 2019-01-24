@@ -20,7 +20,7 @@ public class LookDecision : Decision
         if (Physics.SphereCast(controller.eyes.position, controller.enemyStats.lookSphereCastRadius, controller.eyes.forward, out hit, controller.enemyStats.lookRange)
             && hit.collider.CompareTag("Player"))
         {
-            controller.chaseTarget = hit.transform;
+            //controller.chaseTarget = hit.transform;
             return true;
         }
         else
