@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float jumpSpeed = 8.0f;
+    public float originalSpeed = 10.0f;
+    public float speed;
     public float gravity = 20.0f;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
+    public float sprintMeater = 100.0f;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        speed = originalSpeed;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (controller.isGrounded)
         {
@@ -24,14 +26,41 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
 
-            if (InputManager.instance.Jump())
+            if (InputManager.instance.Sprint())
             {
-                moveDirection.y = jumpSpeed;
+                if(sprintMeater <= 100.0f && sprintMeater >= 0.0f)
+                {
+                    speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
+
+                    if(speed < 10.0f)
+                    {
+                        speed = 10.0f;
+                    }
+
+                    sprintMeater -= 0.5f;
+                }
+                else if (sprintMeater <= 0.0f)
+                {
+                    sprintMeater = 0.0f;
+                }
             }
+            else
+            {
+                speed = originalSpeed;
+
+                if(sprintMeater > 100.0f)
+                {
+                    sprintMeater = 100.0f;
+                }
+                else
+                {
+                    sprintMeater += 0.5f;
+                }
+            }
+
         }
 
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
-
         controller.Move(moveDirection * Time.deltaTime);
     }
 }
