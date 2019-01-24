@@ -13,7 +13,8 @@ public class MainMenuButtons : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(gameSceneName);
+        Debug.Log("Load game scene");
+        //SceneManager.LoadScene(gameSceneName);
     }
 
     public void LoadOptions()

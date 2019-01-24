@@ -43,7 +43,8 @@ public class PauseMenu : MonoBehaviour
 
     void CheckPause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) //InputManager.instance.Pause()
+        Debug.Log(InputManager.instance.Pause());
+        if (InputManager.instance.Pause()) //InputManager.instance.Pause()
         {
             if (pauseMenuUI.activeSelf)
             {
