@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 6952691404256912236}
   - component: {fileID: 6952691404256912239}
   - component: {fileID: 6952691404256912238}
+  - component: {fileID: 6952691404256912242}
   - component: {fileID: 6952691404256912237}
   m_Layer: 0
   m_Name: Main Camera
@@ -201,7 +202,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -213,6 +214,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6952691404256912241}
   m_Enabled: 1
+--- !u!114 &6952691404256912242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952691404256912241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: d5d0d6bd84617b040874a74bb1fa07d5, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!114 &6952691404256912237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,3 +245,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 6952691403254199166}
   mouseSensitivivty: 4
+  Xmax: 30
+  Xmin: -30

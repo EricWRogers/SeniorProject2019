@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CamLooking : MonoBehaviour
 {
-    public Transform playerBody;
+    private GameObject Player;
     public float mouseSensitivivty;
+    public float Xmax = 30.0f;
+    public float Xmin = -30.0f;
 
     float xAxisClamp = 0.0f;
 
     void Awake()
     {
+        Player = GameObject.Find("Player");
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -30,24 +33,24 @@ public class CamLooking : MonoBehaviour
         xAxisClamp -= rotAmountY;
 
         Vector3 targetRotCam = transform.rotation.eulerAngles;
-        Vector3 targetRotBody = playerBody.rotation.eulerAngles;
+        Vector3 targetRotBody = Player.transform.rotation.eulerAngles;
 
         targetRotCam.x -= rotAmountY;
         targetRotCam.z = 0;
         targetRotBody.y += rotAmountX;
         
-        if(xAxisClamp > 30)
+        if(xAxisClamp > Xmax)
         {
-            xAxisClamp = 30;
-            targetRotCam.x = 30;
+            xAxisClamp = Xmax;
+            targetRotCam.x = Xmax;
         }
-        else if (xAxisClamp < -30)
+        else if (xAxisClamp < Xmin)
         {
-            xAxisClamp = -30;
-            targetRotCam.x = -30;
+            xAxisClamp = Xmin;
+            targetRotCam.x = Xmin;
         }
 
         transform.rotation = Quaternion.Euler(targetRotCam);
-        playerBody.rotation = Quaternion.Euler(targetRotBody);
+        Player.transform.rotation = Quaternion.Euler(targetRotBody);
     }
 }
