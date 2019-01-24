@@ -14,18 +14,12 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
-        // let the gameObject fall down
-        gameObject.transform.position = new Vector3(0, 5, 0);
     }
 
     void Update()
     {
         if (controller.isGrounded)
         {
-            // We are grounded, so recalculate
-            // move direction directly from axes
-
             moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
@@ -36,10 +30,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // Apply gravity
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
 
-        // Move the controller
         controller.Move(moveDirection * Time.deltaTime);
     }
 }
