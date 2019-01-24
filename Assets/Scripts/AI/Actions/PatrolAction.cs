@@ -9,15 +9,17 @@ public class PatrolAction : Action
     {
         Patrol(controller);
     }
+    
 
     private void Patrol(StateController controller)
     {
-        controller.navMeshAgent.destination = controller.wayPoints[controller.nextWayPoint].position;
+
+        controller.navMeshAgent.destination = controller.gameManager.RoomGOS[controller.nextWayPoint].transform.position;
         controller.navMeshAgent.isStopped = false;
 
         if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance && !controller.navMeshAgent.pathPending)
         {
-            controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPoints.Count;
+            controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.gameManager.RoomGOS.Length;
         }
     }
 }

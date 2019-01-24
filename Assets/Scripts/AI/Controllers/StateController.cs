@@ -11,10 +11,9 @@ public class StateController : MonoBehaviour
     public Transform eyes;
     public State remainState;
     public Transform chaseTarget;
-    public List<Transform> wayPoints;
-    public GameManager gameManager;
     public int nextWayPoint;
-  
+
+    public GameManager gameManager;
 
     [HideInInspector] public NavMeshAgent navMeshAgent;
  
@@ -36,7 +35,7 @@ public class StateController : MonoBehaviour
 
     public void SetupAI()
     {
-        wayPoints = gameManager.Waypoints;
+       
         aiActive = true;
 
         if (aiActive)
