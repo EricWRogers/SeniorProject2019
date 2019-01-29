@@ -8,8 +8,8 @@ public class EntityStats : ScriptableObject
 {
     public float moveSpeed = 10;
     public float lookRange = 40f;
-    public float lookSphereCastRadius = 1f;
-    public float wanderRadius = 9f;
+    
+    public float wanderRadius = 15f;
 
     //attack variables
     public int attackRange = 5;
@@ -20,6 +20,5 @@ public class EntityStats : ScriptableObject
     public float searchingTurnSpeed = 2f;
 
 
-
-
+ 
 }

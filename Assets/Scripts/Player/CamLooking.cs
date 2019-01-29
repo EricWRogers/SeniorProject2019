@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CamLooking : MonoBehaviour
 {
-    private GameObject Player;
     public float mouseSensitivivty;
     public float Xmax = 30.0f;
     public float Xmin = -30.0f;
 
+    GameObject Player;
     float xAxisClamp = 0.0f;
 
     void Awake()
