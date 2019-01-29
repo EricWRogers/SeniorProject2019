@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public float originalSpeed = 10.0f;
     public float speed;
     public float gravity = 20.0f;
+    public float sprintMeater = 100.0f;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
-    public float sprintMeater = 50.0f;
+
+    private bool iscrouching = false;
+    private bool isSprinting = false;
 
     void Start()
     {
@@ -24,20 +27,23 @@ public class PlayerMovement : MonoBehaviour
         {
             if (InputManager.instance.Sprint())
             {
-                if(sprintMeater <= 100.0f && sprintMeater >= 0.0f)
-                {
-                    speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
+                isSprinting = true;
 
-                    if(speed < 10.0f)
+                if(sprintMeater <= 100.0f && sprintMeater > 0.0f)
+                {
+                    //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
+                    speed = originalSpeed * 2.0f;
+                    sprintMeater -= 0.5f;
+
+                    if (speed < 10.0f)
                     {
                         speed = 10.0f;
                     }
-
-                    sprintMeater -= 0.5f;
                 }
                 else if (sprintMeater <= 0.0f)
                 {
                     sprintMeater = 0.0f;
+                    speed = originalSpeed;
                 }
             }
             else
@@ -52,7 +58,20 @@ public class PlayerMovement : MonoBehaviour
                 {
                     sprintMeater += 0.5f;
                 }
+
+                isSprinting = false;
             }
+
+            if(InputManager.instance.Crouch())
+            {
+                transform.localScale = new Vector3(1, 0.5f, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+
+
 
             moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
             moveDirection = transform.TransformDirection(moveDirection);
