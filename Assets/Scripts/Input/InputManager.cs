@@ -344,7 +344,7 @@ public class InputManager : MonoBehaviour
 
                     case OperatingSystemFamily.Windows:
 
-                        if (Input.GetButtonDown("Crouch_Keyboard") || Input.GetButtonDown("Crouch_Windows"))
+                        if (Input.GetButton("Crouch_Keyboard") || Input.GetButtonDown("Crouch_Windows"))
                         {
                             return true;
                         }
