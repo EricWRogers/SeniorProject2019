@@ -49,15 +49,18 @@ public class CamLooking : MonoBehaviour
 
         if (InputManager.instance.Lean_L())
         {
-            curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
+            curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
+            transform.localPosition = new Vector3(-1,0.8f,0);;
         }
         else if (InputManager.instance.Lean_R())
         {
-            curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
+            curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
+            transform.localPosition = new Vector3(1,0.8f,0);
         }
         else
         {
             curAngle = Mathf.MoveTowardsAngle(curAngle, 0f, speed * Time.deltaTime);
+            transform.localPosition = new Vector3(0,0.8f,0);
         }
 
         if(InputManager.instance.Lean_L() || InputManager.instance.Lean_R())
