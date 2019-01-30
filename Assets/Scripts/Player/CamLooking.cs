@@ -7,22 +7,19 @@ public class CamLooking : MonoBehaviour
     public float mouseSensitivivty;
     public float Xmax = 30.0f;
     public float Xmin = -30.0f;
+    public float speed = 100f;
+    public float maxAngle = 20f;
 
     GameObject Player;
     float xAxisClamp = 0.0f;
-
+    float curAngle = 0f;
     void Awake()
     {
-        Player = GameObject.Find("Player");
+        Player = GameObject.FindGameObjectWithTag("Player");
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
-    {
-        RotateCamera();
-    }
-
-    void RotateCamera()
     {
         float MouseX = InputManager.instance.Looking().x;
         float MouseY = InputManager.instance.Looking().y;
@@ -50,7 +47,27 @@ public class CamLooking : MonoBehaviour
             targetRotCam.x = Xmin;
         }
 
-        transform.rotation = Quaternion.Euler(targetRotCam);
-        Player.transform.rotation = Quaternion.Euler(targetRotBody);
+        if (InputManager.instance.Lean_L())
+        {
+            curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
+        }
+        else if (InputManager.instance.Lean_R())
+        {
+            curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
+        }
+        else
+        {
+            curAngle = Mathf.MoveTowardsAngle(curAngle, 0f, speed * Time.deltaTime);
+        }
+
+        if(InputManager.instance.Lean_L() || InputManager.instance.Lean_R())
+        {
+            transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward); 
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(targetRotCam);
+            Player.transform.rotation = Quaternion.Euler(targetRotBody);
+        }
     }
 }

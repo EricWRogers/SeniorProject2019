@@ -6788,5 +6788,10 @@ PrefabInstance:
       propertyPath: sprintMeater
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6952691404256912237, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e153226711df47049a4cf8f4fa132f82, type: 3}
