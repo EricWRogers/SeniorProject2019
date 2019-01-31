@@ -13,6 +13,8 @@ public class StateController : MonoBehaviour
     
     public int nextWayPoint;
 
+   
+
     public GameManager gameManager;
 
     [HideInInspector] public NavMeshAgent navMeshAgent;
@@ -78,18 +80,7 @@ public class StateController : MonoBehaviour
         return (stateTimeElapsed >= duration);
     }
 
-    public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
-    {
-        Vector3 randDirection = Random.insideUnitSphere * dist;
 
-        randDirection += origin;
-
-        NavMeshHit navHit;
-
-        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
-
-        return navHit.position;
-    }
 
     private void OnExitState()
     {
