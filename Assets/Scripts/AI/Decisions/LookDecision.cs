@@ -16,11 +16,11 @@ public class LookDecision : Decision
         RaycastHit hit;
 
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.lookRange,Color.green);
-
+        
         if (Physics.Raycast(controller.eyes.position, controller.eyes.forward, out hit, controller.enemyStats.lookRange)
             && hit.collider.CompareTag("Player"))
         {
-            //controller.chaseTarget = hit.transform;
+            //controller.gameManager.PlayerGO = hit.transform;
             return true;
         }
         else
