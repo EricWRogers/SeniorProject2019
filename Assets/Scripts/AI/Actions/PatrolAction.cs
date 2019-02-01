@@ -21,5 +21,6 @@ public class PatrolAction : Action
         {
             controller.nextWayPoint = Random.Range(0,controller.gameManager.RoomGOS.Length);
         }
+       
     }
 }

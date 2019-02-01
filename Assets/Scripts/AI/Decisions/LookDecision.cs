@@ -20,29 +20,22 @@ public class LookDecision : Decision
 
 
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.lookRange,Color.green);
-        
-
         //Back
-        if (Physics.Raycast(controller.eyes.position,raydirection, out hit))
+        if (Physics.Raycast(controller.eyes.position, raydirection, out hit))
         {
-            if((hit.transform.tag == "Player") && (DTP <= controller.enemyStats.minPlayerDetectDist) )
+            if ((hit.transform.tag == "Player") && (DTP <= controller.enemyStats.minPlayerDetectDist))
             {
                 return true;
             }
         }
-        /*if((Vector3.Angle(rayDirection, transform.forward)) &lt; fieldOfViewRange){ // Detect if player is within the field of view
-     if (Physics.Raycast (transform.position, rayDirection, hit, rayRange)) {
-         if (hit.transform.tag == "Player") {
-             //Debug.Log("Can see player");
-             return true;*/
-
         //Front
-        if (Physics.Raycast(controller.eyes.position, controller.eyes.forward, out hit, controller.enemyStats.lookRange)
-            && hit.collider.CompareTag("Player"))
+        if (Vector3.Angle(raydirection, controller.eyes.transform.forward) <= controller.enemyStats.fovAngle && 
+            Physics.Raycast(controller.eyes.position, controller.eyes.forward, out hit, controller.enemyStats.lookRange) && hit.collider.CompareTag("Player"))
         {
-           
+
             return true;
         }
+
         else
         {
             return false;
@@ -50,3 +43,8 @@ public class LookDecision : Decision
     }
 
 }
+       
+     
+
+
+   
