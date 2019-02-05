@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float gravity = 20.0f;
     public float sprintMeater = 100.0f;
+    public bool CanDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private bool iscrouching = false;
@@ -91,6 +92,18 @@ public class PlayerMovement : MonoBehaviour
             {
                 iscrouching = false;
                 transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(CanDie)
+        {
+            if (other.tag == "entity")
+            {
+                Debug.Log("Death");
+                Application.LoadLevel(Application.loadedLevel);
             }
         }
     }
