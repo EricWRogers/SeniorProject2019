@@ -65,10 +65,5 @@ public class GameManager : MonoBehaviour
 
             if (ScaredShitlessMeter > 100.0f) { ScaredShitlessMeter = 100.0f; }
         }
-
-
     }
-
-
-
 }

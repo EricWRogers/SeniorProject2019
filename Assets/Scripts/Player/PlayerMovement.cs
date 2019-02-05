@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float originalSpeed = 10.0f;
+    public float originalSpeed;
     public float speed;
     public float gravity = 20.0f;
     public float sprintMeater = 100.0f;
@@ -50,9 +50,9 @@ public class PlayerMovement : MonoBehaviour
                 speed = originalSpeed * 2.0f;
                 sprintMeater -= 0.5f;
 
-                if (speed < 10.0f)
+                if (speed < originalSpeed)
                 {
-                    speed = 10.0f;
+                    speed = originalSpeed;
                 }
             }
             else if (sprintMeater <= 0.0f)
