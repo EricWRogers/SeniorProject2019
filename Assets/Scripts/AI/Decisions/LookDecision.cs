@@ -25,6 +25,7 @@ public class LookDecision : Decision
         {
             if ((hit.transform.tag == "Player") && (DTP <= controller.enemyStats.minPlayerDetectDist))
             {
+                Debug.Log("see Player");
                 return true;
             }
         }
@@ -32,6 +33,7 @@ public class LookDecision : Decision
         if (Vector3.Angle(raydirection, controller.eyes.transform.forward) <= controller.enemyStats.fovAngle && 
             Physics.Raycast(controller.eyes.position, controller.eyes.forward, out hit, controller.enemyStats.lookRange) && hit.collider.CompareTag("Player"))
         {
+            Debug.Log("see Player");
 
             return true;
         }
