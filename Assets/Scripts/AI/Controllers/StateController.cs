@@ -10,7 +10,7 @@ public class StateController : MonoBehaviour
     public EntityStats enemyStats;
     public Transform eyes;
     public State remainState;
-    
+    public fovEditor editor;
     public int nextWayPoint;
     public GameManager gameManager;
     [HideInInspector] public NavMeshAgent navMeshAgent;
@@ -74,6 +74,14 @@ public class StateController : MonoBehaviour
         return (stateTimeElapsed >= duration);
     }
 
+    public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGloabal)
+    {
+        if(!angleIsGloabal)
+        {
+            angleInDegrees += eyes.transform.eulerAngles.y;
+        }
+        return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+    }
 
 
     private void OnExitState()
