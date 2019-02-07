@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -103,7 +104,8 @@ public class PlayerMovement : MonoBehaviour
             if (other.tag == "entity")
             {
                 Debug.Log("Death");
-                Application.LoadLevel(Application.loadedLevel);
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
         }
     }
