@@ -11,25 +11,18 @@ public class WanderAction : Action
     }
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
-        Vector3 randDirection = Random.insideUnitSphere * dist;
-
-        randDirection += origin;
+        Vector3 randDirection = origin + Random.insideUnitSphere * dist;
 
         NavMeshHit navHit;
 
-        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+        NavMesh.SamplePosition(randDirection, out navHit, 1.0f, NavMesh.AllAreas);
 
         return navHit.position;
     }
     private void Wander(StateController controller)
     {
-
-        if (controller.CheckIfCountDownElapsed(controller.enemyStats.wanderDuration))
-        {
+        
             Vector3 newPos = RandomNavSphere(controller.transform.position, controller.enemyStats.wanderRadius, -1);
             controller.navMeshAgent.SetDestination(newPos);
-
-        }
-
     }
 }

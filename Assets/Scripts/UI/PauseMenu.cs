@@ -2,12 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
     public string mainMenuScene;
+
+    public Slider MasterVolumeSlider;
+    public Slider MusicVolumeSlider;
+    public Slider SFXVolumeSlider;
+
+    void Start()
+    {
+        MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
+        MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+        SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
+    }
 
     public void Pause()
     {
@@ -43,7 +56,7 @@ public class PauseMenu : MonoBehaviour
 
     void CheckPause()
     {
-        Debug.Log(InputManager.instance.Pause());
+        //Debug.Log(InputManager.instance.Pause());
         if (InputManager.instance.Pause()) //InputManager.instance.Pause()
         {
             if (pauseMenuUI.activeSelf)

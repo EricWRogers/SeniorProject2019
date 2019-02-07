@@ -13,6 +13,8 @@ public class StateController : MonoBehaviour
     
     public int nextWayPoint;
 
+   
+
     public GameManager gameManager;
 
     [HideInInspector] public NavMeshAgent navMeshAgent;
@@ -77,6 +79,8 @@ public class StateController : MonoBehaviour
         stateTimeElapsed += Time.deltaTime;
         return (stateTimeElapsed >= duration);
     }
+
+
 
     private void OnExitState()
     {

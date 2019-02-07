@@ -6,14 +6,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerGO;
-   
+    
     public GameObject[] RoomGOS;
 
+   
     // Start is called before the first frame update
     void Start(){
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
-       
+        
     }
     void Update() { }
     void FixedUpdate()
