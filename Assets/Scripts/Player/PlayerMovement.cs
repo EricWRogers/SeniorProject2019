@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float originalSpeed = 10.0f;
+    public float originalSpeed;
     public float speed;
     public float gravity = 20.0f;
     public float sprintMeater = 100.0f;
+    public bool CanDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private bool iscrouching = false;
@@ -50,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
                 speed = originalSpeed * 2.0f;
                 sprintMeater -= 0.5f;
 
-                if (speed < 10.0f)
+                if (speed < originalSpeed)
                 {
-                    speed = 10.0f;
+                    speed = originalSpeed;
                 }
             }
             else if (sprintMeater <= 0.0f)
@@ -91,6 +93,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 iscrouching = false;
                 transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(CanDie)
+        {
+            if (other.tag == "entity")
+            {
+                Debug.Log("Death");
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
         }
     }
