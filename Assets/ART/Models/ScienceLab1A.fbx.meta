@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: 8d2a901b7d4801040a86d7c3529c7a28
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Computerdesk2_hs
+    100002: computerDesk_hs
+    100004: ExperimentRoom_hs
+    100006: FishStorage_hs
+    100008: GasLine4_hs
+    100010: GasLine4_hs1
+    100012: GasLine4_hs2
+    100014: GasLine4_hs3
+    100016: GasLine4_hs4
+    100018: GasLine4_hs5
+    100020: GasLine5_hs2
+    100022: GasLine5_hs3
+    100024: MainLabRoom1_hs
+    100026: Sci_ComputerBase
+    100028: Sci_ComputerBase 1
+    100030: Sci_ComputerBase 2
+    100032: Sci_ComputerBase 3
+    100034: Sci_ComputerBase 4
+    100036: Sci_ComputerBase 5
+    100038: Sci_ComputerBase 6
+    100040: Sci_ComputerBase 7
+    100042: Sci_ComputerGroup
+    100044: Sci_ComputerGroup 1
+    100046: Sci_ComputerGroup 2
+    100048: Sci_ComputerGroup 3
+    100050: Sci_ComputerGroup 4
+    100052: Sci_ComputerGroup 5
+    100054: Sci_ComputerGroup 6
+    100056: Sci_ComputerGroup 7
+    100058: Sci_ComputerMoniter
+    100060: Sci_ComputerMoniter 1
+    100062: Sci_ComputerMoniter 2
+    100064: Sci_ComputerMoniter 3
+    100066: Sci_ComputerMoniter 4
+    100068: Sci_ComputerMoniter 5
+    100070: Sci_ComputerMoniter 6
+    100072: Sci_ComputerMoniter 7
+    100074: Sci_ComputerSupport
+    100076: Sci_ComputerSupport 1
+    100078: Sci_ComputerSupport 2
+    100080: Sci_ComputerSupport 3
+    100082: Sci_ComputerSupport 4
+    100084: Sci_ComputerSupport 5
+    100086: Sci_ComputerSupport 6
+    100088: Sci_ComputerSupport 7
+    100090: Sci_ComputerTower
+    100092: Sci_ComputerTower 1
+    100094: Sci_ComputerTower 2
+    100096: Sci_ComputerTower 3
+    100098: Sci_ComputerTower 4
+    100100: Sci_ComputerTower 5
+    100102: Sci_ComputerTower 6
+    100104: Sci_ComputerTower 7
+    100106: Sci_footrestforStool
+    100108: Sci_footrestforStool 1
+    100110: Sci_footrestforStool 2
+    100112: Sci_footrestforStool 3
+    100114: Sci_footrestforStool 4
+    100116: Sci_footrestforStool 5
+    100118: Sci_footrestforStool 6
+    100120: Sci_footrestforStool 7
+    100122: Sci_Keyboard1
+    100124: Sci_Keyboard1 1
+    100126: Sci_Keyboard1 2
+    100128: Sci_Keyboard1 3
+    100130: Sci_Keyboard1 4
+    100132: Sci_Keyboard1 5
+    100134: Sci_Keyboard1 6
+    100136: Sci_Keyboard1 7
+    100138: Sci_Lab1computerGroup
+    100140: Sci_Lab1computerGroup1
+    100142: Sci_Lab1computerGroup2
+    100144: Sci_Lab1computerGroup3
+    100146: Sci_Lab1computerGroup4
+    100148: Sci_Lab1computerGroup5
+    100150: Sci_Lab1computerGroup6
+    100152: Sci_Lab1computerGroup7
+    100154: Sci_Mouse1
+    100156: Sci_Mouse1 1
+    100158: Sci_Mouse1 2
+    100160: Sci_Mouse1 3
+    100162: Sci_Mouse1 4
+    100164: Sci_Mouse1 5
+    100166: Sci_Mouse1 6
+    100168: Sci_Mouse1 7
+    100170: Sci_StoolSeat
+    100172: Sci_StoolSeat 1
+    100174: Sci_StoolSeat 2
+    100176: Sci_StoolSeat 3
+    100178: Sci_StoolSeat 4
+    100180: Sci_StoolSeat 5
+    100182: Sci_StoolSeat 6
+    100184: Sci_StoolSeat 7
+    100186: Sci_WallShelf
+    100188: Sci_WallShelf1
+    100190: scienceBeakersShelf_hs
+    100192: scienceBeakersShelf_hs1
+    100194: ScienceDesk_hs
+    100196: //RootNode
+    100198: SciLab_Stool
+    100200: SciLab_Stool1
+    100202: SciLab_Stool2
+    100204: SciLab_Stool3
+    100206: SciLab_Stool4
+    100208: SciLab_Stool5
+    100210: SciLab_Stool6
+    100212: SciLab_Stool7
+    100214: ShelfDivider_hs
+    100216: ShelfDivider_hs 1
+    100218: SuportShelf4_hs
+    100220: SuportShelf4_hs 1
+    100222: SupportBeam1_hs
+    100224: SupportBeam1_hs 1
+    100226: SupportBeam1_hs1
+    100228: SupportBeam1_hs1 1
+    100230: SupportBeam1_hs2
+    100232: SupportBeam1_hs2 1
+    100234: SupportBeam3_hs1
+    100236: SupportBeam3_hs1 1
+    100238: SupportBeam4_hs1
+    100240: SupportBeam4_hs1 1
+    100242: SupportBeam4_hs2
+    100244: SupportBeam4_hs3
+    100246: SupportShelf1_hs
+    100248: SupportShelf1_hs 1
+    100250: SupportShelf1_hs1
+    100252: SupportShelf1_hs1 1
+    100254: SupportShelf1_hs2
+    100256: SupportShelf1_hs2 1
+    100258: SupportShelf2_hs
+    100260: SupportShelf2_hs 1
+    100262: SupportShelf2_hs1
+    100264: SupportShelf2_hs1 1
+    100266: SupportShelf3_hs
+    100268: SupportShelf3_hs 1
+    100270: SupportShelf3_hs1
+    100272: SupportShelf3_hs1 1
+    100274: SupportShelf3_hs2
+    100276: SupportShelf3_hs2 1
+    100278: TopofShelf_hs
+    100280: TopofShelf_hs 1
+    100282: Watch_control_Room_hs
+    400000: Computerdesk2_hs
+    400002: computerDesk_hs
+    400004: ExperimentRoom_hs
+    400006: FishStorage_hs
+    400008: GasLine4_hs
+    400010: GasLine4_hs1
+    400012: GasLine4_hs2
+    400014: GasLine4_hs3
+    400016: GasLine4_hs4
+    400018: GasLine4_hs5
+    400020: GasLine5_hs2
+    400022: GasLine5_hs3
+    400024: MainLabRoom1_hs
+    400026: Sci_ComputerBase
+    400028: Sci_ComputerBase 1
+    400030: Sci_ComputerBase 2
+    400032: Sci_ComputerBase 3
+    400034: Sci_ComputerBase 4
+    400036: Sci_ComputerBase 5
+    400038: Sci_ComputerBase 6
+    400040: Sci_ComputerBase 7
+    400042: Sci_ComputerGroup
+    400044: Sci_ComputerGroup 1
+    400046: Sci_ComputerGroup 2
+    400048: Sci_ComputerGroup 3
+    400050: Sci_ComputerGroup 4
+    400052: Sci_ComputerGroup 5
+    400054: Sci_ComputerGroup 6
+    400056: Sci_ComputerGroup 7
+    400058: Sci_ComputerMoniter
+    400060: Sci_ComputerMoniter 1
+    400062: Sci_ComputerMoniter 2
+    400064: Sci_ComputerMoniter 3
+    400066: Sci_ComputerMoniter 4
+    400068: Sci_ComputerMoniter 5
+    400070: Sci_ComputerMoniter 6
+    400072: Sci_ComputerMoniter 7
+    400074: Sci_ComputerSupport
+    400076: Sci_ComputerSupport 1
+    400078: Sci_ComputerSupport 2
+    400080: Sci_ComputerSupport 3
+    400082: Sci_ComputerSupport 4
+    400084: Sci_ComputerSupport 5
+    400086: Sci_ComputerSupport 6
+    400088: Sci_ComputerSupport 7
+    400090: Sci_ComputerTower
+    400092: Sci_ComputerTower 1
+    400094: Sci_ComputerTower 2
+    400096: Sci_ComputerTower 3
+    400098: Sci_ComputerTower 4
+    400100: Sci_ComputerTower 5
+    400102: Sci_ComputerTower 6
+    400104: Sci_ComputerTower 7
+    400106: Sci_footrestforStool
+    400108: Sci_footrestforStool 1
+    400110: Sci_footrestforStool 2
+    400112: Sci_footrestforStool 3
+    400114: Sci_footrestforStool 4
+    400116: Sci_footrestforStool 5
+    400118: Sci_footrestforStool 6
+    400120: Sci_footrestforStool 7
+    400122: Sci_Keyboard1
+    400124: Sci_Keyboard1 1
+    400126: Sci_Keyboard1 2
+    400128: Sci_Keyboard1 3
+    400130: Sci_Keyboard1 4
+    400132: Sci_Keyboard1 5
+    400134: Sci_Keyboard1 6
+    400136: Sci_Keyboard1 7
+    400138: Sci_Lab1computerGroup
+    400140: Sci_Lab1computerGroup1
+    400142: Sci_Lab1computerGroup2
+    400144: Sci_Lab1computerGroup3
+    400146: Sci_Lab1computerGroup4
+    400148: Sci_Lab1computerGroup5
+    400150: Sci_Lab1computerGroup6
+    400152: Sci_Lab1computerGroup7
+    400154: Sci_Mouse1
+    400156: Sci_Mouse1 1
+    400158: Sci_Mouse1 2
+    400160: Sci_Mouse1 3
+    400162: Sci_Mouse1 4
+    400164: Sci_Mouse1 5
+    400166: Sci_Mouse1 6
+    400168: Sci_Mouse1 7
+    400170: Sci_StoolSeat
+    400172: Sci_StoolSeat 1
+    400174: Sci_StoolSeat 2
+    400176: Sci_StoolSeat 3
+    400178: Sci_StoolSeat 4
+    400180: Sci_StoolSeat 5
+    400182: Sci_StoolSeat 6
+    400184: Sci_StoolSeat 7
+    400186: Sci_WallShelf
+    400188: Sci_WallShelf1
+    400190: scienceBeakersShelf_hs
+    400192: scienceBeakersShelf_hs1
+    400194: ScienceDesk_hs
+    400196: //RootNode
+    400198: SciLab_Stool
+    400200: SciLab_Stool1
+    400202: SciLab_Stool2
+    400204: SciLab_Stool3
+    400206: SciLab_Stool4
+    400208: SciLab_Stool5
+    400210: SciLab_Stool6
+    400212: SciLab_Stool7
+    400214: ShelfDivider_hs
+    400216: ShelfDivider_hs 1
+    400218: SuportShelf4_hs
+    400220: SuportShelf4_hs 1
+    400222: SupportBeam1_hs
+    400224: SupportBeam1_hs 1
+    400226: SupportBeam1_hs1
+    400228: SupportBeam1_hs1 1
+    400230: SupportBeam1_hs2
+    400232: SupportBeam1_hs2 1
+    400234: SupportBeam3_hs1
+    400236: SupportBeam3_hs1 1
+    400238: SupportBeam4_hs1
+    400240: SupportBeam4_hs1 1
+    400242: SupportBeam4_hs2
+    400244: SupportBeam4_hs3
+    400246: SupportShelf1_hs
+    400248: SupportShelf1_hs 1
+    400250: SupportShelf1_hs1
+    400252: SupportShelf1_hs1 1
+    400254: SupportShelf1_hs2
+    400256: SupportShelf1_hs2 1
+    400258: SupportShelf2_hs
+    400260: SupportShelf2_hs 1
+    400262: SupportShelf2_hs1
+    400264: SupportShelf2_hs1 1
+    400266: SupportShelf3_hs
+    400268: SupportShelf3_hs 1
+    400270: SupportShelf3_hs1
+    400272: SupportShelf3_hs1 1
+    400274: SupportShelf3_hs2
+    400276: SupportShelf3_hs2 1
+    400278: TopofShelf_hs
+    400280: TopofShelf_hs 1
+    400282: Watch_control_Room_hs
+    2100000: ScienceRoom1
+    2100002: ScienceRoom2StorageRoommat
+    2100004: Science_WatchControlRomMat
+    2100006: ScienceExperiemntRoomMat
+    2100008: PipesForCounterMaterial
+    2100010: ScienceDeskMaterial
+    2100012: ComputerDeskMat
+    2100014: ScienceShelfMaterial
+    2100016: ShelfBackGlass
+    2100018: lambert1
+    2100020: computerPlasticMat
+    2100022: ComputerScreenMat
+    2100024: computerPasticLighter
+    2100026: KeyboardMat
+    2100028: KeyboardKeysMat
+    2300000: Computerdesk2_hs
+    2300002: computerDesk_hs
+    2300004: ExperimentRoom_hs
+    2300006: FishStorage_hs
+    2300008: GasLine4_hs
+    2300010: GasLine4_hs1
+    2300012: GasLine4_hs2
+    2300014: GasLine4_hs3
+    2300016: GasLine4_hs4
+    2300018: GasLine4_hs5
+    2300020: GasLine5_hs2
+    2300022: GasLine5_hs3
+    2300024: MainLabRoom1_hs
+    2300026: Sci_ComputerBase
+    2300028: Sci_ComputerBase 1
+    2300030: Sci_ComputerBase 2
+    2300032: Sci_ComputerBase 3
+    2300034: Sci_ComputerBase 4
+    2300036: Sci_ComputerBase 5
+    2300038: Sci_ComputerBase 6
+    2300040: Sci_ComputerBase 7
+    2300042: Sci_ComputerMoniter
+    2300044: Sci_ComputerMoniter 1
+    2300046: Sci_ComputerMoniter 2
+    2300048: Sci_ComputerMoniter 3
+    2300050: Sci_ComputerMoniter 4
+    2300052: Sci_ComputerMoniter 5
+    2300054: Sci_ComputerMoniter 6
+    2300056: Sci_ComputerMoniter 7
+    2300058: Sci_ComputerSupport
+    2300060: Sci_ComputerSupport 1
+    2300062: Sci_ComputerSupport 2
+    2300064: Sci_ComputerSupport 3
+    2300066: Sci_ComputerSupport 4
+    2300068: Sci_ComputerSupport 5
+    2300070: Sci_ComputerSupport 6
+    2300072: Sci_ComputerSupport 7
+    2300074: Sci_ComputerTower
+    2300076: Sci_ComputerTower 1
+    2300078: Sci_ComputerTower 2
+    2300080: Sci_ComputerTower 3
+    2300082: Sci_ComputerTower 4
+    2300084: Sci_ComputerTower 5
+    2300086: Sci_ComputerTower 6
+    2300088: Sci_ComputerTower 7
+    2300090: Sci_footrestforStool
+    2300092: Sci_footrestforStool 1
+    2300094: Sci_footrestforStool 2
+    2300096: Sci_footrestforStool 3
+    2300098: Sci_footrestforStool 4
+    2300100: Sci_footrestforStool 5
+    2300102: Sci_footrestforStool 6
+    2300104: Sci_footrestforStool 7
+    2300106: Sci_Keyboard1
+    2300108: Sci_Keyboard1 1
+    2300110: Sci_Keyboard1 2
+    2300112: Sci_Keyboard1 3
+    2300114: Sci_Keyboard1 4
+    2300116: Sci_Keyboard1 5
+    2300118: Sci_Keyboard1 6
+    2300120: Sci_Keyboard1 7
+    2300122: Sci_Mouse1
+    2300124: Sci_Mouse1 1
+    2300126: Sci_Mouse1 2
+    2300128: Sci_Mouse1 3
+    2300130: Sci_Mouse1 4
+    2300132: Sci_Mouse1 5
+    2300134: Sci_Mouse1 6
+    2300136: Sci_Mouse1 7
+    2300138: Sci_StoolSeat
+    2300140: Sci_StoolSeat 1
+    2300142: Sci_StoolSeat 2
+    2300144: Sci_StoolSeat 3
+    2300146: Sci_StoolSeat 4
+    2300148: Sci_StoolSeat 5
+    2300150: Sci_StoolSeat 6
+    2300152: Sci_StoolSeat 7
+    2300154: ScienceDesk_hs
+    2300156: ShelfDivider_hs
+    2300158: ShelfDivider_hs 1
+    2300160: SuportShelf4_hs
+    2300162: SuportShelf4_hs 1
+    2300164: SupportBeam1_hs
+    2300166: SupportBeam1_hs 1
+    2300168: SupportBeam1_hs1
+    2300170: SupportBeam1_hs1 1
+    2300172: SupportBeam1_hs2
+    2300174: SupportBeam1_hs2 1
+    2300176: SupportBeam3_hs1
+    2300178: SupportBeam3_hs1 1
+    2300180: SupportBeam4_hs1
+    2300182: SupportBeam4_hs1 1
+    2300184: SupportBeam4_hs2
+    2300186: SupportBeam4_hs3
+    2300188: SupportShelf1_hs
+    2300190: SupportShelf1_hs 1
+    2300192: SupportShelf1_hs1
+    2300194: SupportShelf1_hs1 1
+    2300196: SupportShelf1_hs2
+    2300198: SupportShelf1_hs2 1
+    2300200: SupportShelf2_hs
+    2300202: SupportShelf2_hs 1
+    2300204: SupportShelf2_hs1
+    2300206: SupportShelf2_hs1 1
+    2300208: SupportShelf3_hs
+    2300210: SupportShelf3_hs 1
+    2300212: SupportShelf3_hs1
+    2300214: SupportShelf3_hs1 1
+    2300216: SupportShelf3_hs2
+    2300218: SupportShelf3_hs2 1
+    2300220: TopofShelf_hs
+    2300222: TopofShelf_hs 1
+    2300224: Watch_control_Room_hs
+    3300000: Computerdesk2_hs
+    3300002: computerDesk_hs
+    3300004: ExperimentRoom_hs
+    3300006: FishStorage_hs
+    3300008: GasLine4_hs
+    3300010: GasLine4_hs1
+    3300012: GasLine4_hs2
+    3300014: GasLine4_hs3
+    3300016: GasLine4_hs4
+    3300018: GasLine4_hs5
+    3300020: GasLine5_hs2
+    3300022: GasLine5_hs3
+    3300024: MainLabRoom1_hs
+    3300026: Sci_ComputerBase
+    3300028: Sci_ComputerBase 1
+    3300030: Sci_ComputerBase 2
+    3300032: Sci_ComputerBase 3
+    3300034: Sci_ComputerBase 4
+    3300036: Sci_ComputerBase 5
+    3300038: Sci_ComputerBase 6
+    3300040: Sci_ComputerBase 7
+    3300042: Sci_ComputerMoniter
+    3300044: Sci_ComputerMoniter 1
+    3300046: Sci_ComputerMoniter 2
+    3300048: Sci_ComputerMoniter 3
+    3300050: Sci_ComputerMoniter 4
+    3300052: Sci_ComputerMoniter 5
+    3300054: Sci_ComputerMoniter 6
+    3300056: Sci_ComputerMoniter 7
+    3300058: Sci_ComputerSupport
+    3300060: Sci_ComputerSupport 1
+    3300062: Sci_ComputerSupport 2
+    3300064: Sci_ComputerSupport 3
+    3300066: Sci_ComputerSupport 4
+    3300068: Sci_ComputerSupport 5
+    3300070: Sci_ComputerSupport 6
+    3300072: Sci_ComputerSupport 7
+    3300074: Sci_ComputerTower
+    3300076: Sci_ComputerTower 1
+    3300078: Sci_ComputerTower 2
+    3300080: Sci_ComputerTower 3
+    3300082: Sci_ComputerTower 4
+    3300084: Sci_ComputerTower 5
+    3300086: Sci_ComputerTower 6
+    3300088: Sci_ComputerTower 7
+    3300090: Sci_footrestforStool
+    3300092: Sci_footrestforStool 1
+    3300094: Sci_footrestforStool 2
+    3300096: Sci_footrestforStool 3
+    3300098: Sci_footrestforStool 4
+    3300100: Sci_footrestforStool 5
+    3300102: Sci_footrestforStool 6
+    3300104: Sci_footrestforStool 7
+    3300106: Sci_Keyboard1
+    3300108: Sci_Keyboard1 1
+    3300110: Sci_Keyboard1 2
+    3300112: Sci_Keyboard1 3
+    3300114: Sci_Keyboard1 4
+    3300116: Sci_Keyboard1 5
+    3300118: Sci_Keyboard1 6
+    3300120: Sci_Keyboard1 7
+    3300122: Sci_Mouse1
+    3300124: Sci_Mouse1 1
+    3300126: Sci_Mouse1 2
+    3300128: Sci_Mouse1 3
+    3300130: Sci_Mouse1 4
+    3300132: Sci_Mouse1 5
+    3300134: Sci_Mouse1 6
+    3300136: Sci_Mouse1 7
+    3300138: Sci_StoolSeat
+    3300140: Sci_StoolSeat 1
+    3300142: Sci_StoolSeat 2
+    3300144: Sci_StoolSeat 3
+    3300146: Sci_StoolSeat 4
+    3300148: Sci_StoolSeat 5
+    3300150: Sci_StoolSeat 6
+    3300152: Sci_StoolSeat 7
+    3300154: ScienceDesk_hs
+    3300156: ShelfDivider_hs
+    3300158: ShelfDivider_hs 1
+    3300160: SuportShelf4_hs
+    3300162: SuportShelf4_hs 1
+    3300164: SupportBeam1_hs
+    3300166: SupportBeam1_hs 1
+    3300168: SupportBeam1_hs1
+    3300170: SupportBeam1_hs1 1
+    3300172: SupportBeam1_hs2
+    3300174: SupportBeam1_hs2 1
+    3300176: SupportBeam3_hs1
+    3300178: SupportBeam3_hs1 1
+    3300180: SupportBeam4_hs1
+    3300182: SupportBeam4_hs1 1
+    3300184: SupportBeam4_hs2
+    3300186: SupportBeam4_hs3
+    3300188: SupportShelf1_hs
+    3300190: SupportShelf1_hs 1
+    3300192: SupportShelf1_hs1
+    3300194: SupportShelf1_hs1 1
+    3300196: SupportShelf1_hs2
+    3300198: SupportShelf1_hs2 1
+    3300200: SupportShelf2_hs
+    3300202: SupportShelf2_hs 1
+    3300204: SupportShelf2_hs1
+    3300206: SupportShelf2_hs1 1
+    3300208: SupportShelf3_hs
+    3300210: SupportShelf3_hs 1
+    3300212: SupportShelf3_hs1
+    3300214: SupportShelf3_hs1 1
+    3300216: SupportShelf3_hs2
+    3300218: SupportShelf3_hs2 1
+    3300220: TopofShelf_hs
+    3300222: TopofShelf_hs 1
+    3300224: Watch_control_Room_hs
+    4300000: MainLabRoom1_hs
+    4300002: FishStorage_hs
+    4300004: Watch_control_Room_hs
+    4300006: ExperimentRoom_hs
+    4300008: GasLine4_hs
+    4300010: ScienceDesk_hs
+    4300012: computerDesk_hs
+    4300014: Computerdesk2_hs
+    4300016: SupportBeam3_hs1
+    4300018: SupportBeam4_hs1
+    4300020: SupportShelf1_hs2
+    4300022: SupportShelf3_hs2
+    4300024: SupportShelf2_hs1
+    4300026: SupportShelf3_hs1
+    4300028: SupportShelf1_hs1
+    4300030: SupportBeam4_hs2
+    4300032: SupportShelf1_hs
+    4300034: SupportShelf2_hs
+    4300036: SupportShelf3_hs
+    4300038: SuportShelf4_hs
+    4300040: TopofShelf_hs
+    4300042: SupportBeam1_hs
+    4300044: ShelfDivider_hs
+    4300046: SupportBeam1_hs1
+    4300048: SupportBeam1_hs2
+    4300050: SupportBeam3_hs1
+    4300052: SupportBeam4_hs1
+    4300054: SupportShelf1_hs2
+    4300056: SupportShelf3_hs2
+    4300058: SupportShelf2_hs1
+    4300060: SupportShelf3_hs1
+    4300062: SupportShelf1_hs1
+    4300064: SupportBeam4_hs3
+    4300066: GasLine5_hs2
+    4300068: GasLine5_hs3
+    4300070: GasLine4_hs1
+    4300072: GasLine4_hs2
+    4300074: GasLine4_hs3
+    4300076: GasLine4_hs4
+    4300078: GasLine4_hs5
+    4300080: SupportShelf1_hs
+    4300082: SupportShelf2_hs
+    4300084: SupportShelf3_hs
+    4300086: SuportShelf4_hs
+    4300088: TopofShelf_hs
+    4300090: SupportBeam1_hs
+    4300092: ShelfDivider_hs
+    4300094: SupportBeam1_hs1
+    4300096: SupportBeam1_hs2
+    4300098: Sci_StoolSeat
+    4300100: Sci_footrestforStool
+    4300102: Sci_StoolSeat
+    4300104: Sci_footrestforStool
+    4300106: Sci_StoolSeat
+    4300108: Sci_footrestforStool
+    4300110: Sci_StoolSeat
+    4300112: Sci_footrestforStool
+    4300114: Sci_ComputerMoniter
+    4300116: Sci_ComputerSupport
+    4300118: Sci_ComputerBase
+    4300120: Sci_ComputerTower
+    4300122: Sci_Keyboard1
+    4300124: Sci_Mouse1
+    4300126: Sci_ComputerMoniter
+    4300128: Sci_ComputerSupport
+    4300130: Sci_ComputerBase
+    4300132: Sci_ComputerTower
+    4300134: Sci_Keyboard1
+    4300136: Sci_Mouse1
+    4300138: Sci_ComputerMoniter
+    4300140: Sci_ComputerSupport
+    4300142: Sci_ComputerBase
+    4300144: Sci_ComputerTower
+    4300146: Sci_Keyboard1
+    4300148: Sci_Mouse1
+    4300150: Sci_ComputerMoniter
+    4300152: Sci_ComputerSupport
+    4300154: Sci_ComputerBase
+    4300156: Sci_ComputerTower
+    4300158: Sci_Keyboard1
+    4300160: Sci_Mouse1
+    4300162: Sci_ComputerMoniter
+    4300164: Sci_ComputerSupport
+    4300166: Sci_ComputerBase
+    4300168: Sci_ComputerTower
+    4300170: Sci_Keyboard1
+    4300172: Sci_Mouse1
+    4300174: Sci_ComputerMoniter
+    4300176: Sci_ComputerSupport
+    4300178: Sci_ComputerBase
+    4300180: Sci_ComputerTower
+    4300182: Sci_Keyboard1
+    4300184: Sci_Mouse1
+    4300186: Sci_ComputerMoniter
+    4300188: Sci_ComputerSupport
+    4300190: Sci_ComputerBase
+    4300192: Sci_ComputerTower
+    4300194: Sci_Keyboard1
+    4300196: Sci_Mouse1
+    4300198: Sci_ComputerMoniter
+    4300200: Sci_ComputerSupport
+    4300202: Sci_ComputerBase
+    4300204: Sci_ComputerTower
+    4300206: Sci_Keyboard1
+    4300208: Sci_Mouse1
+    4300210: Sci_StoolSeat
+    4300212: Sci_footrestforStool
+    4300214: Sci_StoolSeat
+    4300216: Sci_footrestforStool
+    4300218: Sci_StoolSeat
+    4300220: Sci_footrestforStool
+    4300222: Sci_StoolSeat
+    4300224: Sci_footrestforStool
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
