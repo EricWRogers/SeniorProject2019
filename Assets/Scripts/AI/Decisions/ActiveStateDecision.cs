@@ -7,7 +7,7 @@ public class ActiveStateDecision : Decision
 {
     public override bool Decide(StateController controller)
     {
-        bool chaseTargetIsActive = controller.gameManager.PlayerGO.transform.gameObject.activeSelf;
-        return chaseTargetIsActive;
+        bool chaseTargetIsVisible = controller.gameManager.PlayerGO.transform.gameObject.activeSelf;
+        return chaseTargetIsVisible;
     }
 }

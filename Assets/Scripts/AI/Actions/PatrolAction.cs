@@ -5,11 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PluggableAI/Actions/Patrol")]
 public class PatrolAction : Action
 {
+    float distFromPoint = 0;
     public override void Act(StateController controller)
     {
         Patrol(controller);
     }
-    
+
 
     private void Patrol(StateController controller)
     {
@@ -19,8 +20,18 @@ public class PatrolAction : Action
 
         if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance && !controller.navMeshAgent.pathPending)
         {
-            controller.nextWayPoint = Random.Range(0,controller.gameManager.RoomGOS.Length);
+            controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length);
         }
+
        
+        if (controller.navMeshAgent.destination != null)
+        {
+            distFromPoint = Vector3.Distance(controller.transform.position, controller.navMeshAgent.destination);
+        }
+
+        if (distFromPoint <= controller.navMeshAgent.stoppingDistance)
+        {
+
+        }
     }
 }

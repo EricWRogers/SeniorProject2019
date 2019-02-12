@@ -41,5 +41,19 @@ public class State : ScriptableObject
         }
     }
 
+    public void OnStateEnter()
+    {
+        foreach(Action action in actions)
+        {
+            action.OnStateEnter();
+        }
+    }
 
+    public void OnStateExit()
+    {
+        foreach (Action action in actions)
+        {
+            action.OnStateExit();
+        }
+    }
 }

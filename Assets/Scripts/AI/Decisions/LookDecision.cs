@@ -9,21 +9,21 @@ public class LookDecision : Decision
         bool targetVisible = Look(controller);
         return targetVisible;
     }
-    //layermask for hiding player and what not!!!!
+    //layermask for hiding player and what not
  
     private bool Look(StateController controller)
     {
         bool retValue = false;
-        Collider[] inViewRadius = Physics.OverlapSphere(controller.eyes.transform.position, controller.enemyStats.lookRadius,controller.editor.playerTargetMask);
+        Collider[] inViewRadius = Physics.OverlapSphere(controller.eyes.transform.position, controller.viewRadius,controller.playerTargetMask);
 
         for (int i = 0; i< inViewRadius.Length; i++)
         {
             Transform target = inViewRadius[i].transform;
             Vector3 dirToTarget = (controller.gameManager.PlayerGO.transform.position - controller.eyes.transform.position).normalized;
-            if(Vector3.Angle(controller.eyes.transform.forward, dirToTarget)< controller.enemyStats.fovAngle /2 )
+            if(Vector3.Angle(controller.eyes.transform.forward, dirToTarget)< controller.viewAngle /2 )
             {
                 float distToTarget = Vector3.Distance(controller.eyes.transform.position, target.position);
-                if(!Physics.Raycast(controller.eyes.transform.position,dirToTarget,distToTarget, controller.editor.ObstacleMask))
+                if(!Physics.Raycast(controller.eyes.transform.position,dirToTarget,distToTarget, controller.ObstacleMask))
                 {
                     retValue = true;
                 }

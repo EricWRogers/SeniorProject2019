@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    private void FarthestWaypointFromPlayer(Transform[] RoomGOS)
+    public void FarthestWaypointFromPlayer(Transform[] RoomGOS)
     {
         Transform tMax = null;
         float maxDist = Mathf.Infinity;

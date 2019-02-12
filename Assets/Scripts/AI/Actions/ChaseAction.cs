@@ -12,6 +12,7 @@ public class ChaseAction : Action
 
     private void Chase(StateController controller)
     {
+       
         controller.navMeshAgent.destination = controller.gameManager.PlayerGO.transform.position;
         controller.navMeshAgent.isStopped = false;
     }

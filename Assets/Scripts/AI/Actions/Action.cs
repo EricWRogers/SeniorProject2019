@@ -5,4 +5,12 @@ using UnityEngine;
 public abstract class Action : ScriptableObject
 {
     public abstract void Act(StateController controller);
+
+    public void OnStateEnter()
+    {
+    }
+
+    public void OnStateExit()
+    {
+    }
 }

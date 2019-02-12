@@ -10,12 +10,20 @@ public class StateController : MonoBehaviour
     public EntityStats enemyStats;
     public Transform eyes;
     public State remainState;
-    public fovEditor editor;
     public int nextWayPoint;
     public GameManager gameManager;
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
+
+    //fov 
+    public LayerMask playerTargetMask;
+    public LayerMask ObstacleMask;
+    public float viewRadius;
+    [Range(0, 360)]
+    public float viewAngle;
+
+
 
 
     void Awake()
@@ -42,6 +50,8 @@ public class StateController : MonoBehaviour
         {
             navMeshAgent.enabled = false;
         }
+
+        currentState.OnStateEnter();
     }
 
     void Update()
@@ -56,15 +66,22 @@ public class StateController : MonoBehaviour
         if (currentState != null && eyes != null)
         {
             Gizmos.color = currentState.sceneGizmoColor;
-           
+            Gizmos.DrawWireSphere(transform.position, viewRadius);
+            Vector3 viewAngleA = DirFromAngle(-viewAngle / 2, false);
+            Vector3 viewAngleB = DirFromAngle(viewAngle / 2, false);
+
+            Gizmos.DrawLine(transform.position, transform.position + viewAngleA * viewRadius);
+            Gizmos.DrawLine(transform.position, transform.position + viewAngleB * viewRadius);
+
         }
     }
     public void TransitionToState(State nextState)
     {
         if (nextState != remainState)
         {
+            OnExitState(currentState);
             currentState = nextState;
-            OnExitState();
+            currentState.OnStateEnter();
         }
     }
 
@@ -83,9 +100,9 @@ public class StateController : MonoBehaviour
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
 
-
-    private void OnExitState()
+    private void OnExitState(State exitedState)
     {
         stateTimeElapsed = 0;
+        exitedState.OnStateExit();
     }
 }

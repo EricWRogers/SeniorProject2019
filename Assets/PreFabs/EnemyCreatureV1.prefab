@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220e71ad97034a64daaf02ba22291d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 9c2b3da65da2ddb4ba9c50b4c3a0b3ca, type: 2}
+  currentState: {fileID: 11400000, guid: f8cea3f637587394499fd092bcc20255, type: 2}
   enemyStats: {fileID: 11400000, guid: 78c1cf6592c632d499c9ccf218d0acad, type: 2}
   eyes: {fileID: 4756837556471785}
   remainState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
@@ -444,6 +444,14 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   navMeshAgent: {fileID: 0}
   stateTimeElapsed: 0
+  playerTargetMask:
+    serializedVersion: 2
+    m_Bits: 256
+  ObstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  viewRadius: 15
+  viewAngle: 95
 --- !u!54 &7967482569161225890
 Rigidbody:
   m_ObjectHideFlags: 0
