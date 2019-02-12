@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float gravity = 20.0f;
     public float sprintMeater = 100.0f;
+    public float depletingSpeed = 0.5f;
     public bool CanDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private bool iscrouching = false;
     private bool isSprinting = false;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -50,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
                 speed = originalSpeed * 2.0f;
-                sprintMeater -= 0.5f;
+                sprintMeater -= depletingSpeed;
 
                 if (speed < originalSpeed)
                 {
@@ -73,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                sprintMeater += 0.5f;
+                sprintMeater += depletingSpeed;
             }
 
             isSprinting = false;
