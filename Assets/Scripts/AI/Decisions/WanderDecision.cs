@@ -26,7 +26,7 @@ public class WanderDecision : Decision
             retValue = true;
 
         }
-            Debug.Log("retValue");
+          
             return retValue;
     }
 }

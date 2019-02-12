@@ -14,8 +14,8 @@ public class PatrolAction : Action
 
     private void Patrol(StateController controller)
     {
-
-        controller.navMeshAgent.destination = controller.gameManager.RoomGOS[controller.nextWayPoint].transform.position;
+        
+        controller.navMeshAgent.destination = controller.gameManager.RoomGOS[controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length)].transform.position;
         controller.navMeshAgent.isStopped = false;
 
         if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance && !controller.navMeshAgent.pathPending)
@@ -23,15 +23,6 @@ public class PatrolAction : Action
             controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length);
         }
 
-       
-        if (controller.navMeshAgent.destination != null)
-        {
-            distFromPoint = Vector3.Distance(controller.transform.position, controller.navMeshAgent.destination);
-        }
-
-        if (distFromPoint <= controller.navMeshAgent.stoppingDistance)
-        {
-
-        }
     }
+
 }

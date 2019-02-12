@@ -412,11 +412,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.21333872
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 180
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   viewRadius: 15
-  viewAngle: 95
+  viewAngle: 120
 --- !u!54 &7967482569161225890
 Rigidbody:
   m_ObjectHideFlags: 0

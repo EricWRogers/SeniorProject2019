@@ -21,12 +21,12 @@ public class WanderAction : Action
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, out bool sampled)
     {
         Vector3 randPoint = origin + Random.insideUnitSphere * dist;
-        Debug.Log(randPoint);
+        
 
         NavMeshHit navHit;
 
         sampled = NavMesh.SamplePosition(randPoint, out navHit, 1.0f, NavMesh.AllAreas);
-        Debug.Log(sampled);
+        
 
         return navHit.position;
     }
