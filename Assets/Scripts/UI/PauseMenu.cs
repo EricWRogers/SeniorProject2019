@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    public GameObject pauseCanvas;
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
     public string mainMenuScene;
@@ -24,12 +25,15 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        pauseCanvas.SetActive(true);
         pauseMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
     }
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
+        pauseCanvas.SetActive(false);
+        //pauseMenuUI.SetActive(false);
     }
 
     public void LoadOptions()
@@ -57,9 +61,9 @@ public class PauseMenu : MonoBehaviour
     void CheckPause()
     {
         //Debug.Log(InputManager.instance.Pause());
-        if (InputManager.instance.Pause()) //InputManager.instance.Pause()
+        if (InputManager.instance.Pause())
         {
-            if (pauseMenuUI.activeSelf)
+            if (pauseCanvas.activeSelf)
             {
                 Resume();
             }
