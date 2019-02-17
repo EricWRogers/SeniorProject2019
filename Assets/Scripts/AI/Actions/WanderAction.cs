@@ -33,6 +33,7 @@ public class WanderAction : Action
 
     private void Wander(StateController controller)
     {
+        Debug.Log("Wander Action");
         float distFromPoint = 0;
         if (controller.navMeshAgent.destination != null)
         {
@@ -62,14 +63,15 @@ public class WanderAction : Action
         }
     }
 
-    public new void OnStateEnter()
+    public override void OnStateEnter(StateController controller)
     {
-        base.OnStateEnter();
+        base.OnStateEnter(controller);
         data.lastWanderElapsedTime = 0;
     }
 
-    public new void OnStateExit()
+    public override void OnStateExit(StateController controller)
     {
-        base.OnStateExit();
+        base.OnStateExit(controller);
+        controller.navMeshAgent.ResetPath();
     }
 }

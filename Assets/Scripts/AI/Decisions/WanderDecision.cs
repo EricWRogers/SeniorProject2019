@@ -27,7 +27,7 @@ public class WanderDecision : Decision
 
         }
           
-            return retValue;
+        return retValue;
     }
 }
 

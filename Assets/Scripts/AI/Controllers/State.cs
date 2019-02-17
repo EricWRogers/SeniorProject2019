@@ -41,19 +41,19 @@ public class State : ScriptableObject
         }
     }
 
-    public void OnStateEnter()
+    public void OnStateEnter(StateController controller)
     {
         foreach(Action action in actions)
         {
-            action.OnStateEnter();
+            action.OnStateEnter(controller);
         }
     }
 
-    public void OnStateExit()
+    public void OnStateExit(StateController controller)
     {
         foreach (Action action in actions)
         {
-            action.OnStateExit();
+            action.OnStateExit(controller);
         }
     }
 }

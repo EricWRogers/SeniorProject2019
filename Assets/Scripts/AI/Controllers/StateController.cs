@@ -51,7 +51,7 @@ public class StateController : MonoBehaviour
             navMeshAgent.enabled = false;
         }
 
-        currentState.OnStateEnter();
+        currentState.OnStateEnter(this);
     }
 
     void Update()
@@ -81,7 +81,7 @@ public class StateController : MonoBehaviour
         {
             OnExitState(currentState);
             currentState = nextState;
-            currentState.OnStateEnter();
+            currentState.OnStateEnter(this);
         }
     }
 
@@ -103,6 +103,6 @@ public class StateController : MonoBehaviour
     private void OnExitState(State exitedState)
     {
         stateTimeElapsed = 0;
-        exitedState.OnStateExit();
+        exitedState.OnStateExit(this);
     }
 }

@@ -14,13 +14,18 @@ public class GameManager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start(){
+    void Start()
+    {
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
-        
     }
-    void Update() { }
+
+    void Update()
+    {
+
+    }
+
     void FixedUpdate()
     {
         PollAgression();
@@ -39,6 +44,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     public void FarthestWaypointFromPlayer(Transform[] RoomGOS)
     {
         Transform tMax = null;
@@ -55,15 +61,17 @@ public class GameManager : MonoBehaviour
             }
 
         }
-
     }
+
     private void PollScareShitlessMeter()
     {
         if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 10.0f)
         {
             ScaredShitlessMeter += .5f;
-
-            if (ScaredShitlessMeter > 100.0f) { ScaredShitlessMeter = 100.0f; }
+            if (ScaredShitlessMeter > 100.0f)
+            {
+                ScaredShitlessMeter = 100.0f;
+            }
         }
     }
 }

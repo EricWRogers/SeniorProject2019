@@ -6,11 +6,11 @@ public abstract class Action : ScriptableObject
 {
     public abstract void Act(StateController controller);
 
-    public void OnStateEnter()
+    public virtual void OnStateEnter(StateController controller)
     {
     }
 
-    public void OnStateExit()
+    public virtual void OnStateExit(StateController controller)
     {
     }
 }
