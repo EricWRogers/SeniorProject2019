@@ -15,6 +15,12 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private bool iscrouching = false;
     private bool isSprinting = false;
+    private Vector3 playerSize;
+
+    void Awake()
+    {
+        playerSize = transform.localScale;
+    }
 
     void Start()
     {
@@ -89,12 +95,15 @@ public class PlayerMovement : MonoBehaviour
             if(InputManager.instance.Crouch())
             {
                 iscrouching = true;
-                transform.localScale = new Vector3(1, 0.3f, 1);
+                Vector3 sizeHolder = playerSize;
+                sizeHolder.y /= 2;
+
+                transform.localScale = sizeHolder;
             }
             else
             {
                 iscrouching = false;
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = playerSize;
             }
         }
     }
