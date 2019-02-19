@@ -33,7 +33,7 @@ public class WanderAction : Action
 
     private void Wander(StateController controller)
     {
-        Debug.Log("Wander Action");
+        
         float distFromPoint = 0;
         if (controller.navMeshAgent.destination != null)
         {

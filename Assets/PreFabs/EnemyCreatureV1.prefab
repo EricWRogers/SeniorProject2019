@@ -315,9 +315,9 @@ GameObject:
   - component: {fileID: 3267727031700163769}
   - component: {fileID: 5037718246511438297}
   - component: {fileID: 471861616554851343}
-  - component: {fileID: 7787888430710591678}
   - component: {fileID: 7175917258648135171}
   - component: {fileID: 7967482569161225890}
+  - component: {fileID: 2912666845472802803}
   m_Layer: 0
   m_Name: EnemyCreatureV1
   m_TagString: entity
@@ -334,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 9141935075400404130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -29.46558, y: 2.5, z: 181.1}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
   - {fileID: 4756837556471785}
   - {fileID: 6971675201668386447}
@@ -402,28 +402,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 1ddc00b6657861f4f91098e9ada226e0, type: 3}
---- !u!195 &7787888430710591678
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9141935075400404130}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.21333872
-  m_Speed: 4.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 180
-  m_StoppingDistance: 2
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 0.4578942
-  m_BaseOffset: 0.2289471
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &7175917258648135171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,3 +446,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &2912666845472802803
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141935075400404130}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 2.133387
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 4.5789423
+  m_BaseOffset: 2.2894711
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

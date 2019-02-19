@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             if ( Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 10.0f )
             {
                 VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
-                RoomManager.agressionMeter =  RoomManager.agressionMeter + 0.1f;
+                RoomManager.agressionMeter =  RoomManager.agressionMeter + 0.5f * Time.deltaTime;
                 if( RoomManager.agressionMeter > 100.0f) { RoomManager.agressionMeter = 100.0f; }
             }
         }
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 10.0f)
         {
-            ScaredShitlessMeter += .5f;
+            ScaredShitlessMeter += .7f *Time.deltaTime;
             if (ScaredShitlessMeter > 100.0f)
             {
                 ScaredShitlessMeter = 100.0f;
