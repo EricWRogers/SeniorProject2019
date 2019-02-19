@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7122615499087629953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 433092566}
   - component: {fileID: 959440156}
   - component: {fileID: 6952691403254199167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -177,6 +177,7 @@ MonoBehaviour:
   speed: 3
   gravity: 20
   sprintMeater: 100
+  depletingSpeed: 0.5
   CanDie: 1
 --- !u!1 &6952691404256912241
 GameObject:
@@ -191,7 +192,7 @@ GameObject:
   - component: {fileID: 6952691404256912238}
   - component: {fileID: 6952691404256912242}
   - component: {fileID: 6952691404256912237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

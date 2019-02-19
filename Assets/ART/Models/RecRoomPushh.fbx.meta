@@ -76,6 +76,20 @@ ModelImporter:
     4300022: chair2
     4300024: poolstick
     4300026: microwave
+    6400000: chair1
+    6400002: chair2
+    6400004: drawer
+    6400006: foos
+    6400008: fridge
+    6400010: microwave
+    6400012: pool4
+    6400014: poolstick
+    6400016: RecRoom
+    6400018: shelf1
+    6400020: shelf2
+    6400022: televison2
+    6400024: treadmil1
+    6400026: treadmil2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -109,7 +123,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

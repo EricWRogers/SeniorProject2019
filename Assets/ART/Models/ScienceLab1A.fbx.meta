@@ -641,6 +641,119 @@ ModelImporter:
     4300220: Sci_footrestforStool
     4300222: Sci_StoolSeat
     4300224: Sci_footrestforStool
+    6400000: Computerdesk2_hs
+    6400002: computerDesk_hs
+    6400004: ExperimentRoom_hs
+    6400006: FishStorage_hs
+    6400008: GasLine4_hs
+    6400010: GasLine4_hs1
+    6400012: GasLine4_hs2
+    6400014: GasLine4_hs3
+    6400016: GasLine4_hs4
+    6400018: GasLine4_hs5
+    6400020: GasLine5_hs2
+    6400022: GasLine5_hs3
+    6400024: MainLabRoom1_hs
+    6400026: Sci_ComputerBase
+    6400028: Sci_ComputerBase 1
+    6400030: Sci_ComputerBase 2
+    6400032: Sci_ComputerBase 3
+    6400034: Sci_ComputerBase 4
+    6400036: Sci_ComputerBase 5
+    6400038: Sci_ComputerBase 6
+    6400040: Sci_ComputerBase 7
+    6400042: Sci_ComputerMoniter
+    6400044: Sci_ComputerMoniter 1
+    6400046: Sci_ComputerMoniter 2
+    6400048: Sci_ComputerMoniter 3
+    6400050: Sci_ComputerMoniter 4
+    6400052: Sci_ComputerMoniter 5
+    6400054: Sci_ComputerMoniter 6
+    6400056: Sci_ComputerMoniter 7
+    6400058: Sci_ComputerSupport
+    6400060: Sci_ComputerSupport 1
+    6400062: Sci_ComputerSupport 2
+    6400064: Sci_ComputerSupport 3
+    6400066: Sci_ComputerSupport 4
+    6400068: Sci_ComputerSupport 5
+    6400070: Sci_ComputerSupport 6
+    6400072: Sci_ComputerSupport 7
+    6400074: Sci_ComputerTower
+    6400076: Sci_ComputerTower 1
+    6400078: Sci_ComputerTower 2
+    6400080: Sci_ComputerTower 3
+    6400082: Sci_ComputerTower 4
+    6400084: Sci_ComputerTower 5
+    6400086: Sci_ComputerTower 6
+    6400088: Sci_ComputerTower 7
+    6400090: Sci_footrestforStool
+    6400092: Sci_footrestforStool 1
+    6400094: Sci_footrestforStool 2
+    6400096: Sci_footrestforStool 3
+    6400098: Sci_footrestforStool 4
+    6400100: Sci_footrestforStool 5
+    6400102: Sci_footrestforStool 6
+    6400104: Sci_footrestforStool 7
+    6400106: Sci_Keyboard1
+    6400108: Sci_Keyboard1 1
+    6400110: Sci_Keyboard1 2
+    6400112: Sci_Keyboard1 3
+    6400114: Sci_Keyboard1 4
+    6400116: Sci_Keyboard1 5
+    6400118: Sci_Keyboard1 6
+    6400120: Sci_Keyboard1 7
+    6400122: Sci_Mouse1
+    6400124: Sci_Mouse1 1
+    6400126: Sci_Mouse1 2
+    6400128: Sci_Mouse1 3
+    6400130: Sci_Mouse1 4
+    6400132: Sci_Mouse1 5
+    6400134: Sci_Mouse1 6
+    6400136: Sci_Mouse1 7
+    6400138: Sci_StoolSeat
+    6400140: Sci_StoolSeat 1
+    6400142: Sci_StoolSeat 2
+    6400144: Sci_StoolSeat 3
+    6400146: Sci_StoolSeat 4
+    6400148: Sci_StoolSeat 5
+    6400150: Sci_StoolSeat 6
+    6400152: Sci_StoolSeat 7
+    6400154: ScienceDesk_hs
+    6400156: ShelfDivider_hs
+    6400158: ShelfDivider_hs 1
+    6400160: SuportShelf4_hs
+    6400162: SuportShelf4_hs 1
+    6400164: SupportBeam1_hs
+    6400166: SupportBeam1_hs 1
+    6400168: SupportBeam1_hs1
+    6400170: SupportBeam1_hs1 1
+    6400172: SupportBeam1_hs2
+    6400174: SupportBeam1_hs2 1
+    6400176: SupportBeam3_hs1
+    6400178: SupportBeam3_hs1 1
+    6400180: SupportBeam4_hs1
+    6400182: SupportBeam4_hs1 1
+    6400184: SupportBeam4_hs2
+    6400186: SupportBeam4_hs3
+    6400188: SupportShelf1_hs
+    6400190: SupportShelf1_hs 1
+    6400192: SupportShelf1_hs1
+    6400194: SupportShelf1_hs1 1
+    6400196: SupportShelf1_hs2
+    6400198: SupportShelf1_hs2 1
+    6400200: SupportShelf2_hs
+    6400202: SupportShelf2_hs 1
+    6400204: SupportShelf2_hs1
+    6400206: SupportShelf2_hs1 1
+    6400208: SupportShelf3_hs
+    6400210: SupportShelf3_hs 1
+    6400212: SupportShelf3_hs1
+    6400214: SupportShelf3_hs1 1
+    6400216: SupportShelf3_hs2
+    6400218: SupportShelf3_hs2 1
+    6400220: TopofShelf_hs
+    6400222: TopofShelf_hs 1
+    6400224: Watch_control_Room_hs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -674,7 +787,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

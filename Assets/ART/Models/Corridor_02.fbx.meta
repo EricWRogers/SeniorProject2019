@@ -166,6 +166,34 @@ ModelImporter:
     4300050: Floor_Pipe_12
     4300052: Wire_03
     4300054: Wire_04
+    6400000: Base_Corridor_02 1
+    6400002: Brace_05
+    6400004: Brace_06
+    6400006: Brace_07
+    6400008: Brace_08
+    6400010: Floor_Pipe_07
+    6400012: Floor_Pipe_08
+    6400014: Floor_Pipe_09
+    6400016: Floor_Pipe_10
+    6400018: Floor_Pipe_11
+    6400020: Floor_Pipe_12
+    6400022: Metal_Floor_02
+    6400024: pCylinder24
+    6400026: pCylinder25
+    6400028: pCylinder26
+    6400030: pCylinder27
+    6400032: Pipe_05
+    6400034: Pipe_06
+    6400036: Pipe_07
+    6400038: Pipe_08
+    6400040: Pipe_09
+    6400042: Pipe_10
+    6400044: Valve_05
+    6400046: Valve_06
+    6400048: Valve_07
+    6400050: Valve_08
+    6400052: Wire_03
+    6400054: Wire_04
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -199,7 +227,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
