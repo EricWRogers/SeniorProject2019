@@ -16,17 +16,30 @@ public class MainMenuButtons : MonoBehaviour
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
 
+    //public Sound droppedObject;
+
+    private void Awake()
+    {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        audioManager.CreateAudioSource("droppedObject",gameObject);
+
+        //FindObjectOfType<AudioManager>().CreateAudioSource(AudioManager.locationSounds = droppedObject,gameObject);
+        //FindObjectOfType<AudioManager>().CreateAudioS(BuzzingLight,gameObject, SFX);
+    }
+
     void Start()
     {
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
+        //FindObjectOfType<AudioManager>().CreateAudioSource(droppedObject);
     }
 
     public void Play()
     {
         Debug.Log("Load game scene");
         //SceneManager.LoadScene(gameSceneName);
+        FindObjectOfType<AudioManager>().PlaySoundHere("droppedObject");
     }
 
     public void LoadOptions()

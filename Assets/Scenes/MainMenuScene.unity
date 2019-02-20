@@ -1845,22 +1845,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa652048a37b64458e71c2d75990ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: DroppedObject
+  sounds: []
+  locationSounds:
+  - name: droppedObject
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
     audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
-    volume: 1
-    pitch: 1.64
-    source: {fileID: 0}
-    loop: 1
-  - name: Walking 1
-    outputMixerGroup: {fileID: 0}
-    audioClip: {fileID: 8300000, guid: 02566c5f48cc6f54f9165cbd51f7d4d9, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
-    loop: 1
+    loop: 0
 --- !u!1 &1310179952
 GameObject:
   m_ObjectHideFlags: 0
