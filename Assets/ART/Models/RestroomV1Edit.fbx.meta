@@ -1,78 +1,15 @@
 fileFormatVersion: 2
-guid: fa2446db6a51df74489f81011a09a95c
+guid: 0e9c2210c2e7de64cbe421c662168321
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: MiddleLeft1
-    100004: MiddleLeft2
-    100006: MiddleLeft3
-    100008: MiddleRIght1
-    100010: MiddleRight2
-    100012: MiddleRight3
-    100014: OuterLeft1
-    100016: OuterLeft2
-    100018: OuterLeft3
-    100020: OuterRight1
-    100022: OuterRight2
-    100024: OuterRight3
-    100026: pPlane1
     400000: //RootNode
-    400002: MiddleLeft1
-    400004: MiddleLeft2
-    400006: MiddleLeft3
-    400008: MiddleRIght1
-    400010: MiddleRight2
-    400012: MiddleRight3
-    400014: OuterLeft1
-    400016: OuterLeft2
-    400018: OuterLeft3
-    400020: OuterRight1
-    400022: OuterRight2
-    400024: OuterRight3
-    400026: pPlane1
-    2100000: lambert1
-    2100002: blinn1
-    2300000: MiddleLeft1
-    2300002: MiddleLeft2
-    2300004: MiddleLeft3
-    2300006: MiddleRIght1
-    2300008: MiddleRight2
-    2300010: MiddleRight3
-    2300012: OuterLeft1
-    2300014: OuterLeft2
-    2300016: OuterLeft3
-    2300018: OuterRight1
-    2300020: OuterRight2
-    2300022: OuterRight3
-    2300024: pPlane1
-    3300000: MiddleLeft1
-    3300002: MiddleLeft2
-    3300004: MiddleLeft3
-    3300006: MiddleRIght1
-    3300008: MiddleRight2
-    3300010: MiddleRight3
-    3300012: OuterLeft1
-    3300014: OuterLeft2
-    3300016: OuterLeft3
-    3300018: OuterRight1
-    3300020: OuterRight2
-    3300022: OuterRight3
-    3300024: pPlane1
-    4300000: MiddleRIght1
-    4300002: MiddleRight2
-    4300004: MiddleRight3
-    4300006: OuterRight1
-    4300008: OuterRight3
-    4300010: OuterRight2
-    4300012: OuterLeft1
-    4300014: OuterLeft3
-    4300016: OuterLeft2
-    4300018: MiddleLeft2
-    4300020: MiddleLeft3
-    4300022: MiddleLeft1
-    4300024: pPlane1
-    2186277476908879412: ImportLogs
+    2100000: blinn1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane2
+    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -104,9 +41,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -21,6 +21,9 @@ ModelImporter:
     4300000: LargeDoorFrame
     4300002: LeftLargeDoor
     4300004: RightLargeDoor
+    6400000: LargeDoorFrame
+    6400002: LeftLargeDoor
+    6400004: RightLargeDoor
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -52,9 +55,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

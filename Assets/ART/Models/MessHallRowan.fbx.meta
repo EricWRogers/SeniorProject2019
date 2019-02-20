@@ -306,6 +306,59 @@ ModelImporter:
     4300100: Chair6a
     4300102: Chair7a
     4300104: Chair8a
+    6400000: Chair1a
+    6400002: Chair1b
+    6400004: Chair1c
+    6400006: Chair2a
+    6400008: Chair2b
+    6400010: Chair2c
+    6400012: Chair3a
+    6400014: Chair3b
+    6400016: Chair3c
+    6400018: Chair4a
+    6400020: Chair4b
+    6400022: Chair4c
+    6400024: Chair5a
+    6400026: Chair5b
+    6400028: Chair5c
+    6400030: Chair6a
+    6400032: Chair6b
+    6400034: Chair6c
+    6400036: Chair7a
+    6400038: Chair7b
+    6400040: Chair7c
+    6400042: Chair8a
+    6400044: Chair8b
+    6400046: Chair8c
+    6400048: Counter
+    6400050: Fridge
+    6400052: InnerWall1
+    6400054: InnerWall4
+    6400056: OuterWall
+    6400058: Oven
+    6400060: pipe1a
+    6400062: pipe1b
+    6400064: pipe1c
+    6400066: pipe2a
+    6400068: pipe2b
+    6400070: pipe2c
+    6400072: pipe3a
+    6400074: pipe3b
+    6400076: pipe3c
+    6400078: ServingStation
+    6400080: Shelf1
+    6400082: Shelf2
+    6400084: Shelf3
+    6400086: Shelf4
+    6400088: Shelf5
+    6400090: Shelf6
+    6400092: ShortShelf
+    6400094: SilverwareStation
+    6400096: Stage
+    6400098: Table1a 1
+    6400100: Table1b
+    6400102: Table1c
+    6400104: Trashcan
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -337,9 +390,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

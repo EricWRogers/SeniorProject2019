@@ -16,6 +16,8 @@ ModelImporter:
     3300002: Metal_Floor_09
     4300000: Metal_Floor_09
     4300002: Corridor_7
+    6400000: Corridor_7
+    6400002: Metal_Floor_09
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,9 +49,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
