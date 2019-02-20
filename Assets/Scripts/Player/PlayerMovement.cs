@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float originalSpeed;
+    private float originalSpeed;
     public float speed;
     public float gravity = 20.0f;
+    private float gravityHolder;
     public float sprintMeater = 100.0f;
     public float depletingSpeed = 0.5f;
     public bool CanDie = true;
@@ -20,12 +21,13 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         playerSize = transform.localScale;
+        gravityHolder = gravity;
     }
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        speed = originalSpeed;
+        originalSpeed = speed;
     }
 
     void FixedUpdate()
@@ -95,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
             if(InputManager.instance.Crouch())
             {
                 iscrouching = true;
+                gravity = gravityHolder * 8f; 
                 Vector3 sizeHolder = playerSize;
                 sizeHolder.y /= 2;
 
@@ -103,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 iscrouching = false;
+                gravity = gravityHolder;
                 transform.localScale = playerSize;
             }
         }
