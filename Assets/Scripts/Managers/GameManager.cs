@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject EntityGO;
     public GameObject[] RoomGOS;
+    public float TimerSet = 10.0f;
 
     public float ScaredShitlessMeter;
+    public bool GameOver = false;
     
 
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         PollAgression();
         PollScareShitlessMeter();
+        GameTinmer();
     }
 
     private void PollAgression()
@@ -72,6 +75,19 @@ public class GameManager : MonoBehaviour
             {
                 ScaredShitlessMeter = 100.0f;
             }
+        }
+    }
+
+    private void GameTinmer()
+    {
+        TimerSet -= Time.deltaTime;
+
+        //Debug.Log(TimerSet);
+        if (TimerSet <= 0.0f)
+        {
+            TimerSet = 0.0f;
+            GameOver = true;
+            Debug.Log("Game Over");
         }
     }
 }

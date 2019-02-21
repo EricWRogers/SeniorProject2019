@@ -56,14 +56,14 @@ public class CamLooking : MonoBehaviour
 
         if (Physics.Raycast(transform.position, left, out hit, 6))
         {
-            print("Found an object to the left at distance: " + hit.distance);
+            //print("Found an object to the left at distance: " + hit.distance);
             hitLeft = true;
 
         }
 
         if (Physics.Raycast(transform.position, right, out hit, 6))
         {
-            print("Found an object to the right at distance: " + hit.distance);
+            //print("Found an object to the right at distance: " + hit.distance);
             hitRight = true;
         }
 
