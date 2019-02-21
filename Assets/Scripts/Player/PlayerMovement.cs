@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float gravityHolder;
     public float sprintMeater = 100.0f;
     public float depletingSpeed = 0.5f;
+    public float depletingCap = 50.0f;
     public bool CanDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -51,11 +52,7 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
         controller.Move(moveDirection * Time.deltaTime);
 
-
-        if (GameManager.TimerSet <= 0)
-        {
-            hud.GetComponent<HUD>().ReloadSceneLose();
-        }
+        GameOver();
     }
 
     private void Movement()
@@ -67,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprinting()
     {
-        if (InputManager.instance.Sprint())
+        if (InputManager.instance.Sprint() && sprintMeater >= depletingCap)
         {
             isSprinting = true;
 
@@ -137,9 +134,8 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log("Death!!");
                 Enemy.SetActive(false);
                 speed = 0;
+                GetComponentInChildren<CamLooking>().enabled = false;
                 hud.GetComponent<HUD>().ReloadSceneLose();
-         
-                //SceneManager.LoadScene();
             }
         }
 
@@ -148,7 +144,19 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Win!!!");
             Enemy.SetActive(false);
             speed = 0;
+            GetComponentInChildren<CamLooking>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneWin();
+        }
+    }
+
+    private void GameOver()
+    {
+        if (GameManager.TimerSet <= 0)
+        {
+            Enemy.SetActive(false);
+            speed = 0;
+            GetComponentInChildren<CamLooking>().enabled = false;
+            hud.GetComponent<HUD>().ReloadSceneLose();
         }
     }
 }
