@@ -16,6 +16,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCylinder37
+    6400000: //RootNode
     7400000: Take 001
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -50,9 +51,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -71,7 +72,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.099999994
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

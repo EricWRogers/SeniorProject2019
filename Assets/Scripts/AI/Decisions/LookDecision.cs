@@ -28,6 +28,14 @@ public class LookDecision : Decision
                     retValue = true;
                 }
             }
+            if (Vector3.Angle(controller.eyes.transform.forward * -1, dirToTarget) < controller.viewAngle / 2)
+            {
+                float distToTarget = Vector3.Distance(controller.eyes.transform.position, target.position);
+                if (!Physics.Raycast(controller.eyes.transform.position, dirToTarget, distToTarget, controller.ObstacleMask))
+                {
+                    retValue = true;
+                }
+            }
 
         }
 

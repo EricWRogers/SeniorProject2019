@@ -67,6 +67,7 @@ public class WanderAction : Action
     {
         base.OnStateEnter(controller);
         data.lastWanderElapsedTime = 0;
+        controller.navMeshAgent.ResetPath();
     }
 
     public override void OnStateExit(StateController controller)

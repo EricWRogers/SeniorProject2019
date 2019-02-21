@@ -72,6 +72,8 @@ public class StateController : MonoBehaviour
 
             Gizmos.DrawLine(transform.position, transform.position + viewAngleA * viewRadius);
             Gizmos.DrawLine(transform.position, transform.position + viewAngleB * viewRadius);
+            Gizmos.DrawLine(transform.position, transform.position + viewAngleA * viewRadius * -1);
+            Gizmos.DrawLine(transform.position, transform.position + viewAngleB * viewRadius * -1);
 
         }
     }
