@@ -31,6 +31,9 @@ public class CamLooking : MonoBehaviour
         float MouseX = InputManager.instance.Looking().x;
         float MouseY = InputManager.instance.Looking().y;
 
+        Debug.Log(left);
+        Debug.Log(right);
+
         float rotAmountX = MouseX * mouseSensitivivty;
         float rotAmountY = MouseY * mouseSensitivivty;
 
