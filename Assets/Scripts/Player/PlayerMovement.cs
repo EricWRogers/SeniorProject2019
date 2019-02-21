@@ -18,10 +18,14 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting = false;
     private Vector3 playerSize;
     GameManager GameManager;
+    GameObject Enemy;
+    Scene scene;
 
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
+        Enemy = GameObject.FindGameObjectWithTag("entity");
+        scene = SceneManager.GetActiveScene();
         playerSize = transform.localScale;
         gravityHolder = gravity;
     }
@@ -121,14 +125,18 @@ public class PlayerMovement : MonoBehaviour
             if (other.tag == "entity")
             {
                 Debug.Log("Death!!");
-                Scene scene = SceneManager.GetActiveScene();
-                SceneManager.LoadScene(scene.name);
+                Enemy.SetActive(false);
+                speed = 0;
+                //SceneManager.LoadScene();
             }
         }
 
         if(GameManager.TimerSet > 0 && other.tag == "Finish")
         {
             Debug.Log("Win!!!");
+            Enemy.SetActive(false);
+            speed = 0;
+            //SceneManager.LoadScene();
         }
     }
 }
