@@ -9,6 +9,8 @@ public class HUD : MonoBehaviour
     public GameObject loseCanvas;
     public GameObject winCanvas;
     private GameManager GameManager;
+    private GameObject text;
+    private float time;
 
     public string mainMenu;
     public float reloadTime = 5.0f;
@@ -44,6 +46,7 @@ public class HUD : MonoBehaviour
     private void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
+        text = GameObject.Find("HUD/TimerCanvas/TimerText");
     }
 
     void Update()
@@ -55,5 +58,24 @@ public class HUD : MonoBehaviour
             ReloadSceneLose();
         }
         */
+
+        CalculateTimer();
+    }
+
+    void CalculateTimer()
+    {
+        time = GameManager.TimerSet;
+
+        float minutes = (int)time / 60;
+        float seconds = (int)time % 60;
+
+        if (time > 0)
+        {
+            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            text.GetComponent<Text>().text = "0:00";
+        }
     }
 }
