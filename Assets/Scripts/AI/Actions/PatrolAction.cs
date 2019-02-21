@@ -14,11 +14,9 @@ public class PatrolAction : Action
 
     private void Patrol(StateController controller)
     {
-        if (!controller.navMeshAgent.hasPath)
+        if (!controller.navMeshAgent.hasPath && !controller.navMeshAgent.pathPending)
         {  
-            controller.navMeshAgent.isStopped = true;
-            controller.navMeshAgent.destination = controller.gameManager.RoomGOS[controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length)].transform.position;
-            controller.navMeshAgent.isStopped = false;
+            bool result = controller.navMeshAgent.SetDestination(controller.gameManager.RoomGOS[controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length)].transform.position);
         }
     }
 }

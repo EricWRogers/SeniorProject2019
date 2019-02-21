@@ -35,21 +35,19 @@ public class WanderAction : Action
     {
         
         float distFromPoint = 0;
-        if (controller.navMeshAgent.destination != null)
+        if (controller.navMeshAgent.hasPath && controller.navMeshAgent.destination != null)
         {
             distFromPoint = Vector3.Distance(controller.transform.position, controller.navMeshAgent.destination);
         }
 
         if (distFromPoint <= destDistanceThreshold)
         {
-        
             if (data.lastWanderElapsedTime > controller.enemyStats.searchDuration)
             {
                 bool sampled;
                 Vector3 newPos = RandomNavSphere(controller.transform.position, controller.enemyStats.wanderRadius, out sampled);
                 if (sampled)
                 {
-                  
                     controller.navMeshAgent.SetDestination(newPos);
                 }
             } else
