@@ -17,9 +17,11 @@ public class PlayerMovement : MonoBehaviour
     private bool iscrouching = false;
     private bool isSprinting = false;
     private Vector3 playerSize;
+    GameManager GameManager;
 
     void Awake()
     {
+        GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         playerSize = transform.localScale;
         gravityHolder = gravity;
     }
@@ -118,10 +120,20 @@ public class PlayerMovement : MonoBehaviour
         {
             if (other.tag == "entity")
             {
-                Debug.Log("Death");
+                Debug.Log("Death!!");
                 Scene scene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(scene.name);
             }
+        }
+
+        if(GameManager.TimerSet > 0 && other.tag == "Finish")
+        {
+            Debug.Log("Win!!!");
+        }
+
+        if(GameManager.TimerSet <= 0 && other.tag == "Finish")
+        {
+            Debug.Log("Ran Out Of Time!!!!");
         }
     }
 }
