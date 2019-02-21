@@ -25,6 +25,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        Time.timeScale = 0;
         pauseCanvas.SetActive(true);
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
@@ -32,6 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        Time.timeScale = 1;
         pauseCanvas.SetActive(false);
         //pauseMenuUI.SetActive(false);
     }
@@ -55,7 +57,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-       CheckPause();
+        CheckPause();
     }
 
     void CheckPause()
@@ -73,4 +75,10 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+
+    public void GameOver()
+    {
+
+    }
+
 }

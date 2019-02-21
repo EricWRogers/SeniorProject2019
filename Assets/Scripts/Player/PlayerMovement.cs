@@ -18,8 +18,10 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting = false;
     private Vector3 playerSize;
     GameManager GameManager;
+    HUD hud;
     GameObject Enemy;
     Scene scene;
+
 
     void Awake()
     {
@@ -120,13 +122,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(CanDie)
+
+        if (CanDie)
         {
             if (other.tag == "entity")
             {
                 Debug.Log("Death!!");
                 Enemy.SetActive(false);
                 speed = 0;
+                hud.GetComponent<HUD>().ReloadSceneLose();
+         
                 //SceneManager.LoadScene();
             }
         }
@@ -136,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Win!!!");
             Enemy.SetActive(false);
             speed = 0;
-            //SceneManager.LoadScene();
+            hud.GetComponent<HUD>().ReloadSceneWin();
         }
     }
 }
