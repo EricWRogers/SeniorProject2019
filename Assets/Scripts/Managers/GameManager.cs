@@ -8,10 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject EntityGO;
     public GameObject[] RoomGOS;
-    public float TimerSet = 10.0f;
+    public float TimerSet;
 
     public float ScaredShitlessMeter;
-    public bool GameOver = false;
+    private bool gameover = false;
     
 
 
@@ -80,14 +80,14 @@ public class GameManager : MonoBehaviour
 
     private void GameTinmer()
     {
-        TimerSet -= Time.deltaTime;
-
-        //Debug.Log(TimerSet);
-        if (TimerSet <= 0.0f)
+        if(!gameover)
         {
-            TimerSet = 0.0f;
-            GameOver = true;
+            TimerSet -= Time.deltaTime;
+        }
+        if (TimerSet <= 0.0f && !gameover)
+        {
             Debug.Log("Game Over");
+            gameover = true;
         }
     }
 }

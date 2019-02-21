@@ -130,10 +130,5 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Win!!!");
         }
-
-        if(GameManager.TimerSet <= 0 && other.tag == "Finish")
-        {
-            Debug.Log("Ran Out Of Time!!!!");
-        }
     }
 }
