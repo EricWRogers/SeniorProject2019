@@ -55,9 +55,5 @@ public class HUD : MonoBehaviour
             ReloadSceneLose();
         }
         */
-        if(GameManager.TimerSet < 0)
-        {
-            ReloadLose();
-        }
     }
 }

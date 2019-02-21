@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting = false;
     private Vector3 playerSize;
     GameManager GameManager;
-    HUD hud;
+    GameObject hud;
     GameObject Enemy;
     Scene scene;
 
@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         Enemy = GameObject.FindGameObjectWithTag("entity");
+        hud = GameObject.Find("HUD");
         scene = SceneManager.GetActiveScene();
         playerSize = transform.localScale;
         gravityHolder = gravity;
@@ -49,6 +50,12 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
         controller.Move(moveDirection * Time.deltaTime);
+
+
+        if (GameManager.TimerSet <= 0)
+        {
+            hud.GetComponent<HUD>().ReloadSceneLose();
+        }
     }
 
     private void Movement()

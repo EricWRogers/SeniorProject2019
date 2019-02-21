@@ -29,6 +29,7 @@ public class MainMenuButtons : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
@@ -38,7 +39,7 @@ public class MainMenuButtons : MonoBehaviour
     public void Play()
     {
         Debug.Log("Load game scene");
-        //SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene(gameSceneName);
         FindObjectOfType<AudioManager>().PlaySoundHere("droppedObject");
     }
 
