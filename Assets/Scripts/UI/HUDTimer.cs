@@ -28,15 +28,14 @@ public class HUDTimer : MonoBehaviour
 
         float minutes = (int)time / 60;
         float seconds = (int)time % 60;
-        float milSeconds = time - (minutes * seconds) - 60;
 
         if (time > 0)
         {
-            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}{2:.000}", minutes, seconds, milSeconds);
+            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
         }
         else
         {
-            text.GetComponent<Text>().text = "0:00.00";
+            text.GetComponent<Text>().text = "0:00";
         }
     }
 }

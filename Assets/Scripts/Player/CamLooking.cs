@@ -54,6 +54,17 @@ public class CamLooking : MonoBehaviour
             targetRotCam.x = Xmin;
         }
 
+        if (xAxisClamp > Xmax)
+        {
+            xAxisClamp = Xmax;
+            targetRotCam.x = Xmax;
+        }
+        else if (xAxisClamp < Xmin)
+        {
+            xAxisClamp = Xmin;
+            targetRotCam.x = Xmin;
+        }
+
         if (Physics.Raycast(transform.position, left, out hit, 6))
         {
             //print("Found an object to the left at distance: " + hit.distance);
