@@ -174,11 +174,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 277d6e7305b6b4f9eb11883a64ba4b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 20
   gravity: 20
   sprintMeater: 100
   depletingSpeed: 0.5
-  CanDie: 1
+  depletingCap: 50
+  canDie: 1
+  needCharging: 0
 --- !u!1 &6952691404256912241
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,13 +208,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6952691404256912241}
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.992, z: -0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6952691403254199166}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6952691404256912239
 Camera:
   m_ObjectHideFlags: 0

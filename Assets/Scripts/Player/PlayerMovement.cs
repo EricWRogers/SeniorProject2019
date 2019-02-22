@@ -12,23 +12,27 @@ public class PlayerMovement : MonoBehaviour
     public float sprintMeater = 100.0f;
     public float depletingSpeed = 0.5f;
     public float depletingCap = 50.0f;
-    public bool CanDie = true;
+    public bool canDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private bool iscrouching = false;
     private bool isSprinting = false;
+    private bool needCharging = false;
+    private bool stopMoving = false;
     private Vector3 playerSize;
-    GameManager GameManager;
+    GameManager gameManager;
     GameObject hud;
+    GameObject pauseUI;
     GameObject Enemy;
     Scene scene;
 
 
     void Awake()
     {
-        GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
+        gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         Enemy = GameObject.FindGameObjectWithTag("entity");
         hud = GameObject.Find("HUD");
+        pauseUI = GameObject.Find("Pause UI");
         scene = SceneManager.GetActiveScene();
         playerSize = transform.localScale;
         gravityHolder = gravity;
@@ -42,15 +46,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (controller.isGrounded)
+        if(!stopMoving)
         {
-            Crouching();
-            Sprinting();
-            Movement();
-        }
+            if (controller.isGrounded)
+            {
+                Crouching();
+                Sprinting();
+                Movement();
+            }
 
-        moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
-        controller.Move(moveDirection * Time.deltaTime);
+            moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
+            controller.Move(moveDirection * Time.deltaTime);
+        }
 
         GameOver();
     }
@@ -64,11 +71,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprinting()
     {
-        if (InputManager.instance.Sprint() && sprintMeater >= depletingCap)
+        if (InputManager.instance.Sprint())
         {
             isSprinting = true;
 
-            if(sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching)
+            if(sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
             {
                 //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
                 speed = originalSpeed * 2.0f;
@@ -96,6 +103,14 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 sprintMeater += depletingSpeed;
+            }
+
+            if(sprintMeater <= depletingCap)
+            {
+                needCharging = true;
+            }else
+            {
+                needCharging = false;
             }
 
             isSprinting = false;
@@ -127,35 +142,39 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (CanDie)
+        if (canDie)
         {
             if (other.tag == "entity")
             {
                 Debug.Log("Death!!");
-                speed = 0;
+                stopMoving = true;
                 GetComponentInChildren<CamLooking>().enabled = false;
+                pauseUI.GetComponent<PauseMenu>().enabled = false;
                 hud.GetComponent<HUD>().ReloadSceneLose();
             }
         }
 
-        if(!GameManager.gameover && other.tag == "Finish")
+        if(!gameManager.stopTimer && other.tag == "Finish")
         {
             Debug.Log("Win!!!");
             Enemy.SetActive(false);
-            GameManager.gameover = true;
-            speed = 0;
+            gameManager.stopTimer = true;
+            stopMoving = true;
             GetComponentInChildren<CamLooking>().enabled = false;
+            pauseUI.GetComponent<PauseMenu>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneWin();
         }
     }
 
     private void GameOver()
     {
-        if (GameManager.gameover && GameManager.TimerSet <= 0)
+        if (gameManager.stopTimer && gameManager.TimerSet <= 0)
         {
+            Debug.Log("Game Over!!!");
             Enemy.SetActive(false);
-            speed = 0;
+            stopMoving = true;
             GetComponentInChildren<CamLooking>().enabled = false;
+            pauseUI.GetComponent<PauseMenu>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneLose();
         }
     }

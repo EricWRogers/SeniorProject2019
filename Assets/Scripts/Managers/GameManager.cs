@@ -8,12 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject EntityGO;
     public GameObject[] RoomGOS;
-    public float TimerSet;
 
     public float ScaredShitlessMeter;
-    public bool gameover = false;
-    
-
+    public float TimerSet;
+    public bool stopTimer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -80,14 +78,13 @@ public class GameManager : MonoBehaviour
 
     private void GameTinmer()
     {
-        if(!gameover)
+        if(!stopTimer)
         {
             TimerSet -= Time.deltaTime;
         }
-        if (TimerSet <= 0.0f && !gameover)
+        if (TimerSet <= 0.0f && !stopTimer)
         {
-            Debug.Log("Game Over");
-            gameover = true;
+            stopTimer = true;
         }
     }
 }
