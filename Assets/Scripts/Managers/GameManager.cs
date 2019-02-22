@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public float TimerSet;
 
     public float ScaredShitlessMeter;
-    private bool gameover = false;
+    public bool gameover = false;
     
 
 

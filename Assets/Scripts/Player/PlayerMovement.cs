@@ -132,17 +132,17 @@ public class PlayerMovement : MonoBehaviour
             if (other.tag == "entity")
             {
                 Debug.Log("Death!!");
-                Enemy.SetActive(false);
                 speed = 0;
                 GetComponentInChildren<CamLooking>().enabled = false;
                 hud.GetComponent<HUD>().ReloadSceneLose();
             }
         }
 
-        if(GameManager.TimerSet > 0 && other.tag == "Finish")
+        if(!GameManager.gameover && other.tag == "Finish")
         {
             Debug.Log("Win!!!");
             Enemy.SetActive(false);
+            GameManager.gameover = true;
             speed = 0;
             GetComponentInChildren<CamLooking>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneWin();
@@ -151,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void GameOver()
     {
-        if (GameManager.TimerSet <= 0)
+        if (GameManager.gameover && GameManager.TimerSet <= 0)
         {
             Enemy.SetActive(false);
             speed = 0;
