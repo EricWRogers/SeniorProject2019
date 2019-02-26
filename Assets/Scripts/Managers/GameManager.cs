@@ -38,25 +38,35 @@ public class GameManager : MonoBehaviour
 
     private void PollAgression()
     {
-       
-        
-            foreach (GameObject waypoint in RoomGOS)
+        foreach (GameObject waypoint in RoomGOS)
+        {
+            if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f)
             {
-                if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f)
+                VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
+                RoomManager.agressionMeter = RoomManager.agressionMeter + 10f * Time.deltaTime;
+                if (RoomManager.agressionMeter >= 100.0f)
                 {
-                    VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
-                    RoomManager.agressionMeter = RoomManager.agressionMeter + 20f * Time.deltaTime;
-                    if (RoomManager.agressionMeter >= 100.0f)
-                    {
-                       if (fullWaypoint == null)
-                       fullWaypoint = waypoint;
-                       //eric subtract to 0 then set to null!
-                       RoomManager.agressionMeter = 100.0f;
-                    }
+                    if (fullWaypoint == null)
+                        fullWaypoint = waypoint;
+                    //eric subtract to 0 then set to null!
+                    RoomManager.agressionMeter = 100.0f;
                 }
             }
-
-        
+            
+        }
+        if(fullWaypoint != null)
+        {
+            VFXRoomManager RoomM = fullWaypoint.GetComponent<VFXRoomManager>();
+            if (Vector3.Distance(fullWaypoint.transform.position, EntityGO.transform.position) < 100.0f)
+            {
+                if (RoomM.agressionMeter >= 0f){
+                    RoomM.agressionMeter = RoomM.agressionMeter - 15f * Time.deltaTime;
+                } else {
+                    RoomM.agressionMeter = 0f;
+                    fullWaypoint = null;
+                }
+            }
+        }        
     }
 
     public void FarthestWaypointFromPlayer(Transform[] RoomGOS)
