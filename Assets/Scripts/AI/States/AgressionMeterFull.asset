@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50097ddb405f5cd43af9692fbfea0e14, type: 3}
-  m_Name: WanderState
+  m_Name: AgressionMeterFull
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: 4367a1e1cf3ba2c46bc2dfc961c92dc6, type: 2}
+  - {fileID: 11400000, guid: e42152cf670ba6741a376f904fd4c2a9, type: 2}
   transitions:
+  - decision: {fileID: 11400000, guid: 1edc456fcde4eec469798d2499a2ec6b, type: 2}
+    trueState: {fileID: 11400000, guid: 9cde20574d99d304a899e62e74b4be18, type: 2}
+    falseState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
   - decision: {fileID: 11400000, guid: 72577c25c7ce0ff489385762da7d508e, type: 2}
     trueState: {fileID: 11400000, guid: 7d504bc8c3d1d86418cc69e52851f6af, type: 2}
     falseState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
-  - decision: {fileID: 11400000, guid: 94a0bd0107f093e48959e00cfd0a32f6, type: 2}
-    trueState: {fileID: 11400000, guid: f8cea3f637587394499fd092bcc20255, type: 2}
-    falseState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
-  - decision: {fileID: 11400000, guid: 4472d6c6c01acfb4abf9ecc70e1249db, type: 2}
-    trueState: {fileID: 11400000, guid: 940c2a8d082980f40bc5c1a94f02ee6d, type: 2}
-    falseState: {fileID: 11400000, guid: 4a2c626fbe9bd9e4284e791a203c90f0, type: 2}
-  sceneGizmoColor: {r: 1, g: 0, b: 0.78478, a: 1}
+  sceneGizmoColor: {r: 0.04004982, g: 0.9433962, b: 0.8987405, a: 1}

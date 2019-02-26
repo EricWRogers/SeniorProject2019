@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public float TimerSet;
     public bool stopTimer = false;
 
+    public GameObject fullWaypoint = null;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,15 +38,25 @@ public class GameManager : MonoBehaviour
 
     private void PollAgression()
     {
-        foreach(GameObject waypoint in RoomGOS)
-        {
-            if ( Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f )
+       
+        
+            foreach (GameObject waypoint in RoomGOS)
             {
-                VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
-                RoomManager.agressionMeter =  RoomManager.agressionMeter + 0.5f * Time.deltaTime;
-                if( RoomManager.agressionMeter > 100.0f) { RoomManager.agressionMeter = 100.0f; }
+                if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f)
+                {
+                    VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
+                    RoomManager.agressionMeter = RoomManager.agressionMeter + 20f * Time.deltaTime;
+                    if (RoomManager.agressionMeter >= 100.0f)
+                    {
+                       if (fullWaypoint == null)
+                       fullWaypoint = waypoint;
+                       //eric subtract to 0 then set to null!
+                       RoomManager.agressionMeter = 100.0f;
+                    }
+                }
             }
-        }
+
+        
     }
 
     public void FarthestWaypointFromPlayer(Transform[] RoomGOS)
