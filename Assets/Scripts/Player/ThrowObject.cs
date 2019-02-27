@@ -13,7 +13,6 @@ public class ThrowObject : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         hand = GameObject.Find("/Player/Hand");
-
         PlayerHolding = false;
         GetComponent<Rigidbody>().isKinematic = false;
 
@@ -23,11 +22,13 @@ public class ThrowObject : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
 
-        if (dist <= 2.5f && Input.GetKeyDown(KeyCode.C))
+        //Debug.Log(dist);
+
+        if (dist <= 10f && Input.GetKeyDown(KeyCode.G))
         {
-            GetComponent<Rigidbody>().isKinematic = true;
             PlayerHolding = true;
-            GetComponent<Collider>().enabled = !GetComponent<Collider>().enabled;
+            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponent<Collider>().enabled = false;
         }
 
         if (PlayerHolding)
@@ -37,7 +38,7 @@ public class ThrowObject : MonoBehaviour
 
         if (PlayerHolding && Input.GetMouseButtonDown(0))
         {
-            GetComponent<Collider>().enabled = !GetComponent<Collider>().enabled;
+            GetComponent<Collider>().enabled = true;
             GetComponent<Rigidbody>().isKinematic = false;
             GetComponent<Rigidbody>().AddForce(player.transform.forward * throwForce);
             PlayerHolding = false;

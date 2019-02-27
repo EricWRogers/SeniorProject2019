@@ -10,9 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0f;
     private float gravityHolder;
     public float sprintMeater = 100.0f;
-    public float depletingSpeed = 0.5f;
+    public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
-    public bool canDie = true;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private bool iscrouching = false;
@@ -79,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
                 speed = originalSpeed * 2.0f;
-                sprintMeater -= depletingSpeed;
+                sprintMeater -= depletingSpeed * Time.deltaTime;
 
                 if (speed < originalSpeed)
                 {
@@ -102,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                sprintMeater += depletingSpeed;
+                sprintMeater += depletingSpeed * Time.deltaTime;
             }
 
             if(sprintMeater <= depletingCap)
@@ -142,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (canDie)
+        if (gameManager.canDie)
         {
             if (other.tag == "entity")
             {

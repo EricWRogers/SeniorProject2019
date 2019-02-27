@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public float ScaredShitlessMeter;
     public float TimerSet;
     public bool stopTimer = false;
+    public bool canDie = true;
 
     public GameObject fullWaypoint = null;
     
