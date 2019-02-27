@@ -7,6 +7,7 @@ public class ThrowObject : MonoBehaviour
     public GameObject player;
     public GameObject hand;
     public float throwForce;
+    public float distanceOffset = 15f;
     bool PlayerHolding = false;
 
     void Start()
@@ -24,7 +25,7 @@ public class ThrowObject : MonoBehaviour
 
         //Debug.Log(dist);
 
-        if (dist <= 10f && Input.GetKeyDown(KeyCode.G))
+        if (dist <= distanceOffset && InputManager.instance.Interact() && !PlayerHolding)
         {
             PlayerHolding = true;
             GetComponent<Rigidbody>().isKinematic = true;
@@ -36,7 +37,7 @@ public class ThrowObject : MonoBehaviour
             transform.position = hand.transform.position;
         }
 
-        if (PlayerHolding && Input.GetMouseButtonDown(0))
+        if (PlayerHolding && InputManager.instance.ThrowObject())
         {
             GetComponent<Collider>().enabled = true;
             GetComponent<Rigidbody>().isKinematic = false;
