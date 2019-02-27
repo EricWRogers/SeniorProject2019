@@ -16,13 +16,13 @@ public class MainMenu : MonoBehaviour
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
 
-    //public Sound droppedObject;
-
     private void Awake()
     {
         AudioManager audioManager = FindObjectOfType<AudioManager>();
-        audioManager.CreateAudioSource("droppedObject",gameObject);
-
+        //audioManager.CreateAudioSource("droppedObject",gameObject);
+        Vector3 v3 = new Vector3(10f, 0f, 0f);
+        audioManager.PlayThisHere(v3, "droppedObject", 1);
+        //audioManager.PlayThisHere(transform.position, "droppedObject", 1);
         //FindObjectOfType<AudioManager>().CreateAudioSource(AudioManager.locationSounds = droppedObject,gameObject);
         //FindObjectOfType<AudioManager>().CreateAudioS(BuzzingLight,gameObject, SFX);
     }
@@ -33,14 +33,12 @@ public class MainMenu : MonoBehaviour
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
-        //FindObjectOfType<AudioManager>().CreateAudioSource(droppedObject);
     }
 
     public void Play()
     {
-        Debug.Log("Load game scene");
+        Debug.Log("Loading " + gameSceneName);
         SceneManager.LoadScene(gameSceneName);
-        FindObjectOfType<AudioManager>().PlaySoundHere("droppedObject");
     }
 
     public void LoadOptions()

@@ -7,10 +7,11 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     public Sound[] locationSounds;
     //public List<Sound> sounds = new List<Sound>();
-
     public new AudioClip[] audio;
 
     public static AudioManager instance;
+
+    private GameObject emptySpawn;
 
     void Start()
     {
@@ -46,7 +47,6 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-            //s.source.playOnAwake = s.playOnAwake;
         }
         //foreach (AudioClip a in audio)
         //{
@@ -56,6 +56,7 @@ public class AudioManager : MonoBehaviour
         //}
     }
 
+    //plays sound from sounds[]
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -67,6 +68,7 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
+    //creates audio source on object g for a sound from locationSounds[]
     public void CreateAudioSource(string name, GameObject g)
     {
         Sound s = Array.Find(locationSounds, sound => sound.name == name);
@@ -80,18 +82,10 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
-        //s.source.Play();
     }
 
-    //public void CreateAudioS(AudioClip a, GameObject g, AudioMixerGroup mxg)
-    //{
-    //    AudioSource source;
-    //    source = g.AddComponent<AudioSource>();
-    //    source.clip = a;
-    //    source.outputAudioMixerGroup = mxg;
-    //}
-
-    public void PlaySoundHere(string name)
+    //plays sound from locationSounds[]
+    public void PlayLocationSound(string name)
     {
         Sound s = Array.Find(locationSounds, sound => sound.name == name);
         if (s == null)
@@ -101,4 +95,51 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
+
+    //creates empty object at v3 and plays sound from locationSounds[] 
+    public void PlayThisHere(Vector3 v3, string name, float volume)
+    {
+        Sound s = Array.Find(locationSounds, sound => sound.name == name);
+        emptySpawn = new GameObject(name + " sound");
+        emptySpawn.transform.parent = instance.transform;
+        //Instantiate(emptySpawn);
+        //GameObject g = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        emptySpawn.transform.position = v3;
+        
+        s.source = emptySpawn.AddComponent<AudioSource>();
+        s.source.outputAudioMixerGroup = s.outputMixerGroup;
+        s.source.clip = s.audioClip;
+
+        s.source.volume = volume;
+        s.source.pitch = s.pitch;
+        s.source.loop = s.loop;
+
+        s.source.Play();
+        Destroy(emptySpawn, s.audioClip.length);
+    }
+
+    //creates empty object at v3 and plays sound from locationSounds[] without volume
+    public void PlayThisHere(Vector3 v3, string name)
+    {
+        Sound s = Array.Find(locationSounds, sound => sound.name == name);
+        emptySpawn = new GameObject(name + " sound");
+        emptySpawn.transform.parent = instance.transform;
+        emptySpawn.transform.position = v3;
+
+        s.source = emptySpawn.AddComponent<AudioSource>();
+        s.source.outputAudioMixerGroup = s.outputMixerGroup;
+        s.source.clip = s.audioClip;
+
+        s.source.volume = s.volume;
+        s.source.pitch = s.pitch;
+        s.source.loop = s.loop;
+
+        s.source.Play();
+        Destroy(emptySpawn, s.audioClip.length); ;
+    }
 }
+
+//using audio manager
+//create an audio manager or just find each time
+//AudioManager audioManager = FindObjectOfType<AudioManager>();
+//audioManager.PlayThisHere(); || //FindObjectOfType<AudioManager>().PlayThisHere();
