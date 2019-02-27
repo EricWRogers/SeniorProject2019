@@ -45,4 +45,12 @@ public class ThrowObject : MonoBehaviour
             PlayerHolding = false;
         }
     }
+
+     void OnCollisionEnter (Collision other)
+    {
+        if(other.relativeVelocity.magnitude > 2f)
+        {
+            AudioManager.instance.PlayThisHere(transform.position, "hit");
+        }
+    }
 }
