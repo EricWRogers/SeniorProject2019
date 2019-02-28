@@ -16,17 +16,6 @@ public class MainMenu : MonoBehaviour
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
 
-    private void Awake()
-    {
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
-        //audioManager.CreateAudioSource("droppedObject",gameObject);
-        Vector3 v3 = new Vector3(10f, 0f, 0f);
-        audioManager.PlayThisHere(v3, "droppedObject", 1);
-        //audioManager.PlayThisHere(transform.position, "droppedObject", 1);
-        //FindObjectOfType<AudioManager>().CreateAudioSource(AudioManager.locationSounds = droppedObject,gameObject);
-        //FindObjectOfType<AudioManager>().CreateAudioS(BuzzingLight,gameObject, SFX);
-    }
-
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;

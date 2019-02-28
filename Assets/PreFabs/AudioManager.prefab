@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5215473815613239423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5215473815613239409}
+  - component: {fileID: 5215473815613239422}
+  - component: {fileID: 5215473815613239410}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5215473815613239409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215473815613239423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5215473815613239422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215473815613239423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35b76160cec54e46bec7f3c239638d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: 587a48216e997fa4f8670b837e3f48db, type: 2}
+--- !u!114 &5215473815613239410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215473815613239423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa652048a37b64458e71c2d75990ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+  locationSounds:
+  - name: droppedObject
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Hit
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Walking
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 02566c5f48cc6f54f9165cbd51f7d4d9, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  audio: []

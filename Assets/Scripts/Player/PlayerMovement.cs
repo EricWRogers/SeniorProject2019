@@ -13,13 +13,14 @@ public class PlayerMovement : MonoBehaviour
     public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
     private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller;
+    private CharacterController CharController;
     private bool iscrouching = false;
     private bool isSprinting = false;
     private bool needCharging = false;
     private bool stopMoving = false;
     private Vector3 playerSize;
     GameManager gameManager;
+    Rigidbody rigidbody;
     GameObject hud;
     GameObject pauseUI;
     GameObject Enemy;
@@ -39,7 +40,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        CharController = GetComponent<CharacterController>();
+        rigidbody = GetComponent<Rigidbody>();
+        AudioManager.instance.CreateAudioSource("Walking", this.gameObject);
         originalSpeed = speed;
     }
 
@@ -47,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(!stopMoving)
         {
-            if (controller.isGrounded)
+            if (CharController.isGrounded)
             {
                 Crouching();
                 Sprinting();
@@ -55,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
-            controller.Move(moveDirection * Time.deltaTime);
+            CharController.Move(moveDirection * Time.deltaTime);
         }
 
         GameOver();
@@ -63,9 +66,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-            moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection = moveDirection * speed;
+        moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection = moveDirection * speed;
+
+        if (CharController.velocity.magnitude > 2f && CharController.isGrounded)
+        {
+            AudioManager.instance.PlayLocationSound("Walking");
+        }
     }
 
     private void Sprinting()

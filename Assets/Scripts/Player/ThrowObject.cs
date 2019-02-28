@@ -23,12 +23,10 @@ public class ThrowObject : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
 
-        //Debug.Log(dist);
-
         if (dist <= distanceOffset && InputManager.instance.Interact() && !PlayerHolding)
         {
             PlayerHolding = true;
-            GetComponent<Rigidbody>().isKinematic = true;
+            //GetComponent<Rigidbody>().isKinematic = true;
             GetComponent<Collider>().enabled = false;
         }
 
@@ -50,7 +48,7 @@ public class ThrowObject : MonoBehaviour
     {
         if(other.relativeVelocity.magnitude > 2f)
         {
-            AudioManager.instance.PlayThisHere(transform.position, "hit");
+            AudioManager.instance.PlayThisHere(transform.position, "Hit");
         }
     }
 }
