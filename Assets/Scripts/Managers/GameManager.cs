@@ -14,8 +14,9 @@ public class GameManager : MonoBehaviour
     public bool stopTimer = false;
     public bool canDie = true;
 
+    public GameObject tMax;
     public GameObject fullWaypoint = null;
-    
+  
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 
     void FixedUpdate()
@@ -35,10 +36,13 @@ public class GameManager : MonoBehaviour
         PollAgression();
         PollScareShitlessMeter();
         GameTinmer();
+       
     }
 
     private void PollAgression()
     {
+        float maxDist = 0f;
+
         foreach (GameObject waypoint in RoomGOS)
         {
             if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f)
@@ -49,11 +53,20 @@ public class GameManager : MonoBehaviour
                 {
                     if (fullWaypoint == null)
                         fullWaypoint = waypoint;
-                    //eric subtract to 0 then set to null!
                     RoomManager.agressionMeter = 100.0f;
                 }
             }
-            
+
+           
+            float dist = Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position);
+            if (dist > maxDist)
+            {
+                tMax = waypoint;
+                maxDist = dist;
+               
+            }
+
+
         }
         if(fullWaypoint != null)
         {
@@ -70,32 +83,32 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    public void FarthestWaypointFromPlayer(Transform[] RoomGOS)
-    {
-        Transform tMax = null;
-        float maxDist = Mathf.Infinity;
-        Vector3 playersPosition = PlayerGO.transform.position;
-
-        foreach(Transform wp in RoomGOS)
-        {
-            float dist = Vector3.Distance(wp.position, playersPosition);
-            if(dist > maxDist)
-            {
-                tMax = wp;
-                maxDist = dist;
-            }
-
-        }
-    }
 
     private void PollScareShitlessMeter()
     {
-        if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 50.0f)
+        if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 150.0f)
         {
-            ScaredShitlessMeter += .7f *Time.deltaTime;
+            ScaredShitlessMeter += .8f *Time.deltaTime;
             if (ScaredShitlessMeter > 100.0f)
             {
+                Debug.Log("the Farthest Waypoint is" + tMax);
                 ScaredShitlessMeter = 100.0f;
+            }
+        }
+        if (ScaredShitlessMeter >= 100.0f)
+        {
+          
+            if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 150.0f)
+            {
+                if (ScaredShitlessMeter >= 0f)
+                {
+                    ScaredShitlessMeter = ScaredShitlessMeter - 10f * Time.deltaTime;
+                }
+                else
+                {
+                   ScaredShitlessMeter = 0f;
+                   
+                }
             }
         }
     }
