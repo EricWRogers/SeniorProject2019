@@ -477,10 +477,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1082814531, guid: 143413250f276f64bb09b7286ae270b4, type: 3}
-      propertyPath: mainMenuScene
-      value: MainMenuScene
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 143413250f276f64bb09b7286ae270b4, type: 3}
 --- !u!1001 &159493284
@@ -2921,6 +2917,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
   - name: Hit
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
@@ -2929,6 +2926,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
   - name: Walking
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
@@ -2937,6 +2935,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
   audio: []
 --- !u!4 &816355988
 Transform:

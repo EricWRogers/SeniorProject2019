@@ -47,6 +47,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
         }
         //foreach (AudioClip a in audio)
         //{
@@ -81,6 +82,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
         }
     }
 
@@ -113,6 +115,7 @@ public class AudioManager : MonoBehaviour
         s.source.volume = volume;
         s.source.pitch = s.pitch;
         s.source.loop = s.loop;
+        s.source.playOnAwake = s.playOnAwake;
 
         s.source.Play();
         Destroy(emptySpawn, s.audioClip.length);
@@ -133,6 +136,7 @@ public class AudioManager : MonoBehaviour
         s.source.volume = s.volume;
         s.source.pitch = s.pitch;
         s.source.loop = s.loop;
+        s.source.playOnAwake = s.playOnAwake;
 
         s.source.Play();
         Destroy(emptySpawn, s.audioClip.length); ;
