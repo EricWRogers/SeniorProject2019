@@ -10,13 +10,23 @@ public class DoorScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.SetBool("PlayerNearDoor", false);
     }
 
-   
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("entity"))
+        {
+            anim.SetBool("PlayerNearDoor", true);
 
-
-        
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player")|| other.gameObject.CompareTag("entity"))
+        {
+         
+            anim.SetBool("PlayerNearDoor", false);
+        }
     }
 }
