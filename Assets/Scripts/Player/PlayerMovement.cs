@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     GameObject pauseUI;
     GameObject Enemy;
     Scene scene;
+    AudioSource insanity;
+
 
 
     void Awake()
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         AudioManager.instance.CreateAudioSource("Walking", this.gameObject);
         originalSpeed = speed;
+        insanity = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -61,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
             CharController.Move(moveDirection * Time.deltaTime);
         }
 
+        InsanitySound();
+
         GameOver();
     }
 
@@ -75,7 +80,22 @@ public class PlayerMovement : MonoBehaviour
             AudioManager.instance.PlayLocationSound("Walking");
         }
     }
-
+    private void InsanitySound()
+    {
+        float dist = Vector3.Distance(this.transform.position, gameManager.EntityGO.transform.position);
+        if (dist <= 400f)
+            insanity.volume += .5f / dist;
+        else
+            insanity.volume -= .5f / dist;
+        if (insanity.volume <= 0)
+        {
+            insanity.volume = 0;
+        }
+        if (insanity.volume >= 1)
+        {
+            insanity.volume = 1;
+        }
+    }
     private void Sprinting()
     {
         if (InputManager.instance.Sprint())
