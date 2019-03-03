@@ -3091,7 +3091,7 @@ GameObject:
   - component: {fileID: 816355988}
   - component: {fileID: 816355987}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AudioManagerObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3115,7 +3115,7 @@ MonoBehaviour:
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
     audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
-    volume: 0.5
+    volume: 0
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -3124,7 +3124,7 @@ MonoBehaviour:
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
     audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
-    volume: 0.5
+    volume: 0
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -3133,7 +3133,7 @@ MonoBehaviour:
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
     audioClip: {fileID: 8300000, guid: 257afe4854d40154b948f5b14bb98905, type: 3}
-    volume: 0.5
+    volume: 0
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -7393,16 +7393,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8043410794898d748bc92a0aa447b463, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 0.8
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -7437,7 +7437,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
