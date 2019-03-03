@@ -36,6 +36,10 @@ public class StateController : MonoBehaviour
     {
         SetupAI();
     }
+    void FixedUpdate()
+    {
+        
+    }
 
     public void SetupAI()
     {

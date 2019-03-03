@@ -7,7 +7,7 @@ public class testInputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((InputManager.instance.Move().x > 0) || (InputManager.instance.Move().y > 0) || (InputManager.instance.Move().z > 0))
+       /* if((InputManager.instance.Move().x > 0) || (InputManager.instance.Move().y > 0) || (InputManager.instance.Move().z > 0))
         {
             Debug.Log("Move: " + InputManager.instance.Move());
         }
@@ -16,7 +16,7 @@ public class testInputManager : MonoBehaviour
         {
             Debug.Log("Looking: " + InputManager.instance.Looking());
         }
-
+        */
         if(InputManager.instance.Interact())
         {
             Debug.Log("Interact");

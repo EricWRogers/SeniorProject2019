@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PluggableAI/Actions/Patrol")]
 public class PatrolAction : Action
 {
-    float distFromPoint = 0;
+  
     public override void Act(StateController controller)
     {
         Patrol(controller);
@@ -18,5 +18,6 @@ public class PatrolAction : Action
         {  
             bool result = controller.navMeshAgent.SetDestination(controller.gameManager.RoomGOS[controller.nextWayPoint = Random.Range(0, controller.gameManager.RoomGOS.Length)].transform.position);
         }
+        
     }
 }

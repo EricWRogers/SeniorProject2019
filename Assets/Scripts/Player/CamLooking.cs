@@ -15,7 +15,8 @@ public class CamLooking : MonoBehaviour
     float xAxisClamp = 0.0f;
     float curAngle = 0f;
     GameObject Player;
-    RaycastHit hit;
+    RaycastHit hitInfoLeft;
+    RaycastHit hitInfoRight;
 
     void Awake()
     {
@@ -25,8 +26,8 @@ public class CamLooking : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 left = transform.TransformDirection(Vector3.left);
-        Vector3 right = transform.TransformDirection(Vector3.right);
+        Vector3 left = -transform.right;
+        Vector3 right = transform.right;
 
         float MouseX = InputManager.instance.Looking().x;
         float MouseY = InputManager.instance.Looking().y;
@@ -65,68 +66,43 @@ public class CamLooking : MonoBehaviour
             targetRotCam.x = Xmin;
         }
 
-        if (Physics.Raycast(transform.position, left, out hit, 6))
-        {
-            //print("Found an object to the left at distance: " + hit.distance);
-            hitLeft = true;
-
-        }
-
-        if (Physics.Raycast(transform.position, right, out hit, 6))
-        {
-            //print("Found an object to the right at distance: " + hit.distance);
-            hitRight = true;
-        }
-
         if (InputManager.instance.Lean_L())
         {
-            if(hitLeft)
+            if (Physics.Raycast(transform.position, left, out hitInfoLeft, 6, LayerMask.NameToLayer("target")))
             {
-                if(hit.distance <= 5.7f || hit.distance >= 0.3f)
-                {
-                    curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
-                    transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-hit.distance, 1, 0), 0.1f);
-                    hitLeft = false;
-                }
+                Debug.Log(hitInfoLeft.collider.gameObject.name);
+                curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
+                transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-hitInfoLeft.distance, 1, 0), 0.1f);
+                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
             }
             else
             {
                 curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-1, 1, 0), 0.1f);
-                //transform.localPosition = new Vector3(-1,0.8f,0);;
+                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
             }
         }
         else if (InputManager.instance.Lean_R())
         {
-            if(hitRight)
+            if (Physics.Raycast(transform.position, right, out hitInfoRight, 6, LayerMask.NameToLayer("target")))
             {
-                if (hit.distance <= 5.7f || hit.distance >= 0.3f)
-                {
-                    curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
-                    transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(hit.distance, 1, 0), 0.1f);
-                    hitLeft = false;
-                }
+                Debug.Log(hitInfoRight.collider.gameObject.name);
+                curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
+                transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(hitInfoRight.distance, 1, 0), 0.1f);
+                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
+
             }
             else
             {
                 curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(1, 1, 0), 0.1f);
-                //transform.localPosition = new Vector3(1,0.8f,0);
+                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
             }
         }
         else
         {
             curAngle = Mathf.MoveTowardsAngle(curAngle, 0f, speed * Time.deltaTime);
             transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(0, 1, 0), 0.1f);
-            //transform.localPosition = new Vector3(0,0.8f,0);
-        }
-
-        if(InputManager.instance.Lean_L() || InputManager.instance.Lean_R())
-        {
-            transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward); 
-        }
-        else
-        {
             transform.rotation = Quaternion.Euler(targetRotCam);
             Player.transform.rotation = Quaternion.Euler(targetRotBody);
         }

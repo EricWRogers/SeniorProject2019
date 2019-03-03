@@ -10,21 +10,23 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0f;
     private float gravityHolder;
     public float sprintMeater = 100.0f;
-    public float depletingSpeed = 0.5f;
+    public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
-    public bool canDie = true;
     private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller;
+    private CharacterController CharController;
     private bool iscrouching = false;
     private bool isSprinting = false;
     private bool needCharging = false;
     private bool stopMoving = false;
     private Vector3 playerSize;
     GameManager gameManager;
+    Rigidbody rigidbody;
     GameObject hud;
     GameObject pauseUI;
     GameObject Enemy;
     Scene scene;
+    AudioSource insanity;
+
 
 
     void Awake()
@@ -40,15 +42,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        CharController = GetComponent<CharacterController>();
+        rigidbody = GetComponent<Rigidbody>();
+        AudioManager.instance.CreateAudioSource("Walking", this.gameObject);
         originalSpeed = speed;
+        insanity = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
     {
         if(!stopMoving)
         {
-            if (controller.isGrounded)
+            if (CharController.isGrounded)
             {
                 Crouching();
                 Sprinting();
@@ -56,19 +61,41 @@ public class PlayerMovement : MonoBehaviour
             }
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
-            controller.Move(moveDirection * Time.deltaTime);
+            CharController.Move(moveDirection * Time.deltaTime);
         }
+
+        InsanitySound();
 
         GameOver();
     }
 
     private void Movement()
     {
-            moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection = moveDirection * speed;
-    }
+        moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection = moveDirection * speed;
 
+        if (CharController.velocity.magnitude > 2f && CharController.isGrounded)
+        {
+            AudioManager.instance.PlayLocationSound("Walking");
+        }
+    }
+    private void InsanitySound()
+    {
+        float dist = Vector3.Distance(this.transform.position, gameManager.EntityGO.transform.position);
+        if (dist <= 400f)
+            insanity.volume += .5f / dist;
+        else
+            insanity.volume -= .5f / dist;
+        if (insanity.volume <= 0)
+        {
+            insanity.volume = 0;
+        }
+        if (insanity.volume >= 1)
+        {
+            insanity.volume = 1;
+        }
+    }
     private void Sprinting()
     {
         if (InputManager.instance.Sprint())
@@ -79,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
                 speed = originalSpeed * 2.0f;
-                sprintMeater -= depletingSpeed;
+                sprintMeater -= depletingSpeed * Time.deltaTime;
 
                 if (speed < originalSpeed)
                 {
@@ -102,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                sprintMeater += depletingSpeed;
+                sprintMeater += depletingSpeed * Time.deltaTime;
             }
 
             if(sprintMeater <= depletingCap)
@@ -142,7 +169,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (canDie)
+        if (gameManager.canDie)
         {
             if (other.tag == "entity")
             {
