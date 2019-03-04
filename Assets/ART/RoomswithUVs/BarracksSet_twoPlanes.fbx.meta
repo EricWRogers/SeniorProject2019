@@ -81,6 +81,20 @@ ModelImporter:
     4300022: Barrack12
     4300024: LeftWalkWay
     4300026: RightWalkWay
+    6400000: Barrack1
+    6400002: Barrack10
+    6400004: Barrack11
+    6400006: Barrack12
+    6400008: Barrack2
+    6400010: Barrack3
+    6400012: Barrack4
+    6400014: Barrack5
+    6400016: Barrack6
+    6400018: Barrack7
+    6400020: Barrack8
+    6400022: Barrack9
+    6400024: LeftWalkWay
+    6400026: RightWalkWay
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -112,9 +126,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

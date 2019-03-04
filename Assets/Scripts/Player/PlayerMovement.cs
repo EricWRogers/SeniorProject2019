@@ -65,8 +65,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         InsanitySound();
-
-        GameOver();
+        if (gameManager.stopTimer && gameManager.TimerSet <= 0)
+            GameOver();
     }
 
     private void Movement()
@@ -165,44 +165,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
-    private void OnTriggerEnter(Collider other)
+    public void GameOver()
     {
-
-        if (gameManager.canDie)
-        {
-            if (other.tag == "entity")
-            {
-                Debug.Log("Death!!");
-                stopMoving = true;
-                GetComponentInChildren<CamLooking>().enabled = false;
-                pauseUI.GetComponent<PauseMenu>().enabled = false;
-                hud.GetComponent<HUD>().ReloadSceneLose();
-            }
-        }
-
-        if(!gameManager.stopTimer && other.tag == "Finish")
-        {
-            Debug.Log("Win!!!");
-            Enemy.SetActive(false);
-            gameManager.stopTimer = true;
-            stopMoving = true;
-            GetComponentInChildren<CamLooking>().enabled = false;
-            pauseUI.GetComponent<PauseMenu>().enabled = false;
-            hud.GetComponent<HUD>().ReloadSceneWin();
-        }
-    }
-
-    private void GameOver()
-    {
-        if (gameManager.stopTimer && gameManager.TimerSet <= 0)
-        {
             Debug.Log("Game Over!!!");
             Enemy.SetActive(false);
             stopMoving = true;
             GetComponentInChildren<CamLooking>().enabled = false;
             pauseUI.GetComponent<PauseMenu>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneLose();
-        }
+
     }
 }

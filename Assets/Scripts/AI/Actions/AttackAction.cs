@@ -12,6 +12,7 @@ public class AttackAction : Action
 
     private void Attack(StateController controller)
     {
+       
         RaycastHit hit;
 
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.red);
@@ -21,7 +22,7 @@ public class AttackAction : Action
         {
             if (controller.CheckIfCountDownElapsed(controller.enemyStats.attackRate))
             {
-                Debug.Log("Attack");
+                controller.player.GameOver();
             }
         }
     }

@@ -12,6 +12,7 @@ public class StateController : MonoBehaviour
     public State remainState;
     public int nextWayPoint;
     public GameManager gameManager;
+    public PlayerMovement player;
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
