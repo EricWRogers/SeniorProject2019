@@ -17,14 +17,11 @@ public class GameManager : MonoBehaviour
     public GameObject tMax;
     public GameObject fullWaypoint = null;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
-        
     }
 
     void Update()
@@ -37,7 +34,6 @@ public class GameManager : MonoBehaviour
         PollAgression();
         PollScareShitlessMeter();
         GameTinmer();
-       
     }
 
     private void PollAgression()
@@ -83,7 +79,6 @@ public class GameManager : MonoBehaviour
             }
         }        
     }
-   
 
     private void PollScareShitlessMeter()
     {
@@ -112,11 +107,9 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        
-        
     }
 
-    private void GameTinmer()
+    void GameTinmer()
     {
         if(!stopTimer)
         {

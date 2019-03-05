@@ -67,6 +67,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+    playOnAwake: 0
   - name: Hit
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
       type: 2}
@@ -75,12 +76,5 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  - name: Walking
-    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
-      type: 2}
-    audioClip: {fileID: 8300000, guid: 02566c5f48cc6f54f9165cbd51f7d4d9, type: 3}
-    volume: 0.5
-    pitch: 1
-    source: {fileID: 0}
-    loop: 1
+    playOnAwake: 0
   audio: []

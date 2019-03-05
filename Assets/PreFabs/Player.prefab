@@ -41,7 +41,8 @@ AudioSource:
   m_GameObject: {fileID: 2804447615215911045}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 8043410794898d748bc92a0aa447b463, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
@@ -418,6 +419,7 @@ MonoBehaviour:
   sprintMeater: 100
   depletingSpeed: 50
   depletingCap: 50
+  attacked: 0
 --- !u!1 &6952691404256912241
 GameObject:
   m_ObjectHideFlags: 0

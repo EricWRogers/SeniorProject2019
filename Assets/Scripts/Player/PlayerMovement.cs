@@ -5,46 +5,50 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float originalSpeed;
     public float speed;
-    public float gravity = 20.0f;
-    private float gravityHolder;
     public float sprintMeater = 100.0f;
     public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
+
+    public bool attacked = false;
+
+    private float gravity = 20.0f;
+    private float originalSpeed;
+    private float gravityHolder;
+
     private Vector3 moveDirection = Vector3.zero;
-    private CharacterController CharController;
+    private Vector3 playerSize;
+
     private bool iscrouching = false;
     private bool isSprinting = false;
     private bool needCharging = false;
     private bool stopMoving = false;
-    private Vector3 playerSize;
-    GameManager gameManager;
+
+    GameObject Enemy;
     GameObject hud;
     GameObject pauseUI;
-    GameObject Enemy;
+
+    GameManager gameManager;
     Scene scene;
     AudioSource audioSource;
-
-    public bool attacked;
+    CharacterController CharController;
 
     void Awake()
     {
-        gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         Enemy = GameObject.FindGameObjectWithTag("entity");
         hud = GameObject.Find("HUD");
         pauseUI = GameObject.Find("Pause UI");
+        gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         scene = SceneManager.GetActiveScene();
-        playerSize = transform.localScale;
-        gravityHolder = gravity;
+        CharController = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
     {
-        CharController = GetComponent<CharacterController>();
-        audioSource = GetComponent<AudioSource>();
+        playerSize = transform.localScale;
+        gravityHolder = gravity;
         originalSpeed = speed;
-        attacked = false;
     }
 
     void FixedUpdate()
@@ -62,13 +66,10 @@ public class PlayerMovement : MonoBehaviour
             CharController.Move(moveDirection * Time.deltaTime);
         }
 
-        if (gameManager.stopTimer && gameManager.TimerSet <= 0 || attacked == true)
-        {
-            GameOver();
-        }
+        GameOver();
     }
 
-    private void Movement()
+    void Movement()
     {
         moveDirection = new Vector3(InputManager.instance.Move().x, 0.0f, InputManager.instance.Move().z);
         moveDirection = transform.TransformDirection(moveDirection);
@@ -80,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Sprinting()
+    void Sprinting()
     {
         if (InputManager.instance.Sprint())
         {
@@ -128,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Crouching()
+    void Crouching()
     {
         if(!isSprinting)
         {
@@ -156,19 +157,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    void GameOver()
     {
+        if (attacked)
+        {
             Debug.Log("Game Over!!!");
             Enemy.SetActive(false);
             stopMoving = true;
             GetComponentInChildren<CamLooking>().enabled = false;
             pauseUI.GetComponent<PauseMenu>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneLose();
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if(!gameManager.stopTimer && other.tag == "Finish")
+        if(other.tag == "Finish")
         {
             Debug.Log("Win!!!");
             Enemy.SetActive(false);

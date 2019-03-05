@@ -13,10 +13,9 @@ public class ThrowObject : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        hand = GameObject.Find("/Player/Hand");
+        hand = GameObject.Find("Player/Hand");
         PlayerHolding = false;
-        GetComponent<Rigidbody>().isKinematic = false;
-
+        //GetComponent<Rigidbody>().isKinematic = false;
     }
 
     void Update()
@@ -38,17 +37,17 @@ public class ThrowObject : MonoBehaviour
         if (PlayerHolding && InputManager.instance.ThrowObject())
         {
             GetComponent<Collider>().enabled = true;
-            GetComponent<Rigidbody>().isKinematic = false;
+            //GetComponent<Rigidbody>().isKinematic = false;
             GetComponent<Rigidbody>().AddForce(player.transform.forward * throwForce);
             PlayerHolding = false;
         }
     }
 
      void OnCollisionEnter (Collision other)
-    {
+     {
         if(other.relativeVelocity.magnitude > 2f)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
         }
-    }
+     }
 }

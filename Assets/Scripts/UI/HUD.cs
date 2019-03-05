@@ -6,23 +6,45 @@ using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
-    public GameObject loseCanvas;
-    public GameObject winCanvas;
-    private GameManager GameManager;
-    private GameObject text;
+    public float reloadTime = 5.0f;
+
     private float time;
 
     public string mainMenu;
-    public float reloadTime = 5.0f;
 
-    public void ReloadSceneLose()
+    private GameManager GameManager;
+    private GameObject loseCanvas;
+    private GameObject winCanvas;
+    private GameObject text;
+
+    void Awake()
     {
-        StartCoroutine(ReloadLose());
+        GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
+        loseCanvas = GameObject.Find("HUD/LoseCanvas");
+        winCanvas = GameObject.Find("HUD/WinCanvas");
+        text = GameObject.Find("HUD/TimerCanvas/TimerText");
     }
 
-    public void ReloadSceneWin()
+    void Update()
     {
-        StartCoroutine(ReloadWin());
+        //CalculateTimer();
+    }
+
+    void CalculateTimer()
+    {
+        time = GameManager.TimerSet;
+
+        float minutes = (int)time / 60;
+        float seconds = (int)time % 60;
+
+        if (time > 0)
+        {
+            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            text.GetComponent<Text>().text = "0:00";
+        }
     }
 
     IEnumerator ReloadLose()
@@ -43,39 +65,14 @@ public class HUD : MonoBehaviour
         SceneManager.LoadScene(mainMenu);
     }
 
-    private void Awake()
+    public void ReloadSceneLose()
     {
-        GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        text = GameObject.Find("HUD/TimerCanvas/TimerText");
+        StartCoroutine(ReloadLose());
     }
 
-    void Update()
+    public void ReloadSceneWin()
     {
-        /*test
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("reloading");
-            ReloadSceneLose();
-        }
-        */
-
-        CalculateTimer();
+        StartCoroutine(ReloadWin());
     }
 
-    void CalculateTimer()
-    {
-        time = GameManager.TimerSet;
-
-        float minutes = (int)time / 60;
-        float seconds = (int)time % 60;
-
-        if (time > 0)
-        {
-            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
-        }
-        else
-        {
-            text.GetComponent<Text>().text = "0:00";
-        }
-    }
 }

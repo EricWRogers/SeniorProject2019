@@ -12,10 +12,14 @@ public class CamLooking : MonoBehaviour
 
     bool hitRight = false;
     bool hitLeft = false;
+
     float xAxisClamp = 0.0f;
     float curAngle = 0f;
+
     GameObject Player;
+
     Vector3 camCenter;
+
     RaycastHit hitInfoLeft;
     RaycastHit hitInfoRight;
 
