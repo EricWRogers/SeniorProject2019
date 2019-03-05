@@ -15,7 +15,7 @@ public class StateController : MonoBehaviour
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
-
+    public float normalSpeed = 20f;
     //fov 
     public LayerMask playerTargetMask;
     public LayerMask ObstacleMask;

@@ -12,8 +12,15 @@ public class ChaseAction : Action
 
     private void Chase(StateController controller)
     {
-       
+        controller.navMeshAgent.speed += .3f * Time.deltaTime;
+        
         controller.navMeshAgent.destination = controller.gameManager.PlayerGO.transform.position;
         controller.navMeshAgent.isStopped = false;
+
+    }
+    public override void OnStateExit(StateController controller)
+    {
+        base.OnStateExit(controller);
+        controller.navMeshAgent.speed = controller.normalSpeed;
     }
 }
