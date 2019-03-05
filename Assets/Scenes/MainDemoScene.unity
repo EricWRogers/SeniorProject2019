@@ -10980,17 +10980,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1890852133, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: reloadTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3446326436238514309, guid: e49a6121ee5cf4c438903782ad7f46aa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8976172342048540657, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
 --- !u!1001 &1997048076
 PrefabInstance:
@@ -11936,8 +11926,8 @@ MonoBehaviour:
   EntityGO: {fileID: 1230369810}
   RoomGOS: []
   ScaredShitlessMeter: 0
-  TimerSet: 240
-  stopTimer: 0
+  TimerSet: 0
+  stopTimer: 1
   canDie: 1
   tMax: {fileID: 0}
   fullWaypoint: {fileID: 0}

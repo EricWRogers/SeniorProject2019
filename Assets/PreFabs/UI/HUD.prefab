@@ -453,7 +453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5325948711555686283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -859,10 +859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05a233deeb9fe9448a47e91de67b057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseCanvas: {fileID: 4851682431342774764}
-  winCanvas: {fileID: 7859032138262318990}
+  reloadTime: 3
   mainMenu: MainMenuScene
-  reloadTime: 5
 --- !u!1 &8976172342048540653
 GameObject:
   m_ObjectHideFlags: 0
