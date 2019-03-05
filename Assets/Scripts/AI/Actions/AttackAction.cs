@@ -12,18 +12,14 @@ public class AttackAction : Action
 
     private void Attack(StateController controller)
     {
-       
-        RaycastHit hit;
+        GameObject player = GameObject.FindGameObjectWithTag ("Player");
 
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.red);
-
-        if (Physics.Raycast(controller.eyes.position, controller.eyes.forward, out hit, controller.enemyStats.attackRange)
-            && hit.collider.CompareTag("Player"))
+        float distToTarget = Vector3.Distance(controller.eyes.transform.position, controller.gameManager.PlayerGO.transform.position);
+        if (distToTarget < 25)
         {
-            if (controller.CheckIfCountDownElapsed(controller.enemyStats.attackRate))
-            {
-                controller.player.GameOver();
-            }
+                Debug.Log("Attacked");
+            player.GetComponent<PlayerMovement>().attacked = true;
         }
     }
 }

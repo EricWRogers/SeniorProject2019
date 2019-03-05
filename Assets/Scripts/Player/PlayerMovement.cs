@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     Scene scene;
     AudioSource audioSource;
 
+    public bool attacked;
+
     void Awake()
     {
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
@@ -42,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
         originalSpeed = speed;
+        attacked = false;
     }
 
     void FixedUpdate()
@@ -59,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             CharController.Move(moveDirection * Time.deltaTime);
         }
 
-        if (gameManager.stopTimer && gameManager.TimerSet <= 0)
+        if (gameManager.stopTimer && gameManager.TimerSet <= 0 || attacked == true)
         {
             GameOver();
         }
