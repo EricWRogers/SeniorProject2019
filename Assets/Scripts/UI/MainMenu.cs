@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
@@ -28,6 +29,8 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Loading " + gameSceneName);
         SceneManager.LoadScene(gameSceneName);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void LoadOptions()

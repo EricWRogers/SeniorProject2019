@@ -20,14 +20,11 @@ public class PlayerMovement : MonoBehaviour
     private bool stopMoving = false;
     private Vector3 playerSize;
     GameManager gameManager;
-    Rigidbody rigidbody;
     GameObject hud;
     GameObject pauseUI;
     GameObject Enemy;
     Scene scene;
-    AudioSource insanity;
-
-
+    AudioSource audioSource;
 
     void Awake()
     {
@@ -43,10 +40,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         CharController = GetComponent<CharacterController>();
-        rigidbody = GetComponent<Rigidbody>();
-        AudioManager.instance.CreateAudioSource("Walking", this.gameObject);
+        audioSource = GetComponent<AudioSource>();
         originalSpeed = speed;
-        insanity = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -64,9 +59,10 @@ public class PlayerMovement : MonoBehaviour
             CharController.Move(moveDirection * Time.deltaTime);
         }
 
-        InsanitySound();
         if (gameManager.stopTimer && gameManager.TimerSet <= 0)
+        {
             GameOver();
+        }
     }
 
     private void Movement()
@@ -75,27 +71,12 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection = moveDirection * speed;
 
-        if (CharController.velocity.magnitude > 2f && CharController.isGrounded)
+        if (CharController.velocity.magnitude < 2f && CharController.isGrounded)
         {
-            AudioManager.instance.PlayLocationSound("Walking");
+            audioSource.Play();
         }
     }
-    private void InsanitySound()
-    {
-        float dist = Vector3.Distance(this.transform.position, gameManager.EntityGO.transform.position);
-        if (dist <= 400f)
-            insanity.volume += .5f / dist;
-        else
-            insanity.volume -= .5f / dist;
-        if (insanity.volume <= 0)
-        {
-            insanity.volume = 0;
-        }
-        if (insanity.volume >= 1)
-        {
-            insanity.volume = 1;
-        }
-    }
+
     private void Sprinting()
     {
         if (InputManager.instance.Sprint())
@@ -161,10 +142,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 iscrouching = false;
                 gravity = gravityHolder;
-                transform.localScale = playerSize;
+
+                Vector3 sizeHolder = playerSize;
+
+                if(transform.localScale != playerSize)
+                {
+                    transform.localScale = Vector3.Lerp(transform.localScale, sizeHolder, 0.1f);
+                }
             }
         }
     }
+
     public void GameOver()
     {
             Debug.Log("Game Over!!!");
@@ -173,6 +161,19 @@ public class PlayerMovement : MonoBehaviour
             GetComponentInChildren<CamLooking>().enabled = false;
             pauseUI.GetComponent<PauseMenu>().enabled = false;
             hud.GetComponent<HUD>().ReloadSceneLose();
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(!gameManager.stopTimer && other.tag == "Finish")
+        {
+            Debug.Log("Win!!!");
+            Enemy.SetActive(false);
+            gameManager.stopTimer = true;
+            stopMoving = true;
+            GetComponentInChildren<CamLooking>().enabled = false;
+            pauseUI.GetComponent<PauseMenu>().enabled = false;
+            hud.GetComponent<HUD>().ReloadSceneWin();
+        }
     }
 }

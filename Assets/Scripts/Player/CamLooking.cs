@@ -15,13 +15,14 @@ public class CamLooking : MonoBehaviour
     float xAxisClamp = 0.0f;
     float curAngle = 0f;
     GameObject Player;
+    Vector3 camCenter;
     RaycastHit hitInfoLeft;
     RaycastHit hitInfoRight;
 
     void Awake()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        Cursor.lockState = CursorLockMode.Locked;
+        camCenter = transform.localPosition;
     }
 
     void FixedUpdate()
@@ -102,9 +103,14 @@ public class CamLooking : MonoBehaviour
         else
         {
             curAngle = Mathf.MoveTowardsAngle(curAngle, 0f, speed * Time.deltaTime);
-            transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(0, 1, 0), 0.1f);
-            transform.rotation = Quaternion.Euler(targetRotCam);
-            Player.transform.rotation = Quaternion.Euler(targetRotBody);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, camCenter, 0.3f);
+            transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
+
+            if(transform.localPosition == camCenter)
+            {
+                transform.rotation = Quaternion.Euler(targetRotCam);
+                Player.transform.rotation = Quaternion.Euler(targetRotBody);
+            }
         }
     }
 }
