@@ -1,53 +1,27 @@
 fileFormatVersion: 2
-guid: e29078c017f62ee45bbfab4726d2c543
+guid: ec351a9db45729641b6c5e9e1e5666fa
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: LOD_0
     100002: LOD_1
-    100004: LOD_2
-    100006: LOD_3
-    100008: Medical_Ward_Base_UVs
-    100010: Medical_Ward_Base_UVs 1
-    100012: Medical_Ward_Base_UVs 2
-    100014: Medical_Ward_Base_UVs 3
-    100016: //RootNode
-    100018: MedicalWardGroup
-    100020: MedicalWardGroup 1
-    100022: MedicalWardGroup 2
-    100024: MedicalWardGroup 3
+    100004: //RootNode
+    100006: Medical_Ward_Base
+    100008: Medical_Ward_Base 1
     400000: LOD_0
     400002: LOD_1
-    400004: LOD_2
-    400006: LOD_3
-    400008: Medical_Ward_Base_UVs
-    400010: Medical_Ward_Base_UVs 1
-    400012: Medical_Ward_Base_UVs 2
-    400014: Medical_Ward_Base_UVs 3
-    400016: //RootNode
-    400018: MedicalWardGroup
-    400020: MedicalWardGroup 1
-    400022: MedicalWardGroup 2
-    400024: MedicalWardGroup 3
-    2100000: MedicalWardFloor_Mat
-    2100002: MedicalWardCeiling_Mat
-    2100004: MedicalWard_Walls_Mat
-    2300000: Medical_Ward_Base_UVs
-    2300002: Medical_Ward_Base_UVs 1
-    2300004: Medical_Ward_Base_UVs 2
-    2300006: Medical_Ward_Base_UVs 3
-    3300000: Medical_Ward_Base_UVs
-    3300002: Medical_Ward_Base_UVs 1
-    3300004: Medical_Ward_Base_UVs 2
-    3300006: Medical_Ward_Base_UVs 3
-    4300000: Medical_Ward_Base_UVs
-    4300002: Medical_Ward_Base_UVs
-    4300004: Medical_Ward_Base_UVs
-    4300006: Medical_Ward_Base_UVs
-    6400000: Medical_Ward_Base_UVs
-    6400002: Medical_Ward_Base_UVs 1
-    6400004: Medical_Ward_Base_UVs 2
-    6400006: Medical_Ward_Base_UVs 3
+    400004: //RootNode
+    400006: Medical_Ward_Base
+    400008: Medical_Ward_Base 1
+    2100000: MedicalWardFloor_Mat1
+    2100002: MedicalWardCeiling_Mat1
+    2100004: MedicalWard_Walls_Mat1
+    2300000: Medical_Ward_Base
+    2300002: Medical_Ward_Base 1
+    3300000: Medical_Ward_Base
+    3300002: Medical_Ward_Base 1
+    4300000: Medical_Ward_Base
+    4300002: Medical_Ward_Base
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -79,9 +53,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
