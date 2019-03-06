@@ -42,10 +42,10 @@ public class GameManager : MonoBehaviour
 
         foreach (GameObject waypoint in RoomGOS)
         {
-            if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f)
+            if (Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 100.0f && Vector3.Distance(waypoint.transform.position,EntityGO.transform.position) > 100.0f)
             {
                 VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
-                RoomManager.agressionMeter = RoomManager.agressionMeter + 10f * Time.deltaTime;
+                RoomManager.agressionMeter = RoomManager.agressionMeter + 4f * Time.deltaTime;
                 if (RoomManager.agressionMeter >= 100.0f)
                 {
                     if (fullWaypoint == null)
@@ -82,9 +82,9 @@ public class GameManager : MonoBehaviour
 
     private void PollScareShitlessMeter()
     {
-        if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 150.0f)
+        if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 180.0f)
         {
-            ScaredShitlessMeter += .8f *Time.deltaTime;
+            ScaredShitlessMeter += 2f *Time.deltaTime;
             if (ScaredShitlessMeter > 100.0f)
             {
                 Debug.Log("the Farthest Waypoint is" + tMax);
@@ -93,14 +93,13 @@ public class GameManager : MonoBehaviour
         }
         if (ScaredShitlessMeter >= 100.0f)
         {
-          
-            if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 150.0f)
+            if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) > 180.0f)
             {
                 if (ScaredShitlessMeter >= 0f)
                 {
                     ScaredShitlessMeter = ScaredShitlessMeter - 10f * Time.deltaTime;
                 }
-                else
+                if(ScaredShitlessMeter < 0f)
                 {
                    ScaredShitlessMeter = 0f;
                    

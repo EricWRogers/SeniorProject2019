@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 974267749895668540}
   - component: {fileID: 3532704385974298322}
   - component: {fileID: 2381888346600891050}
+  - component: {fileID: 6781909534586857371}
   m_Layer: 0
   m_Name: BlueKeyCard
   m_TagString: KeyCard
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyName: Blue
+--- !u!135 &6781909534586857371
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6035945665424619976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}

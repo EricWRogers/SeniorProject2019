@@ -35,6 +35,10 @@ ModelImporter:
     4300002: MainLabRoom1_hs1_polySurface98_polySurface99
     4300004: MainLabRoom1_hs1_polySurface98_polySurface99
     4300006: MainLabRoom1_hs1_polySurface98_polySurface99
+    6400000: MainLabRoom1_hs1_polySurface98_polySurface99
+    6400002: MainLabRoom1_hs1_polySurface98_polySurface99 1
+    6400004: MainLabRoom1_hs1_polySurface98_polySurface99 2
+    6400006: MainLabRoom1_hs1_polySurface98_polySurface99 3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,9 +70,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -172,6 +172,28 @@ ModelImporter:
     4300038: ExperimentRoom_hs
     4300040: Sci_BigObservatory_Window
     4300042: Sci_SmallObservatory_Window
+    6400000: ExperimentRoom_hs
+    6400002: ExperimentRoom_hs 1
+    6400004: ExperimentRoom_hs 2
+    6400006: ExperimentRoom_hs 3
+    6400008: FishStorage_hs
+    6400010: FishStorage_hs 1
+    6400012: FishStorage_hs 2
+    6400014: FishStorage_hs 3
+    6400016: MainLabRoom1_hs
+    6400018: MainLabRoom1_hs 1
+    6400020: MainLabRoom1_hs 2
+    6400022: MainLabRoom1_hs 3
+    6400024: Sci_BigObservatory_Window
+    6400026: Sci_SmallObservatory_Window
+    6400028: ScienceLabRoom1Floor
+    6400030: ScienceLabRoom1Floor 1
+    6400032: ScienceLabRoom1Floor 2
+    6400034: ScienceLabRoom1Floor 3
+    6400036: Watch_control_Room_hs
+    6400038: Watch_control_Room_hs 1
+    6400040: Watch_control_Room_hs 2
+    6400042: Watch_control_Room_hs 3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -203,9 +225,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5597268314470240029}
   - component: {fileID: 3852062942540811507}
   - component: {fileID: 7562523148604220440}
+  - component: {fileID: 5552278564659856437}
   m_Layer: 0
   m_Name: PurpleKeyCard
   m_TagString: KeyCard
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyName: Purple
+--- !u!135 &5552278564659856437
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361838853556319092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3859090290617080731}
   - component: {fileID: 8921647587153425570}
   - component: {fileID: 8015018244334334431}
+  - component: {fileID: 6911357819572946811}
   m_Layer: 0
   m_Name: GreenKeyCard
   m_TagString: KeyCard
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyName: Green
+--- !u!135 &6911357819572946811
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569408139124466081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}
