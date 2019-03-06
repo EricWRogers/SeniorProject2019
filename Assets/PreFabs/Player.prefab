@@ -416,10 +416,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 19
-  sprintMeater: 100
-  depletingSpeed: 50
-  depletingCap: 50
+  sprintingWait: 2
+  acceleration: 10
   attacked: 0
+  maxSpeedReached: 0
 --- !u!114 &1738741865
 MonoBehaviour:
   m_ObjectHideFlags: 0

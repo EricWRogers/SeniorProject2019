@@ -6,15 +6,18 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public float sprintMeater = 100.0f;
-    public float depletingSpeed = 10f;
-    public float depletingCap = 50.0f;
+    public float sprintingWait = 5.0f;
+    public float acceleration = 3f;
+    public float deceleration = 6f;
 
     public bool attacked = false;
+    public bool maxSpeedReached = false;
 
     private float gravity = 20.0f;
+    private float maxSpeed;
     private float originalSpeed;
     private float gravityHolder;
+    private float sprintingWaitHolder;
     private float tempTime;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -22,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool iscrouching = false;
     private bool isSprinting = false;
-    private bool needCharging = false;
     private bool stopMoving = false;
 
     GameObject Enemy;
@@ -50,7 +52,9 @@ public class PlayerMovement : MonoBehaviour
         playerSize = transform.localScale;
         gravityHolder = gravity;
         originalSpeed = speed;
+        sprintingWaitHolder = sprintingWait;
         tempTime = Time.deltaTime;
+        maxSpeed = speed * 3;
     }
 
     void FixedUpdate()
@@ -97,47 +101,37 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
 
-            if(sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
+            if(!iscrouching)
             {
-                //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
-                speed = originalSpeed * 2.0f;
-                sprintMeater -= depletingSpeed * Time.deltaTime;
+                if (speed <= maxSpeed && !maxSpeedReached)
+                {
+                    speed = speed + acceleration * Time.deltaTime;
+                }
+                else
+                {
+                    maxSpeedReached = true;
+                }
 
-                if (speed < originalSpeed)
+                if (speed >= originalSpeed && maxSpeedReached)
+                {
+                    speed = speed - deceleration * Time.deltaTime;
+                }
+
+                if (speed <= originalSpeed)
                 {
                     speed = originalSpeed;
+                    maxSpeedReached = false;
                 }
-            }
-            else if (sprintMeater <= 0.0f)
-            {
-                sprintMeater = 0.0f;
-                speed = originalSpeed;
             }
         }
         else
         {
             speed = originalSpeed;
-
-            if(sprintMeater >= 100.0f)
-            {
-                sprintMeater = 100.0f;
-            }
-            else
-            {
-                sprintMeater += depletingSpeed * Time.deltaTime;
-            }
-
-            if(sprintMeater <= depletingCap)
-            {
-                needCharging = true;
-            }else
-            {
-                needCharging = false;
-            }
-
+            maxSpeedReached = false;
             isSprinting = false;
         }
     }
+
 
     void Crouching()
     {
