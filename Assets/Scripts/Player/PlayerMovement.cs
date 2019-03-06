@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float gravity = 20.0f;
     private float originalSpeed;
     private float gravityHolder;
+    private float tempTime;
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 playerSize;
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         playerSize = transform.localScale;
         gravityHolder = gravity;
         originalSpeed = speed;
+        tempTime = Time.deltaTime;
     }
 
     void FixedUpdate()
@@ -75,9 +77,17 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection = moveDirection * speed;
 
-        if (CharController.velocity.magnitude < 2f && CharController.isGrounded)
+        if (CharController.velocity.magnitude >= 2f)
         {
-            audioSource.Play();
+            if (Time.time >= tempTime + audioSource.clip.length || Time.time <= audioSource.clip.length)
+            {
+                audioSource.Play();
+                tempTime = Time.time;
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 

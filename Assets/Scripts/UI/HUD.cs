@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     private float time;
 
     public string mainMenu;
+    public string message;
 
     private GameManager GameManager;
     private GameObject loseCanvas;
@@ -22,7 +23,12 @@ public class HUD : MonoBehaviour
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         loseCanvas = GameObject.Find("HUD/LoseCanvas");
         winCanvas = GameObject.Find("HUD/WinCanvas");
-        text = GameObject.Find("HUD/TimerCanvas/TimerText");
+        text = GameObject.Find("HUD/MessageCanvas/MessageText");
+    }
+
+    void Start()
+    {
+        messageForPlayer();
     }
 
     void Update()
@@ -45,6 +51,11 @@ public class HUD : MonoBehaviour
         {
             text.GetComponent<Text>().text = "0:00";
         }
+    }
+
+    void messageForPlayer()
+    {
+        text.GetComponent<Text>().text = message;
     }
 
     IEnumerator ReloadLose()
