@@ -172,6 +172,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "KeyCard")
+        {
+            this.gameObject.GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
+            Destroy(other);
+        }
         if(other.tag == "Finish")
         {
             Debug.Log("Win!!!");

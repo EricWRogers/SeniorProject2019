@@ -6,11 +6,29 @@ public class DoorScript : MonoBehaviour
 {
     Animator anim;
     public string MyLock =  "";
-
+    public Component[] Light1;
+ 
+    Color purpleDoor = Color.magenta;
+    Color blueDoor = Color.blue;
+    Color greenDoor = Color.green;
+    Color redDoor = Color.red;
+    public Color doorColor;
     void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("PlayerNearDoor", false);
+        if (MyLock == "Blue")
+            doorColor = blueDoor;
+        if (MyLock == "Green")
+            doorColor = greenDoor;
+        if (MyLock == "Purple")
+            doorColor = purpleDoor;
+
+        Light1 = gameObject.GetComponentsInChildren<Light>();
+        foreach (Light light in Light1)
+        {
+            light.color = doorColor;
+        }
     }
 
     void OnTriggerEnter(Collider other)
