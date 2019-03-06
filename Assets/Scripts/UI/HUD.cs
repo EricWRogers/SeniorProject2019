@@ -21,8 +21,8 @@ public class HUD : MonoBehaviour
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        //loseCanvas = GameObject.Find("HUD/LoseCanvas");
-        //winCanvas = GameObject.Find("HUD/WinCanvas");
+        //loseCanvas = 
+        //winCanvas = 
         text = GameObject.Find("HUD/MessageCanvas/MessageText");
     }
 
