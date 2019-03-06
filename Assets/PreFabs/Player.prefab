@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 959440156}
   - component: {fileID: 1635734425214141142}
   - component: {fileID: 6952691403254199167}
+  - component: {fileID: 1738741865}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -318,7 +319,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -419,6 +420,19 @@ MonoBehaviour:
   depletingSpeed: 50
   depletingCap: 50
   attacked: 0
+--- !u!114 &1738741865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952691403254199045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199b11391fe8e5c9197bc28ba8aa7c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeysInPocket: []
 --- !u!1 &6952691404256912241
 GameObject:
   m_ObjectHideFlags: 0
