@@ -17,6 +17,8 @@ ModelImporter:
     3300002: outer_creature
     4300000: outer_creature
     4300002: inner_creature
+    6400000: inner_creature
+    6400002: outer_creature
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -48,9 +50,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
