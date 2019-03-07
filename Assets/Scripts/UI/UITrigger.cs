@@ -10,6 +10,11 @@ public class UITrigger : MonoBehaviour
     public Text TextBox;
     public string TextToShow;
 
+    private void Awake()
+    {
+        UIToShow.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
