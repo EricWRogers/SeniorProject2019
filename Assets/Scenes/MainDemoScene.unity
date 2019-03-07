@@ -1212,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 400209d46b066674e8b66e63700c76f2, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 400209d46b066674e8b66e63700c76f2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -1230,7 +1234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 400209d46b066674e8b66e63700c76f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -295.4
+      value: -292.18
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 400209d46b066674e8b66e63700c76f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1416,7 +1420,7 @@ PrefabInstance:
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
@@ -3899,7 +3903,7 @@ PrefabInstance:
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
@@ -5340,7 +5344,7 @@ PrefabInstance:
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
@@ -5480,7 +5484,7 @@ PrefabInstance:
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4628535835757880878, guid: b48a8211f4fe9de4289b79cddf46a5fe,
         type: 3}
@@ -6052,7 +6056,7 @@ PrefabInstance:
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 95.4
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
@@ -6062,7 +6066,7 @@ PrefabInstance:
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 382.5
+      value: -286
       objectReference: {fileID: 0}
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
@@ -10489,7 +10493,7 @@ PrefabInstance:
     - target: {fileID: 6188670759675184881, guid: ae12be8ff21202446bc8eb629e87fc4a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -465.82
+      value: -462.6
       objectReference: {fileID: 0}
     - target: {fileID: 6188670759675184881, guid: ae12be8ff21202446bc8eb629e87fc4a,
         type: 3}
@@ -11835,7 +11839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890852133, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
       propertyPath: message
-      value: Find Keys to get to comm Room and Leave
+      value: Find Keys and get to Yellow Lit Door
       objectReference: {fileID: 0}
     - target: {fileID: 8976172342048540655, guid: e49a6121ee5cf4c438903782ad7f46aa,
         type: 3}
