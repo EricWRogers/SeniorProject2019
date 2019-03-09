@@ -6126,7 +6126,17 @@ PrefabInstance:
     - target: {fileID: 1635734425214141142, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_Volume
-      value: 0.13
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952691404256912242, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952691404256912242, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: isGlobal
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e153226711df47049a4cf8f4fa132f82, type: 3}
@@ -10475,6 +10485,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 894293229}
     m_Modifications:
+    - target: {fileID: 1348460894365618880, guid: ae12be8ff21202446bc8eb629e87fc4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348460894365618880, guid: ae12be8ff21202446bc8eb629e87fc4a,
+        type: 3}
+      propertyPath: m_Name
+      value: FinishedDoorLight
+      objectReference: {fileID: 0}
     - target: {fileID: 6188670759675184881, guid: ae12be8ff21202446bc8eb629e87fc4a,
         type: 3}
       propertyPath: m_RootOrder
@@ -10519,16 +10539,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1348460894365618880, guid: ae12be8ff21202446bc8eb629e87fc4a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1348460894365618880, guid: ae12be8ff21202446bc8eb629e87fc4a,
-        type: 3}
-      propertyPath: m_Name
-      value: FinishedDoorLight
       objectReference: {fileID: 0}
     - target: {fileID: 5454216714572598715, guid: ae12be8ff21202446bc8eb629e87fc4a,
         type: 3}

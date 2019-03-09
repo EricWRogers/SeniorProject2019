@@ -13,7 +13,7 @@ public class DoorScript : MonoBehaviour
     Color greenDoor = Color.green;
     Color redDoor = Color.red;
     public Color doorColor;
-
+    AudioSource audioSource;
     
 
     void Start()
@@ -35,7 +35,7 @@ public class DoorScript : MonoBehaviour
             light.color = doorColor;
         }
 
-        AudioManager.instance.CreateAudioSource("SlidingDoor", this.gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -45,20 +45,21 @@ public class DoorScript : MonoBehaviour
             if(other.gameObject.GetComponent<KeyChain>().KeysInPocket.Contains(MyLock))
             {
                 anim.SetBool("PlayerNearDoor", true);
-                AudioManager.instance.PlayLocationSound("SlidingDoor");
+                if(!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
             }
         }
         if ( other.gameObject.CompareTag("entity"))
         {
-            anim.SetBool("PlayerNearDoor", true);
-            //FindObjectOfType<AudioManager>().PlayLocationSound("SlidingDoor");
+            anim.SetBool("PlayerNearDoor", true);            
         }
     }
     void OnTriggerExit(Collider other)
     {
         if(other.gameObject.CompareTag("Player")|| other.gameObject.CompareTag("entity"))
-        {
-         
+        {         
             anim.SetBool("PlayerNearDoor", false);
         }
     }
