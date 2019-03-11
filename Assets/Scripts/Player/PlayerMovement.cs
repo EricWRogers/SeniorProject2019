@@ -178,7 +178,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(other.tag == "KeyCard")
         {
-            this.gameObject.GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
+            GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
             Destroy(other);
         }
         if(other.tag == "Finish")

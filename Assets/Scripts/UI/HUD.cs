@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class HUD : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class HUD : MonoBehaviour
     public GameObject loseCanvas;
     public GameObject winCanvas;
     private GameObject text;
+    private GameObject greenKey;
+    private GameObject purpleKey;
+    private GameObject blueKey;
 
     void Awake()
     {
@@ -24,6 +28,9 @@ public class HUD : MonoBehaviour
         //loseCanvas = 
         //winCanvas = 
         text = GameObject.Find("HUD/MessageCanvas/MessageText");
+        greenKey = GameObject.Find("HUD/KeyCardCanvas/GreenKey");
+        purpleKey = GameObject.Find("HUD/KeyCardCanvas/PurpleKey");
+        blueKey = GameObject.Find("HUD/KeyCardCanvas/BlueKey");
     }
 
     void Start()
@@ -34,6 +41,7 @@ public class HUD : MonoBehaviour
     void Update()
     {
         //CalculateTimer();
+        ShowKeyCard();
     }
 
     void CalculateTimer()
@@ -84,6 +92,30 @@ public class HUD : MonoBehaviour
     public void ReloadSceneWin()
     {
         StartCoroutine(ReloadWin());
+    }
+
+    public void ShowKeyCard()
+    {
+        List<string> KeysInPocket = FindObjectOfType<KeyChain>().KeysInPocket;
+
+        //string keys = string.Join(",", KeysInPocket);
+        //keyCardText.GetComponent<Text>().text = (string)KeysInPocket;
+
+        if(KeysInPocket.Contains("Green"))
+        {
+            greenKey.SetActive(true);
+            //keyCardText.GetComponent<Text>().text = "Green Key";
+        }
+
+        if (KeysInPocket.Contains("Purple"))
+        {
+            purpleKey.SetActive(true);
+        }
+
+        if (KeysInPocket.Contains("Blue"))
+        {
+            blueKey.SetActive(true);
+        }
     }
 
 }
