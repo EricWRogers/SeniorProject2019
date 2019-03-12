@@ -16,10 +16,13 @@ public class AttackAction : Action
 
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.red);
         float distToTarget = Vector3.Distance(controller.eyes.transform.position, controller.gameManager.PlayerGO.transform.position);
+
         if (distToTarget < 25)
         {
-                Debug.Log("Attacked");
-            player.GetComponent<PlayerMovement>().attacked = true;
+            Debug.Log("Attacked");
+            //play animation
+            //check collision on state in animator
+
         }
     }
 }
