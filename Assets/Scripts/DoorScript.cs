@@ -29,7 +29,7 @@ public class DoorScript : MonoBehaviour
 
         Light1 = gameObject.GetComponentsInChildren<Light>();
 
-        Debug.Log(Light1.Length);
+       
         foreach (Light light in Light1)
         {
             light.color = doorColor;
