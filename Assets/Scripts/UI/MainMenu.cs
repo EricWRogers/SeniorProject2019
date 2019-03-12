@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuUI;
+    public GameObject difficultyUI;
     public GameObject optionsMenuUI;
     public GameObject creditsUI;
     public string gameSceneName;
@@ -25,12 +26,48 @@ public class MainMenu : MonoBehaviour
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
     }
 
-    public void Play()
+    public void PlayEasy()
     {
         Debug.Log("Loading " + gameSceneName);
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    public void PlayNormal()
+    {
+        Debug.Log("Loading " + gameSceneName);
+        SceneManager.LoadScene(gameSceneName);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void PlayHard()
+    {
+        Debug.Log("Loading " + gameSceneName);
+        SceneManager.LoadScene(gameSceneName);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void PlayHardcore()
+    {
+        Debug.Log("Loading " + gameSceneName);
+        SceneManager.LoadScene(gameSceneName);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void LoadDifficulty()
+    {
+        difficultyUI.SetActive(true);
+        mainMenuUI.SetActive(false);
+    }
+
+    public void CloseDifficulty()
+    {
+        difficultyUI.SetActive(false);
+        mainMenuUI.SetActive(true);
     }
 
     public void LoadOptions()
