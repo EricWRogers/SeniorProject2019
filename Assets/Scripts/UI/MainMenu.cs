@@ -32,6 +32,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        DifficultyManager.instance.adrenaline = 3;
     }
 
     public void PlayNormal()
@@ -40,6 +41,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        DifficultyManager.instance.adrenaline = 2;
     }
 
     public void PlayHard()
@@ -48,6 +50,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        DifficultyManager.instance.adrenaline = 1;
     }
 
     public void PlayHardcore()
@@ -56,6 +59,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        DifficultyManager.instance.adrenaline = 0;
     }
 
     public void LoadDifficulty()
