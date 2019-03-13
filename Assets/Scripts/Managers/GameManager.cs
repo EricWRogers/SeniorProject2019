@@ -8,20 +8,23 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject EntityGO;
     public GameObject[] RoomGOS;
+    public GameObject tMax;
+    public GameObject fullWaypoint = null;
 
     public float ScaredShitlessMeter;
     public float TimerSet;
     public bool stopTimer = false;
     public bool canDie = true;
 
-    public GameObject tMax;
-    public GameObject fullWaypoint = null;
+    private int adrenaline;
 
     void Start()
     {
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
+
+        adrenaline = DifficultyManager.instance.adrenaline;
     }
 
     void Update()
@@ -54,16 +57,12 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-           
             float dist = Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position);
             if (dist > maxDist)
             {
                 tMax = waypoint;
                 maxDist = dist;
-               
             }
-
-
         }
         if(fullWaypoint != null)
         {
@@ -106,6 +105,30 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void adrenalineAttack()
+    {
+        switch (adrenaline)
+        {
+            case 0:
+                GameOver();
+                break;
+            case 1:
+                adrenaline -= 1;
+                break;
+            case 2:
+                adrenaline -= 1;
+                break;
+            case 3:
+                adrenaline -= 1;
+                break;
+        }
+    }
+
+    void GameOver()
+    {
+
     }
 
     void GameTinmer()
