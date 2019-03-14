@@ -73,48 +73,40 @@ public class CamLooking : MonoBehaviour
 
         if (InputManager.instance.Lean_L())
         {
-            if (Physics.Raycast(transform.position, left, out hitInfoLeft, 6, LayerMask.NameToLayer("target")))
+            if (Physics.Raycast(transform.position, left, out hitInfoLeft, 6, 10))
             {
-                Debug.Log(hitInfoLeft.collider.gameObject.name);
-                curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-hitInfoLeft.distance, 1, 0), 0.1f);
-                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
+                //transform.rotation = Quaternion.Euler(leanlooking);
+                Player.GetComponent<PlayerMovement>().stopMoving = true;
             }
             else
             {
-                curAngle = Mathf.MoveTowardsAngle(curAngle, maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-1, 1, 0), 0.1f);
-                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
+                //transform.rotation = Quaternion.Euler(leanlooking);
+                Player.GetComponent<PlayerMovement>().stopMoving = true;
             }
         }
         else if (InputManager.instance.Lean_R())
         {
-            if (Physics.Raycast(transform.position, right, out hitInfoRight, 6, LayerMask.NameToLayer("target")))
+            if (Physics.Raycast(transform.position, right, out hitInfoRight, 6, 10))
             {
-                Debug.Log(hitInfoRight.collider.gameObject.name);
-                curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(hitInfoRight.distance, 1, 0), 0.1f);
-                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
-
+                //transform.rotation = Quaternion.Euler(leanlooking);
+                Player.GetComponent<PlayerMovement>().stopMoving = true; ;
             }
             else
             {
-                curAngle = Mathf.MoveTowardsAngle(curAngle, -maxAngle, speed * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(1, 1, 0), 0.1f);
-                transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
+                //transform.rotation = Quaternion.Euler(leanlooking);
+                Player.GetComponent<PlayerMovement>().stopMoving = true;
             }
         }
         else
         {
-            curAngle = Mathf.MoveTowardsAngle(curAngle, 0f, speed * Time.deltaTime);
-            transform.localPosition = Vector3.Lerp(transform.localPosition, camCenter, 0.3f);
-            transform.localRotation = Quaternion.AngleAxis(curAngle, Vector3.forward);
-
-            if(transform.localPosition == camCenter)
-            {
-                transform.rotation = Quaternion.Euler(targetRotCam);
-                Player.transform.rotation = Quaternion.Euler(targetRotBody);
-            }
+            Player.GetComponent<PlayerMovement>().stopMoving = false;
+            transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(0, 1, 0), 0.1f);
+            transform.rotation = Quaternion.Euler(targetRotCam);
+            Player.transform.rotation = Quaternion.Euler(targetRotBody);
         }
     }
 }
