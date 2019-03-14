@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool attacked = false;
     public bool maxSpeedReached = false;
+    public bool stopMoving = false;
 
     private float gravity = 20.0f;
     private float maxSpeed;
@@ -25,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool iscrouching = false;
     private bool isSprinting = false;
-    private bool stopMoving = false;
 
     GameObject Enemy;
     GameObject hud;
