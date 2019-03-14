@@ -15,6 +15,12 @@ public class UITrigger : MonoBehaviour
         UIToShow.SetActive(false);
     }
 
+    private void Update()
+    {
+        Vector3 objPos = Camera.main.WorldToScreenPoint(this.transform.position);
+        TextBox.transform.position = objPos;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))

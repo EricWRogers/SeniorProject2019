@@ -23,7 +23,7 @@ TagManager:
   - target
   - Fire
   - PostProcessing
-  - 
+  - Global UI
   - 
   - 
   - 
@@ -45,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Global UI
+    uniqueID: 3436946523
     locked: 0
