@@ -71,6 +71,8 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         SceneManager.LoadScene(mainMenuScene);
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1;
     }
 
     void Update()
