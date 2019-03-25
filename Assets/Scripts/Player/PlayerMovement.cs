@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
 
-    public bool attacked = false;
     public bool stopMoving = false;
 
     public AudioClip walkingClip;
@@ -71,8 +70,6 @@ public class PlayerMovement : MonoBehaviour
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
             CharController.Move(moveDirection * Time.deltaTime);
-
-            GameOver();
         }
     }
 
@@ -194,19 +191,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void GameOver()
-    {
-        if (attacked)
-        {
-            Debug.Log("Game Over!!!");
-            Enemy.SetActive(false);
-            stopMoving = true;
-            GetComponentInChildren<CamLooking>().enabled = false;
-            pauseUI.GetComponent<PauseMenu>().enabled = false;
-            hud.GetComponent<HUD>().ReloadSceneLose();
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "KeyCard")
@@ -214,6 +198,7 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
             Destroy(other);
         }
+
         if(other.tag == "Finish")
         {
             Debug.Log("Win!!!");

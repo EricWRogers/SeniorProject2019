@@ -20,9 +20,9 @@ public class AttackAction : Action
         if (distToTarget < 25)
         {
             Debug.Log("Attacked");
+            controller.gameManager.adrenalineAttacked();
             //play animation
             //check collision on state in animator
-
         }
     }
 }

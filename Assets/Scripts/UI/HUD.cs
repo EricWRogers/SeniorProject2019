@@ -72,7 +72,7 @@ public class HUD : MonoBehaviour
         Debug.Log("waiting");
         yield return new WaitForSeconds(reloadTime);
         //Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(mainMenu);
+        //SceneManager.LoadScene(mainMenu);
     }
 
     IEnumerator ReloadWin()

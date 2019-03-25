@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerGO;
     public GameObject EntityGO;
+    public GameObject HudGO;
+    public GameObject PauseUIGO;
     public GameObject[] RoomGOS;
     public GameObject tMax;
     public GameObject fullWaypoint = null;
@@ -16,15 +19,18 @@ public class GameManager : MonoBehaviour
     public bool stopTimer = false;
     public bool canDie = true;
 
-    private int adrenaline;
+    public int adrenaline;
 
     void Start()
     {
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
-
+        HudGO = HudGO = GameObject.Find("HUD");
+        PauseUIGO = GameObject.Find("Pause UI");
         adrenaline = DifficultyManager.instance.adrenaline;
+
+        Debug.Log(adrenaline);
     }
 
     void Update()
@@ -36,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         PollAgression();
         PollScareShitlessMeter();
-        GameTinmer();
+        //GameTinmer();
     }
 
     private void PollAgression()
@@ -107,7 +113,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void adrenalineAttack()
+    public void adrenalineAttacked()
     {
         switch (adrenaline)
         {
@@ -115,20 +121,25 @@ public class GameManager : MonoBehaviour
                 GameOver();
                 break;
             case 1:
-                adrenaline -= 1;
+                Attacked();
                 break;
             case 2:
-                adrenaline -= 1;
+                Attacked();
                 break;
             case 3:
-                adrenaline -= 1;
+                Attacked();
                 break;
         }
     }
 
     void GameOver()
     {
+        Debug.Log("Game Over!!!");
+    }
 
+    void Attacked()
+    {
+        adrenaline -= 1;
     }
 
     void GameTinmer()
