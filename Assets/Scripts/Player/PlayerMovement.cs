@@ -6,19 +6,20 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public float sprintingWait = 5.0f;
-    public float acceleration = 3f;
-    public float deceleration = 6f;
+    public float sprintMeater = 100.0f;
+    public float depletingSpeed = 10f;
+    public float depletingCap = 50.0f;
 
     public bool attacked = false;
-    public bool maxSpeedReached = false;
     public bool stopMoving = false;
+
+    public AudioClip walkingClip;
+    public AudioClip sprintingClip;
 
     private float gravity = 20.0f;
     private float maxSpeed;
     private float originalSpeed;
     private float gravityHolder;
-    private float sprintingWaitHolder;
     private float tempTime;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool iscrouching = false;
     private bool isSprinting = false;
+    private bool needCharging = false;
 
     GameObject Enemy;
     GameObject hud;
@@ -52,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
         playerSize = transform.localScale;
         gravityHolder = gravity;
         originalSpeed = speed;
-        sprintingWaitHolder = sprintingWait;
         tempTime = Time.deltaTime;
         maxSpeed = speed * 3;
     }
@@ -70,9 +71,9 @@ public class PlayerMovement : MonoBehaviour
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
             CharController.Move(moveDirection * Time.deltaTime);
-        }
 
-        GameOver();
+            GameOver();
+        }
     }
 
     void Movement()
@@ -83,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (CharController.velocity.magnitude >= 2f)
         {
-            if (Time.time >= tempTime + audioSource.clip.length || Time.time <= audioSource.clip.length)
+            if (Time.time >= tempTime + audioSource.clip.length && !isSprinting)
             {
                 audioSource.Play();
                 tempTime = Time.time;
@@ -101,37 +102,69 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
 
-            if(!iscrouching)
+            if (sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
             {
-                if (speed <= maxSpeed && !maxSpeedReached)
+                audioSource.clip = sprintingClip;
+
+                if(!audioSource.isPlaying)
                 {
-                    speed = speed + acceleration * Time.deltaTime;
-                }
-                else
-                {
-                    maxSpeedReached = true;
+                    audioSource.Play();
                 }
 
-                if (speed >= originalSpeed && maxSpeedReached)
-                {
-                    speed = speed - deceleration * Time.deltaTime;
-                }
+                //speed = originalSpeed * (2.0f * ( sprintMeater * 0.01f ));
+                speed = originalSpeed * 2.0f;
+                sprintMeater -= depletingSpeed * Time.deltaTime;
 
-                if (speed <= originalSpeed)
+                if (speed < originalSpeed)
                 {
                     speed = originalSpeed;
-                    maxSpeedReached = false;
+                }
+            }
+            else if (sprintMeater <= 0.0f)
+            {
+                sprintMeater = 0.0f;
+                speed = originalSpeed;
+
+                audioSource.clip = walkingClip;
+
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
                 }
             }
         }
         else
         {
+            audioSource.clip = walkingClip;
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
             speed = originalSpeed;
-            maxSpeedReached = false;
+
+            if (sprintMeater >= 100.0f)
+            {
+                sprintMeater = 100.0f;
+            }
+            else
+            {
+                sprintMeater += depletingSpeed * Time.deltaTime;
+            }
+
+            if (sprintMeater <= depletingCap)
+            {
+                needCharging = true;
+            }
+            else
+            {
+                needCharging = false;
+            }
+
             isSprinting = false;
         }
     }
-
 
     void Crouching()
     {

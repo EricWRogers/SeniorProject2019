@@ -51,7 +51,6 @@ public class PauseMenu : MonoBehaviour
         pauseCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        player.GetComponent<AudioSource>().Play();
         sanityWhispers.GetComponent<AudioSource>().Play();
         //pauseMenuUI.SetActive(false);
     }
@@ -82,7 +81,6 @@ public class PauseMenu : MonoBehaviour
 
     void CheckPause()
     {
-        //Debug.Log(InputManager.instance.Pause());
         if (InputManager.instance.Pause())
         {
             if (pauseCanvas.activeSelf)

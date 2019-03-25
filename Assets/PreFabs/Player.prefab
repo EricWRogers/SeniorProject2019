@@ -317,9 +317,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -328,7 +328,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -415,11 +415,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 277d6e7305b6b4f9eb11883a64ba4b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 19
-  sprintingWait: 2
-  acceleration: 10
+  speed: 20
+  sprintMeater: 100
+  depletingSpeed: 25
+  depletingCap: 50
   attacked: 0
-  maxSpeedReached: 0
+  stopMoving: 0
+  walkingClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
+  sprintingClip: {fileID: 8300000, guid: e7fbb26e7aeed894fb36eaa0846ecf5d, type: 3}
 --- !u!114 &1738741865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,7 +500,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 6967
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
