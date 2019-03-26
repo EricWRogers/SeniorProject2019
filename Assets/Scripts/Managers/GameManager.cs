@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     public float TimerSet;
     public bool stopTimer = false;
     public bool canDie = true;
-
+    public bool playerAttacked;
+    public bool wakeUp;
     public int adrenaline;
 
     void Start()
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
         adrenaline = DifficultyManager.instance.adrenaline;
 
         Debug.Log(adrenaline);
+        playerAttacked = false;
+        wakeUp = false;
     }
 
     void Update()
@@ -115,21 +118,14 @@ public class GameManager : MonoBehaviour
 
     public void adrenalineAttacked()
     {
-        switch (adrenaline)
-        {
-            case 0:
-                GameOver();
-                break;
-            case 1:
-                Attacked();
-                break;
-            case 2:
-                Attacked();
-                break;
-            case 3:
-                Attacked();
-                break;
-        }
+       if(adrenaline!=0)
+       {
+           Attacked();
+       }
+       else
+       {
+          GameOver();
+       }
     }
 
     void GameOver()
@@ -139,7 +135,26 @@ public class GameManager : MonoBehaviour
 
     void Attacked()
     {
-        adrenaline -= 1;
+        playerAttacked = true;
+        adrenaline--;
+        //do blink 
+        //
+        //
+
+        //do audio stuff heart yada
+        //do not let blink up till wake up is true
+        //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
+        //entitys script not here 
+    }
+    void WakeUp()
+    {
+        if(wakeUp == true)
+        {
+            //wake up will be set true by entity
+            //do wake up
+        }
+        
+
     }
 
     void GameTinmer()
