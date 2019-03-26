@@ -15,6 +15,7 @@ public class EntityStats : ScriptableObject
     //attack variables
     public int attackRange;
     public float attackRate;
+    public float attackPower;
 
     public float wanderDuration;
     public float searchDuration;

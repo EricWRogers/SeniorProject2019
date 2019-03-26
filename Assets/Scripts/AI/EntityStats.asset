@@ -17,7 +17,8 @@ MonoBehaviour:
   wanderRadius: 100
   minPlayerDetectDist: 4
   attackRange: 100
-  attackRate: 1.5
+  attackRate: 0.5
+  attackPower: 300
   wanderDuration: 15
   searchDuration: 1.5
   searchingTurnSpeed: 2
