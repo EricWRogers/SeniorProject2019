@@ -8,6 +8,7 @@ using System.Linq;
 public class HUD : MonoBehaviour
 {
     public float reloadTime = 5.0f;
+    public float tutTime = 5.0f;
 
     private float time;
 
@@ -22,6 +23,10 @@ public class HUD : MonoBehaviour
     private GameObject purpleKey;
     private GameObject blueKey;
 
+    public GameObject tutCanvas;
+    public Text tutText;
+    CharacterController CharController;
+
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
@@ -31,11 +36,13 @@ public class HUD : MonoBehaviour
         greenKey = GameObject.Find("HUD/KeyCardCanvas/GreenKey");
         purpleKey = GameObject.Find("HUD/KeyCardCanvas/PurpleKey");
         blueKey = GameObject.Find("HUD/KeyCardCanvas/BlueKey");
+        CharController = (CharacterController)FindObjectOfType(typeof(CharacterController));
     }
 
     void Start()
     {
         messageForPlayer();
+        PlayTutorial("test 1");
     }
 
     void Update()
@@ -118,4 +125,45 @@ public class HUD : MonoBehaviour
         }
     }
 
+    //public void PlayTutorialText(string text)
+    //{
+    //    float curTime = Time.time;
+    //    float duration = 5;
+    //    tutText.text = text;
+
+    //    if(Time.time == curTime+duration)
+    //    {
+    //        tutText.text = "";
+    //    }
+    //}
+
+    public void PlayTutorial(string text1)
+    {
+        StartCoroutine(PlayTutorialText(text1));
+    }
+
+    IEnumerator PlayTutorialText(string text1)
+    {
+        //movement tut
+        tutText.text = "WASD to move";
+
+        yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+        yield return new WaitForSeconds(.5f);
+        tutText.text = "Shift to sprint";
+        //sprint tut
+
+        yield return new WaitWhile(() => !InputManager.instance.Sprint());
+        yield return new WaitForSeconds(.5f);
+        tutText.text = "";
+    }
+
+    void FadeIn(Image i)
+    {
+        i.CrossFadeAlpha(1.0f, 1.5f, false);
+    }
+
+    void FadeOut(Image i)
+    {
+        i.CrossFadeAlpha(0.0f, 2.5f, false);
+    }
 }
