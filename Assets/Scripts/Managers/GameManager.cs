@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public float emptyScreenTime = 2.5f;
     public bool stopTimer = false;
     public bool playerAttacked;
+    public bool testWakeUp;
     public bool wakeUp;
     public int adrenaline;
 
@@ -34,16 +35,24 @@ public class GameManager : MonoBehaviour
         HudGO = HudGO = GameObject.Find("HUD");
         PauseUIGO = GameObject.Find("Pause UI");
         blackImage = GameObject.Find("BlackOut Canvas/Black Image").GetComponent<Image>();
-        adrenaline = DifficultyManager.instance.adrenaline;
+
+        if(DifficultyManager.instance != null)
+        {
+            adrenaline = DifficultyManager.instance.adrenaline;
+        }
 
         Debug.Log(adrenaline);
         playerAttacked = false;
         wakeUp = false;
+        testWakeUp = false;
     }
 
     void Update()
     {
-
+        if(testWakeUp)
+        {
+            WakeUp();
+        }
     }
 
     void FixedUpdate()
@@ -140,36 +149,49 @@ public class GameManager : MonoBehaviour
 
     void Attacked()
     {
+        //do audio stuff heart yada
+        //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
+        //entitys script not here 
+
         playerAttacked = true;
         adrenaline--;
         HudGO.SetActive(false);
+        PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
+        PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
 
         if (blackImage != null)
         {
             blackImage.CrossFadeAlpha(255f, 0.2f, false);
         }
-
-        //
-        //
-
-        //do audio stuff heart yada
-        //do not let blink up till wake up is true
-        //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
-        //entitys script not here 
     }
 
     void WakeUp()
     {
         if(wakeUp)
         {
-            //wake up will be set true by entity
+            HudGO.SetActive(true);
+            PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
+            PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
 
             if (blackImage != null)
             {
                 blackImage.CrossFadeAlpha(1f, 0.2f, false);
             }
-            
-            HudGO.SetActive(true);
+        }
+
+        //For Testing Only
+        {
+            if (!wakeUp)
+            {
+                HudGO.SetActive(false);
+                PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
+                PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
+
+                if (blackImage != null)
+                {
+                    blackImage.CrossFadeAlpha(255f, 0.2f, false);
+                }
+            }
         }
     }
 
