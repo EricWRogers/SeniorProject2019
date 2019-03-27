@@ -143,7 +143,12 @@ public class GameManager : MonoBehaviour
         playerAttacked = true;
         adrenaline--;
         HudGO.SetActive(false);
-        blackImage.CrossFadeAlpha(255f, 0.2f, false);
+
+        if (blackImage != null)
+        {
+            blackImage.CrossFadeAlpha(255f, 0.2f, false);
+        }
+
         //
         //
 
@@ -158,7 +163,12 @@ public class GameManager : MonoBehaviour
         if(wakeUp)
         {
             //wake up will be set true by entity
-            blackImage.CrossFadeAlpha(, 0.2f, false);
+
+            if (blackImage != null)
+            {
+                blackImage.CrossFadeAlpha(1f, 0.2f, false);
+            }
+            
             HudGO.SetActive(true);
         }
     }
