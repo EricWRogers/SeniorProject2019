@@ -17,15 +17,17 @@ public class AttackAction : Action
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.red);
         float distToTarget = Vector3.Distance(controller.eyes.transform.position, controller.gameManager.PlayerGO.transform.position);
 
-        if (distToTarget < 25  )//&&player attacked 
+        if (distToTarget < 25 && !controller.gameManager.playerAttacked  )//&&player attacked 
         {
-            Debug.Log("Attacked");
-            controller.gameManager.adrenalineAttacked();
+            Debug.Log("Attacked"); 
             Vector3 moveDirection = controller.gameManager.PlayerGO.transform.position - controller.transform.position;
-            controller.gameManager.PlayerGO.GetComponent<Rigidbody>().AddForce(moveDirection.normalized * controller.enemyStats.attackPower);
             //play animation
             //check collision on state in animator
             //play audio
+             controller.gameManager.adrenalineAttacked();
+            controller.gameManager.PlayerGO.GetComponent<Rigidbody>().AddForce(moveDirection.normalized * controller.enemyStats.attackPower);
+           
+            
         }
     }
 }

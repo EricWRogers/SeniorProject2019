@@ -40,8 +40,7 @@ public class GameManager : MonoBehaviour
         {
             adrenaline = DifficultyManager.instance.adrenaline;
         }
-
-        Debug.Log(adrenaline);
+        
         playerAttacked = false;
         wakeUp = false;
         testWakeUp = false;
@@ -144,7 +143,7 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-        Debug.Log("Game Over!!!");
+        //Debug.Log("Game Over!!!");
     }
 
     void Attacked()
@@ -152,8 +151,14 @@ public class GameManager : MonoBehaviour
         //do audio stuff heart yada
         //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
         //entitys script not here 
-
+    Debug.Log("stuff should be happening");
         playerAttacked = true;
+
+        if(playerAttacked)
+        PlayerGO.layer = 9;
+        else
+        PlayerGO.layer = 10;
+
         adrenaline--;
         HudGO.SetActive(false);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
