@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -16,11 +17,14 @@ public class GameManager : MonoBehaviour
 
     public float ScaredShitlessMeter;
     public float TimerSet;
+    public float imageScreenTime = 2.5f;
+    public float emptyScreenTime = 2.5f;
     public bool stopTimer = false;
-    public bool canDie = true;
     public bool playerAttacked;
     public bool wakeUp;
     public int adrenaline;
+
+    private Image blackImage;
 
     void Start()
     {
@@ -29,6 +33,7 @@ public class GameManager : MonoBehaviour
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
         HudGO = HudGO = GameObject.Find("HUD");
         PauseUIGO = GameObject.Find("Pause UI");
+        blackImage = GameObject.Find("BlackOut Canvas/Black Image").GetComponent<Image>();
         adrenaline = DifficultyManager.instance.adrenaline;
 
         Debug.Log(adrenaline);
@@ -38,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     void FixedUpdate()
@@ -137,7 +142,8 @@ public class GameManager : MonoBehaviour
     {
         playerAttacked = true;
         adrenaline--;
-        //do blink 
+        HudGO.SetActive(false);
+        blackImage.CrossFadeAlpha(255f, 0.2f, false);
         //
         //
 
@@ -146,15 +152,15 @@ public class GameManager : MonoBehaviour
         //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
         //entitys script not here 
     }
+
     void WakeUp()
     {
-        if(wakeUp == true)
+        if(wakeUp)
         {
             //wake up will be set true by entity
-            //do wake up
+            blackImage.CrossFadeAlpha(, 0.2f, false);
+            HudGO.SetActive(true);
         }
-        
-
     }
 
     void GameTinmer()
