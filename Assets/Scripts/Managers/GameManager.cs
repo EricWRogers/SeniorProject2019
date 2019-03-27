@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public float emptyScreenTime = 2.5f;
     public bool stopTimer = false;
     public bool playerAttacked;
-    public bool testWakeUp;
+    public bool testKnockOut;
     public bool wakeUp;
     public int adrenaline;
 
@@ -43,12 +43,12 @@ public class GameManager : MonoBehaviour
         
         playerAttacked = false;
         wakeUp = false;
-        testWakeUp = false;
+        testKnockOut = false;
     }
 
     void Update()
     {
-        if(testWakeUp)
+        if(testKnockOut)
         {
             WakeUp();
         }
@@ -91,7 +91,8 @@ public class GameManager : MonoBehaviour
             VFXRoomManager RoomM = fullWaypoint.GetComponent<VFXRoomManager>();
             if (Vector3.Distance(fullWaypoint.transform.position, EntityGO.transform.position) < 100.0f)
             {
-                if (RoomM.agressionMeter >= 0f){
+                if (RoomM.agressionMeter >= 0f)
+                {
                     RoomM.agressionMeter = RoomM.agressionMeter - 15f * Time.deltaTime;
                 } else {
                     RoomM.agressionMeter = 0f;
