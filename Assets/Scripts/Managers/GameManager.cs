@@ -40,6 +40,10 @@ public class GameManager : MonoBehaviour
         {
             adrenaline = DifficultyManager.instance.adrenaline;
         }
+        else
+        {
+            adrenaline = 3;
+        }
         
         playerAttacked = false;
         wakeUp = false;
@@ -152,7 +156,7 @@ public class GameManager : MonoBehaviour
         //do audio stuff heart yada
         //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
         //entitys script not here 
-    Debug.Log("stuff should be happening");
+        Debug.Log("stuff should be happening");
         playerAttacked = true;
 
         if(playerAttacked)
