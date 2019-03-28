@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class StateController : MonoBehaviour
 {
+    public static ThrowObject _throwObject;
 
     public State currentState;
     public EntityStats enemyStats;
@@ -24,9 +25,15 @@ public class StateController : MonoBehaviour
     [Range(0, 360)]
     public float viewAngle;
     
+    public ThrowObject throwableObject {
+        get {
+            return StateController._throwObject;
+        }
 
-
-
+        set {
+            StateController._throwObject = value;
+        }
+    }  
 
     void Awake()
     {
