@@ -11,9 +11,17 @@ public class AgressiveAction : Action
 
     private void Agressive(StateController controller)
     {
+        
         if (controller.gameManager.fullWaypoint != null)
         {
             controller.navMeshAgent.SetDestination(controller.gameManager.fullWaypoint.transform.position);
         }
     }
+
+    public override void OnStateExit(StateController controller)
+    {
+        base.OnStateExit(controller);
+        controller.navMeshAgent.speed = controller.normalSpeed;
+    }
+    
 }

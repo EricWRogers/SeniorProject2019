@@ -16,12 +16,15 @@ public class StateController : MonoBehaviour
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
     public float normalSpeed = 20f;
+    public float runspeed = 24f;
     //fov 
     public LayerMask playerTargetMask;
     public LayerMask ObstacleMask;
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
+    
+
 
 
 
@@ -29,6 +32,7 @@ public class StateController : MonoBehaviour
     {
         
         navMeshAgent = GetComponent<NavMeshAgent>();
+        
         
     }
     private void Start()
