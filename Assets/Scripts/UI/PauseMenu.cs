@@ -18,12 +18,12 @@ public class PauseMenu : MonoBehaviour
     public Slider SFXVolumeSlider;
 
     GameObject player;
-    GameObject sanityWhispers;
+    AudioSource sanityWhispers;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        sanityWhispers = GameObject.Find("Player/Sanity Whispers");
+        sanityWhispers = player.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>();
     }
 
     void Start()
@@ -51,6 +51,7 @@ public class PauseMenu : MonoBehaviour
         pauseCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        player.GetComponent<AudioSource>().Play();
         sanityWhispers.GetComponent<AudioSource>().Play();
         //pauseMenuUI.SetActive(false);
     }
@@ -93,10 +94,4 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-
-    public void GameOver()
-    {
-
-    }
-
 }

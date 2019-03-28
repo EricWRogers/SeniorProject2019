@@ -10,11 +10,7 @@ public class CamLooking : MonoBehaviour
     public float speed = 100f;
     public float maxAngle = 20f;
 
-    bool hitRight = false;
-    bool hitLeft = false;
-
     float xAxisClamp = 0.0f;
-    float curAngle = 0f;
 
     GameObject Player;
 

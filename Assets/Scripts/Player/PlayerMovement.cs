@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    public float pantingSpeed;
     public float sprintMeater = 100.0f;
     public float depletingSpeed = 10f;
     public float depletingCap = 50.0f;
@@ -14,36 +15,29 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioClip walkingClip;
     public AudioClip sprintingClip;
+    public AudioClip pantingClip;
 
     private float gravity = 20.0f;
-    private float maxSpeed;
     private float originalSpeed;
     private float gravityHolder;
     private float tempTime;
+    private float audioPlayTime;
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 playerSize;
 
     private bool iscrouching = false;
     private bool isSprinting = false;
+    private bool doneSprinting = false;
     private bool needCharging = false;
 
-    GameObject Enemy;
-    GameObject hud;
-    GameObject pauseUI;
-
     GameManager gameManager;
-    Scene scene;
     AudioSource audioSource;
     CharacterController CharController;
 
     void Awake()
     {
-        Enemy = GameObject.FindGameObjectWithTag("entity");
-        hud = GameObject.Find("HUD");
-        pauseUI = GameObject.Find("Pause UI");
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        scene = SceneManager.GetActiveScene();
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -54,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         gravityHolder = gravity;
         originalSpeed = speed;
         tempTime = Time.deltaTime;
-        maxSpeed = speed * 3;
     }
 
     void FixedUpdate()
@@ -95,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Sprinting()
     {
-        if (InputManager.instance.Sprint())
+        if (InputManager.instance.Sprint() && !doneSprinting)
         {
             isSprinting = true;
 
@@ -119,7 +112,37 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (sprintMeater <= 0.0f)
             {
-                sprintMeater = 0.0f;
+                doneSprinting = true;
+            }
+        }
+        else
+        {
+
+            if (sprintMeater >= 100.0f)
+            {
+                sprintMeater = 100.0f;
+            }
+            else if(!doneSprinting)
+            {
+                sprintMeater += depletingSpeed * Time.deltaTime;
+            }
+
+            if (sprintMeater <= depletingCap)
+            {
+                needCharging = true;
+                doneSprinting = false;
+                speed = pantingSpeed;
+
+                audioSource.clip = pantingClip;
+
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                needCharging = false;
                 speed = originalSpeed;
 
                 audioSource.clip = walkingClip;
@@ -128,35 +151,6 @@ public class PlayerMovement : MonoBehaviour
                 {
                     audioSource.Play();
                 }
-            }
-        }
-        else
-        {
-            audioSource.clip = walkingClip;
-
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
-
-            speed = originalSpeed;
-
-            if (sprintMeater >= 100.0f)
-            {
-                sprintMeater = 100.0f;
-            }
-            else
-            {
-                sprintMeater += depletingSpeed * Time.deltaTime;
-            }
-
-            if (sprintMeater <= depletingCap)
-            {
-                needCharging = true;
-            }
-            else
-            {
-                needCharging = false;
             }
 
             isSprinting = false;
@@ -201,13 +195,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.tag == "Finish")
         {
-            Debug.Log("Win!!!");
-            Enemy.SetActive(false);
-            gameManager.stopTimer = true;
-            stopMoving = true;
-            GetComponentInChildren<CamLooking>().enabled = false;
-            pauseUI.GetComponent<PauseMenu>().enabled = false;
-            hud.GetComponent<HUD>().ReloadSceneWin();
+            gameManager.Win();
         }
     }
 }

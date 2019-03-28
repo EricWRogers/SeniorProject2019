@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6312834905052590554}
   - component: {fileID: 7711991011565635568}
   - component: {fileID: 3387011084622953932}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sanity Whispers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7122615499087629953}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 1635734425214141142}
   - component: {fileID: 6952691403254199167}
   - component: {fileID: 1738741865}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 0.671
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -416,13 +416,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  pantingSpeed: 15
   sprintMeater: 100
   depletingSpeed: 25
   depletingCap: 50
-  attacked: 0
   stopMoving: 0
   walkingClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
   sprintingClip: {fileID: 8300000, guid: e7fbb26e7aeed894fb36eaa0846ecf5d, type: 3}
+  pantingClip: {fileID: 8300000, guid: 9cd42de5659831e449875f5ad5f0f191, type: 3}
 --- !u!114 &1738741865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +450,7 @@ GameObject:
   - component: {fileID: 6952691404256912238}
   - component: {fileID: 6952691404256912242}
   - component: {fileID: 6952691404256912237}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -564,7 +565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5396086177761908854}
   - component: {fileID: 1451837744}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: RayCast
   m_TagString: Untagged
   m_Icon: {fileID: 0}

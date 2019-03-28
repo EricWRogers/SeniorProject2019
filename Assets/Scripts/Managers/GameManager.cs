@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject EntityGO;
     public GameObject HudGO;
-    public GameObject PauseUIGO;
     public GameObject[] RoomGOS;
     public GameObject tMax;
     public GameObject fullWaypoint = null;
@@ -21,22 +20,18 @@ public class GameManager : MonoBehaviour
     public float emptyScreenTime = 2.5f;
     public bool stopTimer = false;
     public bool playerAttacked;
-    public bool testKnockOut;
-    public bool wakeUp;
     public int adrenaline;
-
-    private Image blackImage;
 
     void Start()
     {
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
-        HudGO = HudGO = GameObject.Find("HUD");
-        PauseUIGO = GameObject.Find("Pause UI");
-        blackImage = GameObject.Find("BlackOut Canvas/Black Image").GetComponent<Image>();
+        HudGO = GameObject.Find("HUD");
 
-        if(DifficultyManager.instance != null)
+        playerAttacked = false;
+
+        if (DifficultyManager.instance != null)
         {
             adrenaline = DifficultyManager.instance.adrenaline;
         }
@@ -44,15 +39,12 @@ public class GameManager : MonoBehaviour
         {
             adrenaline = 3;
         }
-        
-        playerAttacked = false;
-        wakeUp = false;
-        testKnockOut = false;
     }
 
     void Update()
     {
-        if(testKnockOut)
+        // Only for Testing
+        if(Input.GetKeyDown(KeyCode.U))
         {
             WakeUp();
         }
@@ -62,7 +54,6 @@ public class GameManager : MonoBehaviour
     {
         PollAgression();
         PollScareShitlessMeter();
-        //GameTinmer();
     }
 
     private void PollAgression()
@@ -134,21 +125,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void adrenalineAttacked()
-    {
-       if(adrenaline!=0)
-       {
-           Attacked();
-       }
-       else
-       {
-          GameOver();
-       }
-    }
-
     void GameOver()
     {
-        //Debug.Log("Game Over!!!");
+        SceneManager.LoadScene("MainMenuScene");
+
+        Debug.Log("Game Over!!!");
     }
 
     void Attacked()
@@ -156,64 +137,42 @@ public class GameManager : MonoBehaviour
         //do audio stuff heart yada
         //when entity goes to farthest waypoint set wakeup to true then wake up will happen this will happen in
         //entitys script not here 
-        Debug.Log("stuff should be happening");
-        playerAttacked = true;
-
-        if(playerAttacked)
-        PlayerGO.layer = 9;
-        else
-        PlayerGO.layer = 10;
-
         adrenaline--;
+        playerAttacked = true;
+        PlayerGO.layer = LayerMask.NameToLayer("obstacles");
         HudGO.SetActive(false);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
+        PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
+    }
 
-        if (blackImage != null)
+    //Call this funichion when you want to WakeUp
+    public void WakeUp()
+    {
+        playerAttacked = false;
+        PlayerGO.layer = LayerMask.NameToLayer("target");
+        HudGO.SetActive(true);
+        PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
+        PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
+        PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Play();
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(1f, 0.2f, false);
+    }
+
+    public void adrenalineAttacked()
+    {
+        if (adrenaline != 0)
         {
-            blackImage.CrossFadeAlpha(255f, 0.2f, false);
+            Attacked();
+        }
+        else
+        {
+            GameOver();
         }
     }
 
-    void WakeUp()
+    public void Win()
     {
-        if(wakeUp)
-        {
-            HudGO.SetActive(true);
-            PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
-            PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
 
-            if (blackImage != null)
-            {
-                blackImage.CrossFadeAlpha(1f, 0.2f, false);
-            }
-        }
-
-        //For Testing Only
-        {
-            if (!wakeUp)
-            {
-                HudGO.SetActive(false);
-                PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
-                PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
-
-                if (blackImage != null)
-                {
-                    blackImage.CrossFadeAlpha(255f, 0.2f, false);
-                }
-            }
-        }
-    }
-
-    void GameTinmer()
-    {
-        if(!stopTimer)
-        {
-            TimerSet -= Time.deltaTime;
-        }
-        if (TimerSet <= 0.0f && !stopTimer)
-        {
-            stopTimer = true;
-        }
     }
 }
