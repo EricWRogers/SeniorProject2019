@@ -12,6 +12,8 @@ public class ArmUI : MonoBehaviour
     private GameObject player;
     private GameObject armCanvas;
 
+    private Animator animator;
+
     void Start()
     {
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
@@ -53,7 +55,6 @@ public class ArmUI : MonoBehaviour
             DisplayKeys();
         }
     }
-
 
     void DisplayAdrenaline()
     {
@@ -155,10 +156,5 @@ public class ArmUI : MonoBehaviour
                 armCanvas.transform.Find("Keys").transform.Find("Key_Purple").gameObject.SetActive(true);
             }
         }
-    }
-
-    void DisplayHartBeat()
-    {
-        
     }
 }

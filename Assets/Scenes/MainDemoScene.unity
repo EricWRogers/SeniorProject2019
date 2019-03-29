@@ -4864,7 +4864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0009765625, y: -0.024993896}
+  m_AnchoredPosition: {x: -0.0009765625, y: -0.025024414}
   m_SizeDelta: {x: -0, y: -0.050049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830226104
@@ -6251,11 +6251,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6456635223935803766, guid: e153226711df47049a4cf8f4fa132f82,
+    - target: {fileID: 6952691403254199040, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad2e701820a574a8f88b02144a20e66a, type: 2}
+    - target: {fileID: 959440156, guid: e153226711df47049a4cf8f4fa132f82, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956392422981383264, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1f0d3368f2c5f472cbf2425d00233c98, type: 2}
+      objectReference: {fileID: 9100000, guid: db3ccb311009c4aedb8bfd4e59c75c8a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e153226711df47049a4cf8f4fa132f82, type: 3}
 --- !u!1001 &1012977240
