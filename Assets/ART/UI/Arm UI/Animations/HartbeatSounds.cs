@@ -9,6 +9,11 @@ public class HartbeatSounds : MonoBehaviour
         Debug.Log("PLaying Hartbeat Sound");
     }
 
+    void PlayFastHartbeatSound()
+    {
+        Debug.Log("PLaying Hartbeat Sound");
+    }
+
     void PlayFlatlineSound()
     {
 
