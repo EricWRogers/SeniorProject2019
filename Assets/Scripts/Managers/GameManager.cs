@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public bool stopTimer = false;
     public bool playerAttacked;
     public int adrenaline;
+    public int explosives;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
         else
         {
             adrenaline = 3;
+            explosives = 3;
         }
     }
 
