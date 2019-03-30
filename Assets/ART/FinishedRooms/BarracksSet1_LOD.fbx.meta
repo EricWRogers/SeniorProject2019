@@ -171,6 +171,34 @@ ModelImporter:
     4300050: Barrack3_LOD3
     4300052: Barrack2_LOD3
     4300054: Barrack1_LOD3
+    6400000: Barrack1_LOD0
+    6400002: Barrack1_LOD1
+    6400004: Barrack1_LOD2
+    6400006: Barrack1_LOD3
+    6400008: Barrack2_LOD0
+    6400010: Barrack2_LOD1
+    6400012: Barrack2_LOD2
+    6400014: Barrack2_LOD3
+    6400016: Barrack3_LOD0
+    6400018: Barrack3_LOD1
+    6400020: Barrack3_LOD2
+    6400022: Barrack3_LOD3
+    6400024: Barrack4_LOD0
+    6400026: Barrack4_LOD1
+    6400028: Barrack4_LOD2
+    6400030: Barrack4_LOD3
+    6400032: Barrack5_LOD0
+    6400034: Barrack5_LOD1
+    6400036: Barrack5_LOD2
+    6400038: Barrack5_LOD3
+    6400040: Barrack6_LOD0
+    6400042: Barrack6_LOD1
+    6400044: Barrack6_LOD2
+    6400046: Barrack6_LOD3
+    6400048: BarrackSide1_Barrack_Cooridor_LOD0
+    6400050: BarrackSide1_Barrack_Cooridor_LOD1
+    6400052: BarrackSide1_Barrack_Cooridor_LOD2
+    6400054: BarrackSide1_Barrack_Cooridor_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -207,16 +235,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
