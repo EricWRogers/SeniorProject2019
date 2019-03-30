@@ -111,6 +111,23 @@ ModelImporter:
     4300028: pCylinder19_LOD3
     4300030: pCube12_LOD3
     4300032: Hydroponics_Collision
+    6400000: Hydroponics_Collision
+    6400002: pCube12_LOD0
+    6400004: pCube12_LOD1
+    6400006: pCube12_LOD2
+    6400008: pCube12_LOD3
+    6400010: pCylinder19_LOD0
+    6400012: pCylinder19_LOD1
+    6400014: pCylinder19_LOD2
+    6400016: pCylinder19_LOD3
+    6400018: pCylinder8_LOD0
+    6400020: pCylinder8_LOD1
+    6400022: pCylinder8_LOD2
+    6400024: pCylinder8_LOD3
+    6400026: pSphere2_LOD0
+    6400028: pSphere2_LOD1
+    6400030: pSphere2_LOD2
+    6400032: pSphere2_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -147,9 +164,9 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

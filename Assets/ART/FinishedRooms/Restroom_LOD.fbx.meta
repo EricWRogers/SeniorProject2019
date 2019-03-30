@@ -69,6 +69,16 @@ ModelImporter:
     4300014: BathroomStallDoor2
     4300016: BathroomStallDoor1
     4300018: BathroomStallDoor
+    6400000: BathroomStallDoor
+    6400002: BathroomStallDoor1
+    6400004: BathroomStallDoor2
+    6400006: BathroomStallDoor3
+    6400008: BathroomStallDoor4
+    6400010: BathroomStallDoor5
+    6400012: Restroom1_LOD0
+    6400014: Restroom1_LOD1
+    6400016: Restroom1_LOD2
+    6400018: Restroom1_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -105,16 +115,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

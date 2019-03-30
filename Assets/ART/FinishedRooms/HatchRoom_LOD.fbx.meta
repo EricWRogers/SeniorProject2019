@@ -54,6 +54,13 @@ ModelImporter:
     4300008: DoorFrame
     4300010: Door1
     4300012: Door2
+    6400000: Door1
+    6400002: Door2
+    6400004: DoorFrame
+    6400006: HatchRoom_object_LOD0
+    6400008: HatchRoom_object_LOD1
+    6400010: HatchRoom_object_LOD2
+    6400012: HatchRoom_object_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -90,16 +97,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

@@ -34,6 +34,10 @@ ModelImporter:
     4300002: Corridor_closedOff_LOD1
     4300004: Corridor_closedOff_LOD2
     4300006: Corridor_closedOff_LOD3
+    6400000: Corridor_closedOff_LOD0
+    6400002: Corridor_closedOff_LOD1
+    6400004: Corridor_closedOff_LOD2
+    6400006: Corridor_closedOff_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -70,16 +74,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
