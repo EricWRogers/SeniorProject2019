@@ -39,6 +39,11 @@ ModelImporter:
     4300004: HingeSide1
     4300006: HingeSide6
     4300008: LockerDoor
+    6400000: HingeSide1
+    6400002: HingeSide4
+    6400004: HingeSide6
+    6400006: Locker
+    6400008: LockerDoor
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -70,9 +75,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
