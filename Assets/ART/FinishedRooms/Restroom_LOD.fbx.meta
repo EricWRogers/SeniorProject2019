@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 722f9c440e9978f48bec7b299f25d01f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BathroomStallDoor
+    100002: BathroomStallDoor1
+    100004: BathroomStallDoor2
+    100006: BathroomStallDoor3
+    100008: BathroomStallDoor4
+    100010: BathroomStallDoor5
+    100012: LOD_0
+    100014: LOD_1
+    100016: LOD_2
+    100018: LOD_3
+    100020: LOD_Restroom
+    100022: Restroom1_LOD0
+    100024: Restroom1_LOD1
+    100026: Restroom1_LOD2
+    100028: Restroom1_LOD3
+    100030: //RootNode
+    100032: StallDoor
+    400000: BathroomStallDoor
+    400002: BathroomStallDoor1
+    400004: BathroomStallDoor2
+    400006: BathroomStallDoor3
+    400008: BathroomStallDoor4
+    400010: BathroomStallDoor5
+    400012: LOD_0
+    400014: LOD_1
+    400016: LOD_2
+    400018: LOD_3
+    400020: LOD_Restroom
+    400022: Restroom1_LOD0
+    400024: Restroom1_LOD1
+    400026: Restroom1_LOD2
+    400028: Restroom1_LOD3
+    400030: //RootNode
+    400032: StallDoor
+    2100000: blinn2
+    2100002: lambert1
+    2300000: BathroomStallDoor
+    2300002: BathroomStallDoor1
+    2300004: BathroomStallDoor2
+    2300006: BathroomStallDoor3
+    2300008: BathroomStallDoor4
+    2300010: BathroomStallDoor5
+    2300012: Restroom1_LOD0
+    2300014: Restroom1_LOD1
+    2300016: Restroom1_LOD2
+    2300018: Restroom1_LOD3
+    3300000: BathroomStallDoor
+    3300002: BathroomStallDoor1
+    3300004: BathroomStallDoor2
+    3300006: BathroomStallDoor3
+    3300008: BathroomStallDoor4
+    3300010: BathroomStallDoor5
+    3300012: Restroom1_LOD0
+    3300014: Restroom1_LOD1
+    3300016: Restroom1_LOD2
+    3300018: Restroom1_LOD3
+    4300000: Restroom1_LOD0
+    4300002: Restroom1_LOD1
+    4300004: Restroom1_LOD2
+    4300006: Restroom1_LOD3
+    4300008: BathroomStallDoor5
+    4300010: BathroomStallDoor4
+    4300012: BathroomStallDoor3
+    4300014: BathroomStallDoor2
+    4300016: BathroomStallDoor1
+    4300018: BathroomStallDoor
+    20500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
