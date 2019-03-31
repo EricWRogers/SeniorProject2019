@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class StateController : MonoBehaviour
 {
+    public static ThrowObject _throwObject;
 
     public State currentState;
     public EntityStats enemyStats;
@@ -16,19 +17,29 @@ public class StateController : MonoBehaviour
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
     public float normalSpeed = 20f;
+    public float runspeed = 24f;
     //fov 
     public LayerMask playerTargetMask;
     public LayerMask ObstacleMask;
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
+    
+    public ThrowObject throwableObject {
+        get {
+            return StateController._throwObject;
+        }
 
-
+        set {
+            StateController._throwObject = value;
+        }
+    }  
 
     void Awake()
     {
         
         navMeshAgent = GetComponent<NavMeshAgent>();
+        
         
     }
     private void Start()

@@ -9,7 +9,7 @@ public class ThrowObject : MonoBehaviour
     public float throwForce;
     public float distanceOffset = 15f;
     bool PlayerHolding = false;
-
+    public Vector3 Throwable;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -48,6 +48,14 @@ public class ThrowObject : MonoBehaviour
         if(other.relativeVelocity.magnitude > 2f)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
+        }
+        if(other.relativeVelocity.magnitude >=2f)
+        {   
+            if (other.contactCount > 0) {
+                Throwable = other.GetContact(0).point; 
+                StateController._throwObject = this;
+                Debug.Log("objects vector3"+other.transform.position);
+            }
         }
      }
 }

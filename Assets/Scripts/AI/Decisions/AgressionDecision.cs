@@ -16,7 +16,20 @@ public class AgressionDecision : Decision
 
         if(controller.gameManager.fullWaypoint != null)
         {
+            Debug.Log("going aggression");
             retValue = true;
+        }
+
+        if(controller.throwableObject)
+        {
+            Debug.Log("going aggression");
+            retValue = true;
+            float dist = Vector3.Distance(controller.navMeshAgent.transform.position,controller.throwableObject.Throwable);
+            if(dist < 15f)
+            {
+                retValue = false;
+            }
+
         }
 
         return retValue;
