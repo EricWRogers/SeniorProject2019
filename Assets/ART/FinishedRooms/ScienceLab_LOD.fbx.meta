@@ -53,6 +53,12 @@ ModelImporter:
     4300006: ScienceLab_LOD3
     4300008: SmallSciWindow
     4300010: BigSciWindow
+    6400000: BigSciWindow
+    6400002: ScienceLab_LOD0
+    6400004: ScienceLab_LOD1
+    6400006: ScienceLab_LOD2
+    6400008: ScienceLab_LOD3
+    6400010: SmallSciWindow
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -89,16 +95,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

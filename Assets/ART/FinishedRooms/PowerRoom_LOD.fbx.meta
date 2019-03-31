@@ -124,6 +124,26 @@ ModelImporter:
     4300034: inner_ring_LOD3
     4300036: outer_ring_LOD3
     4300038: orb_LOD3
+    6400000: inner_ring_LOD0
+    6400002: inner_ring_LOD1
+    6400004: inner_ring_LOD2
+    6400006: inner_ring_LOD3
+    6400008: middle_ring_LOD0
+    6400010: middle_ring_LOD1
+    6400012: middle_ring_LOD2
+    6400014: middle_ring_LOD3
+    6400016: middlePowerBallContainer_LOD0
+    6400018: middlePowerBallContainer_LOD1
+    6400020: middlePowerBallContainer_LOD2
+    6400022: middlePowerBallContainer_LOD3
+    6400024: orb_LOD0
+    6400026: orb_LOD1
+    6400028: orb_LOD2
+    6400030: orb_LOD3
+    6400032: outer_ring_LOD0
+    6400034: outer_ring_LOD1
+    6400036: outer_ring_LOD2
+    6400038: outer_ring_LOD3
     20500000: //RootNode
   externalObjects: {}
   materials:
@@ -160,16 +180,16 @@ ModelImporter:
     - 0.125
     - 0.0625
     - 0.01
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

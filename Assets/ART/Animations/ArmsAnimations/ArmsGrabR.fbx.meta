@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 4c131aedfbc44b84381bf555800a61fd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: L_elbow_jnt
+    100004: L_forarm
+    100006: L_index_01_jnt
+    100008: L_index_02_jnt
+    100010: L_index_03_jnt
+    100012: L_index_jnt_tip
+    100014: L_middle_01_jnt
+    100016: L_middle_02_jnt
+    100018: L_middle_03_jnt
+    100020: L_middle_jnt_tip
+    100022: L_pinky_01_jnt
+    100024: L_pinky_02_jnt
+    100026: L_pinky_03_jnt
+    100028: L_pinky_jnt_tip
+    100030: L_ring_01_jnt
+    100032: L_ring_02_jnt
+    100034: L_ring_03_jnt
+    100036: L_ring_jnt_tip
+    100038: L_shoulder_jnt
+    100040: L_thumb_01_jnt
+    100042: L_thumb_02_jnt
+    100044: L_thumb_03_jnt
+    100046: L_thumb_jnt_tip
+    100048: L_wrist_jnt
+    100050: main_jnt
+    100052: PlayerHands1
+    100054: R_elbow_jnt
+    100056: R_forarm
+    100058: R_index_01_jnt
+    100060: R_index_02_jnt
+    100062: R_index_03_jnt
+    100064: R_index_jnt_tip
+    100066: R_middle_01_jnt
+    100068: R_middle_02_jnt
+    100070: R_middle_03_jnt
+    100072: R_middle_jnt_tip
+    100074: R_pinky_01_jnt
+    100076: R_pinky_02_jnt
+    100078: R_pinky_03_jnt
+    100080: R_pinky_jnt_tip
+    100082: R_ring_01_jnt
+    100084: R_ring_02_jnt
+    100086: R_ring_03_jnt
+    100088: R_ring_jnt_tip
+    100090: R_shoulder_jnt
+    100092: R_thumb_01_jnt
+    100094: R_thumb_02_jnt
+    100096: R_thumb_03_jnt
+    100098: R_thumb_jnt_tip
+    100100: R_wrist_jnt
+    400000: //RootNode
+    400002: L_elbow_jnt
+    400004: L_forarm
+    400006: L_index_01_jnt
+    400008: L_index_02_jnt
+    400010: L_index_03_jnt
+    400012: L_index_jnt_tip
+    400014: L_middle_01_jnt
+    400016: L_middle_02_jnt
+    400018: L_middle_03_jnt
+    400020: L_middle_jnt_tip
+    400022: L_pinky_01_jnt
+    400024: L_pinky_02_jnt
+    400026: L_pinky_03_jnt
+    400028: L_pinky_jnt_tip
+    400030: L_ring_01_jnt
+    400032: L_ring_02_jnt
+    400034: L_ring_03_jnt
+    400036: L_ring_jnt_tip
+    400038: L_shoulder_jnt
+    400040: L_thumb_01_jnt
+    400042: L_thumb_02_jnt
+    400044: L_thumb_03_jnt
+    400046: L_thumb_jnt_tip
+    400048: L_wrist_jnt
+    400050: main_jnt
+    400052: PlayerHands1
+    400054: R_elbow_jnt
+    400056: R_forarm
+    400058: R_index_01_jnt
+    400060: R_index_02_jnt
+    400062: R_index_03_jnt
+    400064: R_index_jnt_tip
+    400066: R_middle_01_jnt
+    400068: R_middle_02_jnt
+    400070: R_middle_03_jnt
+    400072: R_middle_jnt_tip
+    400074: R_pinky_01_jnt
+    400076: R_pinky_02_jnt
+    400078: R_pinky_03_jnt
+    400080: R_pinky_jnt_tip
+    400082: R_ring_01_jnt
+    400084: R_ring_02_jnt
+    400086: R_ring_03_jnt
+    400088: R_ring_jnt_tip
+    400090: R_shoulder_jnt
+    400092: R_thumb_01_jnt
+    400094: R_thumb_02_jnt
+    400096: R_thumb_03_jnt
+    400098: R_thumb_jnt_tip
+    400100: R_wrist_jnt
+    2100000: PlayerHandsMat
+    4300000: PlayerHands1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: PlayerHands1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
