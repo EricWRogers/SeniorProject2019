@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4248476483859539992}
   - component: {fileID: 7070941679622749417}
   - component: {fileID: 7670916257432795180}
-  - component: {fileID: 8821549158640716518}
   m_Layer: 4
   m_Name: Drops
   m_TagString: Untagged
@@ -4649,16 +4648,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &8821549158640716518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8821549158640716519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f894411347b88b74e9bea5eba5a34754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  part: {fileID: 0}
