@@ -18,7 +18,7 @@ public class HUD : MonoBehaviour
     private GameManager GameManager;
     public GameObject loseCanvas;
     public GameObject winCanvas;
-    private GameObject text;
+    private GameObject TimerText;
     private GameObject greenKey;
     private GameObject purpleKey;
     private GameObject blueKey;
@@ -32,7 +32,7 @@ public class HUD : MonoBehaviour
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         //loseCanvas = 
         //winCanvas = 
-        text = GameObject.Find("HUD/MessageCanvas/MessageText");
+        TimerText = GameObject.Find("HUD/MessageCanvas/TopMessageText");
         greenKey = GameObject.Find("HUD/KeyCardCanvas/GreenKey");
         purpleKey = GameObject.Find("HUD/KeyCardCanvas/PurpleKey");
         blueKey = GameObject.Find("HUD/KeyCardCanvas/BlueKey");
@@ -60,17 +60,17 @@ public class HUD : MonoBehaviour
 
         if (time > 0)
         {
-            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            //TimerText.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
         }
         else
         {
-            text.GetComponent<Text>().text = "0:00";
+            //TimerText.GetComponent<Text>().text = "0:00";
         }
     }
 
     void messageForPlayer()
     {
-        text.GetComponent<Text>().text = message;
+        TimerText.GetComponent<Text>().text = message;
     }
 
     IEnumerator ReloadLose()

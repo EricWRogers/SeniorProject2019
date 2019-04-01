@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         PollScareShitlessMeter();
     }
 
-    private void PollAgression()
+    void PollAgression()
     {
         float maxDist = 0f;
 
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    private void PollScareShitlessMeter()
+    void PollScareShitlessMeter()
     {
         if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 180.0f)
         {
@@ -127,13 +127,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void GameOver()
-    {
-        SceneManager.LoadScene("MainMenuScene");
-
-        Debug.Log("Game Over!!!");
-    }
-
     void Attacked()
     {
         //do audio stuff heart yada
@@ -147,6 +140,26 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
         GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
+    }
+
+    void CountDownTimer()
+    {
+        if(TimerSet >= 0 && !stopTimer)
+        {
+            TimerSet -= Time.deltaTime;
+        }
+        else if(TimerSet <= 0)
+        {
+            //Do What???????
+            //GameOver()
+        }
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+
+        Debug.Log("Game Over!!!");
     }
 
     //Call this funichion when you want to WakeUp
@@ -175,6 +188,6 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
-
+        //DO
     }
 }
