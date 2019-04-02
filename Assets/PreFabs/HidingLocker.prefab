@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4964562061781042930}
   m_Layer: 9
   m_Name: LockerDoor
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4964562061781042940}
   m_Layer: 9
   m_Name: Locker
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 4964562061781042936}
   m_Layer: 9
   m_Name: HingeSide4
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 4964562061778531442}
   m_Layer: 9
   m_Name: HingeSide3
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 4964562061781042942}
   m_Layer: 9
   m_Name: HingeSide6
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 4964562061778531446}
   m_Layer: 9
   m_Name: HingeSide5
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4964562061778531448}
   - component: {fileID: 1024866990303351774}
-  - component: {fileID: 2995854150327665534}
+  - component: {fileID: 2014234692}
   m_Layer: 9
   m_Name: HidingLocker
   m_TagString: HideableObjects
@@ -482,7 +482,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2995854150327665534
+--- !u!114 &2014234692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,12 +491,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4964562061778954328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f02065885fd90ad40b2ba12afd866835, type: 3}
+  m_Script: {fileID: 11500000, guid: e5183ef9c92642c46935a8136b83868b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 10
-  OpenMessage: Click to Open Door
-  CloseMessage: Click to Close Door
+  maxDistance: 20
+  OpenMessage: Click to Open Locker
+  CloseMessage: Click to Close Locker
 --- !u!1 &4964562061778954330
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 4964562061778531450}
   m_Layer: 9
   m_Name: DoorHinges
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 4964562061778531452}
   m_Layer: 9
   m_Name: HingeSide2
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 4964562061781042938}
   m_Layer: 9
   m_Name: HingeSide1
-  m_TagString: Untagged
+  m_TagString: HideableObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
