@@ -9,7 +9,7 @@ AnimatorController:
   m_Name: HidingLockerProto
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: PlayerOpen/Close
+  - m_Name: Open/Close
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -37,7 +37,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: PlayerOpen/Close
+    m_ConditionEvent: Open/Close
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102596302562178998}
@@ -84,7 +84,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: PlayerOpen/Close
+    m_ConditionEvent: Open/Close
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102704979466608570}

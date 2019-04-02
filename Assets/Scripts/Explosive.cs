@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Explosive : MonoBehaviour
 {
+    bool showMessage;
     GameObject playerGO;
     GameManager gameManagerGO;
-    Text messageGO;
+    HUD hud;
 
     public float maxDistance;
     public string message;
@@ -17,33 +17,42 @@ public class Explosive : MonoBehaviour
     {
         playerGO = GameObject.FindGameObjectWithTag("Player");
         gameManagerGO = GameObject.FindObjectOfType<GameManager>();
-        messageGO = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("BottomMessageText").GetComponent<Text>();
+        hud = GameObject.FindObjectOfType<HUD>();
+
+        showMessage = false;
     }
 
     void Update()
     {
-        CheckExplosive();
+        ShowExplosiveMessage();
     }
 
-    void CheckExplosive()
+    void ShowExplosiveMessage()
     {
         float dist = Vector3.Distance(playerGO.transform.position, transform.position);
 
         if (dist <= maxDistance)
         {
-            messageGO.text = message;
+            showMessage = true;
+            hud.MessageForPlayer(message);
 
-            if(InputManager.instance.Interact())
-            {
-                gameManagerGO.explosives--;
-                messageGO.text = "";
-                GetComponent<Renderer>().material = Default;
-                GetComponent<Explosive>().enabled = false;
-            }
+            PlaceExplosive();
         }
-        else
+        else if(showMessage)
         {
-            messageGO.text = "";
+            hud.MessageForPlayer();
+            showMessage = false;
+        }
+    }
+
+    void PlaceExplosive()
+    {
+        if (InputManager.instance.Interact())
+        {
+            gameManagerGO.explosives--;
+            hud.MessageForPlayer();
+            GetComponent<Renderer>().material = Default;
+            GetComponent<Explosive>().enabled = false;
         }
     }
 }

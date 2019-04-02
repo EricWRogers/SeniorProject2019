@@ -45,11 +45,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Only for Testing
-        if(Input.GetKeyDown(KeyCode.U))
-        {
-            WakeUp();
-        }
+
     }
 
     void FixedUpdate()
@@ -151,15 +147,13 @@ public class GameManager : MonoBehaviour
         else if(TimerSet <= 0)
         {
             //Do What???????
-            //GameOver()
+            //GameOver() ?
         }
     }
 
     void GameOver()
     {
-        SceneManager.LoadScene("MainMenuScene");
 
-        Debug.Log("Game Over!!!");
     }
 
     //Call this funichion when you want to WakeUp

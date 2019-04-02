@@ -3,158 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class HUD : MonoBehaviour
 {
     public float reloadTime = 5.0f;
     public float tutTime = 5.0f;
 
-    private float time;
-
     public string mainMenu;
-    public string message;
+    public string startMessage;
 
-    private GameManager GameManager;
-    public GameObject loseCanvas;
-    public GameObject winCanvas;
-    private GameObject TimerText;
-    private GameObject greenKey;
-    private GameObject purpleKey;
-    private GameObject blueKey;
+    float time;
 
-    public GameObject tutCanvas;
-    public Text tutText;
+    Text topMessageText;
+    Text bottomMessageText;
+    Text timerText;
+
+    GameManager GameManager;
+    Canvas winCanvas;
+    Canvas loseCanvas;
     CharacterController CharController;
 
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        //loseCanvas = 
-        //winCanvas = 
-        TimerText = GameObject.Find("HUD/MessageCanvas/TopMessageText");
-        greenKey = GameObject.Find("HUD/KeyCardCanvas/GreenKey");
-        purpleKey = GameObject.Find("HUD/KeyCardCanvas/PurpleKey");
-        blueKey = GameObject.Find("HUD/KeyCardCanvas/BlueKey");
         CharController = (CharacterController)FindObjectOfType(typeof(CharacterController));
+        topMessageText = GameObject.Find("MessageCanvas").transform.Find("TopMessageText").gameObject.GetComponent<Text>();
+        bottomMessageText = GameObject.Find("MessageCanvas").transform.Find("BottomMessageText").gameObject.GetComponent<Text>();
+        timerText = GameObject.Find("MessageCanvas").transform.Find("TimerText").GetComponent<Text>();
+        loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
+        winCanvas = GameObject.Find("WinCanvas").GetComponent<Canvas>();
     }
 
     void Start()
     {
-        messageForPlayer();
+        objectiveForPlayer(startMessage);
         PlayTutorial("test 1");
     }
 
     void Update()
     {
-        //CalculateTimer();
-        ShowKeyCard();
-    }
 
-    void CalculateTimer()
-    {
-        time = GameManager.TimerSet;
-
-        float minutes = (int)time / 60;
-        float seconds = (int)time % 60;
-
-        if (time > 0)
-        {
-            //TimerText.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
-        }
-        else
-        {
-            //TimerText.GetComponent<Text>().text = "0:00";
-        }
-    }
-
-    void messageForPlayer()
-    {
-        TimerText.GetComponent<Text>().text = message;
-    }
-
-    IEnumerator ReloadLose()
-    {
-        loseCanvas.SetActive(true);
-        Debug.Log("waiting");
-        yield return new WaitForSeconds(reloadTime);
-        //Scene scene = SceneManager.GetActiveScene();
-        //SceneManager.LoadScene(mainMenu);
-    }
-
-    IEnumerator ReloadWin()
-    {
-        winCanvas.SetActive(true);
-        Debug.Log("waiting");
-        yield return new WaitForSeconds(reloadTime);
-        //Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(mainMenu);
-    }
-
-    public void ReloadSceneLose()
-    {
-        StartCoroutine(ReloadLose());
-    }
-
-    public void ReloadSceneWin()
-    {
-        StartCoroutine(ReloadWin());
-    }
-
-    public void ShowKeyCard()
-    {
-        List<string> KeysInPocket = FindObjectOfType<KeyChain>().KeysInPocket;
-
-        //string keys = string.Join(",", KeysInPocket);
-        //keyCardText.GetComponent<Text>().text = (string)KeysInPocket;
-
-        if(KeysInPocket.Contains("Green"))
-        {
-            greenKey.SetActive(true);
-            //keyCardText.GetComponent<Text>().text = "Green Key";
-        }
-
-        if (KeysInPocket.Contains("Purple"))
-        {
-            purpleKey.SetActive(true);
-        }
-
-        if (KeysInPocket.Contains("Blue"))
-        {
-            blueKey.SetActive(true);
-        }
-    }
-
-    //public void PlayTutorialText(string text)
-    //{
-    //    float curTime = Time.time;
-    //    float duration = 5;
-    //    tutText.text = text;
-
-    //    if(Time.time == curTime+duration)
-    //    {
-    //        tutText.text = "";
-    //    }
-    //}
-
-    public void PlayTutorial(string text1)
-    {
-        StartCoroutine(PlayTutorialText(text1));
-    }
-
-    IEnumerator PlayTutorialText(string text1)
-    {
-        //movement tut
-        tutText.text = "WASD to move";
-
-        yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
-        yield return new WaitForSeconds(.5f);
-        tutText.text = "Shift to sprint";
-        //sprint tut
-
-        yield return new WaitWhile(() => !InputManager.instance.Sprint());
-        yield return new WaitForSeconds(.5f);
-        tutText.text = "";
     }
 
     void FadeIn(Image i)
@@ -165,5 +53,64 @@ public class HUD : MonoBehaviour
     void FadeOut(Image i)
     {
         i.CrossFadeAlpha(0.0f, 2.5f, false);
+    }
+
+    void CalculateTimer()
+    {
+        timerText.enabled = true;
+
+        time = GameManager.TimerSet;
+
+        float minutes = (int)time / 60;
+        float seconds = (int)time % 60;
+
+        if (time > 0)
+        {
+            timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+    }
+
+    public void objectiveForPlayer()
+    {
+        topMessageText.text = "";
+    }
+
+    public void objectiveForPlayer(string message)
+    {
+        topMessageText.text = message;
+    }
+
+    public void MessageForPlayer()
+    {
+        bottomMessageText.text = "";
+    }
+
+    public void MessageForPlayer(string message)
+    {
+        bottomMessageText.text = message;
+    }
+
+    public void PlayTutorial(string text1)
+    {
+        StartCoroutine(PlayTutorialText(text1));
+    }
+
+    IEnumerator PlayTutorialText(string text1)
+    {
+        //movement tut
+        MessageForPlayer("WASD to move");
+
+        yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+        yield return new WaitForSeconds(.5f);
+        MessageForPlayer("Shift to sprint");
+        //sprint tut
+
+        yield return new WaitWhile(() => !InputManager.instance.Sprint());
+        yield return new WaitForSeconds(.5f);
+        MessageForPlayer();
     }
 }

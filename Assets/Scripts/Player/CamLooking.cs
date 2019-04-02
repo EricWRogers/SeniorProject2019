@@ -71,7 +71,7 @@ public class CamLooking : MonoBehaviour
         }
         else if(InputManager.instance.Lean_R())
         {
-            if (Physics.Raycast(transform.position, left, out hitInfoRight, 6, Player.layer))
+            if (Physics.Raycast(transform.position, right, out hitInfoRight, 6, Player.layer))
             {
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(hitInfoRight.distance, 1, 0), 0.1f);
                 Player.GetComponent<PlayerMovement>().stopMoving = true;

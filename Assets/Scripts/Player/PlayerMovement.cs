@@ -30,9 +30,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting = false;
     private bool doneSprinting = false;
     private bool needCharging = false;
+    private bool isHidden = false;
 
     GameManager gameManager;
     AudioSource audioSource;
+    RaycastHit hit;
     CharacterController CharController;
 
     void Awake()
@@ -48,6 +50,11 @@ public class PlayerMovement : MonoBehaviour
         gravityHolder = gravity;
         originalSpeed = speed;
         tempTime = Time.deltaTime;
+    }
+
+    void Update()
+    {
+        CheckIfHidden();
     }
 
     void FixedUpdate()
@@ -181,6 +188,22 @@ public class PlayerMovement : MonoBehaviour
                 {
                     transform.localScale = Vector3.Lerp(transform.localScale, sizeHolder, 0.1f);
                 }
+            }
+        }
+    }
+
+    void CheckIfHidden()
+    {
+        if (Physics.Raycast(transform.position, transform.up, out hit, 10))
+        {
+            if(hit.collider.tag == "HideableObjects")
+            {
+                Debug.Log(hit);
+                gameObject.layer = LayerMask.NameToLayer("obstacles");
+            }
+            else
+            {
+                gameObject.layer = LayerMask.NameToLayer("target");
             }
         }
     }
