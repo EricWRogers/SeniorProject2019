@@ -14,8 +14,11 @@ public class HUD : MonoBehaviour
 
     float time;
 
+    bool basics = true;
+
     Text topMessageText;
     Text bottomMessageText;
+    Text tutorialMessageText;
     Text timerText;
 
     GameManager GameManager;
@@ -29,6 +32,7 @@ public class HUD : MonoBehaviour
         CharController = (CharacterController)FindObjectOfType(typeof(CharacterController));
         topMessageText = GameObject.Find("MessageCanvas").transform.Find("TopMessageText").gameObject.GetComponent<Text>();
         bottomMessageText = GameObject.Find("MessageCanvas").transform.Find("BottomMessageText").gameObject.GetComponent<Text>();
+        tutorialMessageText = GameObject.Find("MessageCanvas").transform.Find("TutorialMessageText").gameObject.GetComponent<Text>();
         timerText = GameObject.Find("MessageCanvas").transform.Find("TimerText").GetComponent<Text>();
         loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
         winCanvas = GameObject.Find("WinCanvas").GetComponent<Canvas>();
@@ -37,7 +41,8 @@ public class HUD : MonoBehaviour
     void Start()
     {
         objectiveForPlayer(startMessage);
-        PlayTutorial("test 1");
+        PlayTutorial(basics);
+        basics = false;
     }
 
     void Update()
@@ -94,23 +99,80 @@ public class HUD : MonoBehaviour
         bottomMessageText.text = message;
     }
 
-    public void PlayTutorial(string text1)
+    public void TutorialForPlayer()
     {
-        StartCoroutine(PlayTutorialText(text1));
+        bottomMessageText.text = "";
     }
 
-    IEnumerator PlayTutorialText(string text1)
+    public void TutorialForPlayer(string message)
     {
-        //movement tut
-        MessageForPlayer("WASD to move");
+        tutorialMessageText.text = message;
+    }
 
-        yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
-        yield return new WaitForSeconds(.5f);
-        MessageForPlayer("Shift to sprint");
-        //sprint tut
+    public void PlayTutorial(bool basics)
+    {
+        StartCoroutine(PlayTutorialText(basics));
+    }    
 
-        yield return new WaitWhile(() => !InputManager.instance.Sprint());
-        yield return new WaitForSeconds(.5f);
-        MessageForPlayer();
+    IEnumerator PlayTutorialText(bool basics)
+    {
+        float textRemoval = .5f;
+
+        if (basics)
+        {
+            //movement tut
+            TutorialForPlayer("WASD to move");
+            yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+            yield return new WaitForSeconds(textRemoval);
+
+            //sprint tut
+            TutorialForPlayer("Shift to sprint");
+            yield return new WaitWhile(() => !InputManager.instance.Sprint());
+            yield return new WaitForSeconds(textRemoval);
+
+            //lean tut
+            TutorialForPlayer("QE to lean");
+            yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
+            yield return new WaitForSeconds(textRemoval);
+
+            //crouch tut
+            TutorialForPlayer("Ctrl to crouch");
+            yield return new WaitWhile(() => !InputManager.instance.Crouch());
+            yield return new WaitForSeconds(textRemoval);
+
+            //interact tut?
+
+            //find scientist
+            yield return new WaitForSeconds(textRemoval);
+            TutorialForPlayer("Find the Scientist");
+
+            //run when finding monster 5s
+
+            //find each keycard
+
+            //if explosives found
+            //plant explosives instructions, not location
+
+            //escape post planting explosives
+
+            MessageForPlayer();
+        }
+        else
+        {
+            //find scientist
+            yield return new WaitForSeconds(textRemoval);
+            TutorialForPlayer("Find the Scientist");
+
+            //run when finding monster 5s
+
+            //find each keycard
+
+            //if explosives found
+            //plant explosives instructions, not location
+
+            //escape post planting explosives
+
+            MessageForPlayer();
+        }        
     }
 }
