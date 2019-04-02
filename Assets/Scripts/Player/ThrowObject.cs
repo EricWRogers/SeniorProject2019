@@ -48,7 +48,7 @@ public class ThrowObject : MonoBehaviour
         if(other.relativeVelocity.magnitude > 2f)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
-        }
+        
         if(other.relativeVelocity.magnitude >=2f)
         {   
             if (other.contactCount > 0) {
@@ -56,6 +56,7 @@ public class ThrowObject : MonoBehaviour
                 StateController._throwObject = this;
                 Debug.Log("objects vector3"+other.transform.position);
             }
+        }
         }
      }
 }
