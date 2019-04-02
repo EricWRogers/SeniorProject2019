@@ -38,6 +38,12 @@ ModelImporter:
     4300006: Lightbulb3
     4300008: Lightbulb4
     4300010: Lightbulb5
+    6400000: CorridorMidIntrance
+    6400002: lightbulb1
+    6400004: LightBulb2
+    6400006: Lightbulb3
+    6400008: Lightbulb4
+    6400010: Lightbulb5
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -71,14 +77,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

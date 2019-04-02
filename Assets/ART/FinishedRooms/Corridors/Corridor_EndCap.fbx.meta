@@ -38,6 +38,12 @@ ModelImporter:
     4300006: light8
     4300008: light9
     4300010: light10
+    6400000: EndCap
+    6400002: light10
+    6400004: light6
+    6400006: light7
+    6400008: light8
+    6400010: light9
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -71,14 +77,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
