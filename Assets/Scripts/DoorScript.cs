@@ -7,13 +7,15 @@ public class DoorScript : MonoBehaviour
     Animator anim;
     public string MyLock =  "";
     public Component[] Light1;
- 
     Color purpleDoor = Color.magenta;
     Color blueDoor = Color.blue;
     Color greenDoor = Color.green;
     Color redDoor = Color.red;
     public Color doorColor;
     AudioSource audioSource;
+    public bool doorIsLocked;
+    public bool doorIsBroken;
+    public GameObject Sparks;
     
 
     void Start()
@@ -28,19 +30,25 @@ public class DoorScript : MonoBehaviour
             doorColor = purpleDoor;
 
         Light1 = gameObject.GetComponentsInChildren<Light>();
-
-       
+    
         foreach (Light light in Light1)
         {
             light.color = doorColor;
         }
-
+        Sparks.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+        doorIsLocked = false;
+        if(doorIsBroken)
+        {
+            Sparks.SetActive(true);
+            anim.SetBool("isBroken",true);
+        }
+
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !doorIsLocked)
         {
             if(other.gameObject.GetComponent<KeyChain>().KeysInPocket.Contains(MyLock))
             {
@@ -50,6 +58,7 @@ public class DoorScript : MonoBehaviour
                     audioSource.Play();
                 }
             }
+        
         }
         if ( other.gameObject.CompareTag("entity"))
         {

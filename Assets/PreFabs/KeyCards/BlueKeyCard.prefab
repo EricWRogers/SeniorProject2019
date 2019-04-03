@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6035945665424619976
+--- !u!1 &2642695419309629666
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5817601656626712374}
-  - component: {fileID: 8583443067485117420}
-  - component: {fileID: 1845517333171742726}
-  - component: {fileID: 974267749895668540}
-  - component: {fileID: 3532704385974298322}
-  - component: {fileID: 2381888346600891050}
-  - component: {fileID: 6781909534586857371}
+  - component: {fileID: 3826268433505568372}
+  - component: {fileID: 7774867887651736328}
+  - component: {fileID: 7162278008898826136}
+  - component: {fileID: 1380784909038013289}
+  - component: {fileID: 5903014008273551165}
+  - component: {fileID: 6088342414784143310}
+  - component: {fileID: 3818844894720735175}
   m_Layer: 0
   m_Name: BlueKeyCard
   m_TagString: KeyCard
@@ -22,13 +22,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5817601656626712374
+--- !u!4 &3826268433505568372
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 79.93, y: 9.87, z: 374.59}
   m_LocalScale: {x: 4, y: 2, z: 0.5}
@@ -36,21 +36,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8583443067485117420
+--- !u!33 &7774867887651736328
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1845517333171742726
+--- !u!23 &7162278008898826136
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d97c06c6c9ec06548a72526ecfee0eb2, type: 2}
+  - {fileID: 2100000, guid: 7029df45591f38849acea2bdd0cab8ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,26 +81,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &974267749895668540
+--- !u!65 &1380784909038013289
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3532704385974298322
+--- !u!54 &5903014008273551165
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -110,26 +110,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2381888346600891050
+--- !u!114 &6088342414784143310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3160f8d198da5d9bd8df1448391fe17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   KeyName: Blue
---- !u!135 &6781909534586857371
+--- !u!135 &3818844894720735175
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6035945665424619976}
+  m_GameObject: {fileID: 2642695419309629666}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
