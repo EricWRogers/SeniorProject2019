@@ -8,7 +8,6 @@ public class ThrowObject : MonoBehaviour
     public string ThrowMessage;
 
     public float throwForce;
-    public float distanceOffset = 15f;
 
     public Material material;
     public Vector3 Throwable;
@@ -75,15 +74,16 @@ public class ThrowObject : MonoBehaviour
         if(other.relativeVelocity.magnitude > 2f)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
-        
-        if(other.relativeVelocity.magnitude >=2f)
-        {   
-            if (other.contactCount > 0) {
-                Throwable = other.GetContact(0).point; 
-                StateController._throwObject = this;
-                Debug.Log("objects vector3"+other.transform.position);
+            
+            if(other.relativeVelocity.magnitude >=2f)
+            {   
+                if (other.contactCount > 0) 
+                {
+                    Throwable = other.GetContact(0).point; 
+                    StateController._throwObject = this;
+                    Debug.Log("objects vector3"+other.transform.position);
+                }
             }
-        }
         }
      }
 
@@ -113,6 +113,10 @@ public class ThrowObject : MonoBehaviour
         if (playerHolding)
         {
             hud.MessageForPlayer(ThrowMessage);
+        }
+        else
+        {
+            hud.MessageForPlayer();
         }
     }
 }
