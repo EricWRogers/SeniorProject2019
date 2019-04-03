@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WayPoints
+  - entity
+  - Water
+  - Fire
+  - KeyCard
+  - HideableObjects
   layers:
   - Default
   - TransparentFX
@@ -13,11 +19,11 @@ TagManager:
   - UI
   - 
   - 
+  - obstacles
+  - target
+  - Fire
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - Global UI
   - 
   - 
   - 
@@ -40,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Global UI
+    uniqueID: 3436946523
     locked: 0
