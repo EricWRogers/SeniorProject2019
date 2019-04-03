@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -404,8 +404,81 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 1005910050, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51878140, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1607963911}
+    - target: {fileID: 51878140, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayEasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766446051865, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1607963911}
+    - target: {fileID: 1857490766446051865, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadDifficulty
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
+--- !u!1 &1607963906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1857490766115098261, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1607963905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607963907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7225808096763398143, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1607963905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607963908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1005910050, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1607963905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607963909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1857490766999236429, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1607963905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607963910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1857490766355570284, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1607963905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1607963911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607963910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b89091844e38d74a84f286a06395080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuUI: {fileID: 1607963909}
+  difficultyUI: {fileID: 1607963908}
+  optionsMenuUI: {fileID: 1607963907}
+  creditsUI: {fileID: 1607963906}
+  gameSceneName: MainDemoScene
+  creditDuration: 100
+  MasterVolumeSlider: {fileID: 0}
+  MusicVolumeSlider: {fileID: 0}
+  SFXVolumeSlider: {fileID: 0}
 --- !u!1 &1892118067
 GameObject:
   m_ObjectHideFlags: 0

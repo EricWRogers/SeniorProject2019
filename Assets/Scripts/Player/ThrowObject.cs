@@ -4,42 +4,70 @@ using UnityEngine;
 
 public class ThrowObject : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject hand;
+    public string PickupMessage;
+    public string ThrowMessage;
+
     public float throwForce;
     public float distanceOffset = 15f;
-    bool PlayerHolding = false;
+
+    public Material material;
     public Vector3 Throwable;
+
+    bool playerHolding = false;
+    bool readyToFire = false;
+
+    Transform player;
+    Transform hand;
+    HUD hud;
+    Renderer renderer;
+    Material tempMaterial;
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        hand = GameObject.Find("Player/Hand");
-        PlayerHolding = false;
-        //GetComponent<Rigidbody>().isKinematic = false;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        hand = player.transform.Find("Hand").transform;
+        hud = GameObject.FindObjectOfType<HUD>();
+        renderer = GetComponent<Renderer>();
+
+        playerHolding = false;
     }
 
     void Update()
     {
-        float dist = Vector3.Distance(transform.position, player.transform.position);
-
-        if (dist <= distanceOffset && InputManager.instance.Interact() && !PlayerHolding)
+        if (playerHolding)
         {
-            PlayerHolding = true;
-            //GetComponent<Rigidbody>().isKinematic = true;
+            Pickup();
+            Fire();
+        }
+        else
+        {
+            CheckIfPlayerHolding();
+        }
+    }
+
+    void CheckIfPlayerHolding()
+    {
+        if (InputManager.instance.Interact() && !playerHolding)
+        {
+            playerHolding = true;
             GetComponent<Collider>().enabled = false;
-        }
 
-        if (PlayerHolding)
-        {
-            transform.position = hand.transform.position;
         }
+    }
 
-        if (PlayerHolding && InputManager.instance.ThrowObject())
+    void Pickup()
+    {
+        transform.position = hand.transform.position;
+    }
+
+    void Fire()
+    {
+        if (InputManager.instance.Interact())
         {
+            hud.MessageForPlayer();
             GetComponent<Collider>().enabled = true;
-            //GetComponent<Rigidbody>().isKinematic = false;
             GetComponent<Rigidbody>().AddForce(player.transform.forward * throwForce);
-            PlayerHolding = false;
+            playerHolding = false;
         }
     }
 
@@ -58,4 +86,33 @@ public class ThrowObject : MonoBehaviour
             }
         }
      }
+
+    void OnMouseEnter()
+    {
+        tempMaterial = renderer.material;
+    }
+
+    void OnMouseOver()
+    {
+        renderer.material = material;
+
+        if(!playerHolding)
+        {
+            hud.MessageForPlayer(PickupMessage);
+        }
+        else
+        {
+            hud.MessageForPlayer(ThrowMessage);
+        }
+    }
+
+    void OnMouseExit()
+    {
+        renderer.material = tempMaterial;
+
+        if (playerHolding)
+        {
+            hud.MessageForPlayer(ThrowMessage);
+        }
+    }
 }
