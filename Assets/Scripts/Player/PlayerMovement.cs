@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     private float originalSpeed;
     private float gravityHolder;
     private float tempTime;
-    private float audioPlayTime;
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 playerSize;
@@ -30,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting = false;
     private bool doneSprinting = false;
     private bool needCharging = false;
-    private bool isHidden = false;
 
     GameManager gameManager;
     AudioSource audioSource;
@@ -212,8 +210,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if(other.tag == "KeyCard")
         {
-            GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
-            Destroy(other);
+            if(!(GetComponent<KeyChain>().KeysInPocket.Contains(other.gameObject.GetComponent<KeyCard>().KeyName)))
+            {
+                GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName); 
+                Destroy(other.gameObject); 
+            }
+            else
+            {
+                Destroy(other.gameObject);
+            }
         }
 
         if(other.tag == "Finish")

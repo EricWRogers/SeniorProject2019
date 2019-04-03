@@ -8,29 +8,29 @@ public class ObjectHighlighting : MonoBehaviour
     public Material material;
 
     HUD hud;
-    Renderer renderer;
+    Renderer rend;
     Material tempMaterial;
 
     void Start()
     {
         hud = GameObject.FindObjectOfType<HUD>();
-        renderer = GetComponent<Renderer>();
+        rend = GetComponent<Renderer>();
     }
 
     void OnMouseEnter()
     {
-        tempMaterial = renderer.material;
+        tempMaterial = rend.material;
     }
 
     void OnMouseOver()
     {
-        renderer.material = material;
+        rend.material = material;
         hud.MessageForPlayer(message);
     }
 
     void OnMouseExit()
     {
-        renderer.material = tempMaterial;
+        rend.material = tempMaterial;
         hud.MessageForPlayer();
     }
 }

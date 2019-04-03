@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     Animator anim;
-    public string MyLock =  "";
+    public string neededKey =  "";
     public Component[] Light1;
     Color purpleDoor = Color.magenta;
     Color blueDoor = Color.blue;
@@ -22,11 +22,11 @@ public class DoorScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("PlayerNearDoor", false);
-        if (MyLock == "Blue")
+        if (neededKey == "Blue")
             doorColor = blueDoor;
-        if (MyLock == "Green")
+        if (neededKey == "Green")
             doorColor = greenDoor;
-        if (MyLock == "Purple")
+        if (neededKey == "Purple")
             doorColor = purpleDoor;
 
         Light1 = gameObject.GetComponentsInChildren<Light>();
@@ -50,7 +50,7 @@ public class DoorScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && !doorIsLocked)
         {
-            if(other.gameObject.GetComponent<KeyChain>().KeysInPocket.Contains(MyLock))
+            if(other.gameObject.GetComponent<KeyChain>().KeysInPocket.Contains(neededKey))
             {
                 anim.SetBool("PlayerNearDoor", true);
                 if(!audioSource.isPlaying)

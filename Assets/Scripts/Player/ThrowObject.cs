@@ -14,12 +14,11 @@ public class ThrowObject : MonoBehaviour
     public Vector3 Throwable;
 
     bool playerHolding = false;
-    bool readyToFire = false;
 
     Transform player;
     Transform hand;
     HUD hud;
-    Renderer renderer;
+    Renderer rend;
     Material tempMaterial;
 
     void Start()
@@ -27,7 +26,7 @@ public class ThrowObject : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         hand = player.transform.Find("Hand").transform;
         hud = GameObject.FindObjectOfType<HUD>();
-        renderer = GetComponent<Renderer>();
+        rend = GetComponent<Renderer>();
 
         playerHolding = false;
     }
@@ -90,12 +89,12 @@ public class ThrowObject : MonoBehaviour
 
     void OnMouseEnter()
     {
-        tempMaterial = renderer.material;
+        tempMaterial = rend.material;
     }
 
     void OnMouseOver()
     {
-        renderer.material = material;
+        rend.material = material;
 
         if(!playerHolding)
         {
@@ -109,7 +108,7 @@ public class ThrowObject : MonoBehaviour
 
     void OnMouseExit()
     {
-        renderer.material = tempMaterial;
+        rend.material = tempMaterial;
 
         if (playerHolding)
         {
