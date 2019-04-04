@@ -9,6 +9,8 @@ public class ThrowObject : MonoBehaviour
 
     public float throwForce;
 
+    public float notifyVelocityThreshold;
+
     public Material material;
     public Vector3 Throwable;
 
@@ -19,6 +21,7 @@ public class ThrowObject : MonoBehaviour
     HUD hud;
     Renderer rend;
     Material tempMaterial;
+    Rigidbody rb;
 
     void Start()
     {
@@ -26,6 +29,7 @@ public class ThrowObject : MonoBehaviour
         hand = player.transform.Find("Hand").transform;
         hud = GameObject.FindObjectOfType<HUD>();
         rend = GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
 
         playerHolding = false;
     }
@@ -49,7 +53,6 @@ public class ThrowObject : MonoBehaviour
         {
             playerHolding = true;
             GetComponent<Collider>().enabled = false;
-
         }
     }
 
@@ -69,23 +72,21 @@ public class ThrowObject : MonoBehaviour
         }
     }
 
-     void OnCollisionEnter (Collision other)
-     {
-        if(other.relativeVelocity.magnitude > 2f)
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("Throwable velocity: "  + rb.velocity.magnitude);
+        if (rb.velocity.magnitude >= notifyVelocityThreshold)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
-            
-            if(other.relativeVelocity.magnitude >=2f)
-            {   
-                if (other.contactCount > 0) 
-                {
-                    Throwable = other.GetContact(0).point; 
-                    StateController._throwObject = this;
-                    Debug.Log("objects vector3"+other.transform.position);
-                }
+
+            if (other.contactCount > 0)
+            {
+                Throwable = other.GetContact(0).point;
+                StateController._throwObject = this;
+                Debug.Log("objects vector3" + other.transform.position);
             }
         }
-     }
+    }
 
     void OnMouseEnter()
     {
@@ -96,7 +97,7 @@ public class ThrowObject : MonoBehaviour
     {
         rend.material = material;
 
-        if(!playerHolding)
+        if (!playerHolding)
         {
             hud.MessageForPlayer(PickupMessage);
         }

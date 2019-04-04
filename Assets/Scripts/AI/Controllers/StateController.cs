@@ -77,6 +77,8 @@ public class StateController : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        Gizmos.DrawLine(transform.position, navMeshAgent.destination);
+        
         if (currentState != null && eyes != null)
         {
             Gizmos.color = currentState.sceneGizmoColor;

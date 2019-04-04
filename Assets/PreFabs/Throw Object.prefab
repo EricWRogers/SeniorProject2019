@@ -124,6 +124,6 @@ MonoBehaviour:
   PickupMessage: Click to PickUp
   ThrowMessage: Click to Throw
   throwForce: 5000
-  distanceOffset: 20
-  Throwable: {x: 0, y: 0, z: 0}
+  notifyVelocityThreshold: 10
   material: {fileID: 2100000, guid: 0d626a844b27bd94cafe46f74e6d27cb, type: 2}
+  Throwable: {x: 0, y: 0, z: 0}
