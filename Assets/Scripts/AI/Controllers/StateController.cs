@@ -24,6 +24,7 @@ public class StateController : MonoBehaviour
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
+    public Animator anim;
     
     public ThrowObject throwableObject {
         get {
@@ -45,6 +46,7 @@ public class StateController : MonoBehaviour
     private void Start()
     {
         SetupAI();
+        anim = GetComponent<Animator>();
     }
     void FixedUpdate()
     {
@@ -73,6 +75,7 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
+        
     }
 
     void OnDrawGizmos()
