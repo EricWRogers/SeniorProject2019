@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -631,6 +631,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -775,21 +790,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -1396,6 +1396,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1540,21 +1555,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -2900,6 +2900,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3044,21 +3059,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -3610,6 +3610,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3754,21 +3769,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -6906,6 +6906,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7050,16 +7060,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -7627,6 +7627,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7771,16 +7781,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -8614,6 +8614,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8758,21 +8773,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -9495,6 +9495,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9639,21 +9654,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -10486,6 +10486,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10630,21 +10645,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -14194,6 +14194,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14338,21 +14353,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -18323,7 +18323,7 @@ PrefabInstance:
     - target: {fileID: 6952691403254199045, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
@@ -20095,6 +20095,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20239,16 +20249,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -23157,6 +23157,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23301,21 +23316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -24999,6 +24999,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25143,21 +25158,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -26525,6 +26525,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26669,21 +26684,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -29526,7 +29526,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -29945,6 +29950,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30089,21 +30109,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -31182,6 +31187,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31326,16 +31341,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -33018,6 +33023,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33162,21 +33182,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -33746,7 +33751,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -34553,6 +34563,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34697,21 +34722,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3401500942325871616, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -38076,6 +38086,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38220,16 +38240,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -39613,6 +39623,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39757,16 +39777,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -40686,6 +40696,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40830,21 +40855,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -41008,6 +41018,11 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -43040,6 +43055,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43184,21 +43214,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -46856,6 +46871,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47000,21 +47030,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -47437,6 +47452,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47581,21 +47611,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -47751,6 +47766,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47895,21 +47925,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -48181,6 +48196,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -48325,21 +48355,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -49143,6 +49158,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -49287,21 +49317,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -52999,6 +53014,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53143,21 +53173,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -53387,6 +53402,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53531,21 +53561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -53724,6 +53739,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53868,21 +53898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -54114,6 +54129,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -54258,21 +54288,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -57826,7 +57841,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}

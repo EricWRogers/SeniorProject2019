@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class DoorScript : MonoBehaviour
 {
-    public enum DoorColor
+    public enum ScreenColor
     {
-        None,
         Blue,
         Green,
         Purple,
         White,
+        None,
     }
 
     public enum DoorStates
     {
-        Good,
+        Locked,
         Broken,
-        locked
+        Unlocked,
+        
     }
-
+    
+    public ScreenColor screenColor;
     public DoorStates doorStates;
-    public DoorColor doorColor;
 
     string neededKey;
 
     Color colorLight;
-    Color colorDoor;
+    Color colorScreen;
     AudioSource audioSource;
     Animator anim;
 
@@ -35,102 +36,102 @@ public class DoorScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-
-        SetColorValue();
     }
 
     void Update()
     {
-        CheckDoorLocks();
         CheckIfDoorIsBroken();
+        SetColorValue();
+        CheckDoorLocks();
     }
 
     void SetColorValue()
     {
-        switch(doorColor)
+        switch(screenColor)
         {
-            case DoorColor.None:
+            case ScreenColor.None:
                 
                 if(doorStates != DoorStates.Broken)
                 {
-                    doorStates = DoorStates.Good;
+                    doorStates = DoorStates.Unlocked;
+                    colorScreen = Color.black;
                 }
                 else
                 {
                     doorStates = DoorStates.Broken;
+                    colorScreen = Color.black;
                 }
 
                 SetScreenColor();
 
                 break;
 
-            case DoorColor.Blue:
-                neededKey = "Blue";
+            case ScreenColor.Blue:
 
                 if(doorStates != DoorStates.Broken)
                 {
-                    doorStates = DoorStates.locked;
-                    colorDoor = Color.blue;
+                    doorStates = DoorStates.Locked;
+                    colorScreen = Color.blue;
+                    neededKey = "Blue";
                 }
                 else
                 {
                     doorStates = DoorStates.Broken;
-                    doorColor = DoorColor.None;
+                    screenColor = ScreenColor.None;
                 }
 
                 SetScreenColor();
                 break;
 
-            case DoorColor.Green:
-                neededKey = "Green";
-
-                if(doorStates != DoorStates.Broken)
-                {
-                    doorStates = DoorStates.locked;
-                    colorDoor = Color.green;
-                }
-                else
-                {
-                    doorStates = DoorStates.Broken;
-                    doorColor = DoorColor.None;
-                }
-
-                SetScreenColor();
-                break;
-
-            case DoorColor.Purple:
-                neededKey = "Purple";
+            case ScreenColor.Green:
             
                 if(doorStates != DoorStates.Broken)
                 {
-                    doorStates = DoorStates.locked;
-                    colorDoor = Color.magenta;
+                    doorStates = DoorStates.Locked;
+                    colorScreen = Color.green;
+                    neededKey = "Green";
                 }
                 else
                 {
                     doorStates = DoorStates.Broken;
-                    doorColor = DoorColor.None;
+                    screenColor = ScreenColor.None;
+                }
+
+                SetScreenColor();
+                break;
+
+            case ScreenColor.Purple:
+            
+                if(doorStates != DoorStates.Broken)
+                {
+                    doorStates = DoorStates.Locked;
+                    colorScreen = Color.magenta;
+                    neededKey = "Purple";
+                }
+                else
+                {
+                    doorStates = DoorStates.Broken;
+                    screenColor = ScreenColor.None;
                 }
 
                 SetScreenColor();
 
                 break;
 
-            case DoorColor.White:
-                colorDoor = Color.white;
+            case ScreenColor.White:
+                colorScreen = Color.white;
                 neededKey = "White";
-                SetScreenColor();
 
                 if(doorStates != DoorStates.Broken)
                 {
-                    doorStates = DoorStates.locked;
+                    doorStates = DoorStates.Locked;
                 }
                 else
                 {
                     doorStates = DoorStates.Broken;
-                    doorColor = DoorColor.None;
+                    screenColor = ScreenColor.None;
                 }
-
+                SetScreenColor();
                 break;
 
             default:
@@ -143,7 +144,7 @@ public class DoorScript : MonoBehaviour
     {
         switch(doorStates)
         {
-            case DoorStates.Good:
+            case DoorStates.Unlocked:
                 colorLight = Color.green;
                 SetLightColor();
                 break;
@@ -153,7 +154,7 @@ public class DoorScript : MonoBehaviour
                 SetLightColor();
                 break;
 
-            case DoorStates.locked:
+            case DoorStates.Locked:
                 colorLight = Color.red;
                 SetLightColor();
                 break;
@@ -173,8 +174,8 @@ public class DoorScript : MonoBehaviour
     {
         if(transform.Find("DoorScreen 1") != null)
         {
-            transform.Find("DoorScreen 1").transform.Find("Screen").GetComponent<Image>().color = colorDoor;
-            transform.Find("DoorScreen 2").transform.Find("Screen").GetComponent<Image>().color = colorDoor;
+            transform.Find("DoorScreen 1").transform.Find("Screen").GetComponent<Image>().color = colorScreen;
+            transform.Find("DoorScreen 2").transform.Find("Screen").GetComponent<Image>().color = colorScreen;
         }
     }
 
@@ -188,11 +189,11 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && doorStates == DoorStates.locked && doorColor != DoorColor.None)
+        if (other.gameObject.CompareTag("Player") && doorStates == DoorStates.Locked && screenColor != ScreenColor.None)
         {
             if(other.gameObject.GetComponent<KeyChain>().KeysInPocket.Contains(neededKey))
             {
-                doorStates = DoorStates.Good;
+                screenColor = ScreenColor.None;
 
                 anim.SetBool("PlayerNearDoor", true);
                 anim.SetTrigger("OpenDoor");
@@ -203,7 +204,7 @@ public class DoorScript : MonoBehaviour
                 }
             }
         }
-        else if(other.gameObject.CompareTag("Player") && doorStates == DoorStates.Good && doorColor == DoorColor.None)
+        else if(other.gameObject.CompareTag("Player") && doorStates == DoorStates.Unlocked && screenColor == ScreenColor.None)
         {
             anim.SetBool("PlayerNearDoor", true);
             anim.SetTrigger("OpenDoor");
@@ -213,7 +214,7 @@ public class DoorScript : MonoBehaviour
                 audioSource.Play();
             }
         }
-        else if(other.gameObject.CompareTag("Player") && doorStates == DoorStates.Broken && doorColor == DoorColor.None)
+        else if(other.gameObject.CompareTag("Player") && doorStates == DoorStates.Broken && screenColor == ScreenColor.None)
         {
             anim.SetTrigger("isBroken");
             anim.SetBool("PlayerNearDoor", true); 
