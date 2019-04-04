@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
 
+    public AudioManager audioManager;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -32,7 +34,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 3;
+        DifficultyManager.instance.adrenaline = 0;
+        audioManager.Play("UIMenuSelect");
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayNormal()
@@ -41,7 +45,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 2;
+        DifficultyManager.instance.adrenaline = 0;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayHard()
@@ -50,7 +55,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 1;
+        DifficultyManager.instance.adrenaline = 0;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayHardcore()
@@ -60,30 +66,35 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 0;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadDifficulty()
     {
         difficultyUI.SetActive(true);
         mainMenuUI.SetActive(false);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseDifficulty()
     {
         difficultyUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadOptions()
     {
         mainMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseOptions()
     {
         optionsMenuUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadCredits()
@@ -91,12 +102,14 @@ public class MainMenu : MonoBehaviour
         mainMenuUI.SetActive(false);
         creditsUI.SetActive(true);
         Invoke("CloseCredits", creditDuration);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseCredits()
     {
         creditsUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void Exit()

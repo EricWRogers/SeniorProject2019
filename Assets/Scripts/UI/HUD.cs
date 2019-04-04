@@ -144,7 +144,8 @@ public class HUD : MonoBehaviour
 
             //find scientist
             yield return new WaitForSeconds(textRemoval);
-            TutorialForPlayer("Find the Scientist");
+            TutorialForPlayer("Find and plant explosives");
+            yield return new WaitWhile(() => GameManager.explosives > 1);
 
             //run when finding monster 5s
 
