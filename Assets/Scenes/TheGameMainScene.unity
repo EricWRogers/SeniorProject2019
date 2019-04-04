@@ -329,6 +329,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &6447411 stripped
@@ -700,21 +705,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -859,6 +849,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -1603,21 +1613,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1762,6 +1757,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -1994,6 +2009,16 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 742973872}
+    - target: {fileID: 9161196466396425928, guid: b3aa9d6785032d742b14a937ab8db5af,
+        type: 3}
+      propertyPath: playerTargetMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161196466396425928, guid: b3aa9d6785032d742b14a937ab8db5af,
+        type: 3}
+      propertyPath: ObstacleMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
 --- !u!4 &36543506 stripped
@@ -3134,6 +3159,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &63729234 stripped
@@ -3240,6 +3270,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!1001 &67154423
@@ -3313,21 +3348,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
@@ -3473,6 +3493,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -3783,6 +3823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -4231,21 +4276,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4390,6 +4420,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -4687,11 +4732,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90598272}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -219.12001, y: 25.71, z: 146.72}
+  m_LocalPosition: {x: -626.2146, y: 48.283577, z: -397.0563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 218
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!4 &91274441 stripped
 Transform:
@@ -5014,11 +5059,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108227317}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -158.54, y: 25.71, z: 100.49}
+  m_LocalPosition: {x: -565.6346, y: 48.283577, z: -443.28632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 200
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!1001 &110644122
 PrefabInstance:
@@ -5356,11 +5401,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115152931}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -229.12001, y: 29.42, z: 157.11}
+  m_LocalPosition: {x: -636.2146, y: 51.993576, z: -386.66632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 216
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1 &115969216
 GameObject:
@@ -5425,11 +5470,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115969216}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -317.79, y: 29.58, z: 162.48}
+  m_LocalPosition: {x: -724.88464, y: 52.15358, z: -381.29633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1 &118007165
 GameObject:
@@ -5494,11 +5539,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118007165}
   m_LocalRotation: {x: 0.20706417, y: -0, z: -0, w: 0.97832745}
-  m_LocalPosition: {x: -28.3, y: 122.7, z: -375}
+  m_LocalPosition: {x: -435.3946, y: 145.27357, z: -918.7763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 183
   m_LocalEulerAnglesHint: {x: 23.901001, y: 0, z: 0}
 --- !u!4 &125094780 stripped
 Transform:
@@ -5575,11 +5620,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127369726}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -298.38, y: 26.75, z: 144.44}
+  m_LocalPosition: {x: -705.4746, y: 49.323578, z: -399.3363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 56
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 228
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!4 &127966195 stripped
 Transform:
@@ -5933,11 +5978,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133352557}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -186.18, y: 26.75, z: 63.88}
+  m_LocalPosition: {x: -593.2746, y: 49.323578, z: -479.8963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 192
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!4 &137201636 stripped
 Transform:
@@ -6362,11 +6407,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150888202}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -208.7, y: 29.58, z: 77.34}
+  m_LocalPosition: {x: -615.7946, y: 52.15358, z: -466.4363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 186
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!4 &153123228 stripped
 Transform:
@@ -7230,6 +7275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -8631,16 +8681,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8785,6 +8825,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -9525,6 +9580,79 @@ Transform:
   - {fileID: 2000203096}
   - {fileID: 1989773621}
   - {fileID: 496978075}
+  - {fileID: 118007167}
+  - {fileID: 1135447285}
+  - {fileID: 262692872}
+  - {fileID: 150888204}
+  - {fileID: 1398624616}
+  - {fileID: 1718891602}
+  - {fileID: 1990380507}
+  - {fileID: 2042909156}
+  - {fileID: 914856264}
+  - {fileID: 133352559}
+  - {fileID: 1070892991}
+  - {fileID: 271231954}
+  - {fileID: 563439384}
+  - {fileID: 2140399373}
+  - {fileID: 757880827}
+  - {fileID: 2024960579}
+  - {fileID: 609512205}
+  - {fileID: 108227319}
+  - {fileID: 1708757996}
+  - {fileID: 1812358953}
+  - {fileID: 463387441}
+  - {fileID: 1601380417}
+  - {fileID: 409002923}
+  - {fileID: 930053268}
+  - {fileID: 1209426259}
+  - {fileID: 2106852704}
+  - {fileID: 589112181}
+  - {fileID: 1804137427}
+  - {fileID: 1949220670}
+  - {fileID: 1026011547}
+  - {fileID: 1130106966}
+  - {fileID: 2017645637}
+  - {fileID: 740634433}
+  - {fileID: 115152933}
+  - {fileID: 1687936563}
+  - {fileID: 90598274}
+  - {fileID: 349063210}
+  - {fileID: 1985344880}
+  - {fileID: 1826769378}
+  - {fileID: 527797338}
+  - {fileID: 115969218}
+  - {fileID: 1733551357}
+  - {fileID: 1134008102}
+  - {fileID: 883501837}
+  - {fileID: 1386180084}
+  - {fileID: 127369728}
+  - {fileID: 1929976170}
+  - {fileID: 1121856227}
+  - {fileID: 673543045}
+  - {fileID: 789660111}
+  - {fileID: 940268160}
+  - {fileID: 498465683}
+  - {fileID: 1387671859}
+  - {fileID: 1117251300}
+  - {fileID: 1442130008}
+  - {fileID: 1541266678}
+  - {fileID: 1995445589}
+  - {fileID: 762107283}
+  - {fileID: 1925362975}
+  - {fileID: 1840610255}
+  - {fileID: 1453597380}
+  - {fileID: 561720570}
+  - {fileID: 1980427150}
+  - {fileID: 1191788079}
+  - {fileID: 1943682647}
+  - {fileID: 1847894916}
+  - {fileID: 2141323985}
+  - {fileID: 1767602471}
+  - {fileID: 1200566955}
+  - {fileID: 980583269}
+  - {fileID: 1220233510}
+  - {fileID: 1096690622}
+  - {fileID: 1642533727}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9599,16 +9727,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
       objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
@@ -9755,6 +9873,21 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &260018897 stripped
@@ -9895,11 +10028,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262692870}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -213.02, y: 29.58, z: 80.04}
+  m_LocalPosition: {x: -620.1146, y: 52.15358, z: -463.7363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 185
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &265546603
 PrefabInstance:
@@ -10459,11 +10592,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271231952}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -182.72, y: 29.58, z: 121.27}
+  m_LocalPosition: {x: -589.8146, y: 52.15358, z: -422.50632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 194
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &273770120
 PrefabInstance:
@@ -10541,6 +10674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -10932,21 +11070,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11091,6 +11214,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -11462,6 +11600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -12434,21 +12577,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12593,6 +12721,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -12938,6 +13086,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &346854693 stripped
@@ -13015,11 +13168,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349063208}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -216.46, y: 26.75, z: 151.34}
+  m_LocalPosition: {x: -623.5546, y: 49.323578, z: -392.4363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 219
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!1001 &349665150
 PrefabInstance:
@@ -13632,21 +13785,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13791,6 +13929,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -14319,11 +14477,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409002921}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -271.51, y: 29.58, z: 130.73999}
+  m_LocalPosition: {x: -678.6046, y: 52.15358, z: -413.03632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 205
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1001 &409823254
 PrefabInstance:
@@ -15832,11 +15990,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463387439}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -278.94, y: 29.58, z: 128.86}
+  m_LocalPosition: {x: -686.0346, y: 52.15358, z: -414.91632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 203
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1 &463818681
 GameObject:
@@ -16498,6 +16656,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &477976818 stripped
@@ -16732,6 +16895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -17759,11 +17927,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498465681}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -371.86002, y: 29.42, z: 196.17}
+  m_LocalPosition: {x: -778.9546, y: 51.993576, z: -347.60632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 234
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1001 &500204220
 PrefabInstance:
@@ -18513,21 +18681,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18672,6 +18825,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -18886,11 +19059,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527797336}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -320.9, y: 29.58, z: 157.9}
+  m_LocalPosition: {x: -727.9946, y: 52.15358, z: -385.8763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 222
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1 &528331461
 GameObject:
@@ -20248,11 +20421,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561720568}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -275.3, y: 28.69, z: 194.25}
+  m_LocalPosition: {x: -682.3946, y: 51.26358, z: -349.5263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 72
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 244
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &563295685
 PrefabInstance:
@@ -20331,6 +20504,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &563295686 stripped
@@ -20402,11 +20580,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563439382}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -178.4, y: 29.58, z: 118.56999}
+  m_LocalPosition: {x: -585.4946, y: 52.15358, z: -425.2063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 195
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1001 &565373383
 PrefabInstance:
@@ -20707,11 +20885,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589112179}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -254.76001, y: 25.71, z: 108.08}
+  m_LocalPosition: {x: -661.8546, y: 48.283577, z: -435.6963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 209
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!4 &589333381 stripped
 Transform:
@@ -21192,11 +21370,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609512203}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -158.54, y: 28.69, z: 108.96}
+  m_LocalPosition: {x: -565.6346, y: 51.26358, z: -434.8163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 199
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!4 &613186519 stripped
 Transform:
@@ -21349,6 +21527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -21503,6 +21686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -23406,11 +23594,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673543043}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -381.72, y: 29.58, z: 203.85999}
+  m_LocalPosition: {x: -788.8146, y: 52.15358, z: -339.91632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 231
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1001 &674623159
 PrefabInstance:
@@ -24977,6 +25165,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!4 &712932693 stripped
@@ -25783,11 +25976,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740634431}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -230.59999, y: 27.84, z: 163.42}
+  m_LocalPosition: {x: -637.6946, y: 50.413578, z: -380.35632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 215
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &742506343
 PrefabInstance:
@@ -25865,6 +26058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -26546,11 +26744,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757880825}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -170.02, y: 27.84, z: 117.189995}
+  m_LocalPosition: {x: -577.1146, y: 50.413578, z: -426.5863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 197
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!4 &757978821 stripped
 Transform:
@@ -26627,11 +26825,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762107281}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -295.15997, y: 29.58, z: 203.85999}
+  m_LocalPosition: {x: -702.2546, y: 52.15358, z: -339.91632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 240
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1 &763846851
 GameObject:
@@ -26987,16 +27185,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27141,6 +27329,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -28046,11 +28244,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789660109}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -378.61002, y: 29.58, z: 208.43999}
+  m_LocalPosition: {x: -785.7046, y: 52.15358, z: -335.3363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 60
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 232
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1001 &789975668
 PrefabInstance:
@@ -28722,6 +28920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -29470,7 +29673,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -29628,6 +29836,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -30120,11 +30333,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883501835}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -301.04, y: 28.69, z: 148.29001}
+  m_LocalPosition: {x: -708.13464, y: 51.26358, z: -395.4863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 226
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!4 &884217639 stripped
 Transform:
@@ -31015,21 +31228,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31174,6 +31372,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -31561,11 +31774,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914856262}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -188.84, y: 25.71, z: 59.26}
+  m_LocalPosition: {x: -595.9346, y: 48.283577, z: -484.5163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 191
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!1001 &915109412
 PrefabInstance:
@@ -31854,11 +32067,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930053266}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -266.24, y: 27.84, z: 124.78}
+  m_LocalPosition: {x: -673.3346, y: 50.413578, z: -418.9963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 206
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!4 &932766824 stripped
 Transform:
@@ -32216,11 +32429,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940268158}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -373.34, y: 27.84, z: 202.48}
+  m_LocalPosition: {x: -780.4346, y: 50.413578, z: -341.29633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 61
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 233
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &941175378
 PrefabInstance:
@@ -33271,21 +33484,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33430,6 +33628,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -34054,6 +34267,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &977548953 stripped
@@ -34251,11 +34469,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980583267}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -339.8, y: 29.42, z: 234.29}
+  m_LocalPosition: {x: -746.8946, y: 51.993576, z: -309.48633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 80
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 252
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1001 &990984950
 PrefabInstance:
@@ -35073,21 +35291,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35232,6 +35435,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -35699,11 +35917,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026011545}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -243.3, y: 29.58, z: 167.5}
+  m_LocalPosition: {x: -650.3946, y: 52.15358, z: -376.2763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 212
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &1026216363
 PrefabInstance:
@@ -36357,6 +36575,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1038403715 stripped
@@ -36999,11 +37222,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070892989}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -180.02, y: 29.33, z: 124.74}
+  m_LocalPosition: {x: -587.1146, y: 51.90358, z: -419.03632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 193
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!4 &1072367269 stripped
 Transform:
@@ -37254,11 +37477,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096690620}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -329.8, y: 25.71, z: 223.9}
+  m_LocalPosition: {x: -736.8946, y: 48.283577, z: -319.8763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 82
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 254
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!1 &1097940663
 GameObject:
@@ -37893,11 +38116,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117251298}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -361.86002, y: 25.71, z: 185.78}
+  m_LocalPosition: {x: -768.9546, y: 48.283577, z: -357.9963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 236
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!1 &1121856225
 GameObject:
@@ -37962,11 +38185,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121856225}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -386.04, y: 29.58, z: 206.56}
+  m_LocalPosition: {x: -793.13464, y: 52.15358, z: -337.2163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 58
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 230
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &1122484633
 PrefabInstance:
@@ -38488,11 +38711,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130106964}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -238.98, y: 29.58, z: 164.79999}
+  m_LocalPosition: {x: -646.0746, y: 52.15358, z: -378.97632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 213
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!4 &1131637640 stripped
 Transform:
@@ -38632,11 +38855,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134008100}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -311.04, y: 29.42, z: 150.21}
+  m_LocalPosition: {x: -718.13464, y: 51.993576, z: -393.56628}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 225
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1 &1135447283
 GameObject:
@@ -38701,11 +38924,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135447283}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -210.32, y: 29.33, z: 83.51}
+  m_LocalPosition: {x: -617.4146, y: 51.90358, z: -460.2663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 184
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!1001 &1135603992
 PrefabInstance:
@@ -39666,7 +39889,7 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: screenColor
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -39836,6 +40059,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -40154,21 +40382,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40314,6 +40527,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1190954193 stripped
@@ -40385,11 +40618,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191788077}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -272.63998, y: 26.75, z: 190.4}
+  m_LocalPosition: {x: -679.7346, y: 49.323578, z: -353.3763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 74
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 246
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!1001 &1197280088
 PrefabInstance:
@@ -40540,6 +40773,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!1 &1200566953
@@ -40605,11 +40843,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200566953}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -341.27997, y: 27.84, z: 240.59999}
+  m_LocalPosition: {x: -748.3746, y: 50.413578, z: -303.17633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 251
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &1201523272
 PrefabInstance:
@@ -41152,11 +41390,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209426257}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -264.76, y: 29.42, z: 118.47}
+  m_LocalPosition: {x: -671.8546, y: 51.993576, z: -425.3063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 207
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!4 &1210092674
 Transform:
@@ -41571,11 +41809,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220233508}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -329.8, y: 28.69, z: 232.37}
+  m_LocalPosition: {x: -736.8946, y: 51.26358, z: -311.4063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 81
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &1220459119
 PrefabInstance:
@@ -42012,16 +42250,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42166,6 +42394,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -43986,21 +44229,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44145,6 +44373,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -45871,21 +46114,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46030,6 +46258,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3401500942325871616, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -46496,6 +46739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -46970,11 +47218,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386180082}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -301.04, y: 25.71, z: 139.82}
+  m_LocalPosition: {x: -708.13464, y: 48.283577, z: -403.9563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 55
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 227
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!1001 &1386998622
 PrefabInstance:
@@ -47108,11 +47356,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387671857}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -361.86002, y: 28.69, z: 194.25}
+  m_LocalPosition: {x: -768.9546, y: 51.26358, z: -349.5263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 235
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &1387873575
 PrefabInstance:
@@ -47835,11 +48083,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398624614}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -205.59, y: 29.58, z: 81.92}
+  m_LocalPosition: {x: -612.6846, y: 52.15358, z: -461.85632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 187
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1001 &1399348257
 PrefabInstance:
@@ -48460,6 +48708,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1434875024 stripped
@@ -48816,11 +49069,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442130006}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -359.2, y: 26.75, z: 190.4}
+  m_LocalPosition: {x: -766.2946, y: 49.323578, z: -353.3763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 65
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 237
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!1001 &1442593841
 PrefabInstance:
@@ -49167,11 +49420,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453597378}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -285.3, y: 29.42, z: 196.17}
+  m_LocalPosition: {x: -692.3946, y: 51.993576, z: -347.60632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 243
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1001 &1454743669
 PrefabInstance:
@@ -50360,16 +50613,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50514,6 +50757,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -51433,6 +51691,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1535739594 stripped
@@ -51538,6 +51801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -51727,11 +51995,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541266676}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -296.77997, y: 29.33, z: 210.02998}
+  m_LocalPosition: {x: -703.8746, y: 51.90358, z: -333.74634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 66
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 238
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!4 &1543383504 stripped
 Transform:
@@ -52311,16 +52579,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -52465,6 +52723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -53006,6 +53274,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1571267221 stripped
@@ -53522,21 +53795,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53681,6 +53939,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -53849,7 +54127,7 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: screenColor
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -54499,11 +54777,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601380415}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -274.62, y: 29.58, z: 126.159996}
+  m_LocalPosition: {x: -681.7146, y: 52.15358, z: -417.6163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 204
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1001 &1602068776
 PrefabInstance:
@@ -55881,6 +56159,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1636998314 stripped
@@ -56168,11 +56451,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642533725}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -327.13998, y: 26.75, z: 228.51999}
+  m_LocalPosition: {x: -734.2346, y: 49.323578, z: -315.25632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 83
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 255
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!4 &1644820968 stripped
 Transform:
@@ -56571,21 +56854,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -56730,6 +56998,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -57136,6 +57424,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1662367063 stripped
@@ -57464,7 +57757,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -57571,6 +57869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -57858,11 +58161,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687936561}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -219.12001, y: 28.69, z: 155.19}
+  m_LocalPosition: {x: -626.2146, y: 51.26358, z: -388.5863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 217
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &1689145549
 PrefabInstance:
@@ -58306,6 +58609,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1704855515 stripped
@@ -58520,11 +58828,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708757994}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -155.87999, y: 26.75, z: 105.10999}
+  m_LocalPosition: {x: -562.9746, y: 49.323578, z: -438.66632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 201
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!1 &1710879721
 GameObject:
@@ -58784,11 +59092,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718891600}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -200.32, y: 27.84, z: 75.96}
+  m_LocalPosition: {x: -607.4146, y: 50.413578, z: -467.8163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 188
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &1719401538
 PrefabInstance:
@@ -59358,6 +59666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -59962,11 +60275,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733551355}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -312.52, y: 27.84, z: 156.52}
+  m_LocalPosition: {x: -719.6146, y: 50.413578, z: -387.2563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &1734585599
 PrefabInstance:
@@ -60123,6 +60436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -60943,21 +61261,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -61102,6 +61405,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -61305,11 +61623,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767602469}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -346.55, y: 29.58, z: 246.55998}
+  m_LocalPosition: {x: -753.6446, y: 52.15358, z: -297.2163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 78
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 250
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1 &1771018171
 GameObject:
@@ -61731,21 +62049,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -61890,6 +62193,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -62045,21 +62363,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -62204,6 +62507,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -62475,21 +62798,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -62634,6 +62942,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -63157,11 +63485,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804137425}
   m_LocalRotation: {x: 0.20116472, y: -0.69415927, z: 0.68532634, w: -0.08946225}
-  m_LocalPosition: {x: -252.1, y: 26.75, z: 112.7}
+  m_LocalPosition: {x: -659.1946, y: 49.323578, z: -431.0763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 210
   m_LocalEulerAnglesHint: {x: 113.729004, y: -803.63, z: -632.88904}
 --- !u!1 &1805672538
 GameObject:
@@ -63713,21 +64041,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -63873,6 +64186,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1809917840 stripped
@@ -63983,11 +64316,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812358951}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -276.24, y: 29.33, z: 132.32999}
+  m_LocalPosition: {x: -683.3346, y: 51.90358, z: -411.44632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 202
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!1001 &1812523777
 PrefabInstance:
@@ -64219,6 +64552,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!1001 &1824849664
@@ -64345,11 +64683,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826769376}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -325.22, y: 29.58, z: 160.6}
+  m_LocalPosition: {x: -732.3146, y: 52.15358, z: -383.1763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!4 &1829371290 stripped
 Transform:
@@ -64782,11 +65120,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840610253}
   m_LocalRotation: {x: 0.3263059, y: -0.3392301, z: 0.6703129, w: 0.5736969}
-  m_LocalPosition: {x: -286.77997, y: 27.84, z: 202.48}
+  m_LocalPosition: {x: -693.8746, y: 50.413578, z: -341.29633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 242
   m_LocalEulerAnglesHint: {x: 56.015003, y: -355.051, z: -258.485}
 --- !u!1001 &1840688765
 PrefabInstance:
@@ -65005,11 +65343,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847894914}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -353.97998, y: 29.58, z: 244.68}
+  m_LocalPosition: {x: -761.0746, y: 52.15358, z: -299.0963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 76
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 248
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &1847912761
 PrefabInstance:
@@ -66778,6 +67116,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1918512710 stripped
@@ -67036,6 +67379,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!1 &1925362973
@@ -67101,11 +67449,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925362973}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -292.05, y: 29.58, z: 208.43999}
+  m_LocalPosition: {x: -699.1446, y: 52.15358, z: -335.3363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 69
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 241
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1 &1929976168
 GameObject:
@@ -67170,11 +67518,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929976168}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -383.34, y: 29.33, z: 210.02998}
+  m_LocalPosition: {x: -790.4346, y: 51.90358, z: -333.74634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 57
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 229
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!1001 &1933831411
 PrefabInstance:
@@ -67611,11 +67959,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943682645}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -351.27997, y: 29.33, z: 248.14998}
+  m_LocalPosition: {x: -758.3746, y: 51.90358, z: -295.62634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 247
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!4 &1943732897 stripped
 Transform:
@@ -67881,11 +68229,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949220668}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -240.59999, y: 29.33, z: 170.96999}
+  m_LocalPosition: {x: -647.6946, y: 51.90358, z: -372.80634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 211
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!1001 &1951972423
 PrefabInstance:
@@ -68400,6 +68748,11 @@ PrefabInstance:
       propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1977114554 stripped
@@ -68621,11 +68974,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980427148}
   m_LocalRotation: {x: 0.5180831, y: -0.70632434, z: 0.383778, w: 0.29225048}
-  m_LocalPosition: {x: -275.3, y: 25.71, z: 185.78}
+  m_LocalPosition: {x: -682.3946, y: 48.283577, z: -357.9963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 73
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 245
   m_LocalEulerAnglesHint: {x: 122.332, y: -718.373, z: -611.623}
 --- !u!4 &1981157969 stripped
 Transform:
@@ -68827,11 +69180,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985344878}
   m_LocalRotation: {x: 0.5724731, y: -0.050763037, z: -0.040412147, w: 0.8173522}
-  m_LocalPosition: {x: -322.52, y: 29.33, z: 164.06999}
+  m_LocalPosition: {x: -729.6146, y: 51.90358, z: -379.7063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 220
   m_LocalEulerAnglesHint: {x: 68.705, y: -20.848001, z: -19.995}
 --- !u!4 &1985635074 stripped
 Transform:
@@ -68930,6 +69283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -69196,11 +69554,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990380505}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -198.84, y: 29.42, z: 69.65}
+  m_LocalPosition: {x: -605.9346, y: 51.993576, z: -474.1263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 189
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1 &1990945310
 GameObject:
@@ -69383,21 +69741,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -69543,6 +69886,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1991140140 stripped
@@ -69683,11 +70046,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995445587}
   m_LocalRotation: {x: 0.6702628, y: -0.1826143, z: -0.1257816, w: 0.7082223}
-  m_LocalPosition: {x: -299.47998, y: 29.58, z: 206.56}
+  m_LocalPosition: {x: -706.5746, y: 52.15358, z: -337.2163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 239
   m_LocalEulerAnglesHint: {x: 64.615005, y: -85.344, z: -80.622}
 --- !u!1001 &1995847565
 PrefabInstance:
@@ -69840,21 +70203,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -69999,6 +70347,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -70306,11 +70674,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017645635}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -235.87001, y: 29.58, z: 169.37999}
+  m_LocalPosition: {x: -642.9646, y: 52.15358, z: -374.3963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 214
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1001 &2018382638
 PrefabInstance:
@@ -70383,21 +70751,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
@@ -70543,6 +70896,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -70690,11 +71058,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024960577}
   m_LocalRotation: {x: 0.5809598, y: -0.6674735, z: 0.42485788, w: 0.19094671}
-  m_LocalPosition: {x: -168.54, y: 29.42, z: 110.88}
+  m_LocalPosition: {x: -575.6346, y: 51.993576, z: -432.8963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 198
   m_LocalEulerAnglesHint: {x: 127.905, y: -382.86798, z: -273.363}
 --- !u!1001 &2026783464
 PrefabInstance:
@@ -70843,21 +71211,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorStates
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: MyLock
-      value: Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
-        type: 3}
-      propertyPath: doorColor
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 415262997196224121, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -71002,6 +71355,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: MyLock
+      value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -71389,11 +71762,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042909154}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -188.84, y: 28.69, z: 67.73}
+  m_LocalPosition: {x: -595.9346, y: 51.26358, z: -476.0463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 190
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &2043557664
 PrefabInstance:
@@ -72130,6 +72503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: doorStates
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -73585,11 +73963,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106852702}
   m_LocalRotation: {x: 0.33412206, y: -0.47616133, z: 0.6440712, w: 0.49679482}
-  m_LocalPosition: {x: -254.76001, y: 28.69, z: 116.55}
+  m_LocalPosition: {x: -661.8546, y: 51.26358, z: -427.22632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 208
   m_LocalEulerAnglesHint: {x: 109.031006, y: -547.527, z: -440.658}
 --- !u!1001 &2108604734
 PrefabInstance:
@@ -74508,11 +74886,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140399371}
   m_LocalRotation: {x: 0.5524408, y: -0.4002814, z: 0.53694713, w: 0.4962578}
-  m_LocalPosition: {x: -175.29, y: 29.58, z: 123.149994}
+  m_LocalPosition: {x: -582.3846, y: 52.15358, z: -420.6263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 196
   m_LocalEulerAnglesHint: {x: 78.005005, y: -289.44, z: -205.86499}
 --- !u!1 &2141323983
 GameObject:
@@ -74577,11 +74955,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141323983}
   m_LocalRotation: {x: 0.83668935, y: -0.18293595, z: 0.07726965, w: 0.51040643}
-  m_LocalPosition: {x: -349.65997, y: 29.58, z: 241.97998}
+  m_LocalPosition: {x: -756.7546, y: 52.15358, z: -301.79633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 77
+  m_Father: {fileID: 254922148}
+  m_RootOrder: 249
   m_LocalEulerAnglesHint: {x: 61.930004, y: -172.988, z: -151.123}
 --- !u!1 &2142242589
 GameObject:
@@ -75526,7 +75904,7 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: screenColor
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}

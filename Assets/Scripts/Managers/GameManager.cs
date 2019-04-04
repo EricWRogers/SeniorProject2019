@@ -57,6 +57,10 @@ public class GameManager : MonoBehaviour
     {
         PollAgression();
         PollScareShitlessMeter();
+        if( explosives == 0)
+        {
+            CountDownTimer();
+        }
     }
 
     void PollAgression()
@@ -153,18 +157,18 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //hidden = false;
+            hidden = false;
         }
         
         if( hidden || playerAttacked)
         {
-            gameObject.layer = LayerMask.NameToLayer("obstacles");
+            PlayerGO.layer = LayerMask.NameToLayer("obstacles");
             
         }
         else
         {
 
-            gameObject.layer = LayerMask.NameToLayer("target");
+            PlayerGO.layer = LayerMask.NameToLayer("target");
         }
     }
 
