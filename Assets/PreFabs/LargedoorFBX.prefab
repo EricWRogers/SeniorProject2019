@@ -285,10 +285,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415262997195860575}
+  - component: {fileID: 7664624857214224829}
   - component: {fileID: 998298976358389159}
   - component: {fileID: 8341634228727613714}
   - component: {fileID: 1316209965476734830}
-  - component: {fileID: 7664624857214224829}
   m_Layer: 0
   m_Name: LargedoorFBX
   m_TagString: Untagged
@@ -318,6 +318,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 396, z: 0}
+--- !u!114 &7664624857214224829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415262997196224127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a059ab4f66ed7924e833c1170c285d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorStates: 2
+  doorColor: 1
 --- !u!95 &998298976358389159
 Animator:
   serializedVersion: 3
@@ -447,20 +461,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 17
   m_Center: {x: 1.8, y: 12, z: 0}
---- !u!114 &7664624857214224829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415262997196224127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a059ab4f66ed7924e833c1170c285d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorColor: 1
-  doorStates: 2
 --- !u!1 &1551378138320804821
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +945,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 415262997195860575}
     m_Modifications:
+    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Light 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3928974251258187898, guid: 6f4c734422b92b34a8566e1b70f783ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,11 +1019,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
-        type: 3}
-      propertyPath: m_Name
-      value: Light 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4c734422b92b34a8566e1b70f783ee, type: 3}
@@ -1225,6 +1225,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 415262997195860575}
     m_Modifications:
+    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Light 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3928974251258187898, guid: 6f4c734422b92b34a8566e1b70f783ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1294,11 +1299,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
-        type: 3}
-      propertyPath: m_Name
-      value: Light 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4c734422b92b34a8566e1b70f783ee, type: 3}
