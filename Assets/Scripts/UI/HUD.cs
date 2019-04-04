@@ -60,7 +60,7 @@ public class HUD : MonoBehaviour
         i.CrossFadeAlpha(0.0f, 2.5f, false);
     }
 
-    void CalculateTimer()
+    public void CalculateTimer()
     {
         timerText.enabled = true;
 

@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerGO;
+    public GameObject winPoint;
     public GameObject EntityGO;
     public GameObject HudGO;
     public GameObject[] RoomGOS;
@@ -33,13 +34,18 @@ public class GameManager : MonoBehaviour
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
+        winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
+
         hidden = false;
         playerAttacked = false;
+
+        winPoint.GetComponent<Collider>().enabled = false;
 
         if (DifficultyManager.instance != null)
         {
             adrenaline = DifficultyManager.instance.adrenaline;
+            explosives = 3;
         }
         else
         {
@@ -59,6 +65,7 @@ public class GameManager : MonoBehaviour
         PollScareShitlessMeter();
         if( explosives == 0)
         {
+            winPoint.GetComponent<Collider>().enabled = true;
             CountDownTimer();
         }
     }
@@ -126,7 +133,6 @@ public class GameManager : MonoBehaviour
                 if(ScaredShitlessMeter < 0f)
                 {
                    ScaredShitlessMeter = 0f;
-                   
                 }
             }
         }
@@ -176,18 +182,21 @@ public class GameManager : MonoBehaviour
     {
         if(TimerSet >= 0 && !stopTimer)
         {
+            HudGO.GetComponent<HUD>().CalculateTimer();
             TimerSet -= Time.deltaTime;
         }
         else if(TimerSet <= 0)
         {
-            //Do What???????
-            //GameOver() ?
+            GameOver();
         }
     }
 
     void GameOver()
     {
-
+        stopTimer = true;
+        HudGO.transform.Find("MessageCanvas").GetComponent<Canvas>().enabled = false;
+        HudGO.transform.Find("LoseCanvas").GetComponent<Canvas>().enabled = true;
+        StartCoroutine(LoadScene());
     }
 
     //Call this funichion when you want to WakeUp
@@ -215,6 +224,15 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
-        //DO
+        stopTimer = true;
+        HudGO.transform.Find("MessageCanvas").GetComponent<Canvas>().enabled = false;
+        HudGO.transform.Find("WinCanvas").GetComponent<Canvas>().enabled = true;
+        StartCoroutine(LoadScene());
     }
+
+     IEnumerator LoadScene()
+     {
+         yield return new WaitForSeconds(3);
+         SceneManager.LoadScene("MainMenuScene");
+     }
 }
