@@ -19,17 +19,22 @@ public class GameManager : MonoBehaviour
     public float imageScreenTime = 2.5f;
     public float emptyScreenTime = 2.5f;
     public bool stopTimer = false;
-    public bool playerAttacked;
+    
     public int adrenaline;
     public int explosives;
+    RaycastHit hit;
+    public bool hidden;
+    public bool playerAttacked;
+
 
     void Start()
     {
+       
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
         HudGO = GameObject.Find("HUD");
-
+        hidden = false;
         playerAttacked = false;
 
         if (DifficultyManager.instance != null)
@@ -130,12 +135,37 @@ public class GameManager : MonoBehaviour
         //entitys script not here 
         adrenaline--;
         playerAttacked = true;
-        PlayerGO.layer = LayerMask.NameToLayer("obstacles");
         HudGO.SetActive(false);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
         GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
+    }
+     public void CheckIfHidden()
+    {
+        if (Physics.Raycast(PlayerGO.transform.position, PlayerGO.transform.up, out hit, 15f))
+        {
+            if(hit.collider.tag == "HideableObjects")
+            {
+                hidden = true;
+                Debug.Log(hit.collider.name);
+            }
+        }
+        else
+        {
+            //hidden = false;
+        }
+        
+        if( hidden || playerAttacked)
+        {
+            gameObject.layer = LayerMask.NameToLayer("obstacles");
+            
+        }
+        else
+        {
+
+            gameObject.layer = LayerMask.NameToLayer("target");
+        }
     }
 
     void CountDownTimer()
@@ -160,7 +190,6 @@ public class GameManager : MonoBehaviour
     public void WakeUp()
     {
         playerAttacked = false;
-        PlayerGO.layer = LayerMask.NameToLayer("target");
         HudGO.SetActive(true);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;

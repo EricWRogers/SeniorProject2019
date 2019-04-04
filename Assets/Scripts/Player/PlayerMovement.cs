@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     GameManager gameManager;
     AudioSource audioSource;
-    RaycastHit hit;
+    
     CharacterController CharController;
 
     void Awake()
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        CheckIfHidden();
+        gameManager.CheckIfHidden();
     }
 
     void FixedUpdate()
@@ -190,22 +190,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void CheckIfHidden()
-    {
-        if (Physics.Raycast(transform.position, transform.up, out hit, 15f))
-        {
-            if(hit.collider.tag == "HideableObjects")
-            {
-                Debug.Log(hit.collider.name);
-                gameObject.layer = LayerMask.NameToLayer("obstacles");
-            }
-        }
-        else
-        {
-            gameObject.layer = LayerMask.NameToLayer("target");
-        }
-    }
-
+   
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "KeyCard")
