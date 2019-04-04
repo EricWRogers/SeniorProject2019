@@ -2013,6 +2013,16 @@ PrefabInstance:
       propertyPath: ObstacleMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 1179532221692642881, guid: b3aa9d6785032d742b14a937ab8db5af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e117bc054febdd74ca5e1f3016f4edfc, type: 2}
+    - target: {fileID: 416932646121601416, guid: b3aa9d6785032d742b14a937ab8db5af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bef0c936929d9e74e8eb0308ab57ad71, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
 --- !u!1001 &38269135
@@ -31522,6 +31532,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1890852133, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
+      propertyPath: startMessage
+      value: Explore and PlaceExplosives
+      objectReference: {fileID: 0}
     - target: {fileID: 2093643890, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
       propertyPath: m_SizeDelta.x
       value: 200
@@ -31538,6 +31552,18 @@ PrefabInstance:
     - target: {fileID: 2002210640, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2093643891, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
       propertyPath: m_Enabled
