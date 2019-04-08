@@ -17,18 +17,18 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip sprintingClip;
     public AudioClip pantingClip;
 
-    private float gravity = 20.0f;
-    private float originalSpeed;
-    private float gravityHolder;
-    private float tempTime;
+    float gravity = 20.0f;
+    float originalSpeed;
+    float gravityHolder;
+    float tempTime;
 
-    private Vector3 moveDirection = Vector3.zero;
-    private Vector3 playerSize;
+    Vector3 moveDirection = Vector3.zero;
+    Vector3 playerSize;
 
-    private bool iscrouching = false;
-    private bool isSprinting = false;
-    private bool doneSprinting = false;
-    private bool needCharging = false;
+    bool iscrouching = false;
+    bool isSprinting = false;
+    bool doneSprinting = false;
+    bool needCharging = false;
 
     GameManager gameManager;
     AudioSource audioSource;

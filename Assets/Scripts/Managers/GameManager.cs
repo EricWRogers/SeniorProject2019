@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject tMax;
     public GameObject fullWaypoint = null;
 
+    public RaycastHit hit;
+
     public float ScaredShitlessMeter;
     public float TimerSet;
     public float imageScreenTime = 2.5f;
@@ -23,7 +25,7 @@ public class GameManager : MonoBehaviour
     
     public int adrenaline;
     public int explosives;
-    RaycastHit hit;
+
     public bool hidden;
     public bool playerAttacked;
 
@@ -56,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 
     void FixedUpdate()
@@ -86,6 +88,7 @@ public class GameManager : MonoBehaviour
             }
 
             float dist = Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position);
+            
             if (dist > maxDist)
             {
                 tMax = waypoint;
@@ -159,7 +162,7 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(0f, 0.2f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(1f, 0.15f, false);
     }
 
     void CountDownTimer()
@@ -215,7 +218,7 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Play();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(0f, 0.2f, false);
     }
 
     public void adrenalineAttacked()
