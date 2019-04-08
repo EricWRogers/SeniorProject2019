@@ -1005,7 +1005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &101313834
 Transform:
   m_ObjectHideFlags: 0
@@ -15328,6 +15328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerGO: {fileID: 1738741856}
+  winPoint: {fileID: 0}
   EntityGO: {fileID: 0}
   HudGO: {fileID: 0}
   RoomGOS: []
@@ -15338,9 +15339,10 @@ MonoBehaviour:
   imageScreenTime: 2.5
   emptyScreenTime: 2.5
   stopTimer: 1
-  playerAttacked: 0
   adrenaline: 0
   explosives: 0
+  hidden: 0
+  playerAttacked: 0
 --- !u!114 &7391906400326182062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15403,6 +15405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Explosive Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8598989853059492792, guid: 6a7b24b49f8469645826cabb7bd1e1b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8598989853059492787, guid: 6a7b24b49f8469645826cabb7bd1e1b0,
         type: 3}

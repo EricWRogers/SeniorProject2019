@@ -62,12 +62,8 @@ public class GameManager : MonoBehaviour
     void FixedUpdate()
     {
         PollAgression();
+        CheckExplosives();
         PollScareShitlessMeter();
-        if( explosives == 0)
-        {
-            winPoint.GetComponent<Collider>().enabled = true;
-            CountDownTimer();
-        }
     }
 
     void PollAgression()
@@ -80,6 +76,7 @@ public class GameManager : MonoBehaviour
             {
                 VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
                 RoomManager.agressionMeter = RoomManager.agressionMeter + 4f * Time.deltaTime;
+
                 if (RoomManager.agressionMeter >= 100.0f)
                 {
                     if (fullWaypoint == null)
@@ -98,12 +95,15 @@ public class GameManager : MonoBehaviour
         if(fullWaypoint != null)
         {
             VFXRoomManager RoomM = fullWaypoint.GetComponent<VFXRoomManager>();
+
             if (Vector3.Distance(fullWaypoint.transform.position, EntityGO.transform.position) < 100.0f)
             {
                 if (RoomM.agressionMeter >= 0f)
                 {
                     RoomM.agressionMeter = RoomM.agressionMeter - 15f * Time.deltaTime;
-                } else {
+                } 
+                else 
+                {
                     RoomM.agressionMeter = 0f;
                     fullWaypoint = null;
                 }
@@ -116,6 +116,7 @@ public class GameManager : MonoBehaviour
         if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 180.0f)
         {
             ScaredShitlessMeter += 2f *Time.deltaTime;
+
             if (ScaredShitlessMeter > 100.0f)
             {
                 Debug.Log("the Farthest Waypoint is" + tMax);
@@ -138,6 +139,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void CheckExplosives()
+    {
+        if( explosives == 0)
+        {
+            winPoint.GetComponent<Collider>().enabled = true;
+            CountDownTimer();
+        }
+    }
+
     void Attacked()
     {
         //do audio stuff heart yada
@@ -149,33 +159,7 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
-    }
-     public void CheckIfHidden()
-    {
-        if (Physics.Raycast(PlayerGO.transform.position, PlayerGO.transform.up, out hit, 15f))
-        {
-            if(hit.collider.tag == "HideableObjects")
-            {
-                hidden = true;
-                Debug.Log(hit.collider.name);
-            }
-        }
-        else
-        {
-            hidden = false;
-        }
-        
-        if( hidden || playerAttacked)
-        {
-            PlayerGO.layer = LayerMask.NameToLayer("obstacles");
-            
-        }
-        else
-        {
-
-            PlayerGO.layer = LayerMask.NameToLayer("target");
-        }
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(0f, 0.2f, false);
     }
 
     void CountDownTimer()
@@ -199,7 +183,31 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
-    //Call this funichion when you want to WakeUp
+    public void CheckIfHidden()
+    {
+        if (Physics.Raycast(PlayerGO.transform.position, PlayerGO.transform.up, out hit, 15f))
+        {
+            if(hit.collider.tag == "HideableObjects")
+            {
+                hidden = true;
+                Debug.Log(hit.collider.name);
+            }
+        }
+        else
+        {
+            hidden = false;
+        }
+        
+        if( hidden || playerAttacked)
+        {
+            PlayerGO.layer = LayerMask.NameToLayer("obstacles");
+        }
+        else
+        {
+            PlayerGO.layer = LayerMask.NameToLayer("target");
+        }
+    }
+
     public void WakeUp()
     {
         playerAttacked = false;
@@ -207,7 +215,7 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Play();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(1f, 0.2f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
     }
 
     public void adrenalineAttacked()
@@ -230,9 +238,9 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
-     IEnumerator LoadScene()
-     {
-         yield return new WaitForSeconds(3);
-         SceneManager.LoadScene("MainMenuScene");
-     }
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MainMenuScene");
+    }
 }
