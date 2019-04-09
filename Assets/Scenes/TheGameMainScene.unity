@@ -31009,6 +31009,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8341634228727613714, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341634228727613714, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &894046253 stripped
@@ -31551,11 +31561,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    - target: {fileID: 8976172341561190542, guid: e49a6121ee5cf4c438903782ad7f46aa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8976172341561190543, guid: e49a6121ee5cf4c438903782ad7f46aa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31609,48 +31614,6 @@ PrefabInstance:
     - target: {fileID: 8976172341561190543, guid: e49a6121ee5cf4c438903782ad7f46aa,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1890852133, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: startMessage
-      value: Explore and PlaceExplosives
-      objectReference: {fileID: 0}
-    - target: {fileID: 2093643890, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 3446326436238514309, guid: e49a6121ee5cf4c438903782ad7f46aa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 347002400, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2002210640, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 910984537, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2093643891, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2342963931292358081, guid: e49a6121ee5cf4c438903782ad7f46aa,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

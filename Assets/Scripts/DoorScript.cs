@@ -25,23 +25,29 @@ public class DoorScript : MonoBehaviour
     public ScreenColor screenColor;
     public DoorStates doorStates;
 
+    public float lockOutTime;
+
+    bool lockOveride;
+
     string neededKey;
 
     Color colorLight;
     Color colorScreen;
     AudioSource audioSource;
+    Text lockedTimerText;
     Animator anim;
 
     void Start()
     {
+        lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        CheckIfDoorIsBroken();
         SetColorValue();
+        CheckIfDoorIsBroken();
         CheckDoorLocks();
     }
 
@@ -187,6 +193,28 @@ public class DoorScript : MonoBehaviour
         }
     }
 
+    void TempLockOut()
+    {
+        
+    }
+
+    void CalculateLockOutTimer()
+    {
+        lockedTimerText.enabled = true;
+
+        float minutes = (int)lockOutTime / 60;
+        float seconds = (int)lockOutTime % 60;
+
+        if (lockOutTime > 0)
+        {
+            lockedTimerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            lockedTimerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player") && doorStates == DoorStates.Locked && screenColor != ScreenColor.None)
@@ -220,11 +248,12 @@ public class DoorScript : MonoBehaviour
             anim.SetBool("PlayerNearDoor", true); 
         }
 
-        if ( other.gameObject.CompareTag("entity"))
+        if (other.gameObject.CompareTag("entity"))
         {
             anim.SetBool("PlayerNearDoor", true);           
         }
     }
+
     void OnTriggerExit(Collider other)
     {
         if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("entity"))

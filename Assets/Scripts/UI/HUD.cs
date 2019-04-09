@@ -6,19 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
-    public float reloadTime = 5.0f;
-    public float tutTime = 5.0f;
-
-    public string mainMenu;
     public string startMessage;
 
-    float time;
+    float gameOverTime;
+    float lockOutTime;
 
     bool basics = true;
 
     Text topMessageText;
     Text bottomMessageText;
     Text tutorialMessageText;
+    Text lockedTimerText;
     Text timerText;
 
     GameManager GameManager;
@@ -34,6 +32,7 @@ public class HUD : MonoBehaviour
         bottomMessageText = GameObject.Find("MessageCanvas").transform.Find("BottomMessageText").gameObject.GetComponent<Text>();
         tutorialMessageText = GameObject.Find("MessageCanvas").transform.Find("TutorialMessageText").gameObject.GetComponent<Text>();
         timerText = GameObject.Find("MessageCanvas").transform.Find("TimerText").GetComponent<Text>();
+        lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
         loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
         winCanvas = GameObject.Find("WinCanvas").GetComponent<Canvas>();
     }
@@ -64,12 +63,12 @@ public class HUD : MonoBehaviour
     {
         timerText.enabled = true;
 
-        time = GameManager.TimerSet;
+        gameOverTime = GameManager.TimerSet;
 
-        float minutes = (int)time / 60;
-        float seconds = (int)time % 60;
+        float minutes = (int)gameOverTime / 60;
+        float seconds = (int)gameOverTime % 60;
 
-        if (time > 0)
+        if (gameOverTime > 0)
         {
             timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
         }
