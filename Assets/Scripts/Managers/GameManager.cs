@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(1f, 0.15f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.15f, false);
     }
 
     void CountDownTimer()

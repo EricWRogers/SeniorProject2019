@@ -60,7 +60,7 @@ public class DoorScript : MonoBehaviour
                 if(doorStates != DoorStates.Broken)
                 {
                     doorStates = DoorStates.Unlocked;
-                    colorScreen = Color.black;
+                    //colorScreen = Color.black;
                 }
                 else
                 {

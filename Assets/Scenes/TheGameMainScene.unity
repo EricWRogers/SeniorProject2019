@@ -24206,6 +24206,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6952691404256912237, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: mouseSensitivivty
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5447004097357390598, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_ReceiveShadows
@@ -33733,6 +33738,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dbb1b4384cd7f964eb8a7ae546fea8e4, type: 2}
+    - target: {fileID: 2300000, guid: a7f9d8854e269d04bb22e321b521679c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f9d8854e269d04bb22e321b521679c, type: 3}
 --- !u!4 &971987041 stripped
@@ -53921,6 +53930,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dbb1b4384cd7f964eb8a7ae546fea8e4, type: 2}
+    - target: {fileID: 2300000, guid: a7f9d8854e269d04bb22e321b521679c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f9d8854e269d04bb22e321b521679c, type: 3}
 --- !u!4 &1592892659 stripped
