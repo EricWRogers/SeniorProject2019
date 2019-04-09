@@ -24,6 +24,10 @@ public class HUD : MonoBehaviour
     Canvas loseCanvas;
     CharacterController CharController;
 
+    private GameObject player;
+    private GameObject creature;
+    private float creatureDistance;
+
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
@@ -35,6 +39,8 @@ public class HUD : MonoBehaviour
         lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
         loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
         winCanvas = GameObject.Find("WinCanvas").GetComponent<Canvas>();
+        player = GameObject.Find("Player");
+        creature = GameObject.Find("Creature");
     }
 
     void Start()
@@ -46,7 +52,8 @@ public class HUD : MonoBehaviour
 
     void Update()
     {
-
+        creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+        Debug.Log(creatureDistance);
     }
 
     void FadeIn(Image i)
@@ -142,12 +149,15 @@ public class HUD : MonoBehaviour
             //interact tut?
 
             //find scientist
-            yield return new WaitForSeconds(textRemoval);
+            //yield return new WaitForSeconds(textRemoval);
             TutorialForPlayer("Find and plant explosives");
             yield return new WaitWhile(() => GameManager.explosives > 1);
+            yield return new WaitForSeconds(textRemoval);
 
             //run when finding monster 5s
-
+            TutorialForPlayer("Run from the creature!");
+            yield return new WaitWhile(() => creatureDistance > 200);
+            yield return new WaitForSeconds(textRemoval);
             //find each keycard
 
             //if explosives found
@@ -161,7 +171,7 @@ public class HUD : MonoBehaviour
         {
             //find scientist
             yield return new WaitForSeconds(textRemoval);
-            TutorialForPlayer("Find the Scientist");
+            TutorialForPlayer("Find and plant explosives");
 
             //run when finding monster 5s
 

@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     public Slider MasterVolumeSlider;
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
+    public Slider MouseSensativitySlider;
 
     public AudioManager audioManager;
 
@@ -26,6 +27,7 @@ public class MainMenu : MonoBehaviour
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
+        MouseSensativitySlider.value = PlayerPrefs.GetFloat("MouseSensativiy", 0.75f);
     }
 
     public void PlayEasy()

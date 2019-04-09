@@ -59,7 +59,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa652048a37b64458e71c2d75990ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: UIMenuSelect
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 1c4e4ac348ed1334d81f4cd850475847, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
   locationSounds:
   - name: droppedObject
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
