@@ -53,7 +53,6 @@ public class HUD : MonoBehaviour
     void Update()
     {
         creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
-        Debug.Log(creatureDistance);
     }
 
     void FadeIn(Image i)

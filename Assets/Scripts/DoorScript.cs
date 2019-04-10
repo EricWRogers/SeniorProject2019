@@ -248,9 +248,16 @@ public class DoorScript : MonoBehaviour
             anim.SetBool("PlayerNearDoor", true); 
         }
 
-        if (other.gameObject.CompareTag("entity"))
+        else if (other.gameObject.CompareTag("entity"))
         {
-            anim.SetBool("PlayerNearDoor", true);           
+            anim.SetBool("PlayerNearDoor", true);
+            anim.SetTrigger("OpenDoor");
+        }
+
+        else if (other.gameObject.CompareTag("DollyCam"))
+        {
+            anim.SetBool("PlayerNearDoor", true);
+            anim.SetTrigger("OpenDoor");
         }
     }
 
