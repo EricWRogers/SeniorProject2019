@@ -98,9 +98,6 @@ public class StateController : MonoBehaviour
             anim.SetBool("isWalking",false);
             anim.SetBool("isRunning",false);
         }
-        
-        Debug.Log("Speed"+vel.magnitude);
-        
     }
 
     void OnDrawGizmos()
