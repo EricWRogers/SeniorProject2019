@@ -75,10 +75,13 @@ public class ThrowObject : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         Debug.Log("Throwable velocity: "  + rb.velocity.magnitude);
+
         if (rb.velocity.magnitude >= notifyVelocityThreshold)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
 
+            //Add PE Here
+     
             if (other.contactCount > 0)
             {
                 Throwable = other.GetContact(0).point;

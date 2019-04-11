@@ -20,7 +20,7 @@ public class PatrolAction : Action
             float dist =Vector3.Distance(controller.transform.position,controller.gameManager.PlayerGO.transform.position);
             Debug.Log("going to "+controller.gameManager.tMax);
             bool result = controller.navMeshAgent.SetDestination(controller.gameManager.tMax.transform.position);
-            if(dist > 200)
+            if(dist > 150)
             {
                 Debug.Log("player Wake Up");
                 controller.gameManager.WakeUp();
