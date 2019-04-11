@@ -1067,6 +1067,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &45262066 stripped
@@ -3126,6 +3136,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6193,6 +6213,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &339499974 stripped
@@ -6266,6 +6296,11 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7405,6 +7440,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa37c01e2aa2d4f870e301d4f2aec0, type: 3}
 --- !u!4 &389418642 stripped
@@ -7768,6 +7823,11 @@ PrefabInstance:
     - target: {fileID: 6239487805674704565, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9429,6 +9489,46 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa37c01e2aa2d4f870e301d4f2aec0, type: 3}
 --- !u!4 &463251520 stripped
@@ -9870,6 +9970,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -13237,6 +13347,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &682523931 stripped
@@ -13310,6 +13430,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13454,6 +13584,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13621,11 +13761,6 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4956392422981383264, guid: e153226711df47049a4cf8f4fa132f82,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 536e9bee45d070148b78d43f2e234b8b, type: 2}
     - target: {fileID: 1635734425214141142, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_audioClip
@@ -13646,6 +13781,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 4956392422981383264, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 536e9bee45d070148b78d43f2e234b8b, type: 2}
     - target: {fileID: 6952691404256912237, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: mouseSensitivivty
@@ -14290,6 +14430,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -16569,6 +16719,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ddb2a9463dd87b341bbe0a627ebe7272, type: 2}
+    - target: {fileID: 2300000, guid: e4b39681bdc7ef4429731086bd714034, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddb2a9463dd87b341bbe0a627ebe7272, type: 2}
     - target: {fileID: 400016, guid: e4b39681bdc7ef4429731086bd714034, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6
@@ -17562,6 +17716,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -18748,6 +18912,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1023211072 stripped
@@ -19401,6 +19575,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -20874,6 +21058,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1151550200 stripped
@@ -21016,6 +21210,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -22046,6 +22250,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1219076652 stripped
@@ -22745,6 +22959,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!4 &1241362291 stripped
@@ -23189,6 +23408,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1287681902 stripped
@@ -23470,6 +23694,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -24627,6 +24861,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -26322,7 +26566,7 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 887.5
+      value: 886.8
       objectReference: {fileID: 0}
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
@@ -26332,7 +26576,7 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -178.5
+      value: -177.6
       objectReference: {fileID: 0}
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
@@ -26373,6 +26617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -26448,6 +26697,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -26591,6 +26850,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26815,6 +27084,11 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -27814,6 +28088,46 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa37c01e2aa2d4f870e301d4f2aec0, type: 3}
 --- !u!4 &1565733929 stripped
@@ -28026,6 +28340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -28307,6 +28631,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29372,6 +29706,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!4 &1675602995 stripped
@@ -29445,6 +29784,11 @@ PrefabInstance:
     - target: {fileID: 6239487805674704565, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29664,6 +30008,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31700,6 +32054,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -34176,6 +34540,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2000005
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: doorStates
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: screenColor
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!4 &2020054555 stripped
@@ -35382,6 +35756,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa37c01e2aa2d4f870e301d4f2aec0, type: 3}
 --- !u!4 &2044930205 stripped
@@ -36304,6 +36698,26 @@ PrefabInstance:
     - target: {fileID: 2876689832719494979, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
         type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37293,6 +37707,46 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833660000564225216, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802455977767411508, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614709248851325471, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: screenColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177706563385355845, guid: d0aa37c01e2aa2d4f870e301d4f2aec0,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa37c01e2aa2d4f870e301d4f2aec0, type: 3}
 --- !u!4 &2070494875 stripped
@@ -37970,6 +38424,16 @@ PrefabInstance:
     - target: {fileID: 415262997195860575, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: screenColor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: doorStates
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
