@@ -10,6 +10,7 @@ public class HUD : MonoBehaviour
 
     float gameOverTime;
     float lockOutTime;
+    float fadeOutTime = 1f;
 
     bool basics = true;
 
@@ -45,14 +46,17 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
-        objectiveForPlayer(startMessage);
+        objectiveForPlayer("");
         PlayTutorial(basics);
         basics = false;
     }
 
     void Update()
     {
-        creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+        if(player!= null && creature != null)
+        {
+            creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+        }        
     }
 
     void FadeIn(Image i)
@@ -117,71 +121,93 @@ public class HUD : MonoBehaviour
     public void PlayTutorial(bool basics)
     {
         StartCoroutine(PlayTutorialText(basics));
-    }    
+    }
+
+    public void FadeOut(Text fadeOutText)
+    {
+        StartCoroutine(FadeOutRoutine(fadeOutText));
+    }
+
+    private IEnumerator FadeOutRoutine(Text fadeOutText)
+    {
+        Text text = fadeOutText;
+        Color originalColor = text.color;
+        for (float t = 0.01f; t < fadeOutTime; t += Time.deltaTime)
+        {
+            text.color = Color.Lerp(originalColor, Color.clear, Mathf.Min(1, t / fadeOutTime));            
+            yield return null;
+        }
+        text.text = "";
+        text.color = originalColor;
+    }
 
     IEnumerator PlayTutorialText(bool basics)
     {
         float textRemoval = .5f;
+        float objectiveRemoval = 2.5f;
 
         if (basics)
         {
             //movement tut
             TutorialForPlayer("WASD to move");
-            yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
             yield return new WaitForSeconds(textRemoval);
+            yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+            FadeOut(tutorialMessageText);
+            yield return new WaitForSeconds(fadeOutTime);
 
             //sprint tut
             TutorialForPlayer("Shift to sprint");
             yield return new WaitWhile(() => !InputManager.instance.Sprint());
-            yield return new WaitForSeconds(textRemoval);
+            FadeOut(tutorialMessageText);
+            yield return new WaitForSeconds(fadeOutTime);
 
             //lean tut
             TutorialForPlayer("QE to lean");
             yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
-            yield return new WaitForSeconds(textRemoval);
+            FadeOut(tutorialMessageText);
+            yield return new WaitForSeconds(fadeOutTime);
 
             //crouch tut
             TutorialForPlayer("Ctrl to crouch");
             yield return new WaitWhile(() => !InputManager.instance.Crouch());
-            yield return new WaitForSeconds(textRemoval);
+            FadeOut(tutorialMessageText);
+            yield return new WaitForSeconds(fadeOutTime);
 
             //interact tut?
 
-            //find scientist
-            //yield return new WaitForSeconds(textRemoval);
-            TutorialForPlayer("Find and plant explosives");
+            //find keycards
+            //TutorialForPlayer("Find Keycards to access more of the lab");
+            //yield return new WaitWhile
+
+            //Search the station and place explosives in key points
+            TutorialForPlayer("Search the station and place explosives in key points");
+            yield return new WaitForSeconds(objectiveRemoval);
+            FadeOut(tutorialMessageText);
+            objectiveForPlayer("Search the station and place explosives in key points");
             yield return new WaitWhile(() => GameManager.explosives > 1);
-            yield return new WaitForSeconds(textRemoval);
-
-            //run when finding monster 5s
-            TutorialForPlayer("Run from the creature!");
-            yield return new WaitWhile(() => creatureDistance > 200);
-            yield return new WaitForSeconds(textRemoval);
-            //find each keycard
-
-            //if explosives found
-            //plant explosives instructions, not location
+            //yield return new WaitForSeconds(textRemoval);
 
             //escape post planting explosives
-
-            MessageForPlayer();
+            TutorialForPlayer("Escape!");
+            yield return new WaitForSeconds(objectiveRemoval);
+            FadeOut(tutorialMessageText);
+            objectiveForPlayer("Escape!");
         }
         else
         {
-            //find scientist
-            yield return new WaitForSeconds(textRemoval);
-            TutorialForPlayer("Find and plant explosives");
-
-            //run when finding monster 5s
-
-            //find each keycard
-
-            //if explosives found
-            //plant explosives instructions, not location
+            //Search the station and place explosives in key points
+            TutorialForPlayer("Search the station and place explosives in key points");
+            yield return new WaitForSeconds(objectiveRemoval);
+            FadeOut(tutorialMessageText);
+            objectiveForPlayer("Search the station and place explosives in key points");
+            yield return new WaitWhile(() => GameManager.explosives > 1);
+            //yield return new WaitForSeconds(textRemoval);
 
             //escape post planting explosives
-
-            MessageForPlayer();
+            TutorialForPlayer("Escape!");
+            yield return new WaitForSeconds(objectiveRemoval);
+            FadeOut(tutorialMessageText);
+            objectiveForPlayer("Escape!");
         }        
     }
 }
