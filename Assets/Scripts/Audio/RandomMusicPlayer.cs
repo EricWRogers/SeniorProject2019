@@ -12,7 +12,7 @@ public class RandomMusicPlayer : MonoBehaviour
 
     public AudioClip[] audioClips;    
 
-    private string mainMenuScene = "MainMenuScene";
+    public string mainMenuScene = "MainMenuScene";
     private string currentScene;
 
     private float fadeDuration = .05f;

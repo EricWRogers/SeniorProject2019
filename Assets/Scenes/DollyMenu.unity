@@ -945,6 +945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2072304907, guid: 986bcb1d162efcf4e87cfea7c32c47f1, type: 3}
+      propertyPath: mainMenuScene
+      value: DollyMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 986bcb1d162efcf4e87cfea7c32c47f1, type: 3}
 --- !u!1 &14337482
@@ -6653,7 +6657,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d38c4fdb03eebd041a4a036105e33050, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 1
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -19108,6 +19112,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1625795753}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &527158186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1857490767386167497, guid: a81d3e5699565f444a62028b8bf21260,
+    type: 3}
+  m_PrefabInstance: {fileID: 997608119}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13920cfedfbaac74d81c97ff3fea51fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &527626955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35136,6 +35152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1857490767386167497, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: startYPos
+      value: -450
+      objectReference: {fileID: 0}
     - target: {fileID: 1857490767518575666, guid: a81d3e5699565f444a62028b8bf21260,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35225,6 +35246,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 527158186}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857490766417775649, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
