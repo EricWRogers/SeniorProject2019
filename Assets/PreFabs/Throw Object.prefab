@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9007012071891275056
 Transform:
   m_ObjectHideFlags: 0
@@ -121,7 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32019b666a5db294a8a2328ec3314a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  hand: {fileID: 0}
-  throwForce: 3000
-  distanceOffset: 15
+  PickupMessage: Click to PickUp
+  ThrowMessage: Click to Throw
+  throwForce: 5000
+  notifyVelocityThreshold: 10
+  material: {fileID: 2100000, guid: 0d626a844b27bd94cafe46f74e6d27cb, type: 2}
+  Throwable: {x: 0, y: 0, z: 0}

@@ -429,13 +429,13 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public bool ThrowObject()
+    public bool CheckStats()
     {
         switch (SystemInfo.operatingSystemFamily)
         {
             case OperatingSystemFamily.MacOSX:
 
-                if (Input.GetButtonDown("ThrowObject_Keyboard") || Input.GetButtonDown("ThrowObject_MacOSX"))
+                if (Input.GetButtonDown("CheckStats_Keyboard") || Input.GetButtonDown("CheckStats_MacOSX"))
                 {
                     return true;
                 }
@@ -443,7 +443,7 @@ public class InputManager : MonoBehaviour
 
             case OperatingSystemFamily.Windows:
 
-                if (Input.GetButtonDown("ThrowObject_Keyboard") || Input.GetButtonDown("ThrowObject_Windows"))
+                if (Input.GetButtonDown("CheckStats_Keyboard") || Input.GetButtonDown("CheckStats_Windows"))
                 {
                     return true;
                 }
@@ -451,7 +451,7 @@ public class InputManager : MonoBehaviour
 
             case OperatingSystemFamily.Linux:
 
-                if (Input.GetButtonDown("ThrowObject_Keyboard") || Input.GetButtonDown("ThrowObject_Linux"))
+                if (Input.GetButtonDown("CheckStats_Keyboard") || Input.GetButtonDown("CheckStats_Linux"))
                 {
                     return true;
                 }

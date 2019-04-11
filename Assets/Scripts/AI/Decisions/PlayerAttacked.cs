@@ -15,8 +15,10 @@ public class PlayerAttacked : Decision
         if(controller.gameManager.playerAttacked)
         {
             retValue = true;
-
         }
+        else 
+        retValue = false;
+
         return retValue;
     }
 }

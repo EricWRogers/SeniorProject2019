@@ -4,58 +4,120 @@ using UnityEngine;
 
 public class ThrowObject : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject hand;
+    public string PickupMessage;
+    public string ThrowMessage;
+
     public float throwForce;
-    public float distanceOffset = 15f;
-    bool PlayerHolding = false;
+
+    public float notifyVelocityThreshold;
+
+    public Material material;
     public Vector3 Throwable;
+
+    bool playerHolding = false;
+
+    Transform player;
+    Transform hand;
+    HUD hud;
+    Renderer rend;
+    Material tempMaterial;
+    Rigidbody rb;
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        hand = GameObject.Find("Player/Hand");
-        PlayerHolding = false;
-        //GetComponent<Rigidbody>().isKinematic = false;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        hand = player.transform.Find("Hand").transform;
+        hud = GameObject.FindObjectOfType<HUD>();
+        rend = GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
+
+        playerHolding = false;
     }
 
     void Update()
     {
-        float dist = Vector3.Distance(transform.position, player.transform.position);
-
-        if (dist <= distanceOffset && InputManager.instance.Interact() && !PlayerHolding)
+        if (playerHolding)
         {
-            PlayerHolding = true;
-            //GetComponent<Rigidbody>().isKinematic = true;
-            GetComponent<Collider>().enabled = false;
+            Pickup();
+            Fire();
         }
-
-        if (PlayerHolding)
+        else
         {
-            transform.position = hand.transform.position;
-        }
-
-        if (PlayerHolding && InputManager.instance.ThrowObject())
-        {
-            GetComponent<Collider>().enabled = true;
-            //GetComponent<Rigidbody>().isKinematic = false;
-            GetComponent<Rigidbody>().AddForce(player.transform.forward * throwForce);
-            PlayerHolding = false;
+            CheckIfPlayerHolding();
         }
     }
 
-     void OnCollisionEnter (Collision other)
-     {
-        if(other.relativeVelocity.magnitude > 2f)
+    void CheckIfPlayerHolding()
+    {
+        if (InputManager.instance.Interact() && !playerHolding)
+        {
+            playerHolding = true;
+            GetComponent<Collider>().enabled = false;
+        }
+    }
+
+    void Pickup()
+    {
+        transform.position = hand.transform.position;
+    }
+
+    void Fire()
+    {
+        if (InputManager.instance.Interact())
+        {
+            hud.MessageForPlayer();
+            GetComponent<Collider>().enabled = true;
+            GetComponent<Rigidbody>().AddForce(player.transform.forward * throwForce);
+            playerHolding = false;
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("Throwable velocity: "  + rb.velocity.magnitude);
+        if (rb.velocity.magnitude >= notifyVelocityThreshold)
         {
             AudioManager.instance.PlayThisHere(transform.position, "Hit");
-        }
-        if(other.relativeVelocity.magnitude >=2f)
-        {   
-            if (other.contactCount > 0) {
-                Throwable = other.GetContact(0).point; 
+
+            if (other.contactCount > 0)
+            {
+                Throwable = other.GetContact(0).point;
                 StateController._throwObject = this;
-                Debug.Log("objects vector3"+other.transform.position);
+                Debug.Log("objects vector3" + other.transform.position);
             }
         }
-     }
+    }
+
+    void OnMouseEnter()
+    {
+        tempMaterial = rend.material;
+    }
+
+    void OnMouseOver()
+    {
+        rend.material = material;
+
+        if (!playerHolding)
+        {
+            hud.MessageForPlayer(PickupMessage);
+        }
+        else
+        {
+            hud.MessageForPlayer(ThrowMessage);
+        }
+    }
+
+    void OnMouseExit()
+    {
+        rend.material = tempMaterial;
+
+        if (playerHolding)
+        {
+            hud.MessageForPlayer(ThrowMessage);
+        }
+        else
+        {
+            hud.MessageForPlayer();
+        }
+    }
 }

@@ -16,6 +16,9 @@ public class MainMenu : MonoBehaviour
     public Slider MasterVolumeSlider;
     public Slider MusicVolumeSlider;
     public Slider SFXVolumeSlider;
+    public Slider MouseSensativitySlider;
+
+    public AudioManager audioManager;
 
     void Start()
     {
@@ -24,6 +27,7 @@ public class MainMenu : MonoBehaviour
         MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         MusicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
         SFXVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
+        MouseSensativitySlider.value = PlayerPrefs.GetFloat("MouseSensativiy", 0.75f);
     }
 
     public void PlayEasy()
@@ -32,7 +36,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 3;
+        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.escapeTime = 240f;
+        audioManager.Play("UIMenuSelect");
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayNormal()
@@ -41,7 +48,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 2;
+        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.escapeTime = 210f;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayHard()
@@ -50,7 +59,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 1;
+        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.escapeTime = 180f;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void PlayHardcore()
@@ -60,30 +71,36 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.escapeTime = 150f;
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadDifficulty()
     {
         difficultyUI.SetActive(true);
         mainMenuUI.SetActive(false);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseDifficulty()
     {
         difficultyUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadOptions()
     {
         mainMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseOptions()
     {
         optionsMenuUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadCredits()
@@ -91,12 +108,14 @@ public class MainMenu : MonoBehaviour
         mainMenuUI.SetActive(false);
         creditsUI.SetActive(true);
         Invoke("CloseCredits", creditDuration);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseCredits()
     {
         creditsUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void Exit()

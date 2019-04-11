@@ -18,7 +18,6 @@ public class ArmUI : MonoBehaviour
     {
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         player = GameObject.FindGameObjectWithTag("Player");
-        armCanvas = player.transform.Find("PlayerArms_W_ctrls").transform.Find("Arm Canvas").gameObject;
         numOfKeys = player.GetComponent<KeyChain>().KeysInPocket.Count;
     }
 
@@ -61,31 +60,31 @@ public class ArmUI : MonoBehaviour
         switch (numOfAdrenaline)
         {
             case 0:
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(true);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(true);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
                 break;
 
             case 1:
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(true);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(true);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
                 break;
 
             case 2:
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(true);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(true);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
                 break;
 
             case 3:
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(true);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(true);
                 break;
 
             default:
@@ -99,31 +98,31 @@ public class ArmUI : MonoBehaviour
         switch (numOfExplosives)
         {
             case 0:
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(true);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(true);
+                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
                 break;
 
             case 1:
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(true);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(true);
+                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
                 break;
 
             case 2:
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(true);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(true);
+                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
                 break;
 
             case 3:
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
-                armCanvas.transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(true);
+                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(true);
                 break;
 
             default:
@@ -138,22 +137,22 @@ public class ArmUI : MonoBehaviour
         {
             if(player.GetComponent<KeyChain>().KeysInPocket[i] == "Blue")
             {
-                armCanvas.transform.Find("Keys").transform.Find("Key_Blue").gameObject.SetActive(true);
+                transform.Find("Keys").transform.Find("Key_Blue").gameObject.SetActive(true);
             }
 
             if(player.GetComponent<KeyChain>().KeysInPocket[i] == "Green")
             {
-                armCanvas.transform.Find("Keys").transform.Find("Key_Green").gameObject.SetActive(true);
+                transform.Find("Keys").transform.Find("Key_Green").gameObject.SetActive(true);
             }
 
             if(player.GetComponent<KeyChain>().KeysInPocket[i] == "White")
             {
-                armCanvas.transform.Find("Keys").transform.Find("Key_White").gameObject.SetActive(true);
+                transform.Find("Keys").transform.Find("Key_White").gameObject.SetActive(true);
             }
 
             if(player.GetComponent<KeyChain>().KeysInPocket[i] == "Purple")
             {
-                armCanvas.transform.Find("Keys").transform.Find("Key_Purple").gameObject.SetActive(true);
+                transform.Find("Keys").transform.Find("Key_Purple").gameObject.SetActive(true);
             }
         }
     }

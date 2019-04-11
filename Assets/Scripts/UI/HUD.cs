@@ -3,158 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class HUD : MonoBehaviour
 {
-    public float reloadTime = 5.0f;
-    public float tutTime = 5.0f;
+    public string startMessage;
 
-    private float time;
+    float gameOverTime;
+    float lockOutTime;
 
-    public string mainMenu;
-    public string message;
+    bool basics = true;
 
-    private GameManager GameManager;
-    public GameObject loseCanvas;
-    public GameObject winCanvas;
-    private GameObject text;
-    private GameObject greenKey;
-    private GameObject purpleKey;
-    private GameObject blueKey;
+    Text topMessageText;
+    Text bottomMessageText;
+    Text tutorialMessageText;
+    Text lockedTimerText;
+    Text timerText;
 
-    public GameObject tutCanvas;
-    public Text tutText;
+    GameManager GameManager;
+    Canvas winCanvas;
+    Canvas loseCanvas;
     CharacterController CharController;
+
+    private GameObject player;
+    private GameObject creature;
+    private float creatureDistance;
 
     void Awake()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        //loseCanvas = 
-        //winCanvas = 
-        text = GameObject.Find("HUD/MessageCanvas/MessageText");
-        greenKey = GameObject.Find("HUD/KeyCardCanvas/GreenKey");
-        purpleKey = GameObject.Find("HUD/KeyCardCanvas/PurpleKey");
-        blueKey = GameObject.Find("HUD/KeyCardCanvas/BlueKey");
         CharController = (CharacterController)FindObjectOfType(typeof(CharacterController));
+        topMessageText = GameObject.Find("MessageCanvas").transform.Find("TopMessageText").gameObject.GetComponent<Text>();
+        bottomMessageText = GameObject.Find("MessageCanvas").transform.Find("BottomMessageText").gameObject.GetComponent<Text>();
+        tutorialMessageText = GameObject.Find("MessageCanvas").transform.Find("TutorialMessageText").gameObject.GetComponent<Text>();
+        timerText = GameObject.Find("MessageCanvas").transform.Find("TimerText").GetComponent<Text>();
+        lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
+        loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
+        winCanvas = GameObject.Find("WinCanvas").GetComponent<Canvas>();
+        player = GameObject.Find("Player");
+        creature = GameObject.Find("Creature");
     }
 
     void Start()
     {
-        messageForPlayer();
-        PlayTutorial("test 1");
+        objectiveForPlayer(startMessage);
+        PlayTutorial(basics);
+        basics = false;
     }
 
     void Update()
     {
-        //CalculateTimer();
-        ShowKeyCard();
-    }
-
-    void CalculateTimer()
-    {
-        time = GameManager.TimerSet;
-
-        float minutes = (int)time / 60;
-        float seconds = (int)time % 60;
-
-        if (time > 0)
-        {
-            text.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
-        }
-        else
-        {
-            text.GetComponent<Text>().text = "0:00";
-        }
-    }
-
-    void messageForPlayer()
-    {
-        text.GetComponent<Text>().text = message;
-    }
-
-    IEnumerator ReloadLose()
-    {
-        loseCanvas.SetActive(true);
-        Debug.Log("waiting");
-        yield return new WaitForSeconds(reloadTime);
-        //Scene scene = SceneManager.GetActiveScene();
-        //SceneManager.LoadScene(mainMenu);
-    }
-
-    IEnumerator ReloadWin()
-    {
-        winCanvas.SetActive(true);
-        Debug.Log("waiting");
-        yield return new WaitForSeconds(reloadTime);
-        //Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(mainMenu);
-    }
-
-    public void ReloadSceneLose()
-    {
-        StartCoroutine(ReloadLose());
-    }
-
-    public void ReloadSceneWin()
-    {
-        StartCoroutine(ReloadWin());
-    }
-
-    public void ShowKeyCard()
-    {
-        List<string> KeysInPocket = FindObjectOfType<KeyChain>().KeysInPocket;
-
-        //string keys = string.Join(",", KeysInPocket);
-        //keyCardText.GetComponent<Text>().text = (string)KeysInPocket;
-
-        if(KeysInPocket.Contains("Green"))
-        {
-            greenKey.SetActive(true);
-            //keyCardText.GetComponent<Text>().text = "Green Key";
-        }
-
-        if (KeysInPocket.Contains("Purple"))
-        {
-            purpleKey.SetActive(true);
-        }
-
-        if (KeysInPocket.Contains("Blue"))
-        {
-            blueKey.SetActive(true);
-        }
-    }
-
-    //public void PlayTutorialText(string text)
-    //{
-    //    float curTime = Time.time;
-    //    float duration = 5;
-    //    tutText.text = text;
-
-    //    if(Time.time == curTime+duration)
-    //    {
-    //        tutText.text = "";
-    //    }
-    //}
-
-    public void PlayTutorial(string text1)
-    {
-        StartCoroutine(PlayTutorialText(text1));
-    }
-
-    IEnumerator PlayTutorialText(string text1)
-    {
-        //movement tut
-        tutText.text = "WASD to move";
-
-        yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
-        yield return new WaitForSeconds(.5f);
-        tutText.text = "Shift to sprint";
-        //sprint tut
-
-        yield return new WaitWhile(() => !InputManager.instance.Sprint());
-        yield return new WaitForSeconds(.5f);
-        tutText.text = "";
+        creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
     }
 
     void FadeIn(Image i)
@@ -165,5 +63,125 @@ public class HUD : MonoBehaviour
     void FadeOut(Image i)
     {
         i.CrossFadeAlpha(0.0f, 2.5f, false);
+    }
+
+    public void CalculateTimer()
+    {
+        timerText.enabled = true;
+
+        gameOverTime = GameManager.escapeTime;
+
+        float minutes = (int)gameOverTime / 60;
+        float seconds = (int)gameOverTime % 60;
+
+        if (gameOverTime > 0)
+        {
+            timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+    }
+
+    public void objectiveForPlayer()
+    {
+        topMessageText.text = "";
+    }
+
+    public void objectiveForPlayer(string message)
+    {
+        topMessageText.text = message;
+    }
+
+    public void MessageForPlayer()
+    {
+        bottomMessageText.text = "";
+    }
+
+    public void MessageForPlayer(string message)
+    {
+        bottomMessageText.text = message;
+    }
+
+    public void TutorialForPlayer()
+    {
+        bottomMessageText.text = "";
+    }
+
+    public void TutorialForPlayer(string message)
+    {
+        tutorialMessageText.text = message;
+    }
+
+    public void PlayTutorial(bool basics)
+    {
+        StartCoroutine(PlayTutorialText(basics));
+    }    
+
+    IEnumerator PlayTutorialText(bool basics)
+    {
+        float textRemoval = .5f;
+
+        if (basics)
+        {
+            //movement tut
+            TutorialForPlayer("WASD to move");
+            yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+            yield return new WaitForSeconds(textRemoval);
+
+            //sprint tut
+            TutorialForPlayer("Shift to sprint");
+            yield return new WaitWhile(() => !InputManager.instance.Sprint());
+            yield return new WaitForSeconds(textRemoval);
+
+            //lean tut
+            TutorialForPlayer("QE to lean");
+            yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
+            yield return new WaitForSeconds(textRemoval);
+
+            //crouch tut
+            TutorialForPlayer("Ctrl to crouch");
+            yield return new WaitWhile(() => !InputManager.instance.Crouch());
+            yield return new WaitForSeconds(textRemoval);
+
+            //interact tut?
+
+            //find scientist
+            //yield return new WaitForSeconds(textRemoval);
+            TutorialForPlayer("Find and plant explosives");
+            yield return new WaitWhile(() => GameManager.explosives > 1);
+            yield return new WaitForSeconds(textRemoval);
+
+            //run when finding monster 5s
+            TutorialForPlayer("Run from the creature!");
+            yield return new WaitWhile(() => creatureDistance > 200);
+            yield return new WaitForSeconds(textRemoval);
+            //find each keycard
+
+            //if explosives found
+            //plant explosives instructions, not location
+
+            //escape post planting explosives
+
+            MessageForPlayer();
+        }
+        else
+        {
+            //find scientist
+            yield return new WaitForSeconds(textRemoval);
+            TutorialForPlayer("Find and plant explosives");
+
+            //run when finding monster 5s
+
+            //find each keycard
+
+            //if explosives found
+            //plant explosives instructions, not location
+
+            //escape post planting explosives
+
+            MessageForPlayer();
+        }        
     }
 }

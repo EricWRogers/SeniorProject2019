@@ -17,29 +17,30 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip sprintingClip;
     public AudioClip pantingClip;
 
-    private float gravity = 20.0f;
-    private float originalSpeed;
-    private float gravityHolder;
-    private float tempTime;
-    private float audioPlayTime;
+    float gravity = 20.0f;
+    float originalSpeed;
+    float gravityHolder;
+    float tempTime;
 
-    private Vector3 moveDirection = Vector3.zero;
-    private Vector3 playerSize;
+    Vector3 moveDirection = Vector3.zero;
+    Vector3 playerSize;
 
-    private bool iscrouching = false;
-    private bool isSprinting = false;
-    private bool doneSprinting = false;
-    private bool needCharging = false;
+    bool iscrouching = false;
+    bool isSprinting = false;
+    bool doneSprinting = false;
+    bool needCharging = false;
 
     GameManager gameManager;
     AudioSource audioSource;
     CharacterController CharController;
+    Animator animator;
 
     void Awake()
     {
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
+        animator = transform.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
     }
 
     void Start()
@@ -48,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
         gravityHolder = gravity;
         originalSpeed = speed;
         tempTime = Time.deltaTime;
+    }
+
+    void Update()
+    {
+        gameManager.CheckIfHidden();
     }
 
     void FixedUpdate()
@@ -92,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
 
+            animator.SetBool("Sprinting", true);
+
             if (sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
             {
                 audioSource.clip = sprintingClip;
@@ -113,11 +121,11 @@ public class PlayerMovement : MonoBehaviour
             else if (sprintMeater <= 0.0f)
             {
                 doneSprinting = true;
+                animator.SetBool("Sprinting", false);
             }
         }
         else
         {
-
             if (sprintMeater >= 100.0f)
             {
                 sprintMeater = 100.0f;
@@ -154,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             isSprinting = false;
+            animator.SetBool("Sprinting", false);
         }
     }
 
@@ -185,12 +194,25 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void GrabObject()
+    {
+        
+    }
+
+   
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "KeyCard")
         {
-            GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName);
-            Destroy(other);
+            if(!(GetComponent<KeyChain>().KeysInPocket.Contains(other.gameObject.GetComponent<KeyCard>().KeyName)))
+            {
+                GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName); 
+                Destroy(other.gameObject); 
+            }
+            else
+            {
+                Destroy(other.gameObject);
+            }
         }
 
         if(other.tag == "Finish")

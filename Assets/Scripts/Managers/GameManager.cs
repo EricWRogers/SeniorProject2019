@@ -8,57 +8,67 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerGO;
+    public GameObject winPoint;
     public GameObject EntityGO;
     public GameObject HudGO;
     public GameObject[] RoomGOS;
     public GameObject tMax;
     public GameObject fullWaypoint = null;
 
+    public RaycastHit hit;
+
     public float ScaredShitlessMeter;
-    public float TimerSet;
-    public float imageScreenTime = 2.5f;
-    public float emptyScreenTime = 2.5f;
+    public float escapeTime;
     public bool stopTimer = false;
-    public bool playerAttacked;
+    
     public int adrenaline;
     public int explosives;
 
+    public bool hidden;
+    public bool playerAttacked;
+
+
     void Start()
     {
+       
         EntityGO = GameObject.FindGameObjectWithTag("entity");
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoints");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
+        winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
 
+        hidden = false;
         playerAttacked = false;
+
+        winPoint.GetComponent<Collider>().enabled = false;
 
         if (DifficultyManager.instance != null)
         {
             adrenaline = DifficultyManager.instance.adrenaline;
+            escapeTime = DifficultyManager.instance.escapeTime;
+            explosives = 3;
         }
         else
         {
             adrenaline = 3;
+            escapeTime = 180;
             explosives = 3;
         }
     }
 
     void Update()
     {
-        // Only for Testing
-        if(Input.GetKeyDown(KeyCode.U))
-        {
-            WakeUp();
-        }
+        
     }
 
     void FixedUpdate()
     {
         PollAgression();
+        CheckExplosives();
         PollScareShitlessMeter();
     }
 
-    private void PollAgression()
+    void PollAgression()
     {
         float maxDist = 0f;
 
@@ -68,6 +78,7 @@ public class GameManager : MonoBehaviour
             {
                 VFXRoomManager RoomManager = waypoint.GetComponent<VFXRoomManager>();
                 RoomManager.agressionMeter = RoomManager.agressionMeter + 4f * Time.deltaTime;
+
                 if (RoomManager.agressionMeter >= 100.0f)
                 {
                     if (fullWaypoint == null)
@@ -77,6 +88,7 @@ public class GameManager : MonoBehaviour
             }
 
             float dist = Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position);
+            
             if (dist > maxDist)
             {
                 tMax = waypoint;
@@ -86,12 +98,15 @@ public class GameManager : MonoBehaviour
         if(fullWaypoint != null)
         {
             VFXRoomManager RoomM = fullWaypoint.GetComponent<VFXRoomManager>();
+
             if (Vector3.Distance(fullWaypoint.transform.position, EntityGO.transform.position) < 100.0f)
             {
                 if (RoomM.agressionMeter >= 0f)
                 {
                     RoomM.agressionMeter = RoomM.agressionMeter - 15f * Time.deltaTime;
-                } else {
+                } 
+                else 
+                {
                     RoomM.agressionMeter = 0f;
                     fullWaypoint = null;
                 }
@@ -99,11 +114,12 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    private void PollScareShitlessMeter()
+    void PollScareShitlessMeter()
     {
         if (Vector3.Distance(PlayerGO.transform.position, EntityGO.transform.position) < 180.0f)
         {
             ScaredShitlessMeter += 2f *Time.deltaTime;
+
             if (ScaredShitlessMeter > 100.0f)
             {
                 Debug.Log("the Farthest Waypoint is" + tMax);
@@ -121,17 +137,18 @@ public class GameManager : MonoBehaviour
                 if(ScaredShitlessMeter < 0f)
                 {
                    ScaredShitlessMeter = 0f;
-                   
                 }
             }
         }
     }
 
-    void GameOver()
+    void CheckExplosives()
     {
-        SceneManager.LoadScene("MainMenuScene");
-
-        Debug.Log("Game Over!!!");
+        if( explosives == 0)
+        {
+            winPoint.GetComponent<Collider>().enabled = true;
+            CountDownTimer();
+        }
     }
 
     void Attacked()
@@ -141,24 +158,67 @@ public class GameManager : MonoBehaviour
         //entitys script not here 
         adrenaline--;
         playerAttacked = true;
-        PlayerGO.layer = LayerMask.NameToLayer("obstacles");
         HudGO.SetActive(false);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = true;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = false;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Pause();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.2f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(255f, 0.15f, false);
     }
 
-    //Call this funichion when you want to WakeUp
+    void CountDownTimer()
+    {
+        if(escapeTime >= 0 && !stopTimer)
+        {
+            HudGO.GetComponent<HUD>().CalculateTimer();
+            escapeTime -= Time.deltaTime;
+        }
+        else if(escapeTime <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        stopTimer = true;
+        HudGO.transform.Find("MessageCanvas").GetComponent<Canvas>().enabled = false;
+        HudGO.transform.Find("LoseCanvas").GetComponent<Canvas>().enabled = true;
+        StartCoroutine(LoadScene());
+    }
+
+    public void CheckIfHidden()
+    {
+        if (Physics.Raycast(PlayerGO.transform.position, PlayerGO.transform.up, out hit, 15f))
+        {
+            if(hit.collider.tag == "HideableObjects")
+            {
+                hidden = true;
+                Debug.Log(hit.collider.name);
+            }
+        }
+        else
+        {
+            hidden = false;
+        }
+        
+        if( hidden || playerAttacked)
+        {
+            PlayerGO.layer = LayerMask.NameToLayer("obstacles");
+        }
+        else
+        {
+            PlayerGO.layer = LayerMask.NameToLayer("target");
+        }
+    }
+
     public void WakeUp()
     {
         playerAttacked = false;
-        PlayerGO.layer = LayerMask.NameToLayer("target");
         HudGO.SetActive(true);
         PlayerGO.GetComponent<PlayerMovement>().stopMoving = false;
         PlayerGO.GetComponentInChildren<CamLooking>().enabled = true;
         PlayerGO.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>().Play();
-        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(1f, 0.2f, false);
+        GameObject.Find("BlackOut Canvas").transform.Find("Black Image").gameObject.GetComponent<Image>().CrossFadeAlpha(0f, 0.2f, false);
     }
 
     public void adrenalineAttacked()
@@ -175,6 +235,15 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
+        stopTimer = true;
+        HudGO.transform.Find("MessageCanvas").GetComponent<Canvas>().enabled = false;
+        HudGO.transform.Find("WinCanvas").GetComponent<Canvas>().enabled = true;
+        StartCoroutine(LoadScene());
+    }
 
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MainMenuScene");
     }
 }

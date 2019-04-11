@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CamLooking : MonoBehaviour
 {
-    public float mouseSensitivivty;
+    [Range(0.1f, 4f)] public float mouseSensitivivty;
     public float Xmax = 30.0f;
     public float Xmin = -30.0f;
     public float speed = 100f;
@@ -58,7 +58,7 @@ public class CamLooking : MonoBehaviour
 
         if (InputManager.instance.Lean_L())
         {
-            if (Physics.Raycast(transform.position, left, out hitInfoLeft, 6, 10))
+            if (Physics.Raycast(transform.position, left, out hitInfoLeft, 6, Player.layer))
             {
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-hitInfoLeft.distance, 1, 0), 0.1f);
                 Player.GetComponent<PlayerMovement>().stopMoving = true;
@@ -71,7 +71,7 @@ public class CamLooking : MonoBehaviour
         }
         else if(InputManager.instance.Lean_R())
         {
-            if (Physics.Raycast(transform.position, left, out hitInfoRight, 6, 10))
+            if (Physics.Raycast(transform.position, right, out hitInfoRight, 6, Player.layer))
             {
                 transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(hitInfoRight.distance, 1, 0), 0.1f);
                 Player.GetComponent<PlayerMovement>().stopMoving = true;

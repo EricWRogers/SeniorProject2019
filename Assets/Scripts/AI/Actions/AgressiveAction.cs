@@ -19,7 +19,7 @@ public class AgressiveAction : Action
 
         if (controller.gameManager.fullWaypoint != null)
         {
-            Debug.Log("going to Waypoint that playre");
+            Debug.Log("going to Waypoint that player");
             controller.navMeshAgent.SetDestination(controller.gameManager.fullWaypoint.transform.position);
         }
     }

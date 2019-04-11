@@ -38,6 +38,12 @@ ModelImporter:
     4300006: light3
     4300008: light4
     4300010: light5
+    6400000: corridorMid
+    6400002: light1
+    6400004: light2
+    6400006: light3
+    6400008: light4
+    6400010: light5
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -71,14 +77,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

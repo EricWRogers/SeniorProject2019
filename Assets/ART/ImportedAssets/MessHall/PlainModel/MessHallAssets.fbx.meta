@@ -1,0 +1,774 @@
+fileFormatVersion: 2
+guid: 564a37a1b82923a4d8ec31dd46fdcbc9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base
+    100002: base
+    100004: BottomHandle
+    100006: Bowl1
+    100008: CoffeeMug
+    100010: CoffeeMug 1
+    100012: CoffeeMugHandle
+    100014: Coffeepot
+    100016: Counter
+    100018: Counter_Coffeepot
+    100020: Cup
+    100022: DrinkDispenser
+    100024: Fork
+    100026: Fridge
+    100028: handle
+    100030: HorizontalRotation
+    100032: HorizontalRotation 1
+    100034: HorizontalRotation 2
+    100036: HorizontalRotation 3
+    100038: HorizontalRotation 4
+    100040: HorizontalRotation 5
+    100042: HorizontalRotation 6
+    100044: Liner1
+    100046: Liner1 1
+    100048: Liner2
+    100050: Liner2 1
+    100052: Liner3
+    100054: Liner3 1
+    100056: Liner4
+    100058: Liner4 1
+    100060: LinerGroup1
+    100062: LinerGroup2
+    100064: //RootNode
+    100066: Oven
+    100068: OvenHandle
+    100070: pCylinder1
+    100072: Plate1
+    100074: Podium
+    100076: SanitaryBarrier1
+    100078: SanitaryBarrier2
+    100080: Seat1
+    100082: Seat1 1
+    100084: Seat1 2
+    100086: Seat10
+    100088: Seat10 1
+    100090: Seat10 2
+    100092: Seat11
+    100094: Seat11 1
+    100096: Seat11 2
+    100098: Seat12
+    100100: Seat12 1
+    100102: Seat12 2
+    100104: Seat13
+    100106: Seat13 1
+    100108: Seat13 2
+    100110: Seat14
+    100112: Seat14 1
+    100114: Seat14 2
+    100116: Seat15
+    100118: Seat15 1
+    100120: Seat15 2
+    100122: Seat16
+    100124: Seat16 1
+    100126: Seat16 2
+    100128: Seat2
+    100130: Seat2 1
+    100132: Seat2 2
+    100134: Seat3
+    100136: Seat3 1
+    100138: Seat3 2
+    100140: Seat4
+    100142: Seat4 1
+    100144: Seat4 2
+    100146: Seat5
+    100148: Seat5 1
+    100150: Seat5 2
+    100152: Seat6
+    100154: Seat6 1
+    100156: Seat6 2
+    100158: Seat7
+    100160: Seat7 1
+    100162: Seat7 2
+    100164: Seat8
+    100166: Seat8 1
+    100168: Seat8 2
+    100170: Seat9
+    100172: Seat9 1
+    100174: Seat9 2
+    100176: SeatRow1
+    100178: SeatRow1 1
+    100180: SeatRow1 2
+    100182: SeatRow2
+    100184: SeatRow2 1
+    100186: SeatRow2 2
+    100188: ServingStation
+    100190: ServingStationBase
+    100192: ShortShelf
+    100194: SilverwareCup1
+    100196: SilverwareCup2
+    100198: SilverwareCup3
+    100200: SilverwareCup4
+    100202: SilverwareCup5
+    100204: SilverwareCup6
+    100206: SilverwareStation
+    100208: SilverwareStation 1
+    100210: Sink_Trashcan
+    100212: SinkStation
+    100214: Spoon
+    100216: spout
+    100218: Stage
+    100220: StorageHandle
+    100222: StoveOvenCombo
+    100224: Table1
+    100226: Table2
+    100228: Table2 1
+    100230: Table2 2
+    100232: Table3
+    100234: Table4
+    100236: Tables
+    100238: TopHandle
+    100240: Tracklight
+    100242: Tracklight1
+    100244: Tracklight2
+    100246: Tracklight3
+    100248: Tracklight4
+    100250: Tracklight5
+    100252: Tracklight6
+    100254: Tracklight7
+    100256: TracklightArm1
+    100258: TracklightArm1 1
+    100260: TracklightArm1 2
+    100262: TracklightArm1 3
+    100264: TracklightArm1 4
+    100266: TracklightArm1 5
+    100268: TracklightArm1 6
+    100270: TracklightBase1
+    100272: TracklightBase1 1
+    100274: TracklightBase1 2
+    100276: TracklightBase1 3
+    100278: TracklightBase1 4
+    100280: TracklightBase1 5
+    100282: TracklightBase1 6
+    100284: TracklightCone1
+    100286: TracklightCone1 1
+    100288: TracklightCone1 2
+    100290: TracklightCone1 3
+    100292: TracklightCone1 4
+    100294: TracklightCone1 5
+    100296: TracklightCone1 6
+    100298: TracklightTrack
+    100300: Trashcan
+    100302: Tray1
+    100304: Utensils
+    100306: VerticalRotation
+    100308: VerticalRotation 1
+    100310: VerticalRotation 2
+    100312: VerticalRotation 3
+    100314: VerticalRotation 4
+    100316: VerticalRotation 5
+    100318: VerticalRotation 6
+    400000: Base
+    400002: base
+    400004: BottomHandle
+    400006: Bowl1
+    400008: CoffeeMug
+    400010: CoffeeMug 1
+    400012: CoffeeMugHandle
+    400014: Coffeepot
+    400016: Counter
+    400018: Counter_Coffeepot
+    400020: Cup
+    400022: DrinkDispenser
+    400024: Fork
+    400026: Fridge
+    400028: handle
+    400030: HorizontalRotation
+    400032: HorizontalRotation 1
+    400034: HorizontalRotation 2
+    400036: HorizontalRotation 3
+    400038: HorizontalRotation 4
+    400040: HorizontalRotation 5
+    400042: HorizontalRotation 6
+    400044: Liner1
+    400046: Liner1 1
+    400048: Liner2
+    400050: Liner2 1
+    400052: Liner3
+    400054: Liner3 1
+    400056: Liner4
+    400058: Liner4 1
+    400060: LinerGroup1
+    400062: LinerGroup2
+    400064: //RootNode
+    400066: Oven
+    400068: OvenHandle
+    400070: pCylinder1
+    400072: Plate1
+    400074: Podium
+    400076: SanitaryBarrier1
+    400078: SanitaryBarrier2
+    400080: Seat1
+    400082: Seat1 1
+    400084: Seat1 2
+    400086: Seat10
+    400088: Seat10 1
+    400090: Seat10 2
+    400092: Seat11
+    400094: Seat11 1
+    400096: Seat11 2
+    400098: Seat12
+    400100: Seat12 1
+    400102: Seat12 2
+    400104: Seat13
+    400106: Seat13 1
+    400108: Seat13 2
+    400110: Seat14
+    400112: Seat14 1
+    400114: Seat14 2
+    400116: Seat15
+    400118: Seat15 1
+    400120: Seat15 2
+    400122: Seat16
+    400124: Seat16 1
+    400126: Seat16 2
+    400128: Seat2
+    400130: Seat2 1
+    400132: Seat2 2
+    400134: Seat3
+    400136: Seat3 1
+    400138: Seat3 2
+    400140: Seat4
+    400142: Seat4 1
+    400144: Seat4 2
+    400146: Seat5
+    400148: Seat5 1
+    400150: Seat5 2
+    400152: Seat6
+    400154: Seat6 1
+    400156: Seat6 2
+    400158: Seat7
+    400160: Seat7 1
+    400162: Seat7 2
+    400164: Seat8
+    400166: Seat8 1
+    400168: Seat8 2
+    400170: Seat9
+    400172: Seat9 1
+    400174: Seat9 2
+    400176: SeatRow1
+    400178: SeatRow1 1
+    400180: SeatRow1 2
+    400182: SeatRow2
+    400184: SeatRow2 1
+    400186: SeatRow2 2
+    400188: ServingStation
+    400190: ServingStationBase
+    400192: ShortShelf
+    400194: SilverwareCup1
+    400196: SilverwareCup2
+    400198: SilverwareCup3
+    400200: SilverwareCup4
+    400202: SilverwareCup5
+    400204: SilverwareCup6
+    400206: SilverwareStation
+    400208: SilverwareStation 1
+    400210: Sink_Trashcan
+    400212: SinkStation
+    400214: Spoon
+    400216: spout
+    400218: Stage
+    400220: StorageHandle
+    400222: StoveOvenCombo
+    400224: Table1
+    400226: Table2
+    400228: Table2 1
+    400230: Table2 2
+    400232: Table3
+    400234: Table4
+    400236: Tables
+    400238: TopHandle
+    400240: Tracklight
+    400242: Tracklight1
+    400244: Tracklight2
+    400246: Tracklight3
+    400248: Tracklight4
+    400250: Tracklight5
+    400252: Tracklight6
+    400254: Tracklight7
+    400256: TracklightArm1
+    400258: TracklightArm1 1
+    400260: TracklightArm1 2
+    400262: TracklightArm1 3
+    400264: TracklightArm1 4
+    400266: TracklightArm1 5
+    400268: TracklightArm1 6
+    400270: TracklightBase1
+    400272: TracklightBase1 1
+    400274: TracklightBase1 2
+    400276: TracklightBase1 3
+    400278: TracklightBase1 4
+    400280: TracklightBase1 5
+    400282: TracklightBase1 6
+    400284: TracklightCone1
+    400286: TracklightCone1 1
+    400288: TracklightCone1 2
+    400290: TracklightCone1 3
+    400292: TracklightCone1 4
+    400294: TracklightCone1 5
+    400296: TracklightCone1 6
+    400298: TracklightTrack
+    400300: Trashcan
+    400302: Tray1
+    400304: Utensils
+    400306: VerticalRotation
+    400308: VerticalRotation 1
+    400310: VerticalRotation 2
+    400312: VerticalRotation 3
+    400314: VerticalRotation 4
+    400316: VerticalRotation 5
+    400318: VerticalRotation 6
+    2100000: CounterGlossy
+    2100002: CoffeePotGlossy
+    2100004: CoffeePotMatte
+    2100006: TrashcanGlossy
+    2100008: SinkGlossy
+    2100010: ServingStationMatte
+    2100012: ServingStationGlossy
+    2100014: SilverwareStationGlossy
+    2100016: FridgeGlossy
+    2100018: StoveOvenGlossy
+    2100020: lambert1
+    2100022: TablesMatte
+    2100024: TracklightMatte
+    2100026: StageGlossy
+    2100028: UtensilsGlossy
+    2100030: PodiumGlossy
+    2300000: Base
+    2300002: base
+    2300004: BottomHandle
+    2300006: Bowl1
+    2300008: CoffeeMug 1
+    2300010: CoffeeMugHandle
+    2300012: Counter
+    2300014: Cup
+    2300016: Fork
+    2300018: handle
+    2300020: Liner1
+    2300022: Liner1 1
+    2300024: Liner2
+    2300026: Liner2 1
+    2300028: Liner3
+    2300030: Liner3 1
+    2300032: Liner4
+    2300034: Liner4 1
+    2300036: Oven
+    2300038: OvenHandle
+    2300040: pCylinder1
+    2300042: Plate1
+    2300044: Podium
+    2300046: SanitaryBarrier1
+    2300048: SanitaryBarrier2
+    2300050: Seat1
+    2300052: Seat1 1
+    2300054: Seat1 2
+    2300056: Seat10
+    2300058: Seat10 1
+    2300060: Seat10 2
+    2300062: Seat11
+    2300064: Seat11 1
+    2300066: Seat11 2
+    2300068: Seat12
+    2300070: Seat12 1
+    2300072: Seat12 2
+    2300074: Seat13
+    2300076: Seat13 1
+    2300078: Seat13 2
+    2300080: Seat14
+    2300082: Seat14 1
+    2300084: Seat14 2
+    2300086: Seat15
+    2300088: Seat15 1
+    2300090: Seat15 2
+    2300092: Seat16
+    2300094: Seat16 1
+    2300096: Seat16 2
+    2300098: Seat2
+    2300100: Seat2 1
+    2300102: Seat2 2
+    2300104: Seat3
+    2300106: Seat3 1
+    2300108: Seat3 2
+    2300110: Seat4
+    2300112: Seat4 1
+    2300114: Seat4 2
+    2300116: Seat5
+    2300118: Seat5 1
+    2300120: Seat5 2
+    2300122: Seat6
+    2300124: Seat6 1
+    2300126: Seat6 2
+    2300128: Seat7
+    2300130: Seat7 1
+    2300132: Seat7 2
+    2300134: Seat8
+    2300136: Seat8 1
+    2300138: Seat8 2
+    2300140: Seat9
+    2300142: Seat9 1
+    2300144: Seat9 2
+    2300146: ServingStationBase
+    2300148: ShortShelf
+    2300150: SilverwareCup1
+    2300152: SilverwareCup2
+    2300154: SilverwareCup3
+    2300156: SilverwareCup4
+    2300158: SilverwareCup5
+    2300160: SilverwareCup6
+    2300162: SilverwareStation 1
+    2300164: SinkStation
+    2300166: Spoon
+    2300168: spout
+    2300170: Stage
+    2300172: StorageHandle
+    2300174: Table2
+    2300176: Table2 1
+    2300178: Table2 2
+    2300180: TopHandle
+    2300182: TracklightArm1
+    2300184: TracklightArm1 1
+    2300186: TracklightArm1 2
+    2300188: TracklightArm1 3
+    2300190: TracklightArm1 4
+    2300192: TracklightArm1 5
+    2300194: TracklightArm1 6
+    2300196: TracklightBase1
+    2300198: TracklightBase1 1
+    2300200: TracklightBase1 2
+    2300202: TracklightBase1 3
+    2300204: TracklightBase1 4
+    2300206: TracklightBase1 5
+    2300208: TracklightBase1 6
+    2300210: TracklightCone1
+    2300212: TracklightCone1 1
+    2300214: TracklightCone1 2
+    2300216: TracklightCone1 3
+    2300218: TracklightCone1 4
+    2300220: TracklightCone1 5
+    2300222: TracklightCone1 6
+    2300224: TracklightTrack
+    2300226: Trashcan
+    2300228: Tray1
+    3300000: Base
+    3300002: base
+    3300004: BottomHandle
+    3300006: Bowl1
+    3300008: CoffeeMug 1
+    3300010: CoffeeMugHandle
+    3300012: Counter
+    3300014: Cup
+    3300016: Fork
+    3300018: handle
+    3300020: Liner1
+    3300022: Liner1 1
+    3300024: Liner2
+    3300026: Liner2 1
+    3300028: Liner3
+    3300030: Liner3 1
+    3300032: Liner4
+    3300034: Liner4 1
+    3300036: Oven
+    3300038: OvenHandle
+    3300040: pCylinder1
+    3300042: Plate1
+    3300044: Podium
+    3300046: SanitaryBarrier1
+    3300048: SanitaryBarrier2
+    3300050: Seat1
+    3300052: Seat1 1
+    3300054: Seat1 2
+    3300056: Seat10
+    3300058: Seat10 1
+    3300060: Seat10 2
+    3300062: Seat11
+    3300064: Seat11 1
+    3300066: Seat11 2
+    3300068: Seat12
+    3300070: Seat12 1
+    3300072: Seat12 2
+    3300074: Seat13
+    3300076: Seat13 1
+    3300078: Seat13 2
+    3300080: Seat14
+    3300082: Seat14 1
+    3300084: Seat14 2
+    3300086: Seat15
+    3300088: Seat15 1
+    3300090: Seat15 2
+    3300092: Seat16
+    3300094: Seat16 1
+    3300096: Seat16 2
+    3300098: Seat2
+    3300100: Seat2 1
+    3300102: Seat2 2
+    3300104: Seat3
+    3300106: Seat3 1
+    3300108: Seat3 2
+    3300110: Seat4
+    3300112: Seat4 1
+    3300114: Seat4 2
+    3300116: Seat5
+    3300118: Seat5 1
+    3300120: Seat5 2
+    3300122: Seat6
+    3300124: Seat6 1
+    3300126: Seat6 2
+    3300128: Seat7
+    3300130: Seat7 1
+    3300132: Seat7 2
+    3300134: Seat8
+    3300136: Seat8 1
+    3300138: Seat8 2
+    3300140: Seat9
+    3300142: Seat9 1
+    3300144: Seat9 2
+    3300146: ServingStationBase
+    3300148: ShortShelf
+    3300150: SilverwareCup1
+    3300152: SilverwareCup2
+    3300154: SilverwareCup3
+    3300156: SilverwareCup4
+    3300158: SilverwareCup5
+    3300160: SilverwareCup6
+    3300162: SilverwareStation 1
+    3300164: SinkStation
+    3300166: Spoon
+    3300168: spout
+    3300170: Stage
+    3300172: StorageHandle
+    3300174: Table2
+    3300176: Table2 1
+    3300178: Table2 2
+    3300180: TopHandle
+    3300182: TracklightArm1
+    3300184: TracklightArm1 1
+    3300186: TracklightArm1 2
+    3300188: TracklightArm1 3
+    3300190: TracklightArm1 4
+    3300192: TracklightArm1 5
+    3300194: TracklightArm1 6
+    3300196: TracklightBase1
+    3300198: TracklightBase1 1
+    3300200: TracklightBase1 2
+    3300202: TracklightBase1 3
+    3300204: TracklightBase1 4
+    3300206: TracklightBase1 5
+    3300208: TracklightBase1 6
+    3300210: TracklightCone1
+    3300212: TracklightCone1 1
+    3300214: TracklightCone1 2
+    3300216: TracklightCone1 3
+    3300218: TracklightCone1 4
+    3300220: TracklightCone1 5
+    3300222: TracklightCone1 6
+    3300224: TracklightTrack
+    3300226: Trashcan
+    3300228: Tray1
+    4300000: Counter
+    4300002: spout
+    4300004: handle
+    4300006: base
+    4300008: Trashcan
+    4300010: SinkStation
+    4300012: ServingStationBase
+    4300014: SanitaryBarrier1
+    4300016: SanitaryBarrier2
+    4300018: Liner4
+    4300020: Liner3
+    4300022: Liner2
+    4300024: Liner1
+    4300026: Liner4
+    4300028: Liner3
+    4300030: Liner2
+    4300032: Liner1
+    4300034: SilverwareStation
+    4300036: SilverwareCup1
+    4300038: SilverwareCup2
+    4300040: SilverwareCup3
+    4300042: SilverwareCup4
+    4300044: SilverwareCup5
+    4300046: SilverwareCup6
+    4300048: TopHandle
+    4300050: Base
+    4300052: BottomHandle
+    4300054: OvenHandle
+    4300056: StorageHandle
+    4300058: Oven
+    4300060: pCylinder1
+    4300062: ShortShelf
+    4300064: Seat5
+    4300066: Seat6
+    4300068: Seat7
+    4300070: Seat8
+    4300072: Seat9
+    4300074: Seat10
+    4300076: Seat11
+    4300078: Seat12
+    4300080: Seat1
+    4300082: Seat16
+    4300084: Seat15
+    4300086: Seat14
+    4300088: Seat13
+    4300090: Seat2
+    4300092: Seat3
+    4300094: Seat4
+    4300096: Table2
+    4300098: Seat5
+    4300100: Seat6
+    4300102: Seat7
+    4300104: Seat8
+    4300106: Seat9
+    4300108: Seat10
+    4300110: Seat11
+    4300112: Seat12
+    4300114: Seat1
+    4300116: Seat16
+    4300118: Seat15
+    4300120: Seat14
+    4300122: Seat13
+    4300124: Seat2
+    4300126: Seat3
+    4300128: Seat4
+    4300130: Table2
+    4300132: Seat5
+    4300134: Seat6
+    4300136: Seat7
+    4300138: Seat8
+    4300140: Seat9
+    4300142: Seat10
+    4300144: Seat11
+    4300146: Seat12
+    4300148: Seat1
+    4300150: Seat16
+    4300152: Seat15
+    4300154: Seat14
+    4300156: Seat13
+    4300158: Seat2
+    4300160: Seat3
+    4300162: Seat4
+    4300164: Table2
+    4300166: TracklightBase1
+    4300168: TracklightArm1
+    4300170: TracklightCone1
+    4300172: TracklightBase1
+    4300174: TracklightArm1
+    4300176: TracklightCone1
+    4300178: TracklightBase1
+    4300180: TracklightArm1
+    4300182: TracklightCone1
+    4300184: TracklightBase1
+    4300186: TracklightArm1
+    4300188: TracklightCone1
+    4300190: TracklightBase1
+    4300192: TracklightArm1
+    4300194: TracklightCone1
+    4300196: TracklightBase1
+    4300198: TracklightArm1
+    4300200: TracklightCone1
+    4300202: TracklightBase1
+    4300204: TracklightArm1
+    4300206: TracklightCone1
+    4300208: TracklightTrack
+    4300210: Stage
+    4300212: CoffeeMug
+    4300214: CoffeeMugHandle
+    4300216: Cup
+    4300218: Fork
+    4300220: Spoon
+    4300222: Plate1
+    4300224: Bowl1
+    4300226: Tray1
+    4300228: Podium
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

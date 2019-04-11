@@ -6,6 +6,7 @@ public class DifficultyManager : MonoBehaviour
 {
     public static DifficultyManager instance;
     public int adrenaline;
+    public float escapeTime;
 
     private void Awake()
     {

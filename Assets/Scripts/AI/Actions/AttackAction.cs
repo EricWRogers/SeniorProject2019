@@ -24,8 +24,8 @@ public class AttackAction : Action
             //play animation
             //check collision on state in animator
             //play audio
-             controller.gameManager.adrenalineAttacked();
             controller.gameManager.PlayerGO.GetComponent<Rigidbody>().AddForce(moveDirection.normalized * controller.enemyStats.attackPower);
+            controller.gameManager.adrenalineAttacked();
            
             
         }

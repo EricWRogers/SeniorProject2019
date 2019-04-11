@@ -9,6 +9,10 @@ TagManager:
   - Water
   - Fire
   - KeyCard
+  - HideableObjects
+  - Explosives
+  - Pickupable
+  - DollyCam
   layers:
   - Default
   - TransparentFX
@@ -18,12 +22,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
   - obstacles
   - target
   - Fire
   - PostProcessing
   - Global UI
+  - 
   - 
   - 
   - 

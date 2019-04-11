@@ -25,5 +25,9 @@ public class RayCastGizmos : MonoBehaviour
         Gizmos.color = Color.red;
         Vector3 directionRight = transform.TransformDirection(Vector3.right) * 6;
         Gizmos.DrawRay(transform.position, directionRight);
+
+        Gizmos.color = Color.blue;
+        Vector3 directionUp = transform.up * 10;
+        Gizmos.DrawRay(transform.position, directionUp);
     }
 }
