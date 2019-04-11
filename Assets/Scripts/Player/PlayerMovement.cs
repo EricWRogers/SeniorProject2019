@@ -32,14 +32,15 @@ public class PlayerMovement : MonoBehaviour
 
     GameManager gameManager;
     AudioSource audioSource;
-    
     CharacterController CharController;
+    Animator animator;
 
     void Awake()
     {
         gameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
+        animator = transform.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
     }
 
     void Start()
@@ -97,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
 
+            animator.SetBool("Sprinting", true);
+
             if (sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
             {
                 audioSource.clip = sprintingClip;
@@ -118,11 +121,11 @@ public class PlayerMovement : MonoBehaviour
             else if (sprintMeater <= 0.0f)
             {
                 doneSprinting = true;
+                animator.SetBool("Sprinting", false);
             }
         }
         else
         {
-
             if (sprintMeater >= 100.0f)
             {
                 sprintMeater = 100.0f;
@@ -159,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             isSprinting = false;
+            animator.SetBool("Sprinting", false);
         }
     }
 
@@ -188,6 +192,11 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    void GrabObject()
+    {
+        
     }
 
    

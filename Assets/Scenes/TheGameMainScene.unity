@@ -24201,6 +24201,11 @@ PrefabInstance:
       propertyPath: sprintingClip
       value: 
       objectReference: {fileID: 8300000, guid: acd8bc8a2c6f1f342b7f5d85f1be8a6e, type: 3}
+    - target: {fileID: 6952691403254199167, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: depletingSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6952691404256912241, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_Layer
