@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.adrenaline = 3;
         DifficultyManager.instance.escapeTime = 240f;
         audioManager.Play("UIMenuSelect");
         audioManager.Play("UIMenuSelect");
@@ -48,7 +48,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.adrenaline = 2;
         DifficultyManager.instance.escapeTime = 210f;
         audioManager.Play("UIMenuSelect");
     }
@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        DifficultyManager.instance.adrenaline = 0;
+        DifficultyManager.instance.adrenaline = 1;
         DifficultyManager.instance.escapeTime = 180f;
         audioManager.Play("UIMenuSelect");
     }
