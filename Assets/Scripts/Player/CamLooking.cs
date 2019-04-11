@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CamLooking : MonoBehaviour
 {
-    public float mouseSensitivivty;
+    [Range(0.1f, 4f)] public float mouseSensitivivty;
     public float Xmax = 30.0f;
     public float Xmin = -30.0f;
     public float speed = 100f;

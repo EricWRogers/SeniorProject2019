@@ -419,7 +419,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4c3264e4e7124a84f921cb119f82eabf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.671
   m_Pitch: 1
@@ -520,11 +520,11 @@ MonoBehaviour:
   speed: 20
   pantingSpeed: 15
   sprintMeater: 100
-  depletingSpeed: 25
+  depletingSpeed: 15
   depletingCap: 50
   stopMoving: 0
-  walkingClip: {fileID: 8300000, guid: 2316ce242f707084cab38bc36540c012, type: 3}
-  sprintingClip: {fileID: 8300000, guid: e7fbb26e7aeed894fb36eaa0846ecf5d, type: 3}
+  walkingClip: {fileID: 8300000, guid: 4c3264e4e7124a84f921cb119f82eabf, type: 3}
+  sprintingClip: {fileID: 8300000, guid: acd8bc8a2c6f1f342b7f5d85f1be8a6e, type: 3}
   pantingClip: {fileID: 8300000, guid: 9cd42de5659831e449875f5ad5f0f191, type: 3}
 --- !u!114 &1738741865
 MonoBehaviour:
@@ -551,7 +551,9 @@ GameObject:
   - component: {fileID: 6952691404256912239}
   - component: {fileID: 6952691404256912238}
   - component: {fileID: 6952691404256912237}
-  m_Layer: 0
+  - component: {fileID: 1896564670}
+  - component: {fileID: 1896564671}
+  m_Layer: 11
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -634,11 +636,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd9b9ad3cbe1452dac0515988db3540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivivty: 4
+  mouseSensitivivty: 3
   Xmax: 90
   Xmin: -90
   speed: 50
   maxAngle: 20
+--- !u!114 &1896564670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952691404256912241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: d5d0d6bd84617b040874a74bb1fa07d5, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &1896564671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952691404256912241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 6952691404256912236}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 1
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &7149544588232343119
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +833,16 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6952691404256912239}
+    - target: {fileID: 2112811790653820654, guid: 982851650bf549449970c33ab5684714,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 536e9bee45d070148b78d43f2e234b8b, type: 2}
+    - target: {fileID: 1300756180817549704, guid: 982851650bf549449970c33ab5684714,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982851650bf549449970c33ab5684714, type: 3}
 --- !u!4 &8843888468975249795 stripped

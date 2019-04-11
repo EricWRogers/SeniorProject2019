@@ -69,7 +69,7 @@ public class HUD : MonoBehaviour
     {
         timerText.enabled = true;
 
-        gameOverTime = GameManager.TimerSet;
+        gameOverTime = GameManager.escapeTime;
 
         float minutes = (int)gameOverTime / 60;
         float seconds = (int)gameOverTime % 60;

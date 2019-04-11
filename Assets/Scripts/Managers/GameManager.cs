@@ -18,9 +18,7 @@ public class GameManager : MonoBehaviour
     public RaycastHit hit;
 
     public float ScaredShitlessMeter;
-    public float TimerSet;
-    public float imageScreenTime = 2.5f;
-    public float emptyScreenTime = 2.5f;
+    public float escapeTime;
     public bool stopTimer = false;
     
     public int adrenaline;
@@ -47,11 +45,13 @@ public class GameManager : MonoBehaviour
         if (DifficultyManager.instance != null)
         {
             adrenaline = DifficultyManager.instance.adrenaline;
+            escapeTime = DifficultyManager.instance.escapeTime;
             explosives = 3;
         }
         else
         {
             adrenaline = 3;
+            escapeTime = 180;
             explosives = 3;
         }
     }
@@ -167,12 +167,12 @@ public class GameManager : MonoBehaviour
 
     void CountDownTimer()
     {
-        if(TimerSet >= 0 && !stopTimer)
+        if(escapeTime >= 0 && !stopTimer)
         {
             HudGO.GetComponent<HUD>().CalculateTimer();
-            TimerSet -= Time.deltaTime;
+            escapeTime -= Time.deltaTime;
         }
-        else if(TimerSet <= 0)
+        else if(escapeTime <= 0)
         {
             GameOver();
         }
