@@ -24,8 +24,9 @@ public class StateController : MonoBehaviour
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
-    public Animator anim;
     
+    public Animator anim;
+
     public ThrowObject throwableObject {
         get {
             return StateController._throwObject;
@@ -46,10 +47,12 @@ public class StateController : MonoBehaviour
     private void Start()
     {
         SetupAI();
+        Rigidbody entityRb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
     }
     void FixedUpdate()
     {
+        
         
     }
 
@@ -75,6 +78,28 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
+
+        Vector3 vel =navMeshAgent.velocity;
+        if(vel.magnitude >= normalSpeed && vel.magnitude  < runspeed)
+        {
+            anim.SetBool("isIdle",false);
+            anim.SetBool("isWalking",true);
+            anim.SetBool("isRunning",false);
+        }
+        if(vel.magnitude >= runspeed)
+        {
+            anim.SetBool("isIdle",false);
+            anim.SetBool("isWalking",false);
+            anim.SetBool("isRunning",true);
+        }
+        if(vel.magnitude  <= 0)
+        {
+            anim.SetBool("isIdle",true);
+            anim.SetBool("isWalking",false);
+            anim.SetBool("isRunning",false);
+        }
+        
+        Debug.Log("Speed"+vel.magnitude);
         
     }
 
