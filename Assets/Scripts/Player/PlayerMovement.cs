@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     AudioSource audioSource;
     CharacterController CharController;
     Animator animator;
+    GameObject pause;
 
     void Awake()
     {
@@ -65,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
                 Crouching();
                 Sprinting();
                 Movement();
+                Pause();
             }
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
@@ -199,7 +201,32 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-   
+    void Pause()
+    {
+        if(InputManager.instance.Pause())
+        {
+            animator.SetTrigger("Pause");
+            animator.SetBool("Paused", true);
+        }
+    }
+
+    void CheckPause()
+    {
+        if (InputManager.instance.Pause())
+        {
+            if (pauseCanvas.activeSelf)
+            {
+                animator.SetBool("Paused", false);
+            }
+            else
+            {
+                animator.SetTrigger("Pause");
+                animator.SetBool("Paused", true);
+            }
+        }
+    }
+
+
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "KeyCard")
