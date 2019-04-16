@@ -949,6 +949,37 @@ PrefabInstance:
       propertyPath: mainMenuScene
       value: DollyMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: UIMenuHover
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.data[1].outputMixerGroup
+      value: 
+      objectReference: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+        type: 2}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c51c7f68d788dea44bcb4e447165c2d5, type: 3}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215473815613239410, guid: 986bcb1d162efcf4e87cfea7c32c47f1,
+        type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 986bcb1d162efcf4e87cfea7c32c47f1, type: 3}
 --- !u!1 &14337482
