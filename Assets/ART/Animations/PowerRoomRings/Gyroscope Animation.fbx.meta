@@ -1,32 +1,30 @@
 fileFormatVersion: 2
-guid: 001bf4e74a050164fa6cd9d212f9f7a8
+guid: 0e334f5655c749f43b7437eee42fa669
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: inner_ring
     100004: middle_ring
-    100006: orb
-    100008: outer_ring
+    100006: outer_ring
     400000: //RootNode
     400002: inner_ring
     400004: middle_ring
-    400006: orb
-    400008: outer_ring
-    2100000: phong2
-    2100002: phong4
-    2300000: inner_ring
-    2300002: middle_ring
-    2300004: orb
+    400006: outer_ring
+    2100000: phong4
+    2100002: phong2
+    2300000: //RootNode
+    2300002: inner_ring
+    2300004: middle_ring
     2300006: outer_ring
-    3300000: inner_ring
-    3300002: middle_ring
-    3300004: orb
+    3300000: //RootNode
+    3300002: inner_ring
+    3300004: middle_ring
     3300006: outer_ring
-    4300000: middle_ring
-    4300002: inner_ring
-    4300004: outer_ring
-    4300006: orb
+    4300000: orb
+    4300002: outer_ring
+    4300004: inner_ring
+    4300006: middle_ring
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
