@@ -1128,7 +1128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 215207395, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1437
+      value: 1315.3
       objectReference: {fileID: 0}
     - target: {fileID: 215207395, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1136,7 +1136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 215207395, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -143.1
+      value: -252.5
       objectReference: {fileID: 0}
     - target: {fileID: 215207395, guid: b3aa9d6785032d742b14a937ab8db5af, type: 3}
       propertyPath: m_LocalRotation.x
@@ -21963,6 +21963,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 892194603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &901990780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901990781}
+  m_Layer: 0
+  m_Name: StartWaypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901990781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901990780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1315.3, y: 101.24, z: -252.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906619499
 GameObject:
   m_ObjectHideFlags: 0
@@ -24841,12 +24871,12 @@ PrefabInstance:
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: screenColor
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7664624857214224829, guid: d44f94497f6be0d4896a742ba114298b,
         type: 3}
       propertyPath: doorStates
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
@@ -46338,6 +46368,7 @@ MonoBehaviour:
   RoomGOS: []
   tMax: {fileID: 0}
   fullWaypoint: {fileID: 0}
+  StartWaypoint: {fileID: 901990780}
   ScaredShitlessMeter: 0
   escapeTime: 0
   stopTimer: 0
@@ -46345,6 +46376,7 @@ MonoBehaviour:
   explosives: 0
   hidden: 0
   playerAttacked: 0
+  EntityInstantiated: 0
 --- !u!4 &5790010740446060879
 Transform:
   m_ObjectHideFlags: 0
