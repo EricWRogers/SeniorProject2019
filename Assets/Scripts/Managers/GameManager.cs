@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] RoomGOS;
     public GameObject tMax;
     public GameObject fullWaypoint = null;
+    public GameObject StartWaypoint;
 
     public RaycastHit hit;
 
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     public bool hidden;
     public bool playerAttacked;
+    public bool EntityInstantiated;
+    
 
 
     void Start()
@@ -36,6 +39,8 @@ public class GameManager : MonoBehaviour
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
         winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
+
+        EntityInstantiated = false;
 
         hidden = false;
         playerAttacked = false;
@@ -66,8 +71,17 @@ public class GameManager : MonoBehaviour
         PollAgression();
         CheckExplosives();
         PollScareShitlessMeter();
+        CheckToInstantiateEntity();
     }
+    void CheckToInstantiateEntity()
+    {
+        if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("green"))
+        {
+            Instantiate(EntityGO, StartWaypoint.transform);
+        }
 
+
+    }
     void PollAgression()
     {
         float maxDist = 0f;
