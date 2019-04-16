@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
     }
     void CheckToInstantiateEntity()
     {
-        if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("blue"))
+        if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("green"))
         {
             Instantiate(EntityGO, StartWaypoint.transform);
         }
