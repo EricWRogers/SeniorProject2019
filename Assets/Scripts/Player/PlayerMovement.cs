@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
         animator = transform.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
+        pause = transform.Find("PlayerArms_W_ctrls").transform.Find("Pause").gameObject;
     }
 
     void Start()
@@ -66,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 Crouching();
                 Sprinting();
                 Movement();
-                Pause();
+                CheckPause();
             }
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
@@ -196,25 +197,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void GrabObject()
-    {
-        
-    }
-
-    void Pause()
-    {
-        if(InputManager.instance.Pause())
-        {
-            animator.SetTrigger("Pause");
-            animator.SetBool("Paused", true);
-        }
-    }
 
     void CheckPause()
     {
         if (InputManager.instance.Pause())
         {
-            if (pauseCanvas.activeSelf)
+            if (pause.activeSelf)
             {
                 animator.SetBool("Paused", false);
             }
