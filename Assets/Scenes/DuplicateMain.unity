@@ -12031,6 +12031,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 478533785}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &480092383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 474732662584978332, guid: 821e921be0091cd438214cfabecd788d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2474040911071701456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &486672066
 GameObject:
   m_ObjectHideFlags: 0
@@ -20757,6 +20763,12 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &880433895 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2474040911955054301, guid: 821e921be0091cd438214cfabecd788d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2474040911071701456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &881607392
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -46311,7 +46323,7 @@ PrefabInstance:
         type: 3}
       propertyPath: eyes
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 480092383}
     - target: {fileID: 2474040911180443847, guid: 821e921be0091cd438214cfabecd788d,
         type: 3}
       propertyPath: gameManager
@@ -46321,11 +46333,11 @@ PrefabInstance:
         type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 880433895}
     - target: {fileID: 2474040911180443847, guid: 821e921be0091cd438214cfabecd788d,
         type: 3}
       propertyPath: viewRadius
-      value: 100
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 2474040911180443847, guid: 821e921be0091cd438214cfabecd788d,
         type: 3}
