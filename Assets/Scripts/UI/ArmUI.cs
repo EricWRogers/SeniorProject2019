@@ -25,7 +25,7 @@ public class ArmUI : MonoBehaviour
         numOfExplosives = gameManager.explosives;
     }
 
-    void LateUpdate()
+    void Update()
     {
         CheckAdrenaline();
         CheckExplosives();
@@ -64,31 +64,48 @@ public class ArmUI : MonoBehaviour
         switch (numOfAdrenaline)
         {
             case 0:
-                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Adrenaline") != null)
+                {
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(true);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                }
                 break;
 
             case 1:
-                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Adrenaline") != null)
+                {
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(true);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                }
                 break;
 
             case 2:
-                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Adrenaline") != null)
+                {
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(true);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(false);
+                }
                 break;
 
             case 3:
-                transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.GetComponent<Image>().enabled = true;
+
+                if(transform.Find("Adrenaline") != null)
+                {
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
+                    transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(true);
+                }
+
                 break;
 
             default:
@@ -102,31 +119,51 @@ public class ArmUI : MonoBehaviour
         switch (numOfExplosives)
         {
             case 0:
-                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Explosives") != null)
+                {
+                    transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(true);
+                    transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                }
+
                 break;
 
             case 1:
-                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Explosives") != null)
+                {
+                    transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(true);
+                    transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                }
+
                 break;
 
             case 2:
-                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.GetComponent<Image>().enabled = true;
-                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.GetComponent<Image>().enabled = false;
+
+                if (transform.Find("Explosives") != null)
+                {
+                    transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(true);
+                    transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(false);
+                }
+
                 break;
 
             case 3:
-                transform.Find("Explosives").transform.Find("Explosives_0").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_1").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_2").gameObject.GetComponent<Image>().enabled = false;
-                transform.Find("Explosives").transform.Find("Explosives_3").gameObject.GetComponent<Image>().enabled = true;
+
+                if (transform.Find("Explosives") != null)
+                {
+                    transform.Find("Explosives").transform.Find("Explosives_0").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_1").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_2").gameObject.SetActive(false);
+                    transform.Find("Explosives").transform.Find("Explosives_3").gameObject.SetActive(true);
+                }
+
                 break;
 
             default:

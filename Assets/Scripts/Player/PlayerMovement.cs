@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
@@ -202,14 +203,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (InputManager.instance.Pause())
         {
-            if (pause.activeSelf)
-            {
-                animator.SetBool("Paused", false);
-            }
-            else
+            if (pause.activeSelf == false)
             {
                 animator.SetTrigger("Pause");
                 animator.SetBool("Paused", true);
+            }
+            else
+            {
+                animator.SetBool("Paused", false);
             }
         }
     }
