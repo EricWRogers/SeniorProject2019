@@ -38,8 +38,7 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 3;
         DifficultyManager.instance.escapeTime = 240f;
-        audioManager.Play("UIMenuSelect");
-        audioManager.Play("UIMenuSelect");
+        audioManager.Play("UIMenuSelect");        
     }
 
     public void PlayNormal()
@@ -116,6 +115,11 @@ public class MainMenu : MonoBehaviour
         creditsUI.SetActive(false);
         mainMenuUI.SetActive(true);
         audioManager.Play("UIMenuSelect");
+    }
+
+    public void Hover()
+    {
+        audioManager.Play("UIMenuHover");
     }
 
     public void Exit()

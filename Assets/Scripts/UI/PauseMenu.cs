@@ -18,6 +18,8 @@ public class PauseMenu : MonoBehaviour
     public Slider SFXVolumeSlider;
     public Slider MouseSensativitySlider;
 
+    public AudioManager audioManager;
+
     bool timerIsDisabled;
 
     GameObject player;
@@ -82,18 +84,26 @@ public class PauseMenu : MonoBehaviour
         player.GetComponent<AudioSource>().Play();
         sanityWhispers.GetComponent<AudioSource>().Play();
         //pauseMenuUI.SetActive(false);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void LoadOptions()
     {
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
     }
 
     public void CloseOptions()
     {
         optionsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
+        audioManager.Play("UIMenuSelect");
+    }
+
+    public void Hover()
+    {
+        audioManager.Play("UIMenuHover");
     }
 
     public void Exit()
@@ -101,6 +111,7 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(mainMenuScene);
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
+        audioManager.Play("UIMenuSelect");
     }
 
     void Update()
