@@ -116,7 +116,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        CheckPause();
+
     }
 
     void CheckPause()

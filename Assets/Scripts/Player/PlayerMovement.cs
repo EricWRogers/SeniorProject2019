@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
         animator = transform.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
-        pause = transform.Find("PlayerArms_W_ctrls").transform.Find("Pause").gameObject;
+        pause = transform.Find("PlayerArms_W_ctrls").transform.Find("Pause").transform.Find("PauseCanvas").gameObject;
     }
 
     void Start()
