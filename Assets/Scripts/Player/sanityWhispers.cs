@@ -21,6 +21,7 @@ public class sanityWhispers : MonoBehaviour
     private void InsanitySound()
     {
         float dist = Vector3.Distance(transform.position, gameManager.EntityGO.transform.position);
+
         if (dist <= 400f)
             insanity.volume += .5f / dist;
         else

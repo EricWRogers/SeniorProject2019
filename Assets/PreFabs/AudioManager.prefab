@@ -69,6 +69,24 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
     playOnAwake: 0
+  - name: UIMenuHover
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: c51c7f68d788dea44bcb4e447165c2d5, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda_11_1
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 33074af312a387642a5ab6637020914d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 1
   locationSounds:
   - name: droppedObject
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
@@ -213,3 +231,4 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 089ddd5ea0dfcde4882e98b6ba7b25db, type: 3}
   - {fileID: 8300000, guid: 861ee751338f03f4bacfce034ef92ef1, type: 3}
+  mainMenuScene: DollyMenu
