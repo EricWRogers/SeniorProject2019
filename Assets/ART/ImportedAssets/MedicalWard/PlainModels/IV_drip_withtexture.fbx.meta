@@ -32,6 +32,11 @@ ModelImporter:
     4300004: IV_wheels_obj
     4300006: IV_stand_obj
     4300008: IV_cord_obj
+    6400000: IV_bag_obj
+    6400002: IV_cord_obj
+    6400004: IV_hooks_obj
+    6400006: IV_stand_obj
+    6400008: IV_wheels_obj
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -65,7 +70,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

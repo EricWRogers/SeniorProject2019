@@ -19,6 +19,8 @@ ModelImporter:
     3300002: polySurface9
     4300000: polySurface9
     4300002: DeskShelf_obj
+    6400000: DeskShelf_obj
+    6400002: polySurface9
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -52,7 +54,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

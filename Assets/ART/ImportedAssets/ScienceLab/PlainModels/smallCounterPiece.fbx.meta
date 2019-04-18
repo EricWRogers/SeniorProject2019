@@ -29,6 +29,11 @@ ModelImporter:
     4300004: DrawerHandle2
     4300006: DrawerHandle3
     4300008: DrawerHandle5
+    6400000: DrawerHandle
+    6400002: DrawerHandle2
+    6400004: DrawerHandle3
+    6400006: DrawerHandle5
+    6400008: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,7 +67,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

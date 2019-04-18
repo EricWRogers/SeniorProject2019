@@ -128,6 +128,28 @@ ModelImporter:
     4300038: MedicalBed_obj1
     4300040: Belt4
     4300042: Belt3
+    6400000: Belt1
+    6400002: Belt2
+    6400004: Belt3
+    6400006: Belt4
+    6400008: DrawerHandle
+    6400010: DrawerHandle1
+    6400012: DrawerHandle2
+    6400014: DrawerHandle3
+    6400016: DrawerHandle4
+    6400018: DrawerHandle5
+    6400020: ExperimentCounter
+    6400022: MedicalBed_obj
+    6400024: MedicalBed_obj1
+    6400026: MetalTableTop
+    6400028: pCylinder1
+    6400030: pCylinder1 1
+    6400032: pCylinder1 2
+    6400034: pCylinder1 3
+    6400036: pTorus1
+    6400038: pTorus1 1
+    6400040: pTorus1 2
+    6400042: pTorus1 3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -161,7 +183,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

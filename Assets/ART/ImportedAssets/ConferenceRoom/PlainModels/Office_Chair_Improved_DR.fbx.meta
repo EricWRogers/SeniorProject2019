@@ -17,6 +17,8 @@ ModelImporter:
     3300002: MR_Chair
     4300000: Cylinder
     4300002: MR_Chair
+    6400000: Cylinder
+    6400002: MR_Chair
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -50,7 +52,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

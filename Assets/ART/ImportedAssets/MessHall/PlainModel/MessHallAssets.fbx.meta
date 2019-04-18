@@ -684,6 +684,121 @@ ModelImporter:
     4300224: Bowl1
     4300226: Tray1
     4300228: Podium
+    6400000: Base
+    6400002: base
+    6400004: BottomHandle
+    6400006: Bowl1
+    6400008: CoffeeMug 1
+    6400010: CoffeeMugHandle
+    6400012: Counter
+    6400014: Cup
+    6400016: Fork
+    6400018: handle
+    6400020: Liner1
+    6400022: Liner1 1
+    6400024: Liner2
+    6400026: Liner2 1
+    6400028: Liner3
+    6400030: Liner3 1
+    6400032: Liner4
+    6400034: Liner4 1
+    6400036: Oven
+    6400038: OvenHandle
+    6400040: pCylinder1
+    6400042: Plate1
+    6400044: Podium
+    6400046: SanitaryBarrier1
+    6400048: SanitaryBarrier2
+    6400050: Seat1
+    6400052: Seat1 1
+    6400054: Seat1 2
+    6400056: Seat10
+    6400058: Seat10 1
+    6400060: Seat10 2
+    6400062: Seat11
+    6400064: Seat11 1
+    6400066: Seat11 2
+    6400068: Seat12
+    6400070: Seat12 1
+    6400072: Seat12 2
+    6400074: Seat13
+    6400076: Seat13 1
+    6400078: Seat13 2
+    6400080: Seat14
+    6400082: Seat14 1
+    6400084: Seat14 2
+    6400086: Seat15
+    6400088: Seat15 1
+    6400090: Seat15 2
+    6400092: Seat16
+    6400094: Seat16 1
+    6400096: Seat16 2
+    6400098: Seat2
+    6400100: Seat2 1
+    6400102: Seat2 2
+    6400104: Seat3
+    6400106: Seat3 1
+    6400108: Seat3 2
+    6400110: Seat4
+    6400112: Seat4 1
+    6400114: Seat4 2
+    6400116: Seat5
+    6400118: Seat5 1
+    6400120: Seat5 2
+    6400122: Seat6
+    6400124: Seat6 1
+    6400126: Seat6 2
+    6400128: Seat7
+    6400130: Seat7 1
+    6400132: Seat7 2
+    6400134: Seat8
+    6400136: Seat8 1
+    6400138: Seat8 2
+    6400140: Seat9
+    6400142: Seat9 1
+    6400144: Seat9 2
+    6400146: ServingStationBase
+    6400148: ShortShelf
+    6400150: SilverwareCup1
+    6400152: SilverwareCup2
+    6400154: SilverwareCup3
+    6400156: SilverwareCup4
+    6400158: SilverwareCup5
+    6400160: SilverwareCup6
+    6400162: SilverwareStation 1
+    6400164: SinkStation
+    6400166: Spoon
+    6400168: spout
+    6400170: Stage
+    6400172: StorageHandle
+    6400174: Table2
+    6400176: Table2 1
+    6400178: Table2 2
+    6400180: TopHandle
+    6400182: TracklightArm1
+    6400184: TracklightArm1 1
+    6400186: TracklightArm1 2
+    6400188: TracklightArm1 3
+    6400190: TracklightArm1 4
+    6400192: TracklightArm1 5
+    6400194: TracklightArm1 6
+    6400196: TracklightBase1
+    6400198: TracklightBase1 1
+    6400200: TracklightBase1 2
+    6400202: TracklightBase1 3
+    6400204: TracklightBase1 4
+    6400206: TracklightBase1 5
+    6400208: TracklightBase1 6
+    6400210: TracklightCone1
+    6400212: TracklightCone1 1
+    6400214: TracklightCone1 2
+    6400216: TracklightCone1 3
+    6400218: TracklightCone1 4
+    6400220: TracklightCone1 5
+    6400222: TracklightCone1 6
+    6400224: TracklightTrack
+    6400226: Trashcan
+    6400228: Tray1
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -719,7 +834,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -738,7 +853,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.099999994
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

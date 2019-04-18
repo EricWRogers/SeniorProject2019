@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
     public GameObject[] RoomGOS;
     public GameObject tMax;
     public GameObject fullWaypoint = null;
-    public GameObject StartWaypoint;
-
     public RaycastHit hit;
 
     public float ScaredShitlessMeter;

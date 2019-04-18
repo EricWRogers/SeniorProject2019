@@ -59,6 +59,16 @@ ModelImporter:
     4300014: SupportShelf2_hs2
     4300016: SupportShelf2_hs3
     4300018: SupportShelf2_hs4
+    6400000: SupportBeam3_hs1
+    6400002: SupportBeam4_hs1
+    6400004: SupportBeam4_hs3
+    6400006: SupportShelf2_hs1
+    6400008: SupportShelf2_hs2
+    6400010: SupportShelf2_hs3
+    6400012: SupportShelf2_hs4
+    6400014: SupportShelf3_hs1
+    6400016: SurgeryLight1
+    6400018: SurgeryLight2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -92,7 +102,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
