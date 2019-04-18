@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public bool hidden;
     public bool playerAttacked;
-    public bool EntityInstantiated;
+    
     
 
 
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
 
-        EntityInstantiated = false;
+        EntityGO.SetActive(false);
 
         hidden = false;
         playerAttacked = false;
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("green"))
         {
-            Instantiate(EntityGO, StartWaypoint.transform);
+           EntityGO.SetActive(true);
         }
 
 
