@@ -526,6 +526,7 @@ MonoBehaviour:
   walkingClip: {fileID: 8300000, guid: 4c3264e4e7124a84f921cb119f82eabf, type: 3}
   sprintingClip: {fileID: 8300000, guid: acd8bc8a2c6f1f342b7f5d85f1be8a6e, type: 3}
   pantingClip: {fileID: 8300000, guid: 9cd42de5659831e449875f5ad5f0f191, type: 3}
+  pause: {fileID: 0}
 --- !u!114 &1738741865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,41 +913,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6952691404256912239}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.00219
-      objectReference: {fileID: 0}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.01644
-      objectReference: {fileID: 0}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.01052
-      objectReference: {fileID: 0}
-    - target: {fileID: 6929152983347164773, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2049472777733136532, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 6952691404256912239}
-    - target: {fileID: 1374716645016003161, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3534252760371702397, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982851650bf549449970c33ab5684714, type: 3}
 --- !u!4 &8843888468975249795 stripped
