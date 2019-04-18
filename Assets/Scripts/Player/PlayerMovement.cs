@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     AudioSource audioSource;
     CharacterController CharController;
     Animator animator;
-    GameObject pause;
+    public GameObject pause;
 
     void Awake()
     {
@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         CharController = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
         animator = transform.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
-        pause = transform.Find("PlayerArms_W_ctrls").transform.Find("Pause").transform.Find("PauseCanvas").gameObject;
     }
 
     void Start()

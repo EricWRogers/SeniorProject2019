@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {
-    GameObject pause;
+    public GameObject pause;
 
     void Strat()
     {
-        pause = transform.Find("Pause").gameObject;
+
     }
 
     void PauseAnimation()

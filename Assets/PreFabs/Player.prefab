@@ -526,6 +526,7 @@ MonoBehaviour:
   walkingClip: {fileID: 8300000, guid: 4c3264e4e7124a84f921cb119f82eabf, type: 3}
   sprintingClip: {fileID: 8300000, guid: acd8bc8a2c6f1f342b7f5d85f1be8a6e, type: 3}
   pantingClip: {fileID: 8300000, guid: 9cd42de5659831e449875f5ad5f0f191, type: 3}
+  pause: {fileID: 0}
 --- !u!114 &1738741865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,31 +908,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.00219
-      objectReference: {fileID: 0}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.01644
-      objectReference: {fileID: 0}
-    - target: {fileID: 982158708247978922, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.01052
-      objectReference: {fileID: 0}
-    - target: {fileID: 2112811790653820654, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 536e9bee45d070148b78d43f2e234b8b, type: 2}
-    - target: {fileID: 2049472777733136532, guid: 982851650bf549449970c33ab5684714,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 6952691404256912239}
     - target: {fileID: 8611973391119905610, guid: 982851650bf549449970c33ab5684714,
         type: 3}
       propertyPath: m_Camera
