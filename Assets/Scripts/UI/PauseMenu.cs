@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseCanvas;
+    //public GameObject pauseCanvas;
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
 
@@ -45,7 +45,7 @@ public class PauseMenu : MonoBehaviour
     {
 
         Time.timeScale = 0;
-        pauseCanvas.SetActive(true);
+        //pauseCanvas.SetActive(true);
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
         messageCanvas.Find("TopMessageText").GetComponent<Text>().enabled = false;
@@ -70,7 +70,9 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1;
-        pauseCanvas.SetActive(false);
+        //pauseCanvas.SetActive(false);
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(false);
         messageCanvas.Find("TopMessageText").GetComponent<Text>().enabled = true;
         messageCanvas.Find("BottomMessageText").GetComponent<Text>().enabled = true;
 
@@ -123,7 +125,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (InputManager.instance.Pause())
         {
-            if (pauseCanvas.activeSelf)
+            if (pauseMenuUI.activeSelf)
             {
                 Resume();
             }
