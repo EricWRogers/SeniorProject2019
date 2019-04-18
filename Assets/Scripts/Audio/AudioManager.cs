@@ -6,8 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public Sound[] locationSounds;
+    public Sound[] audioLogs;
     //public List<Sound> sounds = new List<Sound>();
-    public new AudioClip[] audio;
+    //public new AudioClip[] audio;
 
     public static AudioManager instance;
 
@@ -21,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        audio = Resources.LoadAll<AudioClip>("Audio/");
+        //audio = Resources.LoadAll<AudioClip>("Audio/");
         //sounds = < Sound > audio;
         //sounds = new Sound[audio.Length];
         //int soundIndex = 0;
@@ -96,6 +97,24 @@ public class AudioManager : MonoBehaviour
             return;
         }
         if(!s.source.isPlaying)
+            s.source.Play();
+    }
+
+    public void PlayAudioLog(string name)
+    {
+        Sound s = Array.Find(audioLogs, sound => sound.name == name);
+        if (s.source == null)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.outputAudioMixerGroup = s.outputMixerGroup;
+            s.source.clip = s.audioClip;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
+        }
+        if (!s.source.isPlaying)
             s.source.Play();
     }
 
