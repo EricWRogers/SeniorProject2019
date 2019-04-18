@@ -35196,6 +35196,11 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1531541328}
+    - target: {fileID: 7479148983788942564, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81d3e5699565f444a62028b8bf21260, type: 3}
 --- !u!1001 &998499945
@@ -40990,8 +40995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc492f32a76b1dc4781b6d921315830c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 1531541328}
-  audioLogs: 0
+  audioLogs: 19
 --- !u!4 &1199227360
 Transform:
   m_ObjectHideFlags: 0

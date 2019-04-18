@@ -115,7 +115,394 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
     playOnAwake: 0
-  audio: []
+  audioLogs:
+  - name: Amanda5
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: e6b163785231f984ab8971f1cc19516e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda9
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 1ca6b6fad9b3c2f4faaa73d5004da3b5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda11
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 33074af312a387642a5ab6637020914d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda12
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 847f5bd369f251d498f8103c08a9a8cf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda14
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: d5ea5bdb8e415134aa474b958ea61297, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda18
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 8153acee61f3c9542b5daac2a8dc7eb5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Amanda20
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 5aadca71cffcdd940997d4c475c2e293, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben1
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 2b55e85eafd43f8469a380ab5c55d1c9, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben3
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: fd86ed2352754b147862ef242ac9bdfe, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben5
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 9a6ea088a01783d4bb2c797c94668e6f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben6
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 707999d7973781a41979a871ec048791, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben7
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: bb135cfe4effc834d9b060612df580ef, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben8
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 79127b4221b50b24288c2e2b15de40cc, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Ben9
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 959a55d0c82a2d14daf79f1abc29b9e9, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake36
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 9a3a21c8d0de2b24d835dffde45a800a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake37
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: db1a8d7338538b248ae86a0af3c8e56f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake38
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 8b5938bed8cb72749bb9972e5195b1e2, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake 39
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 57fc96c6ac7db2047935b97d27ffd104, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake40
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 072cb41b337db0547ba3d4cb36056b54, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake41
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 9ab21e4abee046e4b815f623cf3242e2, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Blake45
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 9683c65db959f164ebc05550324c18de, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney3
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 678b9eaec05288641bb7b5dc3254028f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney7
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 436620cac8b76f647b401611dcac0eef, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney8
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 118b0032a409bea4cb2c47a21009f043, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney11
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 94c427d698e43404f93f539cee0a1123, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney13
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 3c373153970b7c9408dbe5682193754b, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney17
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: e7fa9e8b586ec314a9d7b66154d60d77, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney18
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 612f86a2da28c83498c2827b8e825988, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Courtney19
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 0f76c92a6f11af34f9c1834c297f4ec8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr2
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 592149f431de9af47a62a6927bcbcfa9, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr6
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: aa2724ef936ea6c4aa99f6ef2fc99bab, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr9
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: dac3db312a6f9e944994b21336cee088, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr10
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 56e1e15791b2c384b91bcd5ac8e5f752, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr11
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: e2f520f798631e944b2095600f68438f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr12
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 7defe1b702bb7ac4cb06ad105b429b46, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Petr18
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 3fcc42aa7d04c5743a7829d4b2fa5718, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica4
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 0d3ffdad2caa52f4b9492b064579da63, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica6
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 250c4a06a3d14d846bb558a45f8c2b5f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica7
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: c9587f81331ee9249bd5599069af8cf3, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica10
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: a63bd6415e9ce984c86ab1ec6cf1d0fc, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica11
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: a87f355ab4ca63b4192e25e1bb1fca5d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica12
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 127a1e9c34e8fc74e86da47a05dc0f8e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
+  - name: Veronica14
+    outputMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: 2278063d547402e489988a68f9c883c6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
 --- !u!82 &2072304906
 AudioSource:
   m_ObjectHideFlags: 0
