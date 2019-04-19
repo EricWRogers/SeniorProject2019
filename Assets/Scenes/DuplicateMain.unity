@@ -315,6 +315,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,16 +379,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -563,6 +563,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -617,16 +627,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -1091,6 +1091,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1145,16 +1155,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -1866,6 +1866,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1920,16 +1930,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -3987,6 +3987,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4041,16 +4051,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -5432,6 +5432,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5487,31 +5497,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -59.323
       objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304570141730, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
-    - target: {fileID: 7376624304570141738, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
-    - target: {fileID: 7376624304570141742, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_Layer
@@ -5537,6 +5522,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7376624304570141730, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
+    - target: {fileID: 7376624304570141738, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
+    - target: {fileID: 7376624304570141742, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d007f20236df7d34ba64b998c2ed150e, type: 3}
 --- !u!4 &99158611 stripped
@@ -8010,6 +8010,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8064,16 +8074,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -8228,6 +8228,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8282,16 +8292,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -9013,6 +9013,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9067,16 +9077,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -10049,6 +10049,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10103,16 +10113,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10.327001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -10840,6 +10840,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10894,16 +10904,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -11438,6 +11438,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11492,16 +11502,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -12363,6 +12363,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
+        type: 3}
+      propertyPath: m_Name
+      value: Couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5095933577586212271, guid: c201e5ce71591134b8a4891092033e89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12417,16 +12427,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
-        type: 3}
-      propertyPath: m_Name
-      value: Couch
-      objectReference: {fileID: 0}
-    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5095933577588637519, guid: c201e5ce71591134b8a4891092033e89,
         type: 3}
@@ -15595,6 +15595,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15649,16 +15659,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -16119,6 +16119,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16173,16 +16183,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -18038,6 +18038,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18092,16 +18102,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -20175,6 +20175,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20229,16 +20239,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -23619,6 +23619,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23673,16 +23683,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -32255,6 +32255,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32309,16 +32319,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -33221,6 +33221,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33275,16 +33285,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -34063,6 +34063,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34117,16 +34127,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -34376,6 +34376,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34431,16 +34441,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
 --- !u!4 &594159527 stripped
@@ -34456,6 +34456,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34525,16 +34535,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 67.162796
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -34747,6 +34747,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34811,16 +34821,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 81.36222
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -36650,6 +36650,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36704,16 +36714,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -37611,6 +37611,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37665,16 +37675,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -38514,6 +38514,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38568,16 +38578,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -39354,6 +39354,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39408,16 +39418,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -39774,6 +39774,21 @@ PrefabInstance:
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732484057059062479, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975114787684138207, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087196023304270623, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -45206,6 +45221,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45276,21 +45301,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 81.362206
       objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304570141738, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_Layer
@@ -45316,6 +45326,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7376624304570141738, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f206141d5e84f45409a673b655e7466d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d007f20236df7d34ba64b998c2ed150e, type: 3}
 --- !u!4 &769862966 stripped
@@ -56255,6 +56270,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56309,16 +56334,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -58769,6 +58784,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58833,16 +58858,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 69.54129
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -60165,6 +60180,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -60219,16 +60244,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -61387,6 +61402,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -61456,16 +61481,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 69.541306
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -62176,6 +62191,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62245,16 +62270,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.362206
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -62628,6 +62643,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62682,16 +62707,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -63716,6 +63731,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63770,16 +63795,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -64967,6 +64982,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65021,16 +65046,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -67944,6 +67959,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67998,16 +68023,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -68628,6 +68643,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -68682,16 +68707,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 88.211006
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -69641,6 +69656,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69695,16 +69720,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -69945,6 +69960,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69999,16 +70024,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -72799,6 +72814,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72853,16 +72878,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -72960,6 +72975,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73014,16 +73039,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -73134,6 +73149,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73203,16 +73228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 69.54132
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -73543,6 +73558,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73607,16 +73632,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 81.362206
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -78034,6 +78049,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Name
+      value: ScienceWorkStationCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 506245176978355067, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -78088,16 +78113,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Name
-      value: ScienceWorkStationCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 506245176978255705, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
@@ -80204,6 +80219,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -80268,16 +80293,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 67.16281
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -80595,6 +80610,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -80649,16 +80674,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -81954,6 +81969,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
+        type: 3}
+      propertyPath: m_Name
+      value: Large_Research_Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8144319777508464390, guid: 70ec9f5875ca34546972f19653a61773,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82008,16 +82033,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
-        type: 3}
-      propertyPath: m_Name
-      value: Large_Research_Table
-      objectReference: {fileID: 0}
-    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70ec9f5875ca34546972f19653a61773, type: 3}
@@ -89865,6 +89880,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -89919,16 +89944,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -90368,6 +90383,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -90422,16 +90447,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -96329,6 +96344,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -96388,16 +96413,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 69.541275
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -100051,6 +100066,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100105,16 +100130,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8566291475625126024, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
@@ -100820,6 +100835,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100874,16 +100899,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -102579,6 +102594,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102633,16 +102658,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -106107,6 +106122,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106161,16 +106186,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -107591,6 +107606,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -107645,16 +107670,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -108645,6 +108660,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108699,16 +108724,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
@@ -108880,6 +108895,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108934,16 +108959,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -110343,6 +110358,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -110412,16 +110437,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.362206
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304567882464, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -119940,6 +119955,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120009,16 +120034,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 67.16281
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -120542,6 +120557,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 226108877}
     m_Modifications:
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120596,16 +120621,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7889160072699051962, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
