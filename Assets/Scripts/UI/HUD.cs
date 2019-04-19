@@ -17,6 +17,7 @@ public class HUD : MonoBehaviour
     Text topMessageText;
     Text bottomMessageText;
     Text tutorialMessageText;
+    Text audioLogText;
     Text lockedTimerText;
     Text timerText;
 
@@ -36,6 +37,7 @@ public class HUD : MonoBehaviour
         topMessageText = GameObject.Find("MessageCanvas").transform.Find("TopMessageText").gameObject.GetComponent<Text>();
         bottomMessageText = GameObject.Find("MessageCanvas").transform.Find("BottomMessageText").gameObject.GetComponent<Text>();
         tutorialMessageText = GameObject.Find("MessageCanvas").transform.Find("TutorialMessageText").gameObject.GetComponent<Text>();
+        audioLogText = GameObject.Find("MessageCanvas").transform.Find("AudioLogText").gameObject.GetComponent<Text>();
         timerText = GameObject.Find("MessageCanvas").transform.Find("TimerText").GetComponent<Text>();
         lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
         loseCanvas = GameObject.Find("LoseCanvas").GetComponent<Canvas>();
@@ -47,6 +49,7 @@ public class HUD : MonoBehaviour
     void Start()
     {
         objectiveForPlayer("");
+        AudioLogMessage();
         PlayTutorial(basics);
         basics = false;
     }
@@ -116,6 +119,16 @@ public class HUD : MonoBehaviour
     public void TutorialForPlayer(string message)
     {
         tutorialMessageText.text = message;
+    }
+
+    public void AudioLogMessage()
+    {
+        audioLogText.text = "";
+    }
+
+    public void AudioLogMessage(string message)
+    {
+        audioLogText.text = message;
     }
 
     public void PlayTutorial(bool basics)

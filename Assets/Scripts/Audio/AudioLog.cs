@@ -52,15 +52,19 @@ public class AudioLog : MonoBehaviour
     };
 
     AudioManager audioManager;
+    HUD hud;
 
-    public AudioLogs audioLogs;    
+    public AudioLogs audioLogs;
+    public string audioLogMessage;
 
     string audioLog;
 
     private void Start()
     {
         audioManager = GameObject.FindObjectOfType<AudioManager>();
+        hud = GameObject.FindObjectOfType<HUD>();
         audioLog = audioLogs.ToString();
+        hud.AudioLogMessage(audioLogMessage);
         //audioManager.PlayAudioLog(audioLog);   test
     }
 
