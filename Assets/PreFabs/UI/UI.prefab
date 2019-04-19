@@ -117,7 +117,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: PlayEasy
         m_Mode: 1
         m_Arguments:
@@ -147,7 +147,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: PlayHardcore
         m_Mode: 1
         m_Arguments:
@@ -308,7 +308,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: CloseDifficulty
         m_Mode: 1
         m_Arguments:
@@ -627,7 +627,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: PlayNormal
         m_Mode: 1
         m_Arguments:
@@ -1025,7 +1025,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: PlayHard
         m_Mode: 1
         m_Arguments:
@@ -1186,7 +1186,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6117647}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -1658,7 +1658,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -1962,7 +1962,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: CloseCredits
         m_Mode: 1
         m_Arguments:
@@ -1992,7 +1992,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -2268,7 +2268,7 @@ GameObject:
   - component: {fileID: 1857490766355570283}
   - component: {fileID: 1857490766355570294}
   - component: {fileID: 1536830465710729973}
-  - component: {fileID: 7921690847812481731}
+  - component: {fileID: 8197069647450210127}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -2386,7 +2386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterMixer: {fileID: 24100000, guid: 587a48216e997fa4f8670b837e3f48db, type: 2}
---- !u!114 &7921690847812481731
+--- !u!114 &8197069647450210127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2395,14 +2395,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857490766355570284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e71d9c49bb3cc51d8d62a1d37324cbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b89091844e38d74a84f286a06395080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuUI: {fileID: 1857490766999236429}
   difficultyUI: {fileID: 1005910050}
   optionsMenuUI: {fileID: 7225808096763398143}
   creditsUI: {fileID: 1857490766115098261}
-  gameSceneName: TheGameMainScene
+  gameSceneName: DuplicateMain
   creditDuration: 100
   MasterVolumeSlider: {fileID: 219245993725456649}
   MusicVolumeSlider: {fileID: 2552583115536222045}
@@ -2609,7 +2609,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: LoadCredits
         m_Mode: 1
         m_Arguments:
@@ -2650,7 +2650,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -2781,7 +2781,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: LoadDifficulty
         m_Mode: 1
         m_Arguments:
@@ -2811,7 +2811,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -3792,7 +3792,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7921690847812481731}
+      - m_Target: {fileID: 8197069647450210127}
         m_MethodName: LoadOptions
         m_Mode: 1
         m_Arguments:
@@ -3822,7 +3822,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -4233,7 +4233,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7921690847812481731}
+        - m_Target: {fileID: 8197069647450210127}
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -4796,16 +4796,6 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1536830465710729973}
-    - target: {fileID: 9043254633133275691, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_Name
-      value: Options UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043254633133275691, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9043254633133275688, guid: 8148dfa1c64e26d42927e66b4b118872,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4910,6 +4900,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855330335142562109, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1536830465710729973}
+    - target: {fileID: 9043254633133275691, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_Name
+      value: Options UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043254633133275691, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5225323090559339738, guid: 8148dfa1c64e26d42927e66b4b118872,
         type: 3}
@@ -5026,11 +5031,6 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1536830465710729973}
-    - target: {fileID: 8855330335142562109, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1536830465710729973}
     - target: {fileID: 5702799399572140432, guid: 8148dfa1c64e26d42927e66b4b118872,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5065,6 +5065,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 26.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1b9a9aac7482fd4e84bdb5e21d193b1,
+        type: 3}
+    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318157826530526940, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318157826530526940, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8197069647450210127}
+    - target: {fileID: 5466957465858489643, guid: 8148dfa1c64e26d42927e66b4b118872,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6368404782837426687, guid: 8148dfa1c64e26d42927e66b4b118872,
         type: 3}
@@ -5130,42 +5166,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -140.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a1b9a9aac7482fd4e84bdb5e21d193b1,
-        type: 3}
-    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506042332531497360, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318157826530526940, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.a
-      value: 0.627451
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318157826530526940, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7921690847812481731}
-    - target: {fileID: 5466957465858489643, guid: 8148dfa1c64e26d42927e66b4b118872,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8148dfa1c64e26d42927e66b4b118872, type: 3}
