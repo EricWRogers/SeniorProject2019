@@ -38,7 +38,9 @@ public class GameManager : MonoBehaviour
         winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
         EntityIsActive = false;
-        EntityGO.SetActive(false);
+
+        if(!EntityIsActive)
+            EntityGO.SetActive(false);
 
         hidden = false;
         playerAttacked = false;
@@ -66,10 +68,13 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        PollAgression();
-        CheckExplosives();
-        PollScareShitlessMeter();
         CheckToInstantiateEntity();
+        CheckExplosives();
+        if(EntityIsActive)
+        {
+        PollAgression();
+        PollScareShitlessMeter();
+        }
     }
     void CheckToInstantiateEntity()
     {

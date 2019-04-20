@@ -80,7 +80,7 @@ public class StateController : MonoBehaviour
         currentState.UpdateState(this);
 
         Vector3 vel =navMeshAgent.velocity;
-        if(vel.magnitude >= normalSpeed && vel.magnitude  < runspeed)
+        if(vel.magnitude >= 1 && vel.magnitude  < runspeed)
         {
             anim.SetBool("isIdle",false);
             anim.SetBool("isWalking",true);
