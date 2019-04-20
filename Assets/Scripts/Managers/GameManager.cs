@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     
     public int adrenaline;
     public int explosives;
-
+    public bool EntityIsActive;
     public bool hidden;
     public bool playerAttacked;
     
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
         winPoint = GameObject.Find("WinPoint");
         HudGO = GameObject.Find("HUD");
-
+        EntityIsActive = false;
         EntityGO.SetActive(false);
 
         hidden = false;
@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
         if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("green"))
         {
            EntityGO.SetActive(true);
+           EntityIsActive = true;
         }
 
 

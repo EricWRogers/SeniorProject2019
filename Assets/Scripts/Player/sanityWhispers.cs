@@ -15,7 +15,10 @@ public class sanityWhispers : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(gameManager.EntityIsActive)
+        {
         InsanitySound();
+        }
     }
 
     private void InsanitySound()
