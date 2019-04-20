@@ -41062,7 +41062,7 @@ PrefabInstance:
     - target: {fileID: 6952691403254199045, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6952691403254199166, guid: e153226711df47049a4cf8f4fa132f82,
         type: 3}
@@ -59177,7 +59177,7 @@ PrefabInstance:
     - target: {fileID: 8976172341561190542, guid: e49a6121ee5cf4c438903782ad7f46aa,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976172341561190543, guid: e49a6121ee5cf4c438903782ad7f46aa,
         type: 3}
@@ -80308,7 +80308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1310842083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127627,6 +127627,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 4395625621470498153}
+    - target: {fileID: 2895442007914940573, guid: 821e921be0091cd438214cfabecd788d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821e921be0091cd438214cfabecd788d, type: 3}
 --- !u!114 &4395625621470498153
