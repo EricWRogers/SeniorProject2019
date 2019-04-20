@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
     }
     void CheckToInstantiateEntity()
     {
-        if(explosives == 2 && PlayerGO.GetComponent<KeyChain>().KeysInPocket.Contains("green"))
+        if(explosives == 2)
         {
            EntityGO.SetActive(true);
            EntityIsActive = true;
