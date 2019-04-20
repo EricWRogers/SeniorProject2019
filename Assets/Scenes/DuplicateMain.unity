@@ -41253,6 +41253,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: eb21ab58f805905418b4172a947e2778, type: 3}
+    - target: {fileID: 6952691404256912239, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: far clip plane
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952691404256912239, guid: e153226711df47049a4cf8f4fa132f82,
+        type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e153226711df47049a4cf8f4fa132f82, type: 3}
 --- !u!1 &707625306 stripped
