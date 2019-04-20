@@ -22,6 +22,7 @@ public class AttackAction : Action
             Debug.Log("Attacked"); 
             Vector3 moveDirection = controller.gameManager.PlayerGO.transform.position - controller.transform.position;
             //play animation
+            controller.anim.SetTrigger("Slap");
             //check collision on state in animator
             //play audio
             controller.gameManager.PlayerGO.GetComponent<Rigidbody>().AddForce(moveDirection.normalized * controller.enemyStats.attackPower);

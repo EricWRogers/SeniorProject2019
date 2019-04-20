@@ -38,6 +38,8 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 3;
         DifficultyManager.instance.escapeTime = 240f;
+        DifficultyManager.instance.EntityRunSpeed = 22f;
+        DifficultyManager.instance.EntityWalkSpeed =19f;
         audioManager.Play("UIMenuSelect");        
     }
 
@@ -49,6 +51,8 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 2;
         DifficultyManager.instance.escapeTime = 210f;
+        DifficultyManager.instance.EntityRunSpeed = 28f;
+        DifficultyManager.instance.EntityWalkSpeed =24f;
         audioManager.Play("UIMenuSelect");
     }
 
@@ -60,6 +64,8 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 1;
         DifficultyManager.instance.escapeTime = 180f;
+        DifficultyManager.instance.EntityRunSpeed = 30f;
+        DifficultyManager.instance.EntityWalkSpeed =26f;
         audioManager.Play("UIMenuSelect");
     }
 
@@ -71,6 +77,8 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 0;
         DifficultyManager.instance.escapeTime = 150f;
+        DifficultyManager.instance.EntityRunSpeed = 35f;
+        DifficultyManager.instance.EntityWalkSpeed =30f;
         audioManager.Play("UIMenuSelect");
     }
 

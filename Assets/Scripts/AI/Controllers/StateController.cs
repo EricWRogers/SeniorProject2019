@@ -16,8 +16,8 @@ public class StateController : MonoBehaviour
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public float stateTimeElapsed;
     private bool aiActive;
-    public float normalSpeed = 20f;
-    public float runspeed = 24f;
+    public float normalSpeed;
+    public float runspeed;
     //fov 
     public LayerMask playerTargetMask;
     public LayerMask ObstacleMask;
@@ -26,6 +26,7 @@ public class StateController : MonoBehaviour
     public float viewAngle;
     
     public Animator anim;
+    public DifficultyManager diffMan;
 
     public ThrowObject throwableObject {
         get {
@@ -49,6 +50,8 @@ public class StateController : MonoBehaviour
         SetupAI();
         Rigidbody entityRb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        normalSpeed = DifficultyManager.instance.EntityWalkSpeed;
+        runspeed = DifficultyManager.instance.EntityRunSpeed;
     }
     void FixedUpdate()
     {

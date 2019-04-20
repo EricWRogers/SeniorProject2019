@@ -9,14 +9,14 @@ AnimatorController:
   m_Name: SmallDoorFBX
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: PlayerNearDoor
-    m_Type: 4
+  - m_Name: isBroken
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isBroken
-    m_Type: 9
+  - m_Name: PlayerNearDoor
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
