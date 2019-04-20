@@ -162,7 +162,7 @@ public class HUD : MonoBehaviour
         if (basics)
         {
             //movement tut
-            TutorialForPlayer("WASD to move");
+            TutorialForPlayer("W,A,S,D to move");
             yield return new WaitForSeconds(textRemoval);
             yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
             FadeOut(tutorialMessageText);
@@ -175,7 +175,7 @@ public class HUD : MonoBehaviour
             yield return new WaitForSeconds(fadeOutTime);
 
             //lean tut
-            TutorialForPlayer("QE to lean");
+            TutorialForPlayer("Q,E to lean");
             yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
             FadeOut(tutorialMessageText);
             yield return new WaitForSeconds(fadeOutTime);
@@ -197,7 +197,10 @@ public class HUD : MonoBehaviour
             yield return new WaitForSeconds(objectiveRemoval);
             FadeOut(tutorialMessageText);
             objectiveForPlayer("Search the station and place explosives in key points");
-            yield return new WaitWhile(() => GameManager.explosives > 1);
+            yield return new WaitWhile(() => GameManager.explosives > 2);
+            TutorialForPlayer("RUN!");
+
+            yield return new WaitWhile(() => GameManager.explosives > 0);
             //yield return new WaitForSeconds(textRemoval);
 
             //escape post planting explosives

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    //public GameObject pauseCanvas;
+    public GameObject pauseCanvas;
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
 
@@ -20,17 +20,23 @@ public class PauseMenu : MonoBehaviour
 
     public AudioManager audioManager;
 
+    Animator animator;
+
     bool timerIsDisabled;
 
-    GameObject player;
-    Transform messageCanvas;
-    AudioSource sanityWhispers;
+    public GameObject player;
+    public GameObject messageCanvas;
+    public AudioSource sanityWhispers;
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        messageCanvas = GameObject.Find("HUD").transform.Find("MessageCanvas");
-        sanityWhispers = player.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>();
+        //player = GameObject.FindGameObjectWithTag("Player");
+        //messageCanvas = GameObject.Find("MessageCanvas");
+        //sanityWhispers = player.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>();
+
+        audioManager = FindObjectOfType<AudioManager>();
+
+        animator = GameObject.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
     }
 
     void Start()
@@ -45,21 +51,20 @@ public class PauseMenu : MonoBehaviour
     {
 
         Time.timeScale = 0;
-        //pauseCanvas.SetActive(true);
+        pauseCanvas.SetActive(true);
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
-        messageCanvas.Find("TopMessageText").GetComponent<Text>().enabled = false;
-        messageCanvas.Find("BottomMessageText").GetComponent<Text>().enabled = false;
+        messageCanvas.SetActive(false);
 
-        if(messageCanvas.Find("TimerText").GetComponent<Text>().enabled == false)
-        {
-            timerIsDisabled = true;
-        }
-        else
-        {
-            messageCanvas.Find("TimerText").GetComponent<Text>().enabled = false;
-            timerIsDisabled = false;
-        }
+        //if(messageCanvas.Find("TimerText").GetComponent<Text>().enabled == false)
+        //{
+        //    timerIsDisabled = true;
+        //}
+        //else
+        //{
+        //    messageCanvas.Find("TimerText").GetComponent<Text>().enabled = false;
+        //    timerIsDisabled = false;
+        //}
         
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -70,16 +75,15 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1;
-        //pauseCanvas.SetActive(false);
+        pauseCanvas.SetActive(false);
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(false);
-        messageCanvas.Find("TopMessageText").GetComponent<Text>().enabled = true;
-        messageCanvas.Find("BottomMessageText").GetComponent<Text>().enabled = true;
+        messageCanvas.SetActive(true);
 
-        if (!timerIsDisabled)
-        {
-            messageCanvas.Find("TimerText").GetComponent<Text>().enabled = true;
-        }
+        //if (!timerIsDisabled)
+        //{
+        //    messageCanvas.Find("TimerText").GetComponent<Text>().enabled = true;
+        //}
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -118,7 +122,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-
+        //CheckPause();
     }
 
     void CheckPause()
@@ -127,11 +131,16 @@ public class PauseMenu : MonoBehaviour
         {
             if (pauseMenuUI.activeSelf)
             {
+                Debug.Log("Resume");
                 Resume();
+                animator.SetTrigger("Pause");
+                animator.SetBool("Paused", true);
             }
             else
             {
+                Debug.Log("Pause");
                 Pause();
+                animator.SetBool("Paused", false);
             }
         }
     }

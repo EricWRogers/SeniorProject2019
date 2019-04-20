@@ -60,14 +60,15 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!stopMoving)
+        CheckPause();
+
+        if (!stopMoving)
         {
             if (CharController.isGrounded)
             {
                 Crouching();
                 Sprinting();
-                Movement();
-                CheckPause();
+                Movement();                
             }
 
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
@@ -204,11 +205,15 @@ public class PlayerMovement : MonoBehaviour
         {
             if (pause.activeSelf == false)
             {
+                Debug.Log("playing pause");
                 animator.SetTrigger("Pause");
                 animator.SetBool("Paused", true);
             }
             else
             {
+                //reverse animation
+                Debug.Log("resuming");
+                animator.SetTrigger("Pause");
                 animator.SetBool("Paused", false);
             }
         }

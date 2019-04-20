@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class RandomMusicPlayer : MonoBehaviour
 {
     public AudioClip mainMenuTrack;
+    public AudioClip chaseTrack;
     public AudioClip gameOverTrack;
 
     public AudioSource audioSource;
@@ -19,9 +20,22 @@ public class RandomMusicPlayer : MonoBehaviour
     
     private int randomSound = 0;
 
+    private GameObject player;
+    private GameObject creature;
+    private float creatureDistance;
+    private float creatureSoundDistance = 145f;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        creature = GameObject.Find("TheEntity!");
+        creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+    }
+
     void Update()
     {
         currentScene = SceneManager.GetActiveScene().name;
+
 
         if (currentScene != mainMenuScene)
         {
@@ -37,6 +51,17 @@ public class RandomMusicPlayer : MonoBehaviour
                 audioSource.loop = false;
             }
         }
+        else if (creatureDistance < creatureSoundDistance)
+        {
+            if (audioSource.isPlaying)
+            {
+                FadeOutCall(audioSource, fadeDuration);
+            }
+
+            audioSource.clip = chaseTrack;
+            audioSource.Play();
+            audioSource.loop = true;
+        }
         else
         {
             if (audioSource.clip != mainMenuTrack && audioSource.isPlaying)
@@ -50,7 +75,7 @@ public class RandomMusicPlayer : MonoBehaviour
                 audioSource.Play();
                 audioSource.loop = true;
             }            
-        }
+        }        
     }
 
     void ChooseSound()

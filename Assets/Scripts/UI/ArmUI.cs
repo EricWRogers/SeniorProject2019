@@ -39,6 +39,10 @@ public class ArmUI : MonoBehaviour
             numOfAdrenaline = gameManager.adrenaline;
             DisplayAdrenaline();
         }
+        else
+        {
+            DisplayAdrenaline();
+        }
     }
 
     void CheckExplosives()
@@ -46,6 +50,10 @@ public class ArmUI : MonoBehaviour
         if(numOfExplosives != gameManager.explosives)
         {
             numOfExplosives = gameManager.explosives;
+            DisplayExplosives();
+        }
+        else
+        {
             DisplayExplosives();
         }
     }
@@ -62,7 +70,7 @@ public class ArmUI : MonoBehaviour
     void DisplayAdrenaline()
     {
         switch (numOfAdrenaline)
-        {
+        {            
             case 0:
 
                 if (transform.Find("Adrenaline") != null)
@@ -98,14 +106,13 @@ public class ArmUI : MonoBehaviour
 
             case 3:
 
-                if(transform.Find("Adrenaline") != null)
+                if (transform.Find("Adrenaline") != null)
                 {
                     transform.Find("Adrenaline").transform.Find("Adrenaline_0").gameObject.SetActive(false);
                     transform.Find("Adrenaline").transform.Find("Adrenaline_1").gameObject.SetActive(false);
                     transform.Find("Adrenaline").transform.Find("Adrenaline_2").gameObject.SetActive(false);
                     transform.Find("Adrenaline").transform.Find("Adrenaline_3").gameObject.SetActive(true);
                 }
-
                 break;
 
             default:
