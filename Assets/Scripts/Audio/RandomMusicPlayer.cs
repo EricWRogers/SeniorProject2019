@@ -22,20 +22,19 @@ public class RandomMusicPlayer : MonoBehaviour
 
     private GameObject player;
     private GameObject creature;
-    private float creatureDistance;
+    private float creatureDistance = 1000;
     private float creatureSoundDistance = 145f;
 
     private void Awake()
     {
         player = GameObject.Find("Player");
-        creature = GameObject.Find("TheEntity!");
-        creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+        creature = GameObject.Find("TheEntity!");        
     }
 
     void Update()
     {
         currentScene = SceneManager.GetActiveScene().name;
-
+        UpdatePlayerDistance();
 
         if (currentScene != mainMenuScene)
         {
@@ -51,7 +50,7 @@ public class RandomMusicPlayer : MonoBehaviour
                 audioSource.loop = false;
             }
         }
-        else if (creatureDistance < creatureSoundDistance)
+        else if (currentScene != mainMenuScene && creatureDistance < creatureSoundDistance)
         {
             if (audioSource.isPlaying)
             {
@@ -119,4 +118,23 @@ public class RandomMusicPlayer : MonoBehaviour
             yield return new WaitForSeconds(.1f);
         }
     }
+
+    void UpdatePlayerDistance()
+    {
+        if(player == null)
+        {
+            player = GameObject.Find("Player");
+        }
+
+        if(creature == null)
+        {
+            creature = GameObject.Find("TheEntity!");
+        }
+
+        if(player != null && creature != null)
+        {
+            creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
+        }
+    }
+
 }

@@ -78,15 +78,6 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
     playOnAwake: 0
-  - name: Amanda_11_1
-    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
-      type: 2}
-    audioClip: {fileID: 8300000, guid: 33074af312a387642a5ab6637020914d, type: 3}
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
-    loop: 0
-    playOnAwake: 1
   locationSounds:
   - name: droppedObject
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,

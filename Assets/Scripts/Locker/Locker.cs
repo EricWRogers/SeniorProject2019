@@ -8,6 +8,9 @@ public class Locker : MonoBehaviour
     public string OpenMessage;
     public string CloseMessage;
 
+    public AudioClip lockerOpen;
+    public AudioClip lockerClose;
+
     bool showMessage;
     string message;
     GameObject playerGO;
@@ -37,11 +40,12 @@ public class Locker : MonoBehaviour
             if (!animator.GetBool("IsLockerOpen"))
             {
                 hud.MessageForPlayer(OpenMessage);
-
+                audioSource.clip = lockerOpen;
             }
             else
             {
                 hud.MessageForPlayer(CloseMessage);
+                audioSource.clip = lockerClose;
             }
 
             PlayAnimation();
@@ -57,6 +61,7 @@ public class Locker : MonoBehaviour
         if (InputManager.instance.Interact())
         {
             animator.SetTrigger("Open/Close");
+            audioSource.Play();
         }
     }
 }

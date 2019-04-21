@@ -199,7 +199,8 @@ public class HUD : MonoBehaviour
             objectiveForPlayer("Search the station and place explosives in key points");
             yield return new WaitWhile(() => GameManager.explosives > 2);
             TutorialForPlayer("RUN!");
-
+            yield return new WaitForSeconds(objectiveRemoval);
+            TutorialForPlayer("");
             yield return new WaitWhile(() => GameManager.explosives > 0);
             //yield return new WaitForSeconds(textRemoval);
 
@@ -216,7 +217,11 @@ public class HUD : MonoBehaviour
             yield return new WaitForSeconds(objectiveRemoval);
             FadeOut(tutorialMessageText);
             objectiveForPlayer("Search the station and place explosives in key points");
-            yield return new WaitWhile(() => GameManager.explosives > 1);
+            yield return new WaitWhile(() => GameManager.explosives > 2);
+            TutorialForPlayer("RUN!");
+            yield return new WaitForSeconds(objectiveRemoval);
+            TutorialForPlayer("");
+            yield return new WaitWhile(() => GameManager.explosives > 0);
             //yield return new WaitForSeconds(textRemoval);
 
             //escape post planting explosives
