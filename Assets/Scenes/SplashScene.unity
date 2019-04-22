@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731703, g: 0.13414727, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,10 +334,10 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 0
   m_Looping: 0
-  m_WaitForFirstFrame: 1
+  m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
 --- !u!4 &815796396
 Transform:
@@ -360,13 +360,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815796394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdf9698f9c972de4288946293efcf072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  studioPlayer: {fileID: 0}
-  gamePlayer: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  studioClip: {fileID: 0}
+  gameClip: {fileID: 0}
+  menuSceneName: DollyMenu
 --- !u!1 &992822231
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,8 +657,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf9698f9c972de4288946293efcf072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  studioPlayer: {fileID: 815796395}
-  gamePlayer: {fileID: 0}
+  videoPlayer: {fileID: 815796395}
+  studioClip: {fileID: 32900000, guid: f3bf8a23673a7334093a7d8835c7830a, type: 3}
+  gameClip: {fileID: 32900000, guid: f7a0f741381d2d341805e7116a989af7, type: 3}
+  menuSceneName: DollyMenu
 --- !u!1 &2028472556
 GameObject:
   m_ObjectHideFlags: 0

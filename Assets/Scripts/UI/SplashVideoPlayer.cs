@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class SplashVideoPlayer : MonoBehaviour
 {
-    public VideoPlayer studioPlayer;
-    public VideoPlayer gamePlayer;
+    public VideoPlayer videoPlayer;
+
+    public VideoClip studioClip;
+    public VideoClip gameClip;
+
+    double studioLength;
+    double gameLength;
+
+    public string menuSceneName = "DollyMenu";
 
     private void Start()
     {
-        FadeOutCall(studioPlayer, .05f);
+        studioLength = studioClip.length;
+        gameLength = gameClip.length;
+        FadeOutCall(videoPlayer, .05f);                
     }
 
     void FadeOutCall(VideoPlayer videoPlayer, float speed)
@@ -21,14 +31,32 @@ public class SplashVideoPlayer : MonoBehaviour
     IEnumerator FadeOut(VideoPlayer videoPlayer, float speed)
     {
         float videoPlayerAlpha = videoPlayer.targetCameraAlpha;
+        float videoPlayerVolume = videoPlayer.GetDirectAudioVolume(0);
 
-        while (videoPlayer.targetCameraAlpha >= speed)
+        videoPlayer.Play();
+
+        yield return new WaitForSeconds((float)studioLength - 3);
+
+        while (videoPlayer.targetCameraAlpha >= speed || videoPlayer.GetDirectAudioVolume(0) > speed)
         {
             videoPlayerAlpha -= speed;
+            videoPlayerVolume -= speed;
             videoPlayer.targetCameraAlpha = videoPlayerAlpha;
+            videoPlayer.SetDirectAudioVolume(0, videoPlayerVolume);
             yield return new WaitForSeconds(.1f);
         }
-        //audioSource.Stop();
+
         videoPlayer.targetCameraAlpha = 1;
+        videoPlayer.SetDirectAudioVolume(0, 1);
+
+        videoPlayer.clip = gameClip;
+        videoPlayer.Play();
+
+        videoPlayerAlpha = videoPlayer.targetCameraAlpha;
+        videoPlayerVolume = videoPlayer.GetDirectAudioVolume(0);
+
+        yield return new WaitForSeconds((float)gameLength);
+
+        SceneManager.LoadScene(menuSceneName);
     }
 }

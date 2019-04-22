@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
@@ -37,15 +38,30 @@ public class DoorScript : MonoBehaviour
     Text lockedTimerText;
     Animator anim;
 
+    public string mainMenuScene = "DollyMenu";
+    private string currentScene;
+
     void Start()
     {
-        lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
+        currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene != mainMenuScene)
+        {
+            lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
+        }
+        
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
+        currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene != mainMenuScene && lockedTimerText == null)
+        {
+            lockedTimerText = GameObject.Find("HUD").transform.Find("MessageCanvas").transform.Find("LockedTimerText").GetComponent<Text>();
+        }
+
         SetColorValue();
         CheckIfDoorIsBroken();
         CheckDoorLocks();
@@ -263,7 +279,7 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("entity"))
+        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("entity") || other.gameObject.CompareTag("DollyCam"))
         {         
             anim.SetBool("PlayerNearDoor", false);
             anim.SetBool("isBroken", false);
