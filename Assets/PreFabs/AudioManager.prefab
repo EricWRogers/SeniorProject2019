@@ -676,6 +676,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 089ddd5ea0dfcde4882e98b6ba7b25db, type: 3}
   - {fileID: 8300000, guid: 861ee751338f03f4bacfce034ef92ef1, type: 3}
   mainMenuScene: DollyMenu
+  tutorialScene: Tutorial
 --- !u!82 &55701398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -685,7 +686,8 @@ AudioSource:
   m_GameObject: {fileID: 5215473815613239423}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243921880292316746, guid: 587a48216e997fa4f8670b837e3f48db,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
