@@ -107,41 +107,46 @@ public class AudioLog : MonoBehaviour
         }
 
         Pickup();
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+        if(audioManager == null)
         {
-            if (InputManager.instance.Interact())
-            {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                audioManager.PlayAudioLog(audioLog);
-                hud.AudioLogMessage(translatedAudioLog);
-
-                playTime = Time.time;
-                played = true;
-                duration = audioManager.AudioLogLength(audioLog);
-            }
+            audioManager = GameObject.FindObjectOfType<AudioManager>();
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            if (InputManager.instance.Interact() && pickupable)
-            {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                audioManager.PlayAudioLog(audioLog);
-                hud.AudioLogMessage(translatedAudioLog);
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //    {
+    //        if (InputManager.instance.Interact())
+    //        {
+    //            gameObject.GetComponent<MeshRenderer>().enabled = false;
+    //            audioManager.PlayAudioLog(audioLog);
+    //            hud.AudioLogMessage(translatedAudioLog);
 
-                playTime = Time.time;
-                played = true;
-                duration = audioManager.AudioLogLength(audioLog);
-            }
-        }
-    }
+    //            playTime = Time.time;
+    //            played = true;
+    //            duration = audioManager.AudioLogLength(audioLog);
+    //        }
+    //    }
+    //}
+
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //    {
+    //        if (InputManager.instance.Interact() && pickupable)
+    //        {
+    //            gameObject.GetComponent<MeshRenderer>().enabled = false;
+    //            audioManager.PlayAudioLog(audioLog);
+    //            hud.AudioLogMessage(translatedAudioLog);
+
+    //            playTime = Time.time;
+    //            played = true;
+    //            duration = audioManager.AudioLogLength(audioLog);
+    //        }
+    //    }
+    //}
 
     void Pickup()
     {

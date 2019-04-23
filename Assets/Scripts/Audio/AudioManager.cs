@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     {
         //Play("Walking 1");
         //FindObjectOfType<AudioManager>().Play("Walking 1");
+        //voiceSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Awake()
@@ -104,6 +105,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayAudioLog(string name)
     {
+        if(voiceSource == null)
+        {
+            //voiceSource = gameObject.AddComponent<AudioSource>();
+        }        
+
         Sound s = Array.Find(audioLogs, sound => sound.name == name);
         if (s.source == null)
         {
