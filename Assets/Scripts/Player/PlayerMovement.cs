@@ -102,10 +102,13 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
 
-            animator.SetBool("Sprinting", true);
-
             if (sprintMeater <= 100.0f && sprintMeater > 0.0f && !iscrouching && !needCharging)
             {
+                if(CharController.velocity.magnitude >= 2f)
+                {
+                    animator.SetBool("Sprinting", true);
+                }
+
                 audioSource.clip = sprintingClip;
 
                 if(!audioSource.isPlaying)
@@ -213,7 +216,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 //reverse animation
                 Debug.Log("resuming");
-                animator.SetTrigger("Pause");
                 animator.SetBool("Paused", false);
             }
         }

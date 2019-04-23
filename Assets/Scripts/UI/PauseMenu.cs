@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
 
     public AudioManager audioManager;
 
-    Animator animator;
+    public Animator animator;
 
     bool timerIsDisabled;
 
@@ -35,8 +35,6 @@ public class PauseMenu : MonoBehaviour
         //sanityWhispers = player.transform.Find("Sanity Whispers").gameObject.GetComponent<AudioSource>();
 
         audioManager = FindObjectOfType<AudioManager>();
-
-        animator = GameObject.Find("PlayerArms_W_ctrls").GetComponent<Animator>();
     }
 
     void Start()
@@ -49,12 +47,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-
-        Time.timeScale = 0;
         pauseCanvas.SetActive(true);
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
-        messageCanvas.SetActive(false);
+        //messageCanvas.SetActive(false);
 
         //if(messageCanvas.Find("TimerText").GetComponent<Text>().enabled == false)
         //{
@@ -74,11 +70,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        animator.SetBool("Paused", false);
         pauseCanvas.SetActive(false);
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(false);
-        messageCanvas.SetActive(true);
+
+        //messageCanvas.SetActive(true);
 
         //if (!timerIsDisabled)
         //{
