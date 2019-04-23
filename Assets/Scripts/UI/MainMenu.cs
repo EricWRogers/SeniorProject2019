@@ -10,7 +10,8 @@ public class MainMenu : MonoBehaviour
     public GameObject difficultyUI;
     public GameObject optionsMenuUI;
     public GameObject creditsUI;
-    public string gameSceneName;
+
+    public string sceneToLaunch = "Tutorial";
     public float creditDuration = 100f;
 
     public Slider MasterVolumeSlider;
@@ -32,8 +33,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayEasy()
     {
-        Debug.Log("Loading " + gameSceneName);
-        SceneManager.LoadScene(gameSceneName);
+        Debug.Log("Loading " + sceneToLaunch);
+        SceneManager.LoadScene(sceneToLaunch);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 3;
@@ -45,8 +46,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayNormal()
     {
-        Debug.Log("Loading " + gameSceneName);
-        SceneManager.LoadScene(gameSceneName);
+        Debug.Log("Loading " + sceneToLaunch);
+        SceneManager.LoadScene(sceneToLaunch);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 2;
@@ -58,8 +59,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayHard()
     {
-        Debug.Log("Loading " + gameSceneName);
-        SceneManager.LoadScene(gameSceneName);
+        Debug.Log("Loading " + sceneToLaunch);
+        SceneManager.LoadScene(sceneToLaunch);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 1;
@@ -71,8 +72,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayHardcore()
     {
-        Debug.Log("Loading " + gameSceneName);
-        SceneManager.LoadScene(gameSceneName);
+        Debug.Log("Loading " + sceneToLaunch);
+        SceneManager.LoadScene(sceneToLaunch);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         DifficultyManager.instance.adrenaline = 0;
