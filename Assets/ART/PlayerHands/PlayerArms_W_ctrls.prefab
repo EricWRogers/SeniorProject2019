@@ -123,6 +123,7 @@ MonoBehaviour:
   SFXVolumeSlider: {fileID: 8292122339379873903}
   MouseSensativitySlider: {fileID: 1907819762416746074}
   audioManager: {fileID: 0}
+  animator: {fileID: 0}
   player: {fileID: 0}
   messageCanvas: {fileID: 0}
   sanityWhispers: {fileID: 0}
@@ -374,7 +375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1dfcd17fbba204fb18889e9926ad59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pause: {fileID: 711379264}
+  pause: {fileID: 711379265}
+  player: {fileID: 0}
+  playerCam: {fileID: 0}
 --- !u!1 &412512057461624213
 GameObject:
   m_ObjectHideFlags: 0

@@ -262,6 +262,6 @@ public class GameManager : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("MainMenuScene");
+        SceneManager.LoadScene("DollyMenu");
     }
 }
