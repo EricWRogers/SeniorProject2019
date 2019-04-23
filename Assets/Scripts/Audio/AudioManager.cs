@@ -118,6 +118,12 @@ public class AudioManager : MonoBehaviour
             s.source.Play();
     }
 
+    public float AudioLogLength(string name)
+    {
+        Sound s = Array.Find(audioLogs, sound => sound.name == name);
+        return s.source.clip.length;
+    }
+
     //creates empty object at v3 and plays sound from locationSounds[] 
     public void PlayThisHere(Vector3 v3, string name, float volume)
     {

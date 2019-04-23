@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class HUD : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class HUD : MonoBehaviour
         if(player!= null && creature != null)
         {
             creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
-        }        
+        }
     }
 
     void FadeIn(Image i)

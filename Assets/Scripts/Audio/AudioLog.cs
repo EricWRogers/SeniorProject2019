@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class AudioLog : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class AudioLog : MonoBehaviour
         Blake40,
         Blake41,
         Blake45,
+        Cassandra1,
+        Cassandra2,
+        Cassandra4,
+        Cassandra6,
+        Cassandra11,
+        Cassandra16,
+        Cassandra18,
         Courtney3,
         Courtney7,
         Courtney8,
@@ -55,17 +63,39 @@ public class AudioLog : MonoBehaviour
     HUD hud;
 
     public AudioLogs audioLogs;
-    public string audioLogMessage;
+    string audioLogName;
 
     string audioLog;
+    string translatedAudioLog;
+
+    float playTime;
+    float duration;
+
+    bool played = false;
 
     private void Start()
     {
         audioManager = GameObject.FindObjectOfType<AudioManager>();
         hud = GameObject.FindObjectOfType<HUD>();
         audioLog = audioLogs.ToString();
-        hud.AudioLogMessage(audioLogMessage);
+        audioLogName = new string(audioLog.Where(c => (c < '0' || c > '9')).ToArray());
+        SpeakerName(audioLogName);
+        
         //audioManager.PlayAudioLog(audioLog);   test
+    }
+
+    private void Update()
+    {
+        if(played)
+        {
+            if (Time.time > playTime + duration)
+            {
+                hud.AudioLogMessage();
+                Destroy(gameObject);
+            }
+        }
+
+        //Debug.Log(Time.time);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -74,9 +104,45 @@ public class AudioLog : MonoBehaviour
         {
             //if (InputManager.instance.Interact())
             //{
-                Destroy(gameObject);
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 audioManager.PlayAudioLog(audioLog);
+                hud.AudioLogMessage(translatedAudioLog);
+
+                playTime = Time.time;
+                played = true;
+                duration = audioManager.AudioLogLength(audioLog);
             //}
+        }
+    }
+
+    void SpeakerName(string audioLogName)
+    {
+        switch(audioLogName)
+        {
+            case "Amanda":
+                translatedAudioLog = "Dr. Brigette Weatherby";
+                break;
+            case "Ben":
+                translatedAudioLog = "Dr. Adam Lowell";
+                break;
+            case "Blake":
+                translatedAudioLog = "Dr. Jameson Frost";
+                break;
+            case "Cassandra":
+                translatedAudioLog = "Dr. Amanda Cerny";
+                break;
+            case "Courtney":
+                translatedAudioLog = "Dr. Sarah Long";
+                break;
+            case "Petr":
+                translatedAudioLog = "Dr. Adrian Sokolov";
+                break;
+            case "Veronica":
+                translatedAudioLog = "Dr. Mariana Flores";
+                break;
+            default:
+                translatedAudioLog = "";
+                break;
         }
     }
 }
