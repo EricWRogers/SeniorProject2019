@@ -14,6 +14,7 @@ public class RandomMusicPlayer : MonoBehaviour
     public AudioClip[] audioClips;    
 
     public string mainMenuScene = "MainMenuScene";
+    public string tutorialScene = "Tutorial";
     private string currentScene;
 
     private float fadeDuration = .05f;
@@ -36,7 +37,7 @@ public class RandomMusicPlayer : MonoBehaviour
         currentScene = SceneManager.GetActiveScene().name;
         UpdatePlayerDistance();
 
-        if (currentScene != mainMenuScene)
+        if (currentScene != mainMenuScene && currentScene !=tutorialScene)
         {
             if (!audioSource.isPlaying)
             {
