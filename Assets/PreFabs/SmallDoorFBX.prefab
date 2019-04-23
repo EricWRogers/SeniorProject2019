@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8254080658239608401
 Transform:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 6239487805674279573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1.05, z: 1}
   m_Children:
   - {fileID: 6239487805674704561}
   - {fileID: 6239487805674704563}
@@ -396,9 +396,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a059ab4f66ed7924e833c1170c285d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenColor: 0
+  screenColor: 3
   doorStates: 0
   lockOutTime: 0
+  mainMenuScene: DollyMenu
 --- !u!1001 &1801201302761566368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -556,20 +557,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8254080658239608401}
     m_Modifications:
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
-        type: 3}
-      propertyPath: m_Name
-      value: PS_Sparks
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6901293
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
@@ -579,7 +570,7 @@ PrefabInstance:
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.5695605
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
@@ -620,6 +611,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Name
+      value: PS_Sparks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b768d4555b70348827624f93f723a6, type: 3}
@@ -636,20 +637,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8254080658239608401}
     m_Modifications:
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
-        type: 3}
-      propertyPath: m_Name
-      value: PS_Sparks (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6968094
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
@@ -659,7 +650,7 @@ PrefabInstance:
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.019157
+      value: -3.14
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
@@ -700,6 +691,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Name
+      value: PS_Sparks (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b768d4555b70348827624f93f723a6, type: 3}

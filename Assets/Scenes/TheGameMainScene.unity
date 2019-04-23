@@ -481,11 +481,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5345204974147997464, guid: 04b90d6b926743f499775323d2de4799,
-        type: 3}
-      propertyPath: m_Name
-      value: SilverwareStation
-      objectReference: {fileID: 0}
     - target: {fileID: 5345204974147703608, guid: 04b90d6b926743f499775323d2de4799,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -540,6 +535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5345204974147997464, guid: 04b90d6b926743f499775323d2de4799,
+        type: 3}
+      propertyPath: m_Name
+      value: SilverwareStation
       objectReference: {fileID: 0}
     - target: {fileID: 5345204974147703604, guid: 04b90d6b926743f499775323d2de4799,
         type: 3}
@@ -1167,11 +1167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,6 +1232,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1275997
       objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
 --- !u!4 &22403828 stripped
@@ -1252,11 +1252,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1311,6 +1306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -1473,11 +1473,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
-        type: 3}
-      propertyPath: m_Name
-      value: Metal_Jar (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4903164102860506351, guid: 7e0a0eb2fa86b2043877ede33bf18045,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1532,6 +1527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
+        type: 3}
+      propertyPath: m_Name
+      value: Metal_Jar (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a0eb2fa86b2043877ede33bf18045, type: 3}
@@ -2426,11 +2426,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2486,6 +2481,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.50001
       objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
 --- !u!1001 &42652061
@@ -2495,11 +2495,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2565,6 +2560,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1275997
       objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
 --- !u!1001 &43006717
@@ -2574,11 +2574,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2644,6 +2639,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4728913
       objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
 --- !u!1001 &47181484
@@ -2653,11 +2653,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
-        type: 3}
-      propertyPath: m_Name
-      value: Metal_Jar (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4903164102860506351, guid: 7e0a0eb2fa86b2043877ede33bf18045,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2712,6 +2707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
+        type: 3}
+      propertyPath: m_Name
+      value: Metal_Jar (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a0eb2fa86b2043877ede33bf18045, type: 3}
@@ -2933,11 +2933,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3002,6 +2997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.847267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -4124,11 +4124,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4193,6 +4188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.847267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -4763,11 +4763,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4823,6 +4818,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (19)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!33 &97456024
@@ -4840,11 +4840,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4909,6 +4904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -5257,11 +5257,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5321,6 +5316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 69.541245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6, type: 3}
@@ -6177,11 +6177,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6246,6 +6241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -6487,11 +6487,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6547,6 +6542,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
 --- !u!1001 &162445628
@@ -6556,11 +6556,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
-        type: 3}
-      propertyPath: m_Name
-      value: Couch (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5095933577586212271, guid: c201e5ce71591134b8a4891092033e89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6615,6 +6610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
+        type: 3}
+      propertyPath: m_Name
+      value: Couch (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c201e5ce71591134b8a4891092033e89, type: 3}
@@ -6903,11 +6903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6972,6 +6967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -7412,11 +7412,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7482,6 +7477,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.32459614
       objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
 --- !u!4 &194857255 stripped
@@ -7497,11 +7497,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7566,6 +7561,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -7782,11 +7782,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7841,6 +7836,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -8187,11 +8187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8256,6 +8251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.36218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372938, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -8364,11 +8364,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8433,6 +8428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -8992,11 +8992,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9062,6 +9057,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 51.847267
       objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
 --- !u!1001 &245543742
@@ -9071,11 +9071,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table
-      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9130,6 +9125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.16601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -10602,11 +10602,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10671,6 +10666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.32459614
+      objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
@@ -11077,11 +11077,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11146,6 +11141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.84728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -11294,11 +11294,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11353,6 +11348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -12270,11 +12270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12334,6 +12329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -15078,11 +15078,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15147,6 +15142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -15845,11 +15845,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15914,6 +15909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 14.307855
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
@@ -16381,11 +16381,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16441,6 +16436,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
 --- !u!1001 &481764953
@@ -16450,11 +16450,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: Television (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 428275537310471071, guid: dcef3d42988b8dc49b419956550ab1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16509,6 +16504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Television (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcef3d42988b8dc49b419956550ab1f6, type: 3}
@@ -17363,11 +17363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17422,6 +17417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.1010001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
@@ -17696,11 +17696,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17765,6 +17760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 14.307855
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
@@ -17864,11 +17864,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17923,6 +17918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -18840,11 +18840,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18909,6 +18904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -19664,11 +19664,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19723,6 +19718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -19946,11 +19946,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj
-      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20005,6 +20000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6, type: 3}
@@ -20410,11 +20410,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20469,6 +20464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -20740,11 +20740,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
-        type: 3}
-      propertyPath: m_Name
-      value: Metal_Jar
-      objectReference: {fileID: 0}
     - target: {fileID: 4903164102860506351, guid: 7e0a0eb2fa86b2043877ede33bf18045,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20799,6 +20794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
+        type: 3}
+      propertyPath: m_Name
+      value: Metal_Jar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a0eb2fa86b2043877ede33bf18045, type: 3}
@@ -20965,11 +20965,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: Television (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 428275537310471071, guid: dcef3d42988b8dc49b419956550ab1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21024,6 +21019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Television (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcef3d42988b8dc49b419956550ab1f6, type: 3}
@@ -21565,11 +21565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5463443325704478550, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink_Trashcan
-      objectReference: {fileID: 0}
     - target: {fileID: 5463443325704962934, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21624,6 +21619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463443325704478550, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink_Trashcan
       objectReference: {fileID: 0}
     - target: {fileID: 5463443325704962952, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
         type: 3}
@@ -21814,11 +21814,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21873,6 +21868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -21952,11 +21952,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5463443325704478550, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink_Trashcan (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5463443325704962934, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22011,6 +22006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463443325704478550, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink_Trashcan (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5463443325704962952, guid: bdc3ebc253aee9f4b8eb28fb523023d7,
         type: 3}
@@ -22342,11 +22342,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22402,6 +22397,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (22)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!1001 &655633841
@@ -22411,11 +22411,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22470,6 +22465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -22890,11 +22890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22949,6 +22944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -23109,11 +23109,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture
-      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23178,6 +23173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.36218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372938, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -23600,11 +23600,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_table (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6399372764851976766, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23659,6 +23654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399372764851480094, guid: 9cc46649dcd23e64d97fdc4b7128a27a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_table (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cc46649dcd23e64d97fdc4b7128a27a, type: 3}
@@ -23958,11 +23958,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24028,6 +24023,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.32459593
       objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
 --- !u!1001 &704895402
@@ -24037,11 +24037,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24096,6 +24091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -24355,11 +24355,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24424,6 +24419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -24503,11 +24503,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Name
-      value: ScienceWorkStationCounter (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 506245176978355067, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24572,6 +24567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.63760996
+      objectReference: {fileID: 0}
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Name
+      value: ScienceWorkStationCounter (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21426d3e53aea124199ae0650d6d891d, type: 3}
@@ -25136,11 +25136,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
-        type: 3}
-      propertyPath: m_Name
-      value: Couch
-      objectReference: {fileID: 0}
     - target: {fileID: 5095933577586212271, guid: c201e5ce71591134b8a4891092033e89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25195,6 +25190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
+        type: 3}
+      propertyPath: m_Name
+      value: Couch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c201e5ce71591134b8a4891092033e89, type: 3}
@@ -25731,11 +25731,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25800,6 +25795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -26110,11 +26110,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26174,6 +26169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -26516,11 +26516,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
-        type: 3}
-      propertyPath: m_Name
-      value: Metal_Jar (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4903164102860506351, guid: 7e0a0eb2fa86b2043877ede33bf18045,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26575,6 +26570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903164102860675279, guid: 7e0a0eb2fa86b2043877ede33bf18045,
+        type: 3}
+      propertyPath: m_Name
+      value: Metal_Jar (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a0eb2fa86b2043877ede33bf18045, type: 3}
@@ -27573,11 +27573,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 936221271512341390, guid: 50149f65de142bb459cdfddb04259bb0,
-        type: 3}
-      propertyPath: m_Name
-      value: DrinkDispenser (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 936221271512827822, guid: 50149f65de142bb459cdfddb04259bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27632,6 +27627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936221271512341390, guid: 50149f65de142bb459cdfddb04259bb0,
+        type: 3}
+      propertyPath: m_Name
+      value: DrinkDispenser (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50149f65de142bb459cdfddb04259bb0, type: 3}
@@ -28015,11 +28015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28084,6 +28079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 14.307855
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
@@ -28624,11 +28624,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28693,6 +28688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -28916,11 +28916,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28985,6 +28980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 67.162735
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -29640,6 +29640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioLogs: 0
+  material: {fileID: 0}
 --- !u!54 &868385603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29726,7 +29727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &869744299 stripped
 Transform:
@@ -29948,11 +29949,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30007,6 +30003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -30299,11 +30300,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Cup
-      objectReference: {fileID: 0}
     - target: {fileID: 520003131693368338, guid: e88b069321d461a4ab212ac331f5c1b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30368,6 +30364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.4186363
+      objectReference: {fileID: 0}
+    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Cup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88b069321d461a4ab212ac331f5c1b6, type: 3}
@@ -30957,11 +30958,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31031,6 +31027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 69.54125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6, type: 3}
@@ -31469,11 +31470,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31538,6 +31534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -31809,7 +31810,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &916853913
 PrefabInstance:
@@ -31881,6 +31882,11 @@ PrefabInstance:
     - target: {fileID: 85388731, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
       propertyPath: m_Text
       value: testing one two
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002186686961354746, guid: e49a6121ee5cf4c438903782ad7f46aa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49a6121ee5cf4c438903782ad7f46aa, type: 3}
@@ -32340,11 +32346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32409,6 +32410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.84728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -32797,11 +32803,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32866,6 +32867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -32951,11 +32957,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33021,6 +33022,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 69.54124
       objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6, type: 3}
 --- !u!1001 &958686800
@@ -33030,11 +33036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33090,6 +33091,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (24)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!4 &961116031 stripped
@@ -33105,11 +33111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33164,6 +33165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
@@ -33768,11 +33774,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33827,6 +33828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -34975,11 +34981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35044,6 +35045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.84728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -35922,11 +35928,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj
-      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35992,6 +35993,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 67.16276
       objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
 --- !u!1001 &1031296965
@@ -36001,11 +36007,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36060,6 +36061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
@@ -36492,11 +36498,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Name
-      value: ScienceWorkStationCounter (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 506245176978355067, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36551,6 +36552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Name
+      value: ScienceWorkStationCounter (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21426d3e53aea124199ae0650d6d891d, type: 3}
@@ -36775,11 +36781,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36834,6 +36835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.969
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
@@ -37590,11 +37596,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
-        type: 3}
-      propertyPath: m_Name
-      value: Bowl1 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8596608272744777006, guid: eda8a65826801dc488e7cf4b79706660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37650,6 +37651,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
+        type: 3}
+      propertyPath: m_Name
+      value: Bowl1 (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda8a65826801dc488e7cf4b79706660, type: 3}
 --- !u!1001 &1109936924
@@ -37659,11 +37665,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37728,6 +37729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1275997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -38005,7 +38011,7 @@ PrefabInstance:
     - target: {fileID: 2066969913224302284, guid: 143413250f276f64bb09b7286ae270b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2066969913224302284, guid: 143413250f276f64bb09b7286ae270b4,
         type: 3}
@@ -39468,11 +39474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39537,6 +39538,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 14.307855
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
@@ -39754,11 +39760,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39818,6 +39819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -39992,11 +39998,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallDoorFBX (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 6239487805674279573, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6239487805674704565, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40051,31 +40052,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6239487805674704565, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6239487805674704565, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6239487805674279569, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6239487805674279571, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
-        type: 3}
-      propertyPath: screenColor
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
@@ -40244,11 +40220,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6935358213678360188, guid: 36e64b378940c404ebff0e6a05e6843e,
-        type: 3}
-      propertyPath: m_Name
-      value: Stage
-      objectReference: {fileID: 0}
     - target: {fileID: 6935358213678529116, guid: 36e64b378940c404ebff0e6a05e6843e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40313,6 +40284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1445.5085
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935358213678360188, guid: 36e64b378940c404ebff0e6a05e6843e,
+        type: 3}
+      propertyPath: m_Name
+      value: Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e64b378940c404ebff0e6a05e6843e, type: 3}
@@ -40790,6 +40766,26 @@ PrefabInstance:
       propertyPath: screenColor
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6239487805456280259, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: doorStates
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523207792706068482, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777309391806638019, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155207197661519844, guid: 553c1b5e3dd9c00429e629bffd2c3fc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 553c1b5e3dd9c00429e629bffd2c3fc6, type: 3}
 --- !u!1 &1200566953
@@ -41034,11 +41030,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41108,6 +41099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.36218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372938, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -41606,11 +41602,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41675,6 +41666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1275997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -42699,11 +42695,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed_obj (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7232347006918883432, guid: 1c69a67f2cc11ee42806bc271271c633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42758,6 +42749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232347006919107656, guid: 1c69a67f2cc11ee42806bc271271c633,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed_obj (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69a67f2cc11ee42806bc271271c633, type: 3}
@@ -43321,11 +43317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43380,6 +43371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -43678,11 +43674,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43747,6 +43738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.36218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372938, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -45448,11 +45444,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45512,6 +45503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -45782,11 +45778,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45852,6 +45843,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.32459593
       objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
 --- !u!4 &1340934188 stripped
@@ -45867,11 +45863,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45926,6 +45917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -46011,11 +46007,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: Television
-      objectReference: {fileID: 0}
     - target: {fileID: 428275537310471071, guid: dcef3d42988b8dc49b419956550ab1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46070,6 +46061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428275537310830527, guid: dcef3d42988b8dc49b419956550ab1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Television
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcef3d42988b8dc49b419956550ab1f6, type: 3}
@@ -46396,11 +46392,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46465,6 +46456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.847267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -47328,11 +47324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47387,6 +47378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -47826,11 +47822,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
-        type: 3}
-      propertyPath: m_Name
-      value: Large_Research_Table
-      objectReference: {fileID: 0}
     - target: {fileID: 8144319777508464390, guid: 70ec9f5875ca34546972f19653a61773,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47885,6 +47876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144319777508363046, guid: 70ec9f5875ca34546972f19653a61773,
+        type: 3}
+      propertyPath: m_Name
+      value: Large_Research_Table
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70ec9f5875ca34546972f19653a61773, type: 3}
@@ -48045,11 +48041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48104,6 +48095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -48327,11 +48323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Cup (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 520003131693368338, guid: e88b069321d461a4ab212ac331f5c1b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48396,6 +48387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.4186363
+      objectReference: {fileID: 0}
+    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Cup (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88b069321d461a4ab212ac331f5c1b6, type: 3}
@@ -48734,11 +48730,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48794,6 +48785,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
 --- !u!1001 &1438171549
@@ -48803,11 +48799,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
-        type: 3}
-      propertyPath: m_Name
-      value: MedicalBed02_obj (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 8566291475624637626, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48877,6 +48868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 69.54127
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566291475625126042, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6,
+        type: 3}
+      propertyPath: m_Name
+      value: MedicalBed02_obj (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85db4c2c502c8c4385d7ab3eb7fa1f6, type: 3}
@@ -49382,11 +49378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49452,6 +49443,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1275997
       objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
 --- !u!4 &1454743670 stripped
@@ -49467,11 +49463,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Cup (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 520003131693368338, guid: e88b069321d461a4ab212ac331f5c1b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49536,6 +49527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.4186363
+      objectReference: {fileID: 0}
+    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Cup (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88b069321d461a4ab212ac331f5c1b6, type: 3}
@@ -49667,11 +49663,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49727,6 +49718,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!4 &1470839755 stripped
@@ -49742,11 +49738,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49801,6 +49792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
@@ -49880,11 +49876,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8959183827234804163, guid: 3e987e37f57204047b475bfb39426dab,
-        type: 3}
-      propertyPath: m_Name
-      value: Fridge (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8959183827235163619, guid: 3e987e37f57204047b475bfb39426dab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49939,6 +49930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959183827234804163, guid: 3e987e37f57204047b475bfb39426dab,
+        type: 3}
+      propertyPath: m_Name
+      value: Fridge (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e987e37f57204047b475bfb39426dab, type: 3}
@@ -50269,11 +50265,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50338,6 +50329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -50755,11 +50751,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1131588685577361024, guid: 89e3f00fe3afe5945a77070cbb98d22e,
-        type: 3}
-      propertyPath: m_Name
-      value: Podium
-      objectReference: {fileID: 0}
     - target: {fileID: 1131588685577783968, guid: 89e3f00fe3afe5945a77070cbb98d22e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50824,6 +50815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 68.48963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131588685577361024, guid: 89e3f00fe3afe5945a77070cbb98d22e,
+        type: 3}
+      propertyPath: m_Name
+      value: Podium
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e3f00fe3afe5945a77070cbb98d22e, type: 3}
@@ -50923,11 +50919,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50983,6 +50974,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!4 &1511415671 stripped
@@ -50998,11 +50994,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51057,6 +51048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -51142,11 +51138,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51211,6 +51202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.84728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -52092,11 +52088,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52162,6 +52153,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 14.307855
       objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
 --- !u!1001 &1550737475
@@ -52171,11 +52167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52240,6 +52231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -52388,11 +52384,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52447,6 +52438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -53531,11 +53527,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53591,6 +53582,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.505
       objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
 --- !u!1001 &1577382655
@@ -53600,11 +53596,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Cup (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 520003131693368338, guid: e88b069321d461a4ab212ac331f5c1b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53669,6 +53660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.4186363
+      objectReference: {fileID: 0}
+    - target: {fileID: 520003131693275186, guid: e88b069321d461a4ab212ac331f5c1b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Cup (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88b069321d461a4ab212ac331f5c1b6, type: 3}
@@ -53924,11 +53920,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53993,6 +53984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -54136,11 +54132,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54201,6 +54192,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.0969844
       objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
 --- !u!1001 &1591463794
@@ -54210,11 +54206,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
-        type: 3}
-      propertyPath: m_Name
-      value: Bowl1 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 8596608272744777006, guid: eda8a65826801dc488e7cf4b79706660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54269,6 +54260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
+        type: 3}
+      propertyPath: m_Name
+      value: Bowl1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda8a65826801dc488e7cf4b79706660, type: 3}
@@ -54737,11 +54733,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Name
-      value: ScienceWorkStationCounter (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 506245176978355067, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54796,6 +54787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Name
+      value: ScienceWorkStationCounter (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21426d3e53aea124199ae0650d6d891d, type: 3}
@@ -55220,11 +55216,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55289,6 +55280,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.32459614
+      objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
@@ -55813,11 +55809,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55882,6 +55873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.847267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -56126,11 +56122,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8572418578438289647, guid: 86fb5a34a40198f4590302b44faa9499,
-        type: 3}
-      propertyPath: m_Name
-      value: Medical_Tube
-      objectReference: {fileID: 0}
     - target: {fileID: 8572418578438055119, guid: 86fb5a34a40198f4590302b44faa9499,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56200,6 +56191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6943158
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572418578438289647, guid: 86fb5a34a40198f4590302b44faa9499,
+        type: 3}
+      propertyPath: m_Name
+      value: Medical_Tube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86fb5a34a40198f4590302b44faa9499, type: 3}
@@ -56999,11 +56995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57059,6 +57050,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (18)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
 --- !u!1001 &1660159241
@@ -57068,11 +57064,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57137,6 +57128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -57222,11 +57218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57291,6 +57282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1275997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -57711,6 +57707,11 @@ PrefabInstance:
       propertyPath: screenColor
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3675571620877632979, guid: d44f94497f6be0d4896a742ba114298b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f94497f6be0d4896a742ba114298b, type: 3}
 --- !u!4 &1668178408 stripped
@@ -57831,11 +57832,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57900,6 +57896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3245961
+      objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
@@ -58121,11 +58122,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58185,6 +58181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -59124,11 +59125,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
-        type: 3}
-      propertyPath: m_Name
-      value: IV_drip_withtexture (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372942, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59198,6 +59194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 81.3622
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376624304567882478, guid: d007f20236df7d34ba64b998c2ed150e,
+        type: 3}
+      propertyPath: m_Name
+      value: IV_drip_withtexture (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7376624304568372938, guid: d007f20236df7d34ba64b998c2ed150e,
         type: 3}
@@ -59771,11 +59772,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
-        type: 3}
-      propertyPath: m_Name
-      value: ScienceWorkStationCounter (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 506245176978355067, guid: 21426d3e53aea124199ae0650d6d891d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59830,6 +59826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 506245176978255707, guid: 21426d3e53aea124199ae0650d6d891d,
+        type: 3}
+      propertyPath: m_Name
+      value: ScienceWorkStationCounter (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21426d3e53aea124199ae0650d6d891d, type: 3}
@@ -60594,11 +60595,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
-        type: 3}
-      propertyPath: m_Name
-      value: Bowl1 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 8596608272744777006, guid: eda8a65826801dc488e7cf4b79706660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -60653,6 +60649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
+        type: 3}
+      propertyPath: m_Name
+      value: Bowl1 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda8a65826801dc488e7cf4b79706660, type: 3}
@@ -62537,11 +62538,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
-        type: 3}
-      propertyPath: m_Name
-      value: Couch (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5095933577586212271, guid: c201e5ce71591134b8a4891092033e89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62596,6 +62592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095933577586368911, guid: c201e5ce71591134b8a4891092033e89,
+        type: 3}
+      propertyPath: m_Name
+      value: Couch (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c201e5ce71591134b8a4891092033e89, type: 3}
@@ -62920,11 +62921,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
-        type: 3}
-      propertyPath: m_Name
-      value: Bowl1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8596608272744777006, guid: eda8a65826801dc488e7cf4b79706660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62979,6 +62975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
+        type: 3}
+      propertyPath: m_Name
+      value: Bowl1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda8a65826801dc488e7cf4b79706660, type: 3}
@@ -63127,11 +63128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63186,6 +63182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -63440,11 +63441,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63500,6 +63496,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.9250001
       objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
 --- !u!1001 &1808197510
@@ -63509,11 +63510,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63568,6 +63564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -64265,11 +64266,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8959183827234804163, guid: 3e987e37f57204047b475bfb39426dab,
-        type: 3}
-      propertyPath: m_Name
-      value: Fridge
-      objectReference: {fileID: 0}
     - target: {fileID: 8959183827235163619, guid: 3e987e37f57204047b475bfb39426dab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64324,6 +64320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959183827234804163, guid: 3e987e37f57204047b475bfb39426dab,
+        type: 3}
+      propertyPath: m_Name
+      value: Fridge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e987e37f57204047b475bfb39426dab, type: 3}
@@ -65291,11 +65292,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65361,6 +65357,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1275997
       objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
 --- !u!4 &1858775346 stripped
@@ -65376,11 +65377,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65435,6 +65431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
@@ -65637,11 +65638,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
-        type: 3}
-      propertyPath: m_Name
-      value: Bowl1
-      objectReference: {fileID: 0}
     - target: {fileID: 8596608272744777006, guid: eda8a65826801dc488e7cf4b79706660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65696,6 +65692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596608272744880398, guid: eda8a65826801dc488e7cf4b79706660,
+        type: 3}
+      propertyPath: m_Name
+      value: Bowl1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda8a65826801dc488e7cf4b79706660, type: 3}
@@ -67456,11 +67457,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67525,6 +67521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1275997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
@@ -68237,11 +68238,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 6920897307758587299, guid: 5458ad5a53a74934fbe01453141cf293,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -68296,6 +68292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920897307759079811, guid: 5458ad5a53a74934fbe01453141cf293,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5458ad5a53a74934fbe01453141cf293, type: 3}
@@ -69556,11 +69557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69615,6 +69611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
@@ -69694,11 +69695,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Scaple (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 389973670097577427, guid: 38e46917853b5054ab0d45f6e907b4c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69763,6 +69759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.32459605
+      objectReference: {fileID: 0}
+    - target: {fileID: 389973670097615347, guid: 38e46917853b5054ab0d45f6e907b4c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Scaple (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e46917853b5054ab0d45f6e907b4c2, type: 3}
@@ -70162,11 +70163,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
-        type: 3}
-      propertyPath: m_Name
-      value: Plate1 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 9132236468025815937, guid: 30c28186f0641834e92307e101b857f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70231,6 +70227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 14.307855
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132236468025847713, guid: 30c28186f0641834e92307e101b857f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Plate1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c28186f0641834e92307e101b857f0, type: 3}
@@ -70562,11 +70563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Pillow (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7889160072699077528, guid: 743ff991835058147a0be14f5ee650b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70621,6 +70617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.9250001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889160072699051960, guid: 743ff991835058147a0be14f5ee650b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Pillow (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743ff991835058147a0be14f5ee650b6, type: 3}
@@ -71174,11 +71175,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
-        type: 3}
-      propertyPath: m_Name
-      value: Fork (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 910417548968284020, guid: def8c26b46531f5448586f5e3e0927eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -71238,6 +71234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0969844
+      objectReference: {fileID: 0}
+    - target: {fileID: 910417548968645460, guid: def8c26b46531f5448586f5e3e0927eb,
+        type: 3}
+      propertyPath: m_Name
+      value: Fork (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def8c26b46531f5448586f5e3e0927eb, type: 3}
@@ -71404,11 +71405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 936221271512341390, guid: 50149f65de142bb459cdfddb04259bb0,
-        type: 3}
-      propertyPath: m_Name
-      value: DrinkDispenser
-      objectReference: {fileID: 0}
     - target: {fileID: 936221271512827822, guid: 50149f65de142bb459cdfddb04259bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -71463,6 +71459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936221271512341390, guid: 50149f65de142bb459cdfddb04259bb0,
+        type: 3}
+      propertyPath: m_Name
+      value: DrinkDispenser
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50149f65de142bb459cdfddb04259bb0, type: 3}
@@ -71994,11 +71995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 597774049642571277, guid: e74bebc18782b7245ac51e07efa32502,
-        type: 3}
-      propertyPath: m_Name
-      value: StoveOvenCombo
-      objectReference: {fileID: 0}
     - target: {fileID: 597774049642543661, guid: e74bebc18782b7245ac51e07efa32502,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72053,6 +72049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597774049642571277, guid: e74bebc18782b7245ac51e07efa32502,
+        type: 3}
+      propertyPath: m_Name
+      value: StoveOvenCombo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e74bebc18782b7245ac51e07efa32502, type: 3}
@@ -72853,11 +72854,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Tray1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5497262782902351950, guid: af663fbc15d3813409c81b9e96f5e0cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72922,6 +72918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 51.847267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497262782901986350, guid: af663fbc15d3813409c81b9e96f5e0cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tray1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af663fbc15d3813409c81b9e96f5e0cb, type: 3}
@@ -73169,11 +73170,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
-        type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 6317734403643660987, guid: 128c8ee74324e8a48a393b3594170370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73238,6 +73234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4728913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317734403643950747, guid: 128c8ee74324e8a48a393b3594170370,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128c8ee74324e8a48a393b3594170370, type: 3}
@@ -74009,11 +74010,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
-        type: 3}
-      propertyPath: m_Name
-      value: Spoon (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 346663261037101424, guid: 6e4b4bb8652477645b9ebf950bf98328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74069,6 +74065,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 346663261037141328, guid: 6e4b4bb8652477645b9ebf950bf98328,
+        type: 3}
+      propertyPath: m_Name
+      value: Spoon (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4b4bb8652477645b9ebf950bf98328, type: 3}
 --- !u!1001 &2122964674
@@ -74078,11 +74079,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1567847950}
     m_Modifications:
-    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed_Matress (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 1928417680844004672, guid: 3cda6938ed29b80489267ca55c538c58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74147,6 +74143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1276001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928417680844226912, guid: 3cda6938ed29b80489267ca55c538c58,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed_Matress (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cda6938ed29b80489267ca55c538c58, type: 3}
