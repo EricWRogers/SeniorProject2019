@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8254080658239608401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6239487805675474577}
   - component: {fileID: 6239487805676473425}
   - component: {fileID: 6239487805680581681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Small_Door_Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 6239487805675474579}
   - component: {fileID: 6239487805676473427}
   - component: {fileID: 6239487805680581683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmallDoor 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 6239487805456280258}
   - component: {fileID: 6239487805456280256}
   - component: {fileID: 6239487805456280259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmallDoorFBX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 6239487805674279573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1.05, z: 1}
+  m_LocalScale: {x: 2, y: 1.02, z: 1.2}
   m_Children:
   - {fileID: 6239487805674704561}
   - {fileID: 6239487805674704563}
@@ -375,7 +375,7 @@ Animator:
   m_GameObject: {fileID: 6239487805674279573}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 64d99cc5895e3fa42ba55ea58b421d87, type: 2}
+  m_Controller: {fileID: 9100000, guid: fa8a81f27be11674fbbebc25cf22e689, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -396,8 +396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a059ab4f66ed7924e833c1170c285d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenColor: 3
-  doorStates: 0
+  screenColor: 4
+  doorStates: 1
   lockOutTime: 0
   mainMenuScene: DollyMenu
 --- !u!1001 &1801201302761566368
@@ -411,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3928974251258187898, guid: 6f4c734422b92b34a8566e1b70f783ee,
         type: 3}
@@ -467,6 +472,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826398, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826392, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4c734422b92b34a8566e1b70f783ee, type: 3}
 --- !u!4 &3348886234456154330 stripped
@@ -486,6 +501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826394, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3928974251258187898, guid: 6f4c734422b92b34a8566e1b70f783ee,
         type: 3}
@@ -542,6 +562,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826398, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928974251257826392, guid: 6f4c734422b92b34a8566e1b70f783ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4c734422b92b34a8566e1b70f783ee, type: 3}
 --- !u!4 &6082500031206990226 stripped
@@ -557,6 +587,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8254080658239608401}
     m_Modifications:
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Name
+      value: PS_Sparks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -612,10 +652,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+    - target: {fileID: 5042735193394747935, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
-      propertyPath: m_Name
-      value: PS_Sparks
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
@@ -637,6 +682,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8254080658239608401}
     m_Modifications:
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Name
+      value: PS_Sparks (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5042735192553464585, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,10 +747,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5042735192553464584, guid: c6b768d4555b70348827624f93f723a6,
+    - target: {fileID: 5042735193394747935, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
-      propertyPath: m_Name
-      value: PS_Sparks (1)
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5042735192663259974, guid: c6b768d4555b70348827624f93f723a6,
         type: 3}
