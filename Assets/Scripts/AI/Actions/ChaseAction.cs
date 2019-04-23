@@ -14,7 +14,7 @@ public class ChaseAction : Action
     {
         controller.navMeshAgent.speed += 1.5f * Time.deltaTime;
         
-        controller.navMeshAgent.destination = controller.gameManager.PlayerGO.transform.position;
+        controller.navMeshAgent.destination = controller.lastKnownPosition;
         controller.navMeshAgent.isStopped = false;
 
     }

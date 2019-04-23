@@ -27,6 +27,7 @@ public class StateController : MonoBehaviour
     
     public Animator anim;
     public DifficultyManager diffMan;
+    public Vector3 lastKnownPosition;
 
     public ThrowObject throwableObject {
         get {

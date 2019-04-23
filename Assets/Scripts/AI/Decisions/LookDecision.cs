@@ -25,6 +25,7 @@ public class LookDecision : Decision
                 float distToTarget = Vector3.Distance(controller.eyes.transform.position, target.position);
                 if(!Physics.Raycast(controller.eyes.transform.position,dirToTarget,distToTarget, controller.ObstacleMask))
                 {
+                    controller.lastKnownPosition = controller.gameManager.PlayerGO.transform.position;
                     retValue = true;
                 }
             }
@@ -33,6 +34,7 @@ public class LookDecision : Decision
                 float distToTarget = Vector3.Distance(controller.eyes.transform.position, target.position);
                 if (!Physics.Raycast(controller.eyes.transform.position, dirToTarget, distToTarget, controller.ObstacleMask))
                 {
+                    controller.lastKnownPosition = controller.gameManager.PlayerGO.transform.position;
                     retValue = true;
                 }
             }
