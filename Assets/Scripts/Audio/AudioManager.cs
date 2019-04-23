@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+    public AudioSource voiceSource;
+
     private GameObject emptySpawn;
 
     void Start()
@@ -105,7 +107,7 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(audioLogs, sound => sound.name == name);
         if (s.source == null)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
+            s.source = voiceSource;
             s.source.outputAudioMixerGroup = s.outputMixerGroup;
             s.source.clip = s.audioClip;
 

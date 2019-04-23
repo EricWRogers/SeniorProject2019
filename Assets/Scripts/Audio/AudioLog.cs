@@ -72,6 +72,13 @@ public class AudioLog : MonoBehaviour
     float duration;
 
     bool played = false;
+    bool pickupable = false;
+
+    public Material material;
+
+    Renderer rend;
+    Material tempMaterial;
+    Rigidbody rb;
 
     private void Start()
     {
@@ -80,7 +87,10 @@ public class AudioLog : MonoBehaviour
         audioLog = audioLogs.ToString();
         audioLogName = new string(audioLog.Where(c => (c < '0' || c > '9')).ToArray());
         SpeakerName(audioLogName);
-        
+
+        rend = GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
+        tempMaterial = rend.material;
         //audioManager.PlayAudioLog(audioLog);   test
     }
 
@@ -95,15 +105,15 @@ public class AudioLog : MonoBehaviour
             }
         }
 
-        //Debug.Log(Time.time);
+        Pickup();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            //if (InputManager.instance.Interact())
-            //{
+            if (InputManager.instance.Interact())
+            {
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 audioManager.PlayAudioLog(audioLog);
                 hud.AudioLogMessage(translatedAudioLog);
@@ -111,8 +121,57 @@ public class AudioLog : MonoBehaviour
                 playTime = Time.time;
                 played = true;
                 duration = audioManager.AudioLogLength(audioLog);
-            //}
+            }
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (InputManager.instance.Interact() && pickupable)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                audioManager.PlayAudioLog(audioLog);
+                hud.AudioLogMessage(translatedAudioLog);
+
+                playTime = Time.time;
+                played = true;
+                duration = audioManager.AudioLogLength(audioLog);
+            }
+        }
+    }
+
+    void Pickup()
+    {
+        if (InputManager.instance.Interact() && pickupable)
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            audioManager.PlayAudioLog(audioLog);
+            hud.AudioLogMessage(translatedAudioLog);
+
+            playTime = Time.time;
+            played = true;
+            duration = audioManager.AudioLogLength(audioLog);
+        }
+    }
+
+    void OnMouseEnter()
+    {
+        tempMaterial = rend.material;
+        pickupable = true;
+    }
+
+    void OnMouseOver()
+    {
+        rend.material = material;
+        pickupable = true;
+    }
+
+    void OnMouseExit()
+    {
+        rend.material = tempMaterial;
+        pickupable = false;
     }
 
     void SpeakerName(string audioLogName)
