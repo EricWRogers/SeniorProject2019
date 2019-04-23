@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PluggableAI/Decisions/ReachLKP")]
 public class ReachLKPDecision : Decision
 {
-    public float reachDistance = 10f;
+    public float reachDistance = 5f;
     public override bool Decide(StateController controller)
     {
         bool ReachedLPK = LKP(controller);
