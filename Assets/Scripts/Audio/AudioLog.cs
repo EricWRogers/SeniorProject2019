@@ -67,6 +67,7 @@ public class AudioLog : MonoBehaviour
 
     string audioLog;
     string translatedAudioLog;
+    string message = "Click to pickup audio log.";
 
     float playTime;
     float duration;
@@ -159,18 +160,21 @@ public class AudioLog : MonoBehaviour
     void OnMouseEnter()
     {
         tempMaterial = rend.material;
+        hud.MessageForPlayer(message);
         pickupable = true;
     }
 
     void OnMouseOver()
     {
         rend.material = material;
+        hud.MessageForPlayer(message);
         pickupable = true;
     }
 
     void OnMouseExit()
     {
         rend.material = tempMaterial;
+        hud.MessageForPlayer();
         pickupable = false;
     }
 

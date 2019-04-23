@@ -51,7 +51,7 @@ public class HUD : MonoBehaviour
     {
         objectiveForPlayer("");
         AudioLogMessage();
-        PlayTutorial(basics);
+        PlayTutorial();
         basics = false;
     }
 
@@ -132,9 +132,9 @@ public class HUD : MonoBehaviour
         audioLogText.text = message;
     }
 
-    public void PlayTutorial(bool basics)
+    public void PlayTutorial()
     {
-        StartCoroutine(PlayTutorialText(basics));
+        StartCoroutine(PlayTutorialText());
     }
 
     public void FadeOut(Text fadeOutText)
@@ -155,81 +155,61 @@ public class HUD : MonoBehaviour
         text.color = originalColor;
     }
 
-    IEnumerator PlayTutorialText(bool basics)
+    IEnumerator PlayTutorialText()
     {
         float textRemoval = .5f;
         float objectiveRemoval = 2.5f;
 
-        if (basics)
-        {
-            //movement tut
-            TutorialForPlayer("W,A,S,D to move");
-            yield return new WaitForSeconds(textRemoval);
-            yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
-            FadeOut(tutorialMessageText);
-            yield return new WaitForSeconds(fadeOutTime);
+        //if (basics)
+        //{
+        //movement tut
+        //TutorialForPlayer("W,A,S,D to move");
+        //yield return new WaitForSeconds(textRemoval);
+        //yield return new WaitWhile(() => CharController.velocity.magnitude <= 5f);
+        //FadeOut(tutorialMessageText);
+        //yield return new WaitForSeconds(fadeOutTime);
 
-            //sprint tut
-            TutorialForPlayer("Shift to sprint");
-            yield return new WaitWhile(() => !InputManager.instance.Sprint());
-            FadeOut(tutorialMessageText);
-            yield return new WaitForSeconds(fadeOutTime);
+        ////sprint tut
+        //TutorialForPlayer("Shift to sprint");
+        //yield return new WaitWhile(() => !InputManager.instance.Sprint());
+        //FadeOut(tutorialMessageText);
+        //yield return new WaitForSeconds(fadeOutTime);
 
-            //lean tut
-            TutorialForPlayer("Q,E to lean");
-            yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
-            FadeOut(tutorialMessageText);
-            yield return new WaitForSeconds(fadeOutTime);
+        ////lean tut
+        //TutorialForPlayer("Q,E to lean");
+        //yield return new WaitWhile(() => !InputManager.instance.Lean_L() && !InputManager.instance.Lean_R());
+        //FadeOut(tutorialMessageText);
+        //yield return new WaitForSeconds(fadeOutTime);
 
-            //crouch tut
-            TutorialForPlayer("Ctrl to crouch");
-            yield return new WaitWhile(() => !InputManager.instance.Crouch());
-            FadeOut(tutorialMessageText);
-            yield return new WaitForSeconds(fadeOutTime);
+        ////crouch tut
+        //TutorialForPlayer("Ctrl to crouch");
+        //yield return new WaitWhile(() => !InputManager.instance.Crouch());
+        //FadeOut(tutorialMessageText);
+        //yield return new WaitForSeconds(fadeOutTime);
 
-            //interact tut?
+        //interact tut?
 
-            //find keycards
-            //TutorialForPlayer("Find Keycards to access more of the lab");
-            //yield return new WaitWhile
+        //find keycards
+        //TutorialForPlayer("Find Keycards to access more of the lab");
+        //yield return new WaitWhile
 
-            //Search the station and place explosives in key points
-            TutorialForPlayer("Search the station and place explosives in key points");
-            yield return new WaitForSeconds(objectiveRemoval);
-            FadeOut(tutorialMessageText);
-            objectiveForPlayer("Search the station and place explosives in key points");
-            yield return new WaitWhile(() => GameManager.explosives > 2);
-            TutorialForPlayer("RUN!");
-            yield return new WaitForSeconds(objectiveRemoval);
-            TutorialForPlayer("");
-            yield return new WaitWhile(() => GameManager.explosives > 0);
-            //yield return new WaitForSeconds(textRemoval);
+        //Search the station and place explosives in key points
+        TutorialForPlayer("Search the station and place explosives in key points");
+        yield return new WaitForSeconds(objectiveRemoval);
+        FadeOut(tutorialMessageText);
+        objectiveForPlayer("Search the station and place explosives in key points");
+        yield return new WaitWhile(() => GameManager.explosives > 2);
+        TutorialForPlayer("RUN!");
+        yield return new WaitForSeconds(objectiveRemoval);
+        TutorialForPlayer("");
+        yield return new WaitWhile(() => GameManager.explosives > 0);
+        //yield return new WaitForSeconds(textRemoval);
 
-            //escape post planting explosives
-            TutorialForPlayer("Escape!");
-            yield return new WaitForSeconds(objectiveRemoval);
-            FadeOut(tutorialMessageText);
-            objectiveForPlayer("Escape!");
-        }
-        else
-        {
-            //Search the station and place explosives in key points
-            TutorialForPlayer("Search the station and place explosives in key points");
-            yield return new WaitForSeconds(objectiveRemoval);
-            FadeOut(tutorialMessageText);
-            objectiveForPlayer("Search the station and place explosives in key points");
-            yield return new WaitWhile(() => GameManager.explosives > 2);
-            TutorialForPlayer("RUN!");
-            yield return new WaitForSeconds(objectiveRemoval);
-            TutorialForPlayer("");
-            yield return new WaitWhile(() => GameManager.explosives > 0);
-            //yield return new WaitForSeconds(textRemoval);
-
-            //escape post planting explosives
-            TutorialForPlayer("Escape!");
-            yield return new WaitForSeconds(objectiveRemoval);
-            FadeOut(tutorialMessageText);
-            objectiveForPlayer("Escape!");
-        }        
+        //escape post planting explosives
+        TutorialForPlayer("Escape!");
+        yield return new WaitForSeconds(objectiveRemoval);
+        FadeOut(tutorialMessageText);
+        objectiveForPlayer("Escape!");
+        //}
     }
 }
