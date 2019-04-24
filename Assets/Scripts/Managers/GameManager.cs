@@ -25,8 +25,20 @@ public class GameManager : MonoBehaviour
     public bool EntityIsActive;
     public bool hidden;
     public bool playerAttacked;
-    
-    
+
+    public static GameManager Instance { get; private set; } = null;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
 
     void Start()

@@ -25,7 +25,7 @@ public class sanityWhispers : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, gameManager.EntityGO.transform.position);
 
-        if (dist <= 400f)
+        if (dist <= 200f)
             insanity.volume += .5f / dist;
         else
             insanity.volume -= .5f / dist;
@@ -33,9 +33,9 @@ public class sanityWhispers : MonoBehaviour
         {
             insanity.volume = 0;
         }
-        if (insanity.volume >= 1)
+        if (insanity.volume >= .2)
         {
-            insanity.volume = 1;
+            insanity.volume = .5f;
         }
     }
 }

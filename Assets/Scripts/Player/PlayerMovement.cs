@@ -229,11 +229,13 @@ public class PlayerMovement : MonoBehaviour
             if(!(GetComponent<KeyChain>().KeysInPocket.Contains(other.gameObject.GetComponent<KeyCard>().KeyName)))
             {
                 GetComponent<KeyChain>().KeysInPocket.Add(other.gameObject.GetComponent<KeyCard>().KeyName); 
-                Destroy(other.gameObject); 
+                Destroy(other.gameObject);
+                AudioManager.instance.Play("KeyCardPickUp");
             }
             else
             {
                 Destroy(other.gameObject);
+                AudioManager.instance.Play("KeyCardPickUp");
             }
         }
 

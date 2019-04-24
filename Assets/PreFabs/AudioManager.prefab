@@ -79,6 +79,15 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
     playOnAwake: 0
+  - name: KeyCardPickUp
+    outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,
+      type: 2}
+    audioClip: {fileID: 8300000, guid: b7184a3e58e92094886dc5341633360a, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+    playOnAwake: 0
   locationSounds:
   - name: droppedObject
     outputMixerGroup: {fileID: 243101595740210328, guid: 587a48216e997fa4f8670b837e3f48db,

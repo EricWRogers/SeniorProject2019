@@ -24,11 +24,12 @@ public class RandomMusicPlayer : MonoBehaviour
     private GameObject player;
     private GameObject creature;
     private float creatureDistance = 1000;
-    private float creatureSoundDistance = 145f;
+    private float creatureSoundDistance = 300f;
+
 
     private void Awake()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player (1)");
         creature = GameObject.Find("TheEntity!");        
     }
 
@@ -36,8 +37,11 @@ public class RandomMusicPlayer : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene().name;
         UpdatePlayerDistance();
+        //bool th = IsInLookDecistion();
 
-        if (currentScene != mainMenuScene && currentScene !=tutorialScene)
+        //Debug.Log(creatureDistance + "creature distance");
+
+        if (currentScene != mainMenuScene && currentScene !=tutorialScene && creatureDistance > creatureSoundDistance)
         {
             if (!audioSource.isPlaying)
             {
@@ -45,24 +49,19 @@ public class RandomMusicPlayer : MonoBehaviour
                 audioSource.Play();
             }
 
+            if (audioSource.isPlaying && audioSource.clip == chaseTrack)
+            {
+                FadeOutCall(audioSource, fadeDuration);
+                audioSource.loop = false;
+            }
+
             if(audioSource.clip == mainMenuTrack)
             {
                 FadeOutCall(audioSource, fadeDuration);
                 audioSource.loop = false;
             }
-        }
-        else if (currentScene != mainMenuScene && creatureDistance < creatureSoundDistance)
-        {
-            if (audioSource.isPlaying)
-            {
-                FadeOutCall(audioSource, fadeDuration);
-            }
-
-            audioSource.clip = chaseTrack;
-            audioSource.Play();
-            audioSource.loop = true;
-        }
-        else
+        }        
+        else if(currentScene == mainMenuScene || currentScene == tutorialScene)
         {
             if (audioSource.clip != mainMenuTrack && audioSource.isPlaying)
             {
@@ -75,7 +74,21 @@ public class RandomMusicPlayer : MonoBehaviour
                 audioSource.Play();
                 audioSource.loop = true;
             }            
-        }        
+        }
+        else
+        {
+            if (audioSource.clip != chaseTrack)
+            {
+                FadeOutCall(audioSource, fadeDuration);
+            }
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = chaseTrack;
+                audioSource.Play();
+                audioSource.loop = true;
+            }
+        }
     }
 
     void ChooseSound()
@@ -136,6 +149,26 @@ public class RandomMusicPlayer : MonoBehaviour
         {
             creatureDistance = Vector3.Distance(player.transform.position, creature.transform.position);
         }
+    }
+
+    bool IsInChaseState()
+    {
+        if (GameManager.Instance && GameManager.Instance.EntityGO)
+        {
+            //Debug.Log(GameManager.Instance.EntityGO.GetComponent<StateController>().currentState.name);
+            return GameManager.Instance.EntityGO.GetComponent<StateController>().currentState.name == "ChaseScanner";
+        }
+        return false;
+    }
+
+    bool IsInLookDecistion()
+    {
+        if (GameManager.Instance && GameManager.Instance.EntityGO)
+        {
+            //Debug.Log(GameManager.Instance.EntityGO.GetComponent<StateController>().currentState.name);
+            return GameManager.Instance.EntityGO.GetComponent<StateController>().eyes.name == "LookDecision";
+        }
+        return false;
     }
 
 }
