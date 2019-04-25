@@ -29,6 +29,14 @@ public class SliderManager : MonoBehaviour
     public void SetMouseSensativity(float sensativity)
     {
         //change mouse sensativity
+        //InputManager.instance.Looking_Horizontal.r
+        //Input.GetAxis("Looking_Horizontal_Joystick_MacOSX") = sensativity;
+        //Input.GetAxis("Looking_Horizontal_Joystick_Windows");
+        //Input.GetAxis("looking_Horizontal_Joystick_Linux");
+        //Input.GetAxis("Looking_Vertical_Joystick_MacOSX");
+        //Input.GetAxis("Looking_Vertical_Joystick_Windows");
+        //Input.GetAxis("looking_Vertical_Joystick_Linux");
+        //Input.ge
         PlayerPrefs.SetFloat("MouseSensativity", sensativity);
     }
 }
