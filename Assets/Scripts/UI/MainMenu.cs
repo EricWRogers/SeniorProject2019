@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
         DifficultyManager.instance.escapeTime = 240f;
         DifficultyManager.instance.EntityRunSpeed = 22f;
         DifficultyManager.instance.EntityWalkSpeed =19f;
-        audioManager.Play("UIMenuSelect");        
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void PlayNormal()
@@ -54,7 +54,7 @@ public class MainMenu : MonoBehaviour
         DifficultyManager.instance.escapeTime = 210f;
         DifficultyManager.instance.EntityRunSpeed = 28f;
         DifficultyManager.instance.EntityWalkSpeed =24f;
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void PlayHard()
@@ -67,7 +67,7 @@ public class MainMenu : MonoBehaviour
         DifficultyManager.instance.escapeTime = 180f;
         DifficultyManager.instance.EntityRunSpeed = 30f;
         DifficultyManager.instance.EntityWalkSpeed =26f;
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void PlayHardcore()
@@ -80,35 +80,35 @@ public class MainMenu : MonoBehaviour
         DifficultyManager.instance.escapeTime = 150f;
         DifficultyManager.instance.EntityRunSpeed = 35f;
         DifficultyManager.instance.EntityWalkSpeed =30f;
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void LoadDifficulty()
     {
         difficultyUI.SetActive(true);
         mainMenuUI.SetActive(false);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void CloseDifficulty()
     {
         difficultyUI.SetActive(false);
         mainMenuUI.SetActive(true);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void LoadOptions()
     {
         mainMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void CloseOptions()
     {
         optionsMenuUI.SetActive(false);
         mainMenuUI.SetActive(true);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void LoadCredits()
@@ -116,19 +116,20 @@ public class MainMenu : MonoBehaviour
         mainMenuUI.SetActive(false);
         creditsUI.SetActive(true);
         Invoke("CloseCredits", creditDuration);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void CloseCredits()
     {
         creditsUI.SetActive(false);
         mainMenuUI.SetActive(true);
-        audioManager.Play("UIMenuSelect");
+        AudioManager.instance.Play("UIMenuSelect");
     }
 
     public void Hover()
     {
-        audioManager.Play("UIMenuHover");
+        //audioManager.Play("UIMenuHover");
+        AudioManager.instance.Play("UIMenuHover");
     }
 
     public void Exit()

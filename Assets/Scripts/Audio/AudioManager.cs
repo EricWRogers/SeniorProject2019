@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioSource voiceSource;
+    string gameScene = "DuplicateMain";
+    string currentScene;
 
     private GameObject emptySpawn;
 
@@ -59,6 +62,16 @@ public class AudioManager : MonoBehaviour
         //    sounds[soundIndex].name = "this";
         //    soundIndex++;
         //}
+    }
+
+    private void Update()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
+
+        if(currentScene != gameScene)
+        {
+            voiceSource.Stop();
+        }
     }
 
     //plays sound from sounds[]
@@ -111,8 +124,8 @@ public class AudioManager : MonoBehaviour
         }        
 
         Sound s = Array.Find(audioLogs, sound => sound.name == name);
-        if (s.source == null)
-        {
+        //if (s.source == null)
+        //{
             s.source = voiceSource;
             s.source.outputAudioMixerGroup = s.outputMixerGroup;
             s.source.clip = s.audioClip;
@@ -121,7 +134,7 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playOnAwake;
-        }
+        //}
         if (!s.source.isPlaying)
             s.source.Play();
     }
