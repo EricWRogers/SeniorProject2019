@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CamLooking : MonoBehaviour
 {
-    [Range(0.1f, 4f)] public float mouseSensitivivty;
+    [Range(0.5f, 3f)] public float mouseSensitivivty;
     public float Xmax = 30.0f;
     public float Xmin = -30.0f;
     public float speed = 100f;
@@ -23,6 +23,7 @@ public class CamLooking : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         camCenter = transform.localPosition;
+        mouseSensitivivty = DifficultyManager.instance.mouseSensativity;
     }
 
     void FixedUpdate()
@@ -32,6 +33,8 @@ public class CamLooking : MonoBehaviour
 
         float MouseX = InputManager.instance.Looking().x;
         float MouseY = InputManager.instance.Looking().y;
+
+        mouseSensitivivty = DifficultyManager.instance.mouseSensativity; //weird spot to put it... dont worry about it
 
         float rotAmountX = MouseX * mouseSensitivivty;
         float rotAmountY = MouseY * mouseSensitivivty;

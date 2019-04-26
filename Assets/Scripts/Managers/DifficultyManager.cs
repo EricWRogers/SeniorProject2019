@@ -5,10 +5,12 @@ using UnityEngine;
 public class DifficultyManager : MonoBehaviour
 {
     public static DifficultyManager instance;
+
     public int adrenaline;
     public float EntityRunSpeed;
     public float EntityWalkSpeed;
     public float escapeTime;
+    public float mouseSensativity = 1;
 
     private void Awake()
     {
