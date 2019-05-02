@@ -10,9 +10,11 @@ public class SplashVideoPlayer : MonoBehaviour
 
     public VideoClip studioClip;
     public VideoClip gameClip;
+    public VideoClip sauClip;
 
     double studioLength;
     double gameLength;
+    double sauLength;
 
     public string menuSceneName = "DollyMenu";
 
@@ -20,6 +22,7 @@ public class SplashVideoPlayer : MonoBehaviour
     {
         studioLength = studioClip.length;
         gameLength = gameClip.length;
+        sauLength = sauClip.length;
         FadeOutCall(videoPlayer, .05f);                
     }
 
@@ -55,7 +58,27 @@ public class SplashVideoPlayer : MonoBehaviour
         videoPlayerAlpha = videoPlayer.targetCameraAlpha;
         videoPlayerVolume = videoPlayer.GetDirectAudioVolume(0);
 
-        yield return new WaitForSeconds((float)gameLength);
+        yield return new WaitForSeconds((float)gameLength);        
+
+        videoPlayer.targetCameraAlpha = 1;
+        videoPlayer.SetDirectAudioVolume(0, 1);
+
+        videoPlayer.clip = sauClip;
+        videoPlayer.Play();
+
+        videoPlayerAlpha = videoPlayer.targetCameraAlpha;
+        videoPlayerVolume = videoPlayer.GetDirectAudioVolume(0);
+
+        yield return new WaitForSeconds((float)sauLength - 3);
+
+        while (videoPlayer.targetCameraAlpha > 0)
+        {
+            videoPlayerAlpha -= speed;
+            videoPlayerVolume -= speed;
+            videoPlayer.targetCameraAlpha = videoPlayerAlpha;
+            videoPlayer.SetDirectAudioVolume(0, videoPlayerVolume);
+            yield return new WaitForSeconds(.1f);
+        }
 
         SceneManager.LoadScene(menuSceneName);
     }

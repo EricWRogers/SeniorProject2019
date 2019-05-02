@@ -37,6 +37,7 @@ public class SliderManager : MonoBehaviour
         //Input.GetAxis("Looking_Vertical_Joystick_Windows");
         //Input.GetAxis("looking_Vertical_Joystick_Linux");
         //Input.ge
+        DifficultyManager.instance.mouseSensativity = sensativity;
         PlayerPrefs.SetFloat("MouseSensativity", sensativity);
     }
 }

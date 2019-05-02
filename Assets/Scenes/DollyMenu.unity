@@ -64473,6 +64473,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 741177101515784924, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_MinValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 741177101515784924, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 741177101515784924, guid: a81d3e5699565f444a62028b8bf21260,
+        type: 3}
+      propertyPath: m_Value
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8783643237435507578, guid: a81d3e5699565f444a62028b8bf21260,
         type: 3}
       propertyPath: m_Text
