@@ -1,0 +1,1338 @@
+fileFormatVersion: 2
+guid: 099898fbe7b70490e8356ccae82aad59
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Flatline Sprit Sheet_0
+    21300002: Flatline Sprit Sheet_1
+    21300004: Flatline Sprit Sheet_2
+    21300006: Flatline Sprit Sheet_3
+    21300008: Flatline Sprit Sheet_4
+    21300010: Flatline Sprit Sheet_5
+    21300012: Flatline Sprit Sheet_6
+    21300014: Flatline Sprit Sheet_7
+    21300016: Flatline Sprit Sheet_8
+    21300018: Flatline Sprit Sheet_9
+    21300020: Flatline Sprit Sheet_10
+    21300022: Flatline Sprit Sheet_11
+    21300024: Flatline Sprit Sheet_12
+    21300026: Flatline Sprit Sheet_13
+    21300028: Flatline Sprit Sheet_14
+    21300030: Flatline Sprit Sheet_15
+    21300032: Flatline Sprit Sheet_16
+    21300034: Flatline Sprit Sheet_17
+    21300036: Flatline Sprit Sheet_18
+    21300038: Flatline Sprit Sheet_19
+    21300040: Flatline Sprit Sheet_20
+    21300042: Flatline Sprit Sheet_21
+    21300044: Flatline Sprit Sheet_22
+    21300046: Flatline Sprit Sheet_23
+    21300048: Flatline Sprit Sheet_24
+    21300050: Flatline Sprit Sheet_25
+    21300052: Flatline Sprit Sheet_26
+    21300054: Flatline Sprit Sheet_27
+    21300056: Flatline Sprit Sheet_28
+    21300058: Flatline Sprit Sheet_29
+    21300060: Flatline Sprit Sheet_30
+    21300062: Flatline Sprit Sheet_31
+    21300064: Flatline Sprit Sheet_32
+    21300066: Flatline Sprit Sheet_33
+    21300068: Flatline Sprit Sheet_34
+    21300070: Flatline Sprit Sheet_35
+    21300072: Flatline Sprit Sheet_36
+    21300074: Flatline Sprit Sheet_37
+    21300076: Flatline Sprit Sheet_38
+    21300078: Flatline Sprit Sheet_39
+    21300080: Flatline Sprit Sheet_40
+    21300082: Flatline Sprit Sheet_41
+    21300084: Flatline Sprit Sheet_42
+    21300086: Flatline Sprit Sheet_43
+    21300088: Flatline Sprit Sheet_44
+    21300090: Flatline Sprit Sheet_45
+    21300092: Flatline Sprit Sheet_46
+    21300094: Flatline Sprit Sheet_47
+    21300096: Flatline Sprit Sheet_48
+    21300098: Flatline Sprit Sheet_49
+    21300100: Flatline Sprit Sheet_50
+    21300102: Flatline Sprit Sheet_51
+    21300104: Flatline Sprit Sheet_52
+    21300106: Flatline Sprit Sheet_53
+    21300108: Flatline Sprit Sheet_54
+    21300110: Flatline Sprit Sheet_55
+    21300112: Flatline Sprit Sheet_56
+    21300114: Flatline Sprit Sheet_57
+    21300116: Flatline Sprit Sheet_58
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b747e8e809004ac289700892573f58f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b425ef0fb41474bbbe8f8a448c3b8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cc694795583465790a23abdd1f55da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1b59cb67d5f4e988d2c12ca887cabd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26721225c04be424084e26bd98830a66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a424806e031504de6831cfc907108e80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a916fbf2a384397a8bb4a5bbf60a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5060e7670ec2a43079b2b01f1f1c01d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 3025
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0c266e6d96d4873b432d4446de1e93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acfd0c657d2d483e971f61e51cb7a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c01d1a6b36c845eaad0d61875694a18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b41607372534c48a0e984b5a8098a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efd633e3bac04b888550c5490e74dbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a39257095efe4d229f2cd82f2b55286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c489cc2d1df424c3bb0cbee99f8b83fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754d5b84ae50c4e638ac0552d7b859e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea3cb9891437484e8dfc0a979ab278c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b17910adf1e4d669c3c11fc98e5f6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 2420
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e0ac7d35fbd454493eb803c0395ec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4496e94978016475082b0199664910e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f7b139d89cb4832acdcff6a5aac5f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91254337c75b54b22a5c5243e49836a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d7110ae8c1347af9b1182bff1476b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becc3251c17754e2895ba35d0d2324cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3dc8b6798684f1e919ada8d04685ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0bd6012b7e54e0ea9e39db87b32599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e360ea18b634a6dbcf6a1181a12a08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87e1417479564c12b8460f7e2ed4828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 1815
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663d7a4152b534e80a4d690e2a9774ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16f2755d79c649a0a6b4e98ebd684c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29365b4508ca746718c1fc36f2ac1fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7be2d44c4a994ea0b46fc9218c95f2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5a0e649f71a46a78bd3ff5d89b986a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c30714964684afdb5c77c72b81e563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c0f4cc1c0f74aa5a395b1e01ab9c3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d381fad7243d45aba8c4e8539c4b8b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548ea284387fd4633a9019cbcd52d92e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342a71863d36645d8948ebc5b36ce4ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 1210
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab9fc237abd1417bb8d722b41c20369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e9c4c275aef42d78813ec54d909dc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f52dd5b13e214ef49a8276963f0173f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89c902129dd043b48127002140389cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6fa30d0d2ba4ecd900777ae865a560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550f53e3db6104c52b263855ee2a626f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca2b15ca4bfa4e36b8201090474de8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd91eae4b9354ee6908f44295a48103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcc16a38d7a34a56b5029709e39f7a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e902862a6fc4016ba13d81deb776a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 605
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c6e4a13014144688b51db045c08d63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b99c68e14caf463abca7807b1c3b59d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095925a15cdca4076bb46cff4f856f6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465d6c566b821447383d4e32f0fb6163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1da1c7df4b04700a5b7a7439bdc455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925e1cd02a8d6469a91957111789d9f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3558a8d5096954e6b879d42914a25545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 6978
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0806c0d90e843629404c1a6a5591fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fe02321a438424d8de693f26fc47ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 9304
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15056054208e4dbab279bc576d4fddb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatline Sprit Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 10467
+        y: 0
+        width: 1163
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad571b99ac25448d5aec130fa33bd33e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 609c2c2ae0a2646ff9571cb49cc55de9
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

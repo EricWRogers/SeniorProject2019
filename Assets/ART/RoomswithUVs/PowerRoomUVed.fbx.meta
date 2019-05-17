@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: c205b1e80854f4e49a951304abacfb6f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: inner_ring
+    100002: middle_ring
+    100004: orb
+    100006: outer_ring
+    100008: PowerBallGrp
+    100010: PowerRoomBase
+    100012: //RootNode
+    400000: inner_ring
+    400002: middle_ring
+    400004: orb
+    400006: outer_ring
+    400008: PowerBallGrp
+    400010: PowerRoomBase
+    400012: //RootNode
+    2100000: gaurdRail_Material
+    2100002: supportPipes_Material
+    2100004: PowerRoomWalkWay_Mat
+    2100006: PowerRoomHallwayCounter_Mat
+    2100008: PowerRoomWall_Mat
+    2100010: PowerRoomWindow_Mat
+    2100012: Default_Material
+    2100014: PowerOrbGlass_Material
+    2100016: PowerRoom_Pedestal_Mat
+    2100018: phong2
+    2100020: phong4
+    2300000: inner_ring
+    2300002: middle_ring
+    2300004: orb
+    2300006: outer_ring
+    2300008: PowerRoomBase
+    3300000: inner_ring
+    3300002: middle_ring
+    3300004: orb
+    3300006: outer_ring
+    3300008: PowerRoomBase
+    4300000: PowerRoomBase
+    4300002: middle_ring
+    4300004: inner_ring
+    4300006: outer_ring
+    4300008: orb
+    6400000: inner_ring
+    6400002: middle_ring
+    6400004: orb
+    6400006: outer_ring
+    6400008: PowerRoomBase
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
